@@ -162,8 +162,11 @@ class _KladerMainPageState extends State<KladerMainPage> {
                               width: 140,
                               margin: EdgeInsets.only(right: 16),
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Expanded(child: Placeholder())
+                                  Expanded(child: Placeholder()),
+                                  Text("Addidas Hoodie"),
+                                  Text("\$50.99")
                                 ],
                               ),
                             );
