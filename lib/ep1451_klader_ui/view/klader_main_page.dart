@@ -63,7 +63,7 @@ class _KladerMainPageState extends State<KladerMainPage> {
                       ),
                       Row(
                         children: [
-                          Text("New Arrivals"),
+                          Text("Shop Again"),
                           IconButton(
                             onPressed: () {},
                             icon: Icon(Icons.arrow_forward),
