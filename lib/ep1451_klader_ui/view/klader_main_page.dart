@@ -27,7 +27,28 @@ class _KladerMainPageState extends State<KladerMainPage> {
       body: Stack(
         children: [
           Column(
-            children: [Container()],
+            children: [
+              Container(
+                height: 52,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                ),
+                margin: EdgeInsets.symmetric(vertical: 16),
+              ),
+              SizedBox(
+                height: 42,
+                child: Container(
+                  color: Colors.grey,
+                ),
+              ),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [],
+                  ),
+                ),
+              ),
+            ],
           ),
           Positioned(
               bottom: 24,
