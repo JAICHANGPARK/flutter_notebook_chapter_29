@@ -49,7 +49,7 @@ class _KladerMainPageState extends State<KladerMainPage> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 16),
+                padding: const EdgeInsets.only(left: 16, top: 16),
                 child: SizedBox(
                   height: 38,
                   child: Container(
