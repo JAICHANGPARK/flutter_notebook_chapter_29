@@ -58,7 +58,23 @@ class _KladerMainPageState extends State<KladerMainPage> {
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.black,
-                          borderRadius: BorderRadius.circular(16),
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 28),
+                        margin: EdgeInsets.only(right: 16),
+                        child: Center(
+                          child: Text(
+                            "All",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(24),
                         ),
                         padding: EdgeInsets.symmetric(horizontal: 28),
                         margin: EdgeInsets.only(right: 16),
