@@ -215,18 +215,82 @@ class _KladerMainPageState extends State<KladerMainPage> {
                       const SizedBox(
                         height: 28,
                       ),
-                      Row(
-                        children: [
-                          const Text("Shop Again"),
-                          IconButton(
-                            onPressed: () {},
-                            icon: const Icon(Icons.arrow_forward),
-                          ),
-                        ],
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            const Text(
+                              "Shop Again",
+                              style: TextStyle(fontSize: 28),
+                            ),
+                            IconButton(
+                              onPressed: () {},
+                              icon: const Icon(Icons.arrow_forward),
+                            ),
+                          ],
+                        ),
                       ),
                       Container(
-                        height: 300,
-                        color: Colors.blue,
+                        height: 280,
+                        margin: const EdgeInsets.only(left: 16),
+                        child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              width: 150,
+                              margin: const EdgeInsets.only(right: 16),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(8),
+                                        image: const DecorationImage(
+                                          image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2017/08/01/11/48/woman-2564660_960_720.jpg",
+                                          ),
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                      child: Stack(
+                                        children:  [
+                                          Positioned(
+                                            right: 8,
+                                            top: 8,
+                                            child: CircleAvatar(
+                                              backgroundColor: Colors.white,
+                                              radius: 14,
+                                              foregroundColor: Colors.black,
+                                              child: IconButton(
+                                                onPressed: () {},
+                                                iconSize: 15,
+                                                icon: Icon(
+                                                  Icons.favorite_border,
+                                                ),
+                                              ),
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 8,
+                                  ),
+                                  const Text(
+                                    "Hoodie",
+                                  ),
+                                  const SizedBox(
+                                    height: 6,
+                                  ),
+                                  const Text("\$50.99")
+                                ],
+                              ),
+                            );
+                          },
+                        ),
                       ),
                     ],
                   ),
