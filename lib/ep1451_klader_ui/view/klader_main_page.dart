@@ -44,7 +44,37 @@ class _KladerMainPageState extends State<KladerMainPage> {
               Expanded(
                 child: SingleChildScrollView(
                   child: Column(
-                    children: [],
+                    children: [
+                      Row(
+                        children: [
+                          Text("New Arrivals"),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.arrow_forward),
+                          ),
+                        ],
+                      ),
+                      Container(
+                        height: 300,
+                        color: Colors.blue,
+                      ),
+                      SizedBox(
+                        height: 28,
+                      ),
+                      Row(
+                        children: [
+                          Text("New Arrivals"),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.arrow_forward),
+                          ),
+                        ],
+                      ),
+                      Container(
+                        height: 300,
+                        color: Colors.blue,
+                      ),
+                    ],
                   ),
                 ),
               ),
