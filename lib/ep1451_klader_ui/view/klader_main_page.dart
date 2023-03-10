@@ -166,7 +166,15 @@ class _KladerMainPageState extends State<KladerMainPage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Expanded(child: Placeholder()),
-                                  Text("Addidas Hoodie"),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
+                                  Text(
+                                    "Addidas Hoodie",
+                                  ),
+                                  SizedBox(
+                                    height: 6,
+                                  ),
                                   Text("\$50.99")
                                 ],
                               ),
