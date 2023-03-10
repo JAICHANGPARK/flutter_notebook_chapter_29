@@ -48,78 +48,80 @@ class _KladerMainPageState extends State<KladerMainPage> {
                   ),
                 ),
               ),
-              SizedBox(
-                height: 38,
-                child: Container(
-                  color: Colors.grey,
-                  child: ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black,
-                          borderRadius: BorderRadius.circular(24),
-                        ),
-                        padding: EdgeInsets.symmetric(horizontal: 28),
-                        margin: EdgeInsets.only(right: 16),
-                        child: Center(
-                          child: Text(
-                            "All",
-                            style: TextStyle(
-                              color: Colors.white,
+              Padding(
+                padding: const EdgeInsets.only(left: 16),
+                child: SizedBox(
+                  height: 38,
+                  child: Container(
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 28),
+                          margin: EdgeInsets.only(right: 16),
+                          child: Center(
+                            child: Text(
+                              "All",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          border: Border.all(),
-                          borderRadius: BorderRadius.circular(24),
-                        ),
-                        padding: EdgeInsets.symmetric(horizontal: 28),
-                        margin: EdgeInsets.only(right: 16),
-                        child: Center(
-                          child: Text(
-                            "Clothes",
-                            style: TextStyle(
-                              color: Colors.grey,
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(),
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 28),
+                          margin: EdgeInsets.only(right: 16),
+                          child: Center(
+                            child: Text(
+                              "Clothes",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          border: Border.all(),
-                          borderRadius: BorderRadius.circular(24),
-                        ),
-                        padding: EdgeInsets.symmetric(horizontal: 28),
-                        margin: EdgeInsets.only(right: 16),
-                        child: Center(
-                          child: Text(
-                            "Shoes",
-                            style: TextStyle(
-                              color: Colors.grey,
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(),
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 28),
+                          margin: EdgeInsets.only(right: 16),
+                          child: Center(
+                            child: Text(
+                              "Shoes",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          border: Border.all(),
-                          borderRadius: BorderRadius.circular(24),
-                        ),
-                        padding: EdgeInsets.symmetric(horizontal: 28),
-                        margin: EdgeInsets.only(right: 16),
-                        child: Center(
-                          child: Text(
-                            "Accessories",
-                            style: TextStyle(
-                              color: Colors.grey,
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(),
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 28),
+                          margin: EdgeInsets.only(right: 16),
+                          child: Center(
+                            child: Text(
+                              "Accessories",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
                             ),
                           ),
-                        ),
-                      )
-                    ],
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ),
