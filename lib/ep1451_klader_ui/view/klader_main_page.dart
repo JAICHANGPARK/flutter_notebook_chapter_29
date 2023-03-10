@@ -96,34 +96,42 @@ class _KladerMainPageState extends State<KladerMainPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     IconButton(
-                        onPressed: () {
-                          setState(() {
-                            pageIndex = 0;
-                          });
-                        },
-                        icon: const Icon(
-                          Icons.home_outlined,
-                        )),
+                      onPressed: () {
+                        setState(() {
+                          pageIndex = 0;
+                        });
+                      },
+                      icon: const Icon(
+                        Icons.home_outlined,
+                      ),
+                      color: pageIndex == 0? Colors.black:Colors.grey,
+                    ),
                     IconButton(
-                      onPressed: () { setState(() {
-                        pageIndex = 1;
-                      });},
+                      onPressed: () {
+                        setState(() {
+                          pageIndex = 1;
+                        });
+                      },
                       icon: const Icon(Icons.favorite_border),
-                      color: Colors.grey,
+                      color: pageIndex == 1? Colors.black:Colors.grey,
                     ),
                     IconButton(
-                      onPressed: () { setState(() {
-                        pageIndex = 2;
-                      });},
+                      onPressed: () {
+                        setState(() {
+                          pageIndex = 2;
+                        });
+                      },
                       icon: const Icon(Icons.apps),
-                      color: Colors.grey,
+                      color: pageIndex == 2? Colors.black:Colors.grey,
                     ),
                     IconButton(
-                      onPressed: () { setState(() {
-                        pageIndex = 3;
-                      });},
+                      onPressed: () {
+                        setState(() {
+                          pageIndex = 3;
+                        });
+                      },
                       icon: const Icon(Icons.account_circle_outlined),
-                      color: Colors.grey,
+                      color: pageIndex == 3? Colors.black:Colors.grey,
                     ),
                   ],
                 ),
