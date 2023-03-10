@@ -37,6 +37,7 @@ class _KladerMainPageState extends State<KladerMainPage> {
                   color: Colors.grey[200],
                   borderRadius: BorderRadius.circular(4),
                 ),
+                padding: EdgeInsets.symmetric(horizontal: 16),
                 child: Center(
                   child: TextField(
                     decoration: InputDecoration(
@@ -45,6 +46,7 @@ class _KladerMainPageState extends State<KladerMainPage> {
                     ),
                   ),
                 ),
+
               ),
               SizedBox(
                 height: 42,
