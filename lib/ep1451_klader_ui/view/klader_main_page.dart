@@ -37,16 +37,16 @@ class _KladerMainPageState extends State<KladerMainPage> {
                   color: Colors.grey[200],
                   borderRadius: BorderRadius.circular(4),
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 16),
-                child: Center(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: const Center(
                   child: TextField(
                     decoration: InputDecoration(
                       hintText: "Search",
                       icon: Icon(Icons.search),
+                      border: InputBorder.none,
                     ),
                   ),
                 ),
-
               ),
               SizedBox(
                 height: 42,
