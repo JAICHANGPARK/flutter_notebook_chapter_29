@@ -140,9 +140,10 @@ class _KladerMainPageState extends State<KladerMainPage> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            const Text("New Arrivals", style: TextStyle(
-                              fontSize: 28
-                            ),),
+                            const Text(
+                              "New Arrivals",
+                              style: TextStyle(fontSize: 28),
+                            ),
                             IconButton(
                               onPressed: () {},
                               icon: const Icon(Icons.arrow_forward),
@@ -151,8 +152,22 @@ class _KladerMainPageState extends State<KladerMainPage> {
                         ),
                       ),
                       Container(
-                        height: 300,
+                        height: 280,
+                        margin: EdgeInsets.only(left: 16),
                         color: Colors.blue,
+                        child: ListView.builder(
+                          itemBuilder: (context, index) {
+                            return Container(
+                              width: 140,
+                              margin: EdgeInsets.only(right: 16),
+                              child: Column(
+                                children: [
+                                  Expanded(child: Placeholder())
+                                ],
+                              ),
+                            );
+                          },
+                        ),
                       ),
                       const SizedBox(
                         height: 28,
