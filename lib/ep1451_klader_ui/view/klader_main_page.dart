@@ -61,9 +61,9 @@ class _KladerMainPageState extends State<KladerMainPage> {
                             color: Colors.black,
                             borderRadius: BorderRadius.circular(24),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 28),
-                          margin: EdgeInsets.only(right: 16),
-                          child: Center(
+                          padding: const EdgeInsets.symmetric(horizontal: 28),
+                          margin: const EdgeInsets.only(right: 16),
+                          child: const Center(
                             child: Text(
                               "All",
                               style: TextStyle(
@@ -79,9 +79,9 @@ class _KladerMainPageState extends State<KladerMainPage> {
                             ),
                             borderRadius: BorderRadius.circular(24),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 28),
-                          margin: EdgeInsets.only(right: 16),
-                          child: Center(
+                          padding: const EdgeInsets.symmetric(horizontal: 28),
+                          margin: const EdgeInsets.only(right: 16),
+                          child: const Center(
                             child: Text(
                               "Clothes",
                               style: TextStyle(
@@ -97,9 +97,9 @@ class _KladerMainPageState extends State<KladerMainPage> {
                             ),
                             borderRadius: BorderRadius.circular(24),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 28),
-                          margin: EdgeInsets.only(right: 16),
-                          child: Center(
+                          padding: const EdgeInsets.symmetric(horizontal: 28),
+                          margin: const EdgeInsets.only(right: 16),
+                          child: const Center(
                             child: Text(
                               "Shoes",
                               style: TextStyle(
@@ -115,9 +115,9 @@ class _KladerMainPageState extends State<KladerMainPage> {
                             ),
                             borderRadius: BorderRadius.circular(24),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 28),
-                          margin: EdgeInsets.only(right: 16),
-                          child: Center(
+                          padding: const EdgeInsets.symmetric(horizontal: 28),
+                          margin: const EdgeInsets.only(right: 16),
+                          child: const Center(
                             child: Text(
                               "Accessories",
                               style: TextStyle(
@@ -153,7 +153,7 @@ class _KladerMainPageState extends State<KladerMainPage> {
                       ),
                       Container(
                         height: 280,
-                        margin: EdgeInsets.only(left: 16),
+                        margin: const EdgeInsets.only(left: 16),
                         color: Colors.blue,
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
@@ -161,31 +161,32 @@ class _KladerMainPageState extends State<KladerMainPage> {
                             return Container(
                               color: Colors.pink,
                               width: 150,
-                              margin: EdgeInsets.only(right: 16),
+                              margin: const EdgeInsets.only(right: 16),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Expanded(
                                     child: Container(
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         image: DecorationImage(
                                           image: NetworkImage(
                                             "https://cdn.pixabay.com/photo/2017/08/01/11/48/woman-2564660_960_720.jpg",
                                           ),
+                                          fit: BoxFit.cover,
                                         ),
                                       ),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 8,
                                   ),
-                                  Text(
+                                  const Text(
                                     "Hoodie",
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 6,
                                   ),
-                                  Text("\$50.99")
+                                  const Text("\$50.99")
                                 ],
                               ),
                             );
