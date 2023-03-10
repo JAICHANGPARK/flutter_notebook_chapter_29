@@ -74,7 +74,9 @@ class _KladerMainPageState extends State<KladerMainPage> {
                         ),
                         Container(
                           decoration: BoxDecoration(
-                            border: Border.all(),
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
                             borderRadius: BorderRadius.circular(24),
                           ),
                           padding: EdgeInsets.symmetric(horizontal: 28),
@@ -90,7 +92,9 @@ class _KladerMainPageState extends State<KladerMainPage> {
                         ),
                         Container(
                           decoration: BoxDecoration(
-                            border: Border.all(),
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
                             borderRadius: BorderRadius.circular(24),
                           ),
                           padding: EdgeInsets.symmetric(horizontal: 28),
@@ -106,7 +110,9 @@ class _KladerMainPageState extends State<KladerMainPage> {
                         ),
                         Container(
                           decoration: BoxDecoration(
-                            border: Border.all(),
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
                             borderRadius: BorderRadius.circular(24),
                           ),
                           padding: EdgeInsets.symmetric(horizontal: 28),
