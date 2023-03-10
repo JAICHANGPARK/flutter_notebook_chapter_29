@@ -31,11 +31,20 @@ class _KladerMainPageState extends State<KladerMainPage> {
           Column(
             children: [
               Container(
-                height: 52,
-                decoration: const BoxDecoration(
-                  color: Colors.grey,
+                height: 58,
+                margin: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+                decoration: BoxDecoration(
+                  color: Colors.grey[200],
+                  borderRadius: BorderRadius.circular(4),
                 ),
-                margin: const EdgeInsets.symmetric(vertical: 16),
+                child: Center(
+                  child: TextField(
+                    decoration: InputDecoration(
+                      hintText: "Search",
+                      icon: Icon(Icons.search),
+                    ),
+                  ),
+                ),
               ),
               SizedBox(
                 height: 42,
@@ -104,7 +113,7 @@ class _KladerMainPageState extends State<KladerMainPage> {
                       icon: const Icon(
                         Icons.home_outlined,
                       ),
-                      color: pageIndex == 0? Colors.black:Colors.grey,
+                      color: pageIndex == 0 ? Colors.black : Colors.grey,
                     ),
                     IconButton(
                       onPressed: () {
@@ -113,7 +122,7 @@ class _KladerMainPageState extends State<KladerMainPage> {
                         });
                       },
                       icon: const Icon(Icons.favorite_border),
-                      color: pageIndex == 1? Colors.black:Colors.grey,
+                      color: pageIndex == 1 ? Colors.black : Colors.grey,
                     ),
                     IconButton(
                       onPressed: () {
@@ -122,7 +131,7 @@ class _KladerMainPageState extends State<KladerMainPage> {
                         });
                       },
                       icon: const Icon(Icons.apps),
-                      color: pageIndex == 2? Colors.black:Colors.grey,
+                      color: pageIndex == 2 ? Colors.black : Colors.grey,
                     ),
                     IconButton(
                       onPressed: () {
@@ -131,7 +140,7 @@ class _KladerMainPageState extends State<KladerMainPage> {
                         });
                       },
                       icon: const Icon(Icons.account_circle_outlined),
-                      color: pageIndex == 3? Colors.black:Colors.grey,
+                      color: pageIndex == 3 ? Colors.black : Colors.grey,
                     ),
                   ],
                 ),
