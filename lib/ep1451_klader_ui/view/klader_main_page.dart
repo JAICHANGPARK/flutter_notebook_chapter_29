@@ -11,6 +11,6 @@ class KladerMainPage extends StatefulWidget {
 class _KladerMainPageState extends State<KladerMainPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold();
   }
 }
