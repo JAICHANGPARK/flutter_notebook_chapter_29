@@ -154,12 +154,10 @@ class _KladerMainPageState extends State<KladerMainPage> {
                       Container(
                         height: 280,
                         margin: const EdgeInsets.only(left: 16),
-                        color: Colors.blue,
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
                             return Container(
-                              color: Colors.pink,
                               width: 150,
                               margin: const EdgeInsets.only(right: 16),
                               child: Column(
