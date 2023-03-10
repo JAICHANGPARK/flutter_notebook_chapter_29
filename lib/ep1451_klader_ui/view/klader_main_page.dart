@@ -8,6 +8,8 @@ class KladerMainPage extends StatefulWidget {
 }
 
 class _KladerMainPageState extends State<KladerMainPage> {
+  int pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -93,19 +95,33 @@ class _KladerMainPageState extends State<KladerMainPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    IconButton(onPressed: () {}, icon: const Icon(Icons.home_outlined)),
                     IconButton(
-                      onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            pageIndex = 0;
+                          });
+                        },
+                        icon: const Icon(
+                          Icons.home_outlined,
+                        )),
+                    IconButton(
+                      onPressed: () { setState(() {
+                        pageIndex = 1;
+                      });},
                       icon: const Icon(Icons.favorite_border),
                       color: Colors.grey,
                     ),
                     IconButton(
-                      onPressed: () {},
+                      onPressed: () { setState(() {
+                        pageIndex = 2;
+                      });},
                       icon: const Icon(Icons.apps),
                       color: Colors.grey,
                     ),
                     IconButton(
-                      onPressed: () {},
+                      onPressed: () { setState(() {
+                        pageIndex = 3;
+                      });},
                       icon: const Icon(Icons.account_circle_outlined),
                       color: Colors.grey,
                     ),
