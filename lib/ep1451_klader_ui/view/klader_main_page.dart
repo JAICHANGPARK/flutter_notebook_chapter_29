@@ -176,7 +176,7 @@ class _KladerMainPageState extends State<KladerMainPage> {
                                     height: 8,
                                   ),
                                   Text(
-                                    "Addidas Hoodie",
+                                    "Hoodie",
                                   ),
                                   SizedBox(
                                     height: 6,
