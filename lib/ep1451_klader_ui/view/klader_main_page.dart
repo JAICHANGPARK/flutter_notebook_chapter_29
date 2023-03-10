@@ -135,14 +135,20 @@ class _KladerMainPageState extends State<KladerMainPage> {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      Row(
-                        children: [
-                          const Text("New Arrivals"),
-                          IconButton(
-                            onPressed: () {},
-                            icon: const Icon(Icons.arrow_forward),
-                          ),
-                        ],
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            const Text("New Arrivals", style: TextStyle(
+                              fontSize: 28
+                            ),),
+                            IconButton(
+                              onPressed: () {},
+                              icon: const Icon(Icons.arrow_forward),
+                            ),
+                          ],
+                        ),
                       ),
                       Container(
                         height: 300,
