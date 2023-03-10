@@ -167,7 +167,8 @@ class _KladerMainPageState extends State<KladerMainPage> {
                                 children: [
                                   Expanded(
                                     child: Container(
-                                      decoration: const BoxDecoration(
+                                      decoration:  BoxDecoration(
+                                        borderRadius: BorderRadius.circular(8),
                                         image: DecorationImage(
                                           image: NetworkImage(
                                             "https://cdn.pixabay.com/photo/2017/08/01/11/48/woman-2564660_960_720.jpg",
