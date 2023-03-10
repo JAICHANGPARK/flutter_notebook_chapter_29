@@ -12,14 +12,14 @@ class _KladerMainPageState extends State<KladerMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Klader"),
+        title: const Text("Klader"),
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
         elevation: 0,
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.shopping_bag_outlined),
+            icon: const Icon(Icons.shopping_bag_outlined),
           ),
         ],
       ),
@@ -30,10 +30,10 @@ class _KladerMainPageState extends State<KladerMainPage> {
             children: [
               Container(
                 height: 52,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.grey,
                 ),
-                margin: EdgeInsets.symmetric(vertical: 16),
+                margin: const EdgeInsets.symmetric(vertical: 16),
               ),
               SizedBox(
                 height: 42,
@@ -47,10 +47,10 @@ class _KladerMainPageState extends State<KladerMainPage> {
                     children: [
                       Row(
                         children: [
-                          Text("New Arrivals"),
+                          const Text("New Arrivals"),
                           IconButton(
                             onPressed: () {},
-                            icon: Icon(Icons.arrow_forward),
+                            icon: const Icon(Icons.arrow_forward),
                           ),
                         ],
                       ),
@@ -58,15 +58,15 @@ class _KladerMainPageState extends State<KladerMainPage> {
                         height: 300,
                         color: Colors.blue,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 28,
                       ),
                       Row(
                         children: [
-                          Text("Shop Again"),
+                          const Text("Shop Again"),
                           IconButton(
                             onPressed: () {},
-                            icon: Icon(Icons.arrow_forward),
+                            icon: const Icon(Icons.arrow_forward),
                           ),
                         ],
                       ),
@@ -86,27 +86,27 @@ class _KladerMainPageState extends State<KladerMainPage> {
               right: 16,
               child: Container(
                 height: 80,
-                decoration: ShapeDecoration(
+                decoration: const ShapeDecoration(
                   color: Colors.white,
                   shape: StadiumBorder(),
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    IconButton(onPressed: () {}, icon: Icon(Icons.home_outlined)),
+                    IconButton(onPressed: () {}, icon: const Icon(Icons.home_outlined)),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.favorite_border),
+                      icon: const Icon(Icons.favorite_border),
                       color: Colors.grey,
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.apps),
+                      icon: const Icon(Icons.apps),
                       color: Colors.grey,
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.account_circle_outlined),
+                      icon: const Icon(Icons.account_circle_outlined),
                       color: Colors.grey,
                     ),
                   ],
