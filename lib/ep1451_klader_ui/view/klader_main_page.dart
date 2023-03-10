@@ -165,13 +165,17 @@ class _KladerMainPageState extends State<KladerMainPage> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Expanded(child: Container(
-                                    decoration: BoxDecoration(
-                                      image: DecorationImage(
-                                        image: NetworkImage()
-                                      )
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                          image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2017/08/01/11/48/woman-2564660_960_720.jpg",
+                                          ),
+                                        ),
+                                      ),
                                     ),
-                                  )),
+                                  ),
                                   SizedBox(
                                     height: 8,
                                   ),
