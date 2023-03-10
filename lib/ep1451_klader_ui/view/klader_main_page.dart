@@ -49,7 +49,7 @@ class _KladerMainPageState extends State<KladerMainPage> {
                 ),
               ),
               SizedBox(
-                height: 40,
+                height: 38,
                 child: Container(
                   color: Colors.grey,
                   child: ListView(
@@ -60,7 +60,8 @@ class _KladerMainPageState extends State<KladerMainPage> {
                           color: Colors.black,
                           borderRadius: BorderRadius.circular(16),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 24),
+                        padding: EdgeInsets.symmetric(horizontal: 28),
+                        margin: EdgeInsets.only(right: 16),
                         child: Center(
                           child: Text(
                             "All",
