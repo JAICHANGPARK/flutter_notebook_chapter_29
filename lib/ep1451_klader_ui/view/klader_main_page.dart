@@ -292,6 +292,7 @@ class _KladerMainPageState extends State<KladerMainPage> {
                           },
                         ),
                       ),
+                      SizedBox(height: 64,),
                     ],
                   ),
                 ),
