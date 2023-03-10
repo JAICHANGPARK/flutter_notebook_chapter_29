@@ -15,6 +15,7 @@ class _KladerMainPageState extends State<KladerMainPage> {
         title: Text("Klader"),
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
+        elevation: 0,
         actions: [
           IconButton(
             onPressed: () {},
@@ -22,6 +23,7 @@ class _KladerMainPageState extends State<KladerMainPage> {
           ),
         ],
       ),
+      backgroundColor: Colors.white,
       body: Stack(
         children: [
           Column(
