@@ -156,6 +156,7 @@ class _KladerMainPageState extends State<KladerMainPage> {
                         margin: EdgeInsets.only(left: 16),
                         color: Colors.blue,
                         child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
                             return Container(
                               color: Colors.pink,
