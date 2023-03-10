@@ -91,7 +91,25 @@ class _KladerMainPageState extends State<KladerMainPage> {
                   shape: StadiumBorder(),
                 ),
                 child: Row(
-                  children: [],
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    IconButton(onPressed: () {}, icon: Icon(Icons.home_outlined)),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.favorite_border),
+                      color: Colors.grey,
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.apps),
+                      color: Colors.grey,
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.account_circle_outlined),
+                      color: Colors.grey,
+                    ),
+                  ],
                 ),
               ))
         ],
