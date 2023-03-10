@@ -160,7 +160,7 @@ class _KladerMainPageState extends State<KladerMainPage> {
                           itemBuilder: (context, index) {
                             return Container(
                               color: Colors.pink,
-                              width: 140,
+                              width: 150,
                               margin: EdgeInsets.only(right: 16),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
