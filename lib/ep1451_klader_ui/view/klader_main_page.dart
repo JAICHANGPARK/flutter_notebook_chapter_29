@@ -49,12 +49,27 @@ class _KladerMainPageState extends State<KladerMainPage> {
                 ),
               ),
               SizedBox(
-                height: 42,
+                height: 40,
                 child: Container(
                   color: Colors.grey,
                   child: ListView(
+                    scrollDirection: Axis.horizontal,
                     children: [
-                      
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 24),
+                        child: Center(
+                          child: Text(
+                            "All",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      )
                     ],
                   ),
                 ),
