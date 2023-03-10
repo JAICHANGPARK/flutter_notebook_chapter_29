@@ -73,16 +73,48 @@ class _KladerMainPageState extends State<KladerMainPage> {
                       ),
                       Container(
                         decoration: BoxDecoration(
-                          color: Colors.black,
+                          border: Border.all(),
                           borderRadius: BorderRadius.circular(24),
                         ),
                         padding: EdgeInsets.symmetric(horizontal: 28),
                         margin: EdgeInsets.only(right: 16),
                         child: Center(
                           child: Text(
-                            "All",
+                            "Clothes",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(),
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 28),
+                        margin: EdgeInsets.only(right: 16),
+                        child: Center(
+                          child: Text(
+                            "Shoes",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(),
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 28),
+                        margin: EdgeInsets.only(right: 16),
+                        child: Center(
+                          child: Text(
+                            "Accessories",
+                            style: TextStyle(
+                              color: Colors.grey,
                             ),
                           ),
                         ),
