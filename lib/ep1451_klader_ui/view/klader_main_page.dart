@@ -177,6 +177,8 @@ class _KladerMainPageState extends State<KladerMainPage> {
                                       child: Stack(
                                         children:  [
                                           Positioned(
+                                            right: 8,
+                                            top: 8,
                                             child: CircleAvatar(
                                               backgroundColor: Colors.white,
                                               radius: 14,
@@ -187,11 +189,8 @@ class _KladerMainPageState extends State<KladerMainPage> {
                                                 icon: Icon(
                                                   Icons.favorite_border,
                                                 ),
-
                                               ),
                                             ),
-                                            right: 8,
-                                            top: 8,
                                           )
                                         ],
                                       ),
