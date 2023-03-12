@@ -28,6 +28,7 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                   backgroundColor: const Color.fromRGBO(17, 17, 17, 1),
                   unselectedItemColor: Colors.grey,
                   selectedItemColor: Colors.white,
+                  type: BottomNavigationBarType.fixed,
                   items: [
                     const BottomNavigationBarItem(
                         icon: Icon(
