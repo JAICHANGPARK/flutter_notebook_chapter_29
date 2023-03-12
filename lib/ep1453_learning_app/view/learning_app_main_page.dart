@@ -16,7 +16,11 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
           child: Stack(
         children: [
           Positioned(
-            child: Container(),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Color.fromRGBO(17, 17, 17, 1),
+              ),
+            ),
           )
         ],
       )),
