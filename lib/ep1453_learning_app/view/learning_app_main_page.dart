@@ -11,7 +11,7 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(236, 233, 233, 1),
+      backgroundColor: const Color.fromRGBO(236, 233, 233, 1),
       body: SafeArea(
           child: Stack(
         children: [
@@ -25,20 +25,30 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(36),
                 child: BottomNavigationBar(
-                  backgroundColor: Color.fromRGBO(17, 17, 17, 1),
+                  backgroundColor: const Color.fromRGBO(17, 17, 17, 1),
                   unselectedItemColor: Colors.grey,
                   selectedItemColor: Colors.white,
                   items: [
-                    BottomNavigationBarItem(
+                    const BottomNavigationBarItem(
                         icon: Icon(
                           Icons.home_filled,
                         ),
                         label: "Home"),
-                    BottomNavigationBarItem(
+                    const BottomNavigationBarItem(
                         icon: Icon(
-                          Icons.home_filled,
+                          Icons.bookmark_border,
                         ),
-                        label: "Home")
+                        label: "Saved"),
+                    const BottomNavigationBarItem(
+                        icon: Icon(
+                          Icons.splitscreen_outlined,
+                        ),
+                        label: "Course"),
+                    const BottomNavigationBarItem(
+                        icon: Icon(
+                          Icons.video_library,
+                        ),
+                        label: "Library")
                   ],
                 ),
               ),
