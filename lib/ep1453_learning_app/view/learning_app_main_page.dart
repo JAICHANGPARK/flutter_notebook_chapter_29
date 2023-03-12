@@ -16,9 +16,28 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
           child: Stack(
         children: [
           Positioned(
+            left: 16,
+            right: 16,
+            bottom: 16,
             child: Container(
               decoration: BoxDecoration(
                 color: Color.fromRGBO(17, 17, 17, 1),
+              ),
+              child: BottomNavigationBar(
+                items: [
+                  BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.home_filled,
+                    ),
+                    label: "Home"
+                  ),
+                  BottomNavigationBarItem(
+                      icon: Icon(
+                        Icons.home_filled,
+                      ),
+                      label: "Home"
+                  )
+                ],
               ),
             ),
           )
