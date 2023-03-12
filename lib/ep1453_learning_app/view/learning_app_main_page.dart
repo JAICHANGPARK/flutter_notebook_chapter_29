@@ -36,11 +36,18 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                         Container(
                           width: MediaQuery.of(context).size.width / 1.8,
                           height: 48,
-                          color: Colors.white,
+
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(36)
+                          ),
                           child: Row(
                             children: [
                               Expanded(child: TextField()),
-                              CircleAvatar(),
+                              CircleAvatar(
+                                radius: 24,
+                                backgroundColor: Colors.black,
+                              ),
                             ],
                           ),
                         ),
