@@ -12,7 +12,14 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(236, 233, 233, 1),
-      body: Stack(),
+      body: SafeArea(
+          child: Stack(
+        children: [
+          Positioned(
+            child: Container(),
+          )
+        ],
+      )),
     );
   }
 }
