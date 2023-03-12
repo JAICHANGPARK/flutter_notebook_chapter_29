@@ -37,23 +37,23 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                       pageIndex = idx;
                     });
                   },
-                  items: [
-                    const BottomNavigationBarItem(
+                  items: const [
+                    BottomNavigationBarItem(
                         icon: Icon(
                           Icons.home_filled,
                         ),
                         label: "Home"),
-                    const BottomNavigationBarItem(
+                    BottomNavigationBarItem(
                         icon: Icon(
                           Icons.bookmark_border,
                         ),
                         label: "Saved"),
-                    const BottomNavigationBarItem(
+                    BottomNavigationBarItem(
                         icon: Icon(
                           Icons.splitscreen_outlined,
                         ),
                         label: "Course"),
-                    const BottomNavigationBarItem(
+                    BottomNavigationBarItem(
                         icon: Icon(
                           Icons.video_library,
                         ),
