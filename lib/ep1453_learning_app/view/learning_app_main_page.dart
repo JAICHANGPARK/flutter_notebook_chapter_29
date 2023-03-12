@@ -30,13 +30,19 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                       children: [
                         CircleAvatar(
                           backgroundColor: Colors.white,
-                          radius: 27,
+                          radius: 24,
                         ),
                         Spacer(),
                         Container(
-                          width: MediaQuery.of(context).size.width / 1.5,
-                          height: 54,
+                          width: MediaQuery.of(context).size.width / 1.8,
+                          height: 48,
                           color: Colors.white,
+                          child: Row(
+                            children: [
+                              Expanded(child: TextField()),
+                              CircleAvatar(),
+                            ],
+                          ),
                         ),
                       ],
                     ),
