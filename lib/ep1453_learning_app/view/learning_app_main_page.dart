@@ -20,24 +20,31 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
             right: 16,
             bottom: 16,
             child: Container(
+              height: 72,
               decoration: BoxDecoration(
-                color: Color.fromRGBO(17, 17, 17, 1),
+
+                borderRadius: BorderRadius.circular(36)
               ),
-              child: BottomNavigationBar(
-                items: [
-                  BottomNavigationBarItem(
-                    icon: Icon(
-                      Icons.home_filled,
-                    ),
-                    label: "Home"
-                  ),
-                  BottomNavigationBarItem(
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(36),
+                child: BottomNavigationBar(
+                  backgroundColor:  Color.fromRGBO(17, 17, 17, 1),
+                  
+                  items: [
+                    BottomNavigationBarItem(
                       icon: Icon(
                         Icons.home_filled,
                       ),
                       label: "Home"
-                  )
-                ],
+                    ),
+                    BottomNavigationBarItem(
+                        icon: Icon(
+                          Icons.home_filled,
+                        ),
+                        label: "Home"
+                    )
+                  ],
+                ),
               ),
             ),
           )
