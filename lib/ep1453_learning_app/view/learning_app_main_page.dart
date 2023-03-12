@@ -18,6 +18,32 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
           child: Stack(
         children: [
           Positioned(
+              left: 0,
+              right: 0,
+              bottom: 0,
+              top: 0,
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: Colors.white,
+                          radius: 27,
+                        ),
+                        Spacer(),
+                        Container(
+                          width: MediaQuery.of(context).size.width / 1.5,
+                          height: 54,
+                          color: Colors.white,
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              )),
+          Positioned(
             left: 16,
             right: 16,
             bottom: 16,
