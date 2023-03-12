@@ -8,6 +8,8 @@ class LearningAppMainPage extends StatefulWidget {
 }
 
 class _LearningAppMainPageState extends State<LearningAppMainPage> {
+  int pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,6 +31,12 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                   unselectedItemColor: Colors.grey,
                   selectedItemColor: Colors.white,
                   type: BottomNavigationBarType.fixed,
+                  currentIndex: pageIndex,
+                  onTap: (idx) {
+                    setState(() {
+                      pageIndex = idx;
+                    });
+                  },
                   items: [
                     const BottomNavigationBarItem(
                         icon: Icon(
