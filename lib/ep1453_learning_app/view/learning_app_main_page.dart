@@ -10,6 +10,9 @@ class LearningAppMainPage extends StatefulWidget {
 class _LearningAppMainPageState extends State<LearningAppMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Color.fromRGBO(236, 233, 233, 1),
+      body: Stack(),
+    );
   }
 }
