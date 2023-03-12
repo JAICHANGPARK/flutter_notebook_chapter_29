@@ -2,7 +2,15 @@
 
 A new Flutter project.
 
-### EP1451
+### EP1451-1452
+
+- Learning App Design
+- by Sajibur Rahman Sagor
+- https://dribbble.com/shots/20872939-Learning-App-Design
+
+<img src="https://cdn.dribbble.com/userupload/5240844/file/original-6b09f441285fae01b00be1cac6023aa0.jpg?compress=1&resize=1600x1200" width="500px"/>
+
+### EP1451-1452
 
 - Kläder UI
 - by Nivesh Birangal
