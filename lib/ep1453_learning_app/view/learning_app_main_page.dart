@@ -18,62 +18,73 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
           child: Stack(
         children: [
           Positioned(
-              left: 0,
-              right: 0,
-              bottom: 0,
-              top: 0,
-              child: Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        CircleAvatar(
-                          backgroundColor: Colors.white,
-                          radius: 24,
-                          child: IconButton(
-                            onPressed: () {},
-                            icon: Icon(Icons.apps),
-                          ),
+            left: 0,
+            right: 0,
+            bottom: 0,
+            top: 0,
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                        foregroundColor: Colors.black,
+                        radius: 24,
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: const Icon(Icons.apps),
                         ),
-                        const Spacer(),
-                        Container(
-                          width: MediaQuery.of(context).size.width / 1.8,
-                          height: 48,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(36),
-                          ),
-                          child: Row(
-                            children: const [
-                              Expanded(
-                                child: Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 16),
-                                  child: TextField(
-                                    decoration: InputDecoration(
-                                      icon: Icon(Icons.search),
-                                      border: InputBorder.none,
-                                      hintText: "Search Here..",
-                                    ),
+                      ),
+                      const Spacer(),
+                      Container(
+                        width: MediaQuery.of(context).size.width / 1.8,
+                        height: 48,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(36),
+                        ),
+                        child: Row(
+                          children: const [
+                            Expanded(
+                              child: Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 16),
+                                child: TextField(
+                                  decoration: InputDecoration(
+                                    icon: Icon(Icons.search),
+                                    border: InputBorder.none,
+                                    hintText: "Search Here..",
                                   ),
                                 ),
                               ),
-                              CircleAvatar(
-                                radius: 24,
-                                backgroundColor: Colors.black,
-                                foregroundColor: Colors.white,
-                                child: Icon(
-                                  Icons.search,
-                                ),
+                            ),
+                            CircleAvatar(
+                              radius: 24,
+                              backgroundColor: Colors.black,
+                              foregroundColor: Colors.white,
+                              child: Icon(
+                                Icons.search,
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
-                      ],
-                    ),
-                  )
-                ],
-              )),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    children: [
+                      Text("Good Morning, Dream!"),
+                      Text("Be educated so that you can change the world.")
+                    ],
+                  ),
+                ),
+
+              ],
+            ),
+          ),
           Positioned(
             left: 16,
             right: 16,
