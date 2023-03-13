@@ -180,7 +180,7 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                   ),
                 ),
                 SizedBox(
-                  height: 16,
+                  height: 8,
                 ),
                 Expanded(
                   child: Column(
@@ -253,22 +253,28 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                         ),
                       ),
                       Expanded(
-                        child: GridView.count(
-                          crossAxisCount: 2,
-                          children: [
-                            Container(
-                              color: Colors.grey,
-                            ),
-                            Container(
-                              color: Colors.grey,
-                            ),
-                            Container(
-                              color: Colors.grey,
-                            ),
-                            Container(
-                              color: Colors.grey,
-                            ),
-                          ],
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: GridView.count(
+                            crossAxisCount: 2,
+                            mainAxisSpacing: 16,
+                            crossAxisSpacing: 16,
+                            childAspectRatio: 0.7,
+                            children: [
+                              Container(
+                                color: Colors.grey,
+                              ),
+                              Container(
+                                color: Colors.grey,
+                              ),
+                              Container(
+                                color: Colors.grey,
+                              ),
+                              Container(
+                                color: Colors.grey,
+                              ),
+                            ],
+                          ),
                         ),
                       )
                     ],
