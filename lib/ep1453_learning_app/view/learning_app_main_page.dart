@@ -178,6 +178,29 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                       )
                     ],
                   ),
+                ),
+                Expanded(
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        Container(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Spoken English"),
+                              Row(
+                                children: [
+                                  CircleAvatar(
+                                    radius: 12,
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 )
               ],
             ),
