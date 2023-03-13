@@ -26,7 +26,7 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.fromLTRB(8.0, 16, 8, 8),
                   child: Row(
                     children: [
                       CircleAvatar(
@@ -77,10 +77,9 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                 Container(
                   margin: EdgeInsets.fromLTRB(16, 16, 16, 8),
                   padding: EdgeInsets.fromLTRB(0, 16, 16, 24),
-                  decoration: BoxDecoration(color: Color.fromRGBO(236, 233, 233, 1),
-                  borderRadius: BorderRadius.circular(16)),
+                  decoration:
+                      BoxDecoration(color: Color.fromRGBO(236, 233, 233, 1), borderRadius: BorderRadius.circular(16)),
                   width: double.infinity,
-                  
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
