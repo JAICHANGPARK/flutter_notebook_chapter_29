@@ -193,24 +193,42 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                                   CircleAvatar(
                                     radius: 12,
                                   ),
-                                  SizedBox(width: 4,),
+                                  SizedBox(
+                                    width: 4,
+                                  ),
                                   Text("28 Live Class"),
-                                  SizedBox(width: 16,),
+                                  SizedBox(
+                                    width: 16,
+                                  ),
                                   CircleAvatar(
                                     radius: 12,
                                   ),
-                                  SizedBox(width: 4,),
+                                  SizedBox(
+                                    width: 4,
+                                  ),
                                   Text("40 Videos"),
                                 ],
+                              ),
+                              SizedBox(
+                                height: 6,
                               ),
                               Row(
                                 children: [
                                   CircleAvatar(
                                     radius: 12,
                                   ),
+                                  SizedBox(
+                                    width: 4,
+                                  ),
                                   Text("Weakly Exams"),
+                                  SizedBox(
+                                    width: 9,
+                                  ),
                                   CircleAvatar(
                                     radius: 12,
+                                  ),
+                                  SizedBox(
+                                    width: 4,
                                   ),
                                   Text("Hand Notes"),
                                 ],
