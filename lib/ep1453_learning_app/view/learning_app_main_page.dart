@@ -75,14 +75,16 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(16, 16, 16, 8),
-                  padding: EdgeInsets.fromLTRB(0, 16, 16, 24),
-                  decoration:
-                      BoxDecoration(color: Color.fromRGBO(236, 233, 233, 1), borderRadius: BorderRadius.circular(16)),
+                  margin: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+                  padding: const EdgeInsets.fromLTRB(0, 16, 16, 24),
+                  decoration: BoxDecoration(
+                    color: const Color.fromRGBO(236, 233, 233, 1),
+                    borderRadius: BorderRadius.circular(16),
+                  ),
                   width: double.infinity,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
+                    children: const [
                       Text(
                         "Good Morning, Dream!",
                         style: TextStyle(
@@ -106,7 +108,7 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                 Container(
                   height: 42,
                   // color: Colors.blue,
-                  padding: EdgeInsets.only(left: 16),
+                  padding: const EdgeInsets.only(left: 16),
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
@@ -115,9 +117,9 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                           color: Colors.black,
                           borderRadius: BorderRadius.circular(24),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 16),
-                        margin: EdgeInsets.only(right: 8),
-                        child: Center(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        margin: const EdgeInsets.only(right: 8),
+                        child: const Center(
                           child: Text(
                             "ALL",
                             style: TextStyle(
@@ -128,12 +130,12 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                       ),
                       Container(
                         decoration: BoxDecoration(
-                          color: Color.fromRGBO(236, 233, 233, 1),
+                          color: const Color.fromRGBO(236, 233, 233, 1),
                           borderRadius: BorderRadius.circular(24),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 18),
-                        margin: EdgeInsets.only(right: 8),
-                        child: Center(
+                        padding: const EdgeInsets.symmetric(horizontal: 18),
+                        margin: const EdgeInsets.only(right: 8),
+                        child: const Center(
                           child: Text(
                             "UI UX",
                             style: TextStyle(
@@ -144,12 +146,12 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                       ),
                       Container(
                         decoration: BoxDecoration(
-                          color: Color.fromRGBO(236, 233, 233, 1),
+                          color: const Color.fromRGBO(236, 233, 233, 1),
                           borderRadius: BorderRadius.circular(24),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 18),
-                        margin: EdgeInsets.only(right: 8),
-                        child: Center(
+                        padding: const EdgeInsets.symmetric(horizontal: 18),
+                        margin: const EdgeInsets.only(right: 8),
+                        child: const Center(
                           child: Text(
                             "GRAPHIC DESIGN",
                             style: TextStyle(
@@ -160,12 +162,12 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                       ),
                       Container(
                         decoration: BoxDecoration(
-                          color: Color.fromRGBO(236, 233, 233, 1),
+                          color: const Color.fromRGBO(236, 233, 233, 1),
                           borderRadius: BorderRadius.circular(24),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 18),
-                        margin: EdgeInsets.only(right: 8),
-                        child: Center(
+                        padding: const EdgeInsets.symmetric(horizontal: 18),
+                        margin: const EdgeInsets.only(right: 8),
+                        child: const Center(
                           child: Text(
                             "APP DESIGN",
                             style: TextStyle(
