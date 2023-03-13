@@ -13,7 +13,7 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(236, 233, 233, 1),
+      backgroundColor: const Color.fromRGBO(243, 240, 232, 1),
       body: SafeArea(
           child: Stack(
         children: [
@@ -77,6 +77,10 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                 Container(
                   margin: EdgeInsets.fromLTRB(16, 16, 16, 8),
                   padding: EdgeInsets.fromLTRB(0, 16, 16, 24),
+                  decoration: BoxDecoration(color: Color.fromRGBO(236, 233, 233, 1),
+                  borderRadius: BorderRadius.circular(16)),
+                  width: double.infinity,
+                  
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
