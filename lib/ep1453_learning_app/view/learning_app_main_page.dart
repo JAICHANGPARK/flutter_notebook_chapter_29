@@ -179,7 +179,7 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 8,
                 ),
                 Expanded(
@@ -190,63 +190,63 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                           color: const Color.fromRGBO(236, 233, 233, 1),
                           borderRadius: BorderRadius.circular(24),
                         ),
-                        padding: EdgeInsets.all(16),
-                        margin: EdgeInsets.all(16),
+                        padding: const EdgeInsets.all(16),
+                        margin: const EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
+                            const Text(
                               "Spoken English",
                               style: TextStyle(
                                 fontSize: 26,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 16,
                             ),
                             Row(
                               children: [
-                                CircleAvatar(
+                                const CircleAvatar(
                                   radius: 10,
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 4,
                                 ),
-                                Text("28 Live Class"),
-                                SizedBox(
+                                const Text("28 Live Class"),
+                                const SizedBox(
                                   width: 16,
                                 ),
-                                CircleAvatar(
+                                const CircleAvatar(
                                   radius: 10,
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 4,
                                 ),
-                                Text("40 Videos"),
+                                const Text("40 Videos"),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 6,
                             ),
                             Row(
                               children: [
-                                CircleAvatar(
+                                const CircleAvatar(
                                   radius: 10,
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 4,
                                 ),
-                                Text("Weakly Exams"),
-                                SizedBox(
+                                const Text("Weakly Exams"),
+                                const SizedBox(
                                   width: 9,
                                 ),
-                                CircleAvatar(
+                                const CircleAvatar(
                                   radius: 10,
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 4,
                                 ),
-                                Text("Hand Notes"),
+                                const Text("Hand Notes"),
                               ],
                             )
                           ],
