@@ -75,8 +75,8 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(16, 24, 16, 8),
-                  padding: EdgeInsets.fromLTRB(0,16, 16, 24),
+                  margin: EdgeInsets.fromLTRB(16, 16, 16, 8),
+                  padding: EdgeInsets.fromLTRB(0, 16, 16, 24),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -103,6 +103,27 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                 Container(
                   height: 48,
                   color: Colors.blue,
+                  padding: EdgeInsets.only(left: 16),
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 16),
+                        child: Center(
+                          child: Text(
+                            "ALL",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
                 )
               ],
             ),
