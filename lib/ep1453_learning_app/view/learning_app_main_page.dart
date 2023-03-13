@@ -105,8 +105,8 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                   ),
                 ),
                 Container(
-                  height: 48,
-                  color: Colors.blue,
+                  height: 42,
+                  // color: Colors.blue,
                   padding: EdgeInsets.only(left: 16),
                   child: ListView(
                     scrollDirection: Axis.horizontal,
@@ -132,11 +132,43 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                           color: Color.fromRGBO(236, 233, 233, 1),
                           borderRadius: BorderRadius.circular(24),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 16),
+                        padding: EdgeInsets.symmetric(horizontal: 18),
                         margin: EdgeInsets.only(right: 8),
                         child: Center(
                           child: Text(
                             "UI UX",
+                            style: TextStyle(
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(236, 233, 233, 1),
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 18),
+                        margin: EdgeInsets.only(right: 8),
+                        child: Center(
+                          child: Text(
+                            "GRAPHIC DESIGN",
+                            style: TextStyle(
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(236, 233, 233, 1),
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 18),
+                        margin: EdgeInsets.only(right: 8),
+                        child: Center(
+                          child: Text(
+                            "APP DESIGN",
                             style: TextStyle(
                               color: Colors.black,
                             ),
