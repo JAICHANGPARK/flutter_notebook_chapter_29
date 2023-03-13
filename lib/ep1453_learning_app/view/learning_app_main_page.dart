@@ -54,6 +54,10 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                               CircleAvatar(
                                 radius: 24,
                                 backgroundColor: Colors.black,
+                                foregroundColor: Colors.white,
+                                child: Icon(
+                                  Icons.search,
+                                ),
                               ),
                             ],
                           ),
