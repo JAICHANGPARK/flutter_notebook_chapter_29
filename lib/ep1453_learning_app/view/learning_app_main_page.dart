@@ -75,11 +75,28 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                   ),
                 ),
                 Container(
+                  margin: EdgeInsets.fromLTRB(16, 24, 16, 8),
+                  padding: EdgeInsets.all(0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Good Morning, Dream!"),
-                      Text("Be educated so that you can change the world."),
+                      Text(
+                        "Good Morning, Dream!",
+                        style: TextStyle(
+                          fontSize: 32,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 6,
+                      ),
+                      Text(
+                        "Be educated so that you can change the world.",
+                        style: TextStyle(
+                          fontSize: 14.5,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ],
                   ),
                 ),
