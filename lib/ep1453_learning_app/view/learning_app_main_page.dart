@@ -43,11 +43,14 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                           child: Row(
                             children: const [
                               Expanded(
-                                child: TextField(
-                                  decoration: InputDecoration(
-                                    icon: Icon(Icons.search),
-                                    border: InputBorder.none,
-                                    hintText: "Search Here..",
+                                child: Padding(
+                                  padding: EdgeInsets.symmetric(horizontal: 16),
+                                  child: TextField(
+                                    decoration: InputDecoration(
+                                      icon: Icon(Icons.search),
+                                      border: InputBorder.none,
+                                      hintText: "Search Here..",
+                                    ),
                                   ),
                                 ),
                               ),
