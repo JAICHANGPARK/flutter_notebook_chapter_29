@@ -28,9 +28,13 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
                       children: [
-                        const CircleAvatar(
+                        CircleAvatar(
                           backgroundColor: Colors.white,
                           radius: 24,
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.apps),
+                          ),
                         ),
                         const Spacer(),
                         Container(
