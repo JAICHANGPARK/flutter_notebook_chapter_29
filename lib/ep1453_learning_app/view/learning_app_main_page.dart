@@ -184,10 +184,20 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                     child: Column(
                       children: [
                         Container(
+                          padding: EdgeInsets.all(16),
+                          margin: EdgeInsets.all(16),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Spoken English"),
+                              Text(
+                                "Spoken English",
+                                style: TextStyle(
+                                  fontSize: 26,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 16,
+                              ),
                               Row(
                                 children: [
                                   CircleAvatar(
