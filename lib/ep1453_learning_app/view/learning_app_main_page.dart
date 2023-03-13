@@ -205,48 +205,48 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                               height: 16,
                             ),
                             Row(
-                              children: [
-                                const CircleAvatar(
+                              children: const [
+                                CircleAvatar(
                                   radius: 10,
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                   width: 4,
                                 ),
-                                const Text("28 Live Class"),
-                                const SizedBox(
+                                Text("28 Live Class"),
+                                SizedBox(
                                   width: 16,
                                 ),
-                                const CircleAvatar(
+                                CircleAvatar(
                                   radius: 10,
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                   width: 4,
                                 ),
-                                const Text("40 Videos"),
+                                Text("40 Videos"),
                               ],
                             ),
                             const SizedBox(
                               height: 6,
                             ),
                             Row(
-                              children: [
-                                const CircleAvatar(
+                              children: const [
+                                CircleAvatar(
                                   radius: 10,
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                   width: 4,
                                 ),
-                                const Text("Weakly Exams"),
-                                const SizedBox(
+                                Text("Weakly Exams"),
+                                SizedBox(
                                   width: 9,
                                 ),
-                                const CircleAvatar(
+                                CircleAvatar(
                                   radius: 10,
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                   width: 4,
                                 ),
-                                const Text("Hand Notes"),
+                                Text("Hand Notes"),
                               ],
                             )
                           ],
