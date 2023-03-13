@@ -192,7 +192,27 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                                 children: [
                                   CircleAvatar(
                                     radius: 12,
-                                  )
+                                  ),
+                                  SizedBox(width: 4,),
+                                  Text("28 Live Class"),
+                                  SizedBox(width: 16,),
+                                  CircleAvatar(
+                                    radius: 12,
+                                  ),
+                                  SizedBox(width: 4,),
+                                  Text("40 Videos"),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  CircleAvatar(
+                                    radius: 12,
+                                  ),
+                                  Text("Weakly Exams"),
+                                  CircleAvatar(
+                                    radius: 12,
+                                  ),
+                                  Text("Hand Notes"),
                                 ],
                               )
                             ],
