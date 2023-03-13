@@ -23,6 +23,7 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
             bottom: 0,
             top: 0,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -75,13 +76,17 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                 ),
                 Container(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("Good Morning, Dream!"),
-                      Text("Be educated so that you can change the world.")
+                      Text("Be educated so that you can change the world."),
                     ],
                   ),
                 ),
-
+                Container(
+                  height: 48,
+                  color: Colors.blue,
+                )
               ],
             ),
           ),
