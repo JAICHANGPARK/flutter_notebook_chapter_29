@@ -201,7 +201,7 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                               Row(
                                 children: [
                                   CircleAvatar(
-                                    radius: 12,
+                                    radius: 10,
                                   ),
                                   SizedBox(
                                     width: 4,
@@ -211,7 +211,7 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                                     width: 16,
                                   ),
                                   CircleAvatar(
-                                    radius: 12,
+                                    radius: 10,
                                   ),
                                   SizedBox(
                                     width: 4,
@@ -225,7 +225,7 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                               Row(
                                 children: [
                                   CircleAvatar(
-                                    radius: 12,
+                                    radius: 10,
                                   ),
                                   SizedBox(
                                     width: 4,
@@ -235,7 +235,7 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                                     width: 9,
                                   ),
                                   CircleAvatar(
-                                    radius: 12,
+                                    radius: 10,
                                   ),
                                   SizedBox(
                                     width: 4,
