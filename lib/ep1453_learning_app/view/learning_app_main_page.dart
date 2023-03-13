@@ -179,75 +179,99 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                     ],
                   ),
                 ),
+                SizedBox(
+                  height: 16,
+                ),
                 Expanded(
-                  child: SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        Container(
-                          padding: EdgeInsets.all(16),
-                          margin: EdgeInsets.all(16),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                "Spoken English",
-                                style: TextStyle(
-                                  fontSize: 26,
-                                ),
-                              ),
-                              SizedBox(
-                                height: 16,
-                              ),
-                              Row(
-                                children: [
-                                  CircleAvatar(
-                                    radius: 10,
-                                  ),
-                                  SizedBox(
-                                    width: 4,
-                                  ),
-                                  Text("28 Live Class"),
-                                  SizedBox(
-                                    width: 16,
-                                  ),
-                                  CircleAvatar(
-                                    radius: 10,
-                                  ),
-                                  SizedBox(
-                                    width: 4,
-                                  ),
-                                  Text("40 Videos"),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 6,
-                              ),
-                              Row(
-                                children: [
-                                  CircleAvatar(
-                                    radius: 10,
-                                  ),
-                                  SizedBox(
-                                    width: 4,
-                                  ),
-                                  Text("Weakly Exams"),
-                                  SizedBox(
-                                    width: 9,
-                                  ),
-                                  CircleAvatar(
-                                    radius: 10,
-                                  ),
-                                  SizedBox(
-                                    width: 4,
-                                  ),
-                                  Text("Hand Notes"),
-                                ],
-                              )
-                            ],
-                          ),
+                  child: Column(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          color: const Color.fromRGBO(236, 233, 233, 1),
+                          borderRadius: BorderRadius.circular(24),
                         ),
-                      ],
-                    ),
+                        padding: EdgeInsets.all(16),
+                        margin: EdgeInsets.all(16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Spoken English",
+                              style: TextStyle(
+                                fontSize: 26,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 16,
+                            ),
+                            Row(
+                              children: [
+                                CircleAvatar(
+                                  radius: 10,
+                                ),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                Text("28 Live Class"),
+                                SizedBox(
+                                  width: 16,
+                                ),
+                                CircleAvatar(
+                                  radius: 10,
+                                ),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                Text("40 Videos"),
+                              ],
+                            ),
+                            SizedBox(
+                              height: 6,
+                            ),
+                            Row(
+                              children: [
+                                CircleAvatar(
+                                  radius: 10,
+                                ),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                Text("Weakly Exams"),
+                                SizedBox(
+                                  width: 9,
+                                ),
+                                CircleAvatar(
+                                  radius: 10,
+                                ),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                Text("Hand Notes"),
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        child: GridView.count(
+                          crossAxisCount: 2,
+                          children: [
+                            Container(
+                              color: Colors.grey,
+                            ),
+                            Container(
+                              color: Colors.grey,
+                            ),
+                            Container(
+                              color: Colors.grey,
+                            ),
+                            Container(
+                              color: Colors.grey,
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
                   ),
                 )
               ],
