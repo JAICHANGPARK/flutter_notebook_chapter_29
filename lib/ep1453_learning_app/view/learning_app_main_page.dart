@@ -36,14 +36,21 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                         Container(
                           width: MediaQuery.of(context).size.width / 1.8,
                           height: 48,
-
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(36)
+                            borderRadius: BorderRadius.circular(36),
                           ),
                           child: Row(
                             children: const [
-                              Expanded(child: TextField()),
+                              Expanded(
+                                child: TextField(
+                                  decoration: InputDecoration(
+                                    icon: Icon(Icons.search),
+                                    border: InputBorder.none,
+                                    hintText: "Search Here..",
+                                  ),
+                                ),
+                              ),
                               CircleAvatar(
                                 radius: 24,
                                 backgroundColor: Colors.black,
