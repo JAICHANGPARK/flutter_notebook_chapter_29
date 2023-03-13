@@ -76,7 +76,7 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                 ),
                 Container(
                   margin: EdgeInsets.fromLTRB(16, 24, 16, 8),
-                  padding: EdgeInsets.all(0),
+                  padding: EdgeInsets.fromLTRB(0,16, 16, 24),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
