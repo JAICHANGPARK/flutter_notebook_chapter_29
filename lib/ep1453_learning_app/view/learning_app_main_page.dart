@@ -117,11 +117,28 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                           borderRadius: BorderRadius.circular(24),
                         ),
                         padding: EdgeInsets.symmetric(horizontal: 16),
+                        margin: EdgeInsets.only(right: 8),
                         child: Center(
                           child: Text(
                             "ALL",
                             style: TextStyle(
                               color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(236, 233, 233, 1),
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 16),
+                        margin: EdgeInsets.only(right: 8),
+                        child: Center(
+                          child: Text(
+                            "UI UX",
+                            style: TextStyle(
+                              color: Colors.black,
                             ),
                           ),
                         ),
