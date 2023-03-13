@@ -28,11 +28,11 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
                       children: [
-                        CircleAvatar(
+                        const CircleAvatar(
                           backgroundColor: Colors.white,
                           radius: 24,
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Container(
                           width: MediaQuery.of(context).size.width / 1.8,
                           height: 48,
@@ -42,7 +42,7 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                             borderRadius: BorderRadius.circular(36)
                           ),
                           child: Row(
-                            children: [
+                            children: const [
                               Expanded(child: TextField()),
                               CircleAvatar(
                                 radius: 24,
