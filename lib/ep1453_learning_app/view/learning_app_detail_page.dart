@@ -72,26 +72,26 @@ class _LearningAppDetailPageState extends State<LearningAppDetailPage> {
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "),
               ),
               Row(
-                children: [
-                  const CircleAvatar(
+                children: const [
+                  CircleAvatar(
                     radius: 16,
                     backgroundColor: Colors.black,
                     foregroundColor: Colors.white,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     width: 12,
                   ),
-                  const Text("16 Live Class"),
-                  const Spacer(),
-                  const CircleAvatar(
+                  Text("16 Live Class"),
+                  Spacer(),
+                  CircleAvatar(
                     radius: 16,
                     backgroundColor: Colors.black,
                     foregroundColor: Colors.white,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     width: 12,
                   ),
-                  const Text("40 Class Video"),
+                  Text("40 Class Video"),
                 ],
               ),
               const Divider(
@@ -99,9 +99,9 @@ class _LearningAppDetailPageState extends State<LearningAppDetailPage> {
                 color: Colors.black,
               ),
               Row(
-                children: [
-                  const Text("Total Fee"),
-                  const Text(
+                children: const [
+                  Text("Total Fee"),
+                  Text(
                     "\$106.89",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
