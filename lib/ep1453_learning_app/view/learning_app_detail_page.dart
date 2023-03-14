@@ -45,9 +45,13 @@ class _LearningAppDetailPageState extends State<LearningAppDetailPage> {
               ),
               Container(
                 margin: EdgeInsets.only(top: 36, bottom: 24),
-                height: 200,
+                height: 220,
                 decoration: BoxDecoration(
                   color: Colors.grey,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Text(
+                  "Product Design Course 2023",
                 ),
               ),
             ],
