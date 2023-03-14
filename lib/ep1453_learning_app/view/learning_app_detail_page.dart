@@ -54,8 +54,18 @@ class _LearningAppDetailPageState extends State<LearningAppDetailPage> {
               ),
               Text(
                 "Product Design Course 2023",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                ),
               ),
-              Text("By MD. Bikram Hosen."),
+              Text(
+                "By MD. Bikram Hosen.",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                ),
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 child: Text(
@@ -69,7 +79,6 @@ class _LearningAppDetailPageState extends State<LearningAppDetailPage> {
                     foregroundColor: Colors.white,
                   ),
                   Text("16 Live Class"),
-
                   CircleAvatar(
                     radius: 16,
                     backgroundColor: Colors.black,
