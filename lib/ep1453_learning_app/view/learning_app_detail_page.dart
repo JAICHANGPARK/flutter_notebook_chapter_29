@@ -45,63 +45,63 @@ class _LearningAppDetailPageState extends State<LearningAppDetailPage> {
                 ],
               ),
               Container(
-                margin: EdgeInsets.only(top: 36, bottom: 24),
+                margin: const EdgeInsets.only(top: 36, bottom: 24),
                 height: 220,
                 decoration: BoxDecoration(
                   color: Colors.grey,
                   borderRadius: BorderRadius.circular(16),
                 ),
               ),
-              Text(
+              const Text(
                 "Product Design Course 2023",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
                 ),
               ),
-              Text(
+              const Text(
                 "By MD. Bikram Hosen.",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 16),
+              const Padding(
+                padding: EdgeInsets.symmetric(vertical: 16),
                 child: Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "),
               ),
               Row(
                 children: [
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 16,
                     backgroundColor: Colors.black,
                     foregroundColor: Colors.white,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 12,
                   ),
-                  Text("16 Live Class"),
-                  Spacer(),
-                  CircleAvatar(
+                  const Text("16 Live Class"),
+                  const Spacer(),
+                  const CircleAvatar(
                     radius: 16,
                     backgroundColor: Colors.black,
                     foregroundColor: Colors.white,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 12,
                   ),
-                  Text("40 Class Video"),
+                  const Text("40 Class Video"),
                 ],
               ),
-              Divider(
+              const Divider(
                 height: 36,
                 color: Colors.black,
               ),
               Row(
                 children: [
-                  Text("Total Fee"),
-                  Text(
+                  const Text("Total Fee"),
+                  const Text(
                     "\$106.89",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -111,14 +111,14 @@ class _LearningAppDetailPageState extends State<LearningAppDetailPage> {
               ),
               Center(
                 child: Container(
-                  margin: EdgeInsets.symmetric(vertical: 36),
+                  margin: const EdgeInsets.symmetric(vertical: 36),
                   height: 72,
                   width: 200,
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(24),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Enroll Now",
                       style: TextStyle(
