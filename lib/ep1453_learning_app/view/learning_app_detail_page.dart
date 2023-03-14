@@ -12,29 +12,37 @@ class _LearningAppDetailPageState extends State<LearningAppDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                CircleAvatar(
-                  backgroundColor: Colors.black,
-                  radius: 28,
-                ),
-                Expanded(
-                  child: Center(
-                    child: Text("Product Design", style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18
-                    ),),
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  CircleAvatar(
+                    backgroundColor: Colors.black,
+                    radius: 28,
+                    child: Icon(Icons.keyboard_arrow_left),
+                    foregroundColor: Colors.white,
                   ),
-                ),
-                CircleAvatar(
-                  radius: 28,
-                  backgroundColor: Colors.black,
-                )
-              ],
-            )
-          ],
+                  Expanded(
+                    child: Center(
+                      child: Text(
+                        "Product Design",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                      ),
+                    ),
+                  ),
+                  CircleAvatar(
+                    radius: 28,
+                    backgroundColor: Colors.black,
+                  )
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );
