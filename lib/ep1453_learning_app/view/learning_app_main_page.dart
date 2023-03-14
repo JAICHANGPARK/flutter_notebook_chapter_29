@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_29/ep1453_learning_app/view/learning_app_detail_page.dart';
 
 class LearningAppMainPage extends StatefulWidget {
   const LearningAppMainPage({Key? key}) : super(key: key);
@@ -261,47 +262,53 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                             crossAxisSpacing: 16,
                             childAspectRatio: 0.7,
                             children: [
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: const Color.fromRGBO(236, 233, 233, 1),
-                                  borderRadius: BorderRadius.circular(8),
-                                ),
-                                padding: const EdgeInsets.all(16),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Row(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: const [
-                                        Text(
-                                          "Product\nDesign",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 28,
+                              GestureDetector(
+                                onTap: () {
+                                  Navigator.of(context)
+                                      .push(MaterialPageRoute(builder: (context) => LearningAppDetailPage()));
+                                },
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: const Color.fromRGBO(236, 233, 233, 1),
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  padding: const EdgeInsets.all(16),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Row(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: const [
+                                          Text(
+                                            "Product\nDesign",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 28,
+                                            ),
                                           ),
-                                        ),
-                                        SizedBox(
-                                          width: 8,
-                                        ),
-                                        CircleAvatar(
-                                          backgroundColor: Color.fromRGBO(196, 196, 184, 1),
-                                          child: Icon(Icons.bookmark_border),
-                                          foregroundColor: Colors.black,
-                                        ),
-                                      ],
-                                    ),
-                                    const Spacer(),
-                                    const Text("Watch"),
-                                    const Text("Demo"),
-                                    const SizedBox(
-                                      height: 4,
-                                    ),
-                                    const CircleAvatar(
-                                      backgroundColor: Colors.black,
-                                      foregroundColor: Colors.white,
-                                      child: Icon(Icons.play_arrow),
-                                    )
-                                  ],
+                                          SizedBox(
+                                            width: 8,
+                                          ),
+                                          CircleAvatar(
+                                            backgroundColor: Color.fromRGBO(196, 196, 184, 1),
+                                            child: Icon(Icons.bookmark_border),
+                                            foregroundColor: Colors.black,
+                                          ),
+                                        ],
+                                      ),
+                                      const Spacer(),
+                                      const Text("Watch"),
+                                      const Text("Demo"),
+                                      const SizedBox(
+                                        height: 4,
+                                      ),
+                                      const CircleAvatar(
+                                        backgroundColor: Colors.black,
+                                        foregroundColor: Colors.white,
+                                        child: Icon(Icons.play_arrow),
+                                      )
+                                    ],
+                                  ),
                                 ),
                               ),
                               Container(
