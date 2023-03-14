@@ -42,7 +42,14 @@ class _LearningAppDetailPageState extends State<LearningAppDetailPage> {
                     child: Icon(Icons.bookmark_border),
                   ),
                 ],
-              )
+              ),
+              Container(
+                margin: EdgeInsets.only(top: 36, bottom: 24),
+                height: 200,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                ),
+              ),
             ],
           ),
         ),
