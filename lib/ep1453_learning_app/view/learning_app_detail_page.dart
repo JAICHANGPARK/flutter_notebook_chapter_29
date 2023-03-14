@@ -15,6 +15,7 @@ class _LearningAppDetailPageState extends State<LearningAppDetailPage> {
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: const [
@@ -50,10 +51,27 @@ class _LearningAppDetailPageState extends State<LearningAppDetailPage> {
                   color: Colors.grey,
                   borderRadius: BorderRadius.circular(16),
                 ),
-                child: Text(
-                  "Product Design Course 2023",
-                ),
               ),
+              Text(
+                "Product Design Course 2023",
+              ),
+              Text("By MD. Bikram Hosen."),
+              Text(
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "),
+              Row(
+                children: [
+                  CircleAvatar(
+                    radius: 16,
+                    backgroundColor: Colors.black,
+                  ),
+                  Text("16 Live Class"),
+
+                  CircleAvatar(
+                    radius: 16,
+                  ),
+                  Text("40 Class Video"),
+                ],
+              )
             ],
           ),
         ),
