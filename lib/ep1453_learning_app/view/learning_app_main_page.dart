@@ -262,7 +262,36 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                             childAspectRatio: 0.7,
                             children: [
                               Container(
-                                color: Colors.grey,
+                                decoration: BoxDecoration(
+                                  color: Colors.grey,
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                padding: EdgeInsets.all(16),
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Product\nDesign",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 28,
+                                          ),
+                                        ),
+                                        CircleAvatar(
+                                          child: Icon(Icons.bookmark_border),
+                                        ),
+                                      ],
+                                    ),
+                                    Text("Watch"),
+                                    Text("Demo"),
+                                    CircleAvatar(
+                                      backgroundColor: Colors.black,
+                                      child: Icon(Icons.play_arrow),
+                                    )
+                                  ],
+                                ),
                               ),
                               Container(
                                 color: Colors.grey,
