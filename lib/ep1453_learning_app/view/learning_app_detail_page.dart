@@ -56,18 +56,24 @@ class _LearningAppDetailPageState extends State<LearningAppDetailPage> {
                 "Product Design Course 2023",
               ),
               Text("By MD. Bikram Hosen."),
-              Text(
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                child: Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "),
+              ),
               Row(
                 children: [
                   CircleAvatar(
                     radius: 16,
                     backgroundColor: Colors.black,
+                    foregroundColor: Colors.white,
                   ),
                   Text("16 Live Class"),
 
                   CircleAvatar(
                     radius: 16,
+                    backgroundColor: Colors.black,
+                    foregroundColor: Colors.white,
                   ),
                   Text("40 Class Video"),
                 ],
