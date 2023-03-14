@@ -78,15 +78,23 @@ class _LearningAppDetailPageState extends State<LearningAppDetailPage> {
                     backgroundColor: Colors.black,
                     foregroundColor: Colors.white,
                   ),
+                  SizedBox(
+                    width: 12,
+                  ),
                   Text("16 Live Class"),
+                  Spacer(),
                   CircleAvatar(
                     radius: 16,
                     backgroundColor: Colors.black,
                     foregroundColor: Colors.white,
                   ),
+                  SizedBox(
+                    width: 12,
+                  ),
                   Text("40 Class Video"),
                 ],
-              )
+              ),
+              
             ],
           ),
         ),
