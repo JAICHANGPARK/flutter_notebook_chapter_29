@@ -94,7 +94,31 @@ class _LearningAppDetailPageState extends State<LearningAppDetailPage> {
                   Text("40 Class Video"),
                 ],
               ),
-              
+              Divider(
+                height: 36,
+                color: Colors.black,
+              ),
+              Row(
+                children: [
+                  Text("Total Fee"),
+                  Text(
+                    "\$106.89",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  )
+                ],
+              ),
+              Container(
+                height: 72,
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(24)
+                ),
+                child: Center(
+                  child: Text("Enroll Now"),
+                ),
+              )
             ],
           ),
         ),
