@@ -109,14 +109,23 @@ class _LearningAppDetailPageState extends State<LearningAppDetailPage> {
                   )
                 ],
               ),
-              Container(
-                height: 72,
-                decoration: BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.circular(24)
-                ),
-                child: Center(
-                  child: Text("Enroll Now"),
+              Center(
+                child: Container(
+                  margin: EdgeInsets.symmetric(vertical: 36),
+                  height: 72,
+                  width: 200,
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(24),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Enroll Now",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
                 ),
               )
             ],
