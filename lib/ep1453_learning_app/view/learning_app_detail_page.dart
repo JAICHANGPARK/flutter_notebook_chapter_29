@@ -17,12 +17,12 @@ class _LearningAppDetailPageState extends State<LearningAppDetailPage> {
           child: Column(
             children: [
               Row(
-                children: [
+                children: const [
                   CircleAvatar(
                     backgroundColor: Colors.black,
                     radius: 28,
-                    child: Icon(Icons.keyboard_arrow_left),
                     foregroundColor: Colors.white,
+                    child: Icon(Icons.keyboard_arrow_left),
                   ),
                   Expanded(
                     child: Center(
@@ -30,15 +30,17 @@ class _LearningAppDetailPageState extends State<LearningAppDetailPage> {
                         "Product Design",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 18,
+                          fontSize: 20,
                         ),
                       ),
                     ),
                   ),
                   CircleAvatar(
-                    radius: 28,
                     backgroundColor: Colors.black,
-                  )
+                    radius: 28,
+                    foregroundColor: Colors.white,
+                    child: Icon(Icons.bookmark_border),
+                  ),
                 ],
               )
             ],
