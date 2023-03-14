@@ -10,6 +10,33 @@ class LearningAppDetailPage extends StatefulWidget {
 class _LearningAppDetailPageState extends State<LearningAppDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                CircleAvatar(
+                  backgroundColor: Colors.black,
+                  radius: 28,
+                ),
+                Expanded(
+                  child: Center(
+                    child: Text("Product Design", style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18
+                    ),),
+                  ),
+                ),
+                CircleAvatar(
+                  radius: 28,
+                  backgroundColor: Colors.black,
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
