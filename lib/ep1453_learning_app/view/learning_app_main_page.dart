@@ -263,11 +263,12 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                             children: [
                               Container(
                                 decoration: BoxDecoration(
-                                  color: Colors.grey,
+                                  color: Color.fromRGBO(236, 233, 233, 1),
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 padding: EdgeInsets.all(16),
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Row(
                                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -279,15 +280,25 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                                             fontSize: 28,
                                           ),
                                         ),
+                                        SizedBox(
+                                          width: 8,
+                                        ),
                                         CircleAvatar(
+                                          backgroundColor: Color.fromRGBO(196, 196, 184, 1),
                                           child: Icon(Icons.bookmark_border),
+                                          foregroundColor: Colors.black,
                                         ),
                                       ],
                                     ),
+                                    Spacer(),
                                     Text("Watch"),
                                     Text("Demo"),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
                                     CircleAvatar(
                                       backgroundColor: Colors.black,
+                                      foregroundColor: Colors.white,
                                       child: Icon(Icons.play_arrow),
                                     )
                                   ],
