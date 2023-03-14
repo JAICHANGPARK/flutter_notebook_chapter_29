@@ -264,8 +264,11 @@ class _LearningAppMainPageState extends State<LearningAppMainPage> {
                             children: [
                               GestureDetector(
                                 onTap: () {
-                                  Navigator.of(context)
-                                      .push(MaterialPageRoute(builder: (context) => LearningAppDetailPage()));
+                                  Navigator.of(context).push(
+                                    MaterialPageRoute(
+                                      builder: (context) => const LearningAppDetailPage(),
+                                    ),
+                                  );
                                 },
                                 child: Container(
                                   decoration: BoxDecoration(
