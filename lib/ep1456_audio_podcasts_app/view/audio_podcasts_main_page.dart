@@ -23,8 +23,9 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(top: 32),
+          padding: const EdgeInsets.only(top: 32, left: 16),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text("Listen to your\nFavourite Podcasts"),
               Text("Find interesting podcasts & enjoy!"),
