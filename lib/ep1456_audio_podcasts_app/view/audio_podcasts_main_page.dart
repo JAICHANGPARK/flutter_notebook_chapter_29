@@ -21,6 +21,15 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
           CircleAvatar(),
         ],
       ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Text("Listen to your\nFavourite Podcasts"),
+            Text("Find interesting podcasts & enjoy!"),
+            
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.black,
         type: BottomNavigationBarType.fixed,
