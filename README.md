@@ -4,11 +4,11 @@ A new Flutter project.
 
 ### EP1456
 
-- Learning App Design
-- by Sajibur Rahman Sagor
-- https://dribbble.com/shots/20872939-Learning-App-Design
+- Audio Podcasts - Mobile App UI
+- by Sultan Mavlonov for Exadot Design Studio
+- https://dribbble.com/shots/20919439-Audio-Podcasts-Mobile-App-UI
 
-<img src="https://cdn.dribbble.com/userupload/5240844/file/original-6b09f441285fae01b00be1cac6023aa0.jpg?compress=1&resize=1600x1200" width="500px"/>
+<img src="https://cdn.dribbble.com/userupload/5362938/file/original-e87d9f942ac71570e2d91c52064c5ae2.png?compress=1&resize=1600x1200" width="500px"/>
 
 ### EP1453-1455
 
