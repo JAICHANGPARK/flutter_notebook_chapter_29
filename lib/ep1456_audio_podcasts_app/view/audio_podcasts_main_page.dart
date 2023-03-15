@@ -22,6 +22,10 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.black,
+        type: BottomNavigationBarType.fixed,
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.grey,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.mic_none_outlined), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.explore_outlined), label: "Explore"),
