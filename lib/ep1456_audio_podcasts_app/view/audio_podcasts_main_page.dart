@@ -26,7 +26,17 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
           children: [
             Text("Listen to your\nFavourite Podcasts"),
             Text("Find interesting podcasts & enjoy!"),
-            
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("Trending now "),
+                TextButton(onPressed: () {}, child: Text("See all")),
+              ],
+            ),
+            Container(
+              height: 260,
+              color: Colors.blue,
+            )
           ],
         ),
       ),
