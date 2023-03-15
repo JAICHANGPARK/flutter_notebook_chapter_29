@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-
 void main() {
-
+  runApp(AudioPodcastsApp());
 }
 
 class AudioPodcastsApp extends StatelessWidget {
@@ -10,6 +9,6 @@ class AudioPodcastsApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp();
   }
 }
