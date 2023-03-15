@@ -22,33 +22,36 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
         ],
       ),
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Text("Listen to your\nFavourite Podcasts"),
-            Text("Find interesting podcasts & enjoy!"),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text("Trending now "),
-                TextButton(onPressed: () {}, child: Text("See all")),
-              ],
-            ),
-            Container(
-              height: 260,
-              color: Colors.blue,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text("Popular Albums"),
-                TextButton(onPressed: () {}, child: Text("See all")),
-              ],
-            ),
-            Container(
-              height: 300,
-              color: Colors.blue,
-            ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.only(top: 32),
+          child: Column(
+            children: [
+              Text("Listen to your\nFavourite Podcasts"),
+              Text("Find interesting podcasts & enjoy!"),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Trending now "),
+                  TextButton(onPressed: () {}, child: Text("See all")),
+                ],
+              ),
+              Container(
+                height: 260,
+                color: Colors.blue,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Popular Albums"),
+                  TextButton(onPressed: () {}, child: Text("See all")),
+                ],
+              ),
+              Container(
+                height: 300,
+                color: Colors.blue,
+              ),
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
