@@ -36,7 +36,18 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
             Container(
               height: 260,
               color: Colors.blue,
-            )
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("Popular Albums"),
+                TextButton(onPressed: () {}, child: Text("See all")),
+              ],
+            ),
+            Container(
+              height: 300,
+              color: Colors.blue,
+            ),
           ],
         ),
       ),
