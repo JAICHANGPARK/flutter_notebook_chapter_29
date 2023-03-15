@@ -15,10 +15,10 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
         backgroundColor: Colors.black,
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(Icons.apps),
+          icon: const Icon(Icons.apps),
         ),
         actions: [
-          CircleAvatar(),
+          const CircleAvatar(),
         ],
       ),
       body: SingleChildScrollView(
@@ -27,13 +27,13 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Listen to your\nFavourite Podcasts"),
-              Text("Find interesting podcasts & enjoy!"),
+              const Text("Listen to your\nFavourite Podcasts"),
+              const Text("Find interesting podcasts & enjoy!"),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Trending now "),
-                  TextButton(onPressed: () {}, child: Text("See all")),
+                  const Text("Trending now "),
+                  TextButton(onPressed: () {}, child: const Text("See all")),
                 ],
               ),
               Container(
@@ -43,8 +43,8 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Popular Albums"),
-                  TextButton(onPressed: () {}, child: Text("See all")),
+                  const Text("Popular Albums"),
+                  TextButton(onPressed: () {}, child: const Text("See all")),
                 ],
               ),
               Container(
@@ -61,10 +61,10 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.mic_none_outlined), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.explore_outlined), label: "Explore"),
-          BottomNavigationBarItem(icon: Icon(Icons.bookmarks_rounded), label: "Saved"),
-          BottomNavigationBarItem(icon: Icon(Icons.account_circle_outlined), label: "Profile"),
+          const BottomNavigationBarItem(icon: Icon(Icons.mic_none_outlined), label: "Home"),
+          const BottomNavigationBarItem(icon: Icon(Icons.explore_outlined), label: "Explore"),
+          const BottomNavigationBarItem(icon: Icon(Icons.bookmarks_rounded), label: "Saved"),
+          const BottomNavigationBarItem(icon: Icon(Icons.account_circle_outlined), label: "Profile"),
         ],
       ),
     );
