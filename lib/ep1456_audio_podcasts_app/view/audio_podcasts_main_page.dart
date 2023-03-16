@@ -70,7 +70,7 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
               ),
               Container(
                 height: 220,
-              
+
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
