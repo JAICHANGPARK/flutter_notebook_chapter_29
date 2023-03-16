@@ -114,13 +114,16 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                               )
                             ],
                           ),
+                          SizedBox(
+                            height: 16,
+                          ),
                           Expanded(
                             child: Stack(
                               children: [
                                 Positioned(
                                   left: 0,
                                   right: 0,
-                                  bottom: 0,
+                                  bottom: 16,
                                   top: 0,
                                   child: ListView.builder(
                                     scrollDirection: Axis.horizontal,
@@ -136,11 +139,16 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                                     },
                                   ),
                                 ),
-                                Positioned(right: 0, child: CircleAvatar(
-                                  backgroundColor: Colors.deepPurple,
-                                ))
+                                Positioned(
+                                    right: 0,
+                                    child: CircleAvatar(
+                                      backgroundColor: Colors.deepPurple,
+                                    ))
                               ],
                             ),
+                          ),
+                          SizedBox(
+                            height: 16,
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
