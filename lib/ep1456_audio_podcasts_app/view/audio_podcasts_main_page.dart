@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class AudioPodcastsMainPage extends StatefulWidget {
@@ -74,10 +76,8 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                   itemBuilder: (context, index) {
                     return Container(
                       width: 300,
-                      decoration:  BoxDecoration(
-                        color: Color.fromRGBO(45, 45, 45, 1),
-                        borderRadius: BorderRadius.circular(16)
-                      ),
+                      decoration:
+                          BoxDecoration(color: Color.fromRGBO(45, 45, 45, 1), borderRadius: BorderRadius.circular(16)),
                       padding: EdgeInsets.all(16),
                       margin: EdgeInsets.only(right: 16),
                       child: Column(
@@ -115,7 +115,29 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                             ],
                           ),
                           Expanded(
-                            child: Stack(),
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  left: 0,
+                                  right: 0,
+                                  bottom: 0,
+                                  top: 0,
+                                  child: ListView.builder(
+                                    scrollDirection: Axis.horizontal,
+                                    itemCount: 30,
+                                    itemBuilder: (context, index) {
+                                      double height = Random().nextDouble() * 40;
+                                      return Container(
+                                        margin: EdgeInsets.only(right: 4),
+                                        height: height,
+                                        width: 4,
+                                        color: Colors.grey,
+                                      );
+                                    },
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
