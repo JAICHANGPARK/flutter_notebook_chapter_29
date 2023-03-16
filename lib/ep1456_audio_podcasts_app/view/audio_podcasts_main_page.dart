@@ -31,11 +31,13 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
               const Text(
                 "Listen to your\nFavourite Podcasts",
                 style: TextStyle(
-                  fontSize: 26,
+                  fontSize: 28,
                   color: Colors.white,
                 ),
               ),
-              const Text("Find interesting podcasts & enjoy!"),
+              const Text("Find interesting podcasts & enjoy!",style: TextStyle(
+                color: Colors.grey
+              ),),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
