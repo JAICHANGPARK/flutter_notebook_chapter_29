@@ -11,6 +11,7 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       appBar: AppBar(
         backgroundColor: Colors.black,
         leading: IconButton(
@@ -56,7 +57,7 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Color.fromRGBO(45, 45, 45, 1),
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey,
