@@ -67,7 +67,7 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                 ],
               ),
               Container(
-                height: 250,
+                height: 220,
                 color: Colors.blue,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
@@ -77,12 +77,17 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                       decoration: const BoxDecoration(
                         color: Color.fromRGBO(45, 45, 45, 1),
                       ),
+                      padding: EdgeInsets.all(16),
+                      margin: EdgeInsets.only(right: 16),
                       child: Column(
                         children: [
                           Row(
                             children: [
                               const CircleAvatar(
                                 radius: 30,
+                              ),
+                              SizedBox(
+                                width: 12,
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -108,9 +113,20 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                             child: Stack(),
                           ),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              const Text("Hosted by: Dreamwalker"),
-                              const Text("1:34:45"),
+                              const Text(
+                                "Hosted by: Dreamwalker",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                              const Text(
+                                "1:34:45",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
                             ],
                           )
                         ],
