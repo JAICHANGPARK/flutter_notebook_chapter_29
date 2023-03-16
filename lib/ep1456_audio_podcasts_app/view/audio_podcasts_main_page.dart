@@ -92,6 +92,13 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                                 ],
                               )
                             ],
+                          ),
+                          Expanded(child: Stack()),
+                          Row(
+                            children: [
+                              Text("Hosted by: Dreamwalker"),
+                              Text("1:34:45")
+                            ],
                           )
                         ],
                       ),
