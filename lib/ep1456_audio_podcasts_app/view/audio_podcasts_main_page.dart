@@ -11,7 +11,7 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
         leading: IconButton(
@@ -28,7 +28,13 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Listen to your\nFavourite Podcasts"),
+              const Text(
+                "Listen to your\nFavourite Podcasts",
+                style: TextStyle(
+                  fontSize: 26,
+                  color: Colors.white,
+                ),
+              ),
               const Text("Find interesting podcasts & enjoy!"),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
