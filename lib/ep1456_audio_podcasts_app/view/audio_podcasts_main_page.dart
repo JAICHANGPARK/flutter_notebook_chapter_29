@@ -71,6 +71,9 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                   );
                 }),
               ),
+              SizedBox(
+                height: 16,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
