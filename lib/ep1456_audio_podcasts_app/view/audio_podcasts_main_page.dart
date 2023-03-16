@@ -41,7 +41,9 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text("Trending now "),
+                  const Text("Trending now ",style: TextStyle(
+                      color: Colors.grey
+                  ),),
                   TextButton(onPressed: () {}, child: const Text("See all")),
                 ],
               ),
