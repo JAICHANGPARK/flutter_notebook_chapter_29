@@ -135,7 +135,11 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                                       );
                                     },
                                   ),
-                                )
+                                ),
+                                Positioned(
+                                    right: 0,
+
+                                    child: CircleAvatar())
                               ],
                             ),
                           ),
