@@ -77,6 +77,24 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                       decoration: BoxDecoration(
                         color: Color.fromRGBO(45, 45, 45, 1),
                       ),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 30,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Dream Life in not easy"),
+                                  Text("120 podcast"),
+                                ],
+                              )
+                            ],
+                          )
+                        ],
+                      ),
                     );
                   },
                 ),
