@@ -74,8 +74,9 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                   itemBuilder: (context, index) {
                     return Container(
                       width: 300,
-                      decoration: const BoxDecoration(
+                      decoration:  BoxDecoration(
                         color: Color.fromRGBO(45, 45, 45, 1),
+                        borderRadius: BorderRadius.circular(16)
                       ),
                       padding: EdgeInsets.all(16),
                       margin: EdgeInsets.only(right: 16),
@@ -94,7 +95,11 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                                 children: [
                                   const Text(
                                     "Dream Life in not easy",
-                                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 16),
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                    ),
                                   ),
                                   SizedBox(
                                     height: 12,
