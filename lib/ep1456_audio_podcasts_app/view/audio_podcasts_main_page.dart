@@ -35,16 +35,29 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                   color: Colors.white,
                 ),
               ),
-              const Text("Find interesting podcasts & enjoy!",style: TextStyle(
-                color: Colors.grey
-              ),),
+              const Text(
+                "Find interesting podcasts & enjoy!",
+                style: TextStyle(color: Colors.grey),
+              ),
+              SizedBox(
+                height: 32,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text("Trending now ",style: TextStyle(
-                      color: Colors.grey
-                  ),),
-                  TextButton(onPressed: () {}, child: const Text("See all")),
+                  const Text(
+                    "Trending now ",
+                    style: TextStyle(color: Colors.white, fontSize: 16),
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    child: const Text(
+                      "See all",
+                    ),
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.grey,
+                    ),
+                  ),
                 ],
               ),
               Container(
@@ -54,7 +67,10 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text("Popular Albums"),
+                  const Text(
+                    "Popular Albums",
+                    style: TextStyle(color: Colors.white, fontSize: 16),
+                  ),
                   TextButton(onPressed: () {}, child: const Text("See all")),
                 ],
               ),
