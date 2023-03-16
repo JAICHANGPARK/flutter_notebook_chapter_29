@@ -136,10 +136,7 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                                     },
                                   ),
                                 ),
-                                Positioned(
-                                    right: 0,
-
-                                    child: CircleAvatar())
+                                Positioned(right: 0, child: CircleAvatar())
                               ],
                             ),
                           ),
@@ -174,9 +171,18 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                 children: [
                   const Text(
                     "Popular Albums",
-                    style: TextStyle(color: Colors.white, fontSize: 16),
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                    ),
                   ),
-                  TextButton(onPressed: () {}, child: const Text("See all")),
+                  TextButton(
+                    onPressed: () {},
+                    child: const Text("See all"),
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.grey,
+                    ),
+                  ),
                 ],
               ),
               Container(
