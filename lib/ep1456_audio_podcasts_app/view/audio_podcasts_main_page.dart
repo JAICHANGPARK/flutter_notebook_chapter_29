@@ -121,44 +121,46 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                             child: Stack(
                               children: [
                                 Positioned(
-                                  left: 0,
-                                  right: 0,
-                                  bottom: 0,
-                                  top: 0,
-                                  child:
-                                  Row(
-                                    children: List.generate(30, (index) {
-                                      int height = Random().nextInt(32);
-                                      return Container(
-                                        margin: EdgeInsets.only(right: 4),
-                                        height: height.toDouble(),
-                                        width: 4,
-                                        color: Colors.grey,
-                                      );
-                                    }),
-                                  )
-                                  // ListView.builder(
-                                  //   scrollDirection: Axis.horizontal,
-                                  //   itemCount: 30,
-                                  //   itemBuilder: (context, index) {
-                                  //     int height = Random().nextInt(24);
-                                  //     return Container(
-                                  //       margin: EdgeInsets.only(right: 4),
-                                  //       height: height.toDouble(),
-                                  //       width: 4,
-                                  //       color: Colors.grey,
-                                  //     );
-                                  //   },
-                                  // ),
-                                ),
-                                Positioned(
+                                    left: 0,
                                     right: 0,
-                                    top: 0,
                                     bottom: 0,
-                                    child: CircleAvatar(
-                                      backgroundColor: Colors.deepPurple,
-                                      radius: 28,
-                                    ))
+                                    top: 0,
+                                    child: Row(
+                                      children: List.generate(30, (index) {
+                                        int height = Random().nextInt(32);
+                                        return Container(
+                                          margin: EdgeInsets.only(right: 4),
+                                          height: height.toDouble(),
+                                          width: 4,
+                                          color: Colors.grey,
+                                        );
+                                      }),
+                                    )
+                                    // ListView.builder(
+                                    //   scrollDirection: Axis.horizontal,
+                                    //   itemCount: 30,
+                                    //   itemBuilder: (context, index) {
+                                    //     int height = Random().nextInt(24);
+                                    //     return Container(
+                                    //       margin: EdgeInsets.only(right: 4),
+                                    //       height: height.toDouble(),
+                                    //       width: 4,
+                                    //       color: Colors.grey,
+                                    //     );
+                                    //   },
+                                    // ),
+                                    ),
+                                Positioned(
+                                  right: 0,
+                                  top: 0,
+                                  bottom: 0,
+                                  child: CircleAvatar(
+                                    backgroundColor: Colors.deepPurple,
+                                    radius: 28,
+                                    child: Icon(Icons.play_arrow),
+                                    foregroundColor: Colors.white,
+                                  ),
+                                )
                               ],
                             ),
                           ),
