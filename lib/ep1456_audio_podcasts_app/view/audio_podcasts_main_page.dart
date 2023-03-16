@@ -94,10 +94,10 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                                 children: [
                                   const Text(
                                     "Dream Life in not easy",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
-                                    ),
+                                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 16),
+                                  ),
+                                  SizedBox(
+                                    height: 12,
                                   ),
                                   const Text(
                                     "120 podcast",
