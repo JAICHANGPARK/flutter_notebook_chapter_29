@@ -63,6 +63,13 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
               Container(
                 height: 260,
                 color: Colors.blue,
+                child: ListView.builder(itemBuilder: (context, index) {
+                  return Container(
+                    decoration: BoxDecoration(
+                      color: Color.fromRGBO(45, 45, 45, 1)
+                    ),
+                  );
+                }),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
