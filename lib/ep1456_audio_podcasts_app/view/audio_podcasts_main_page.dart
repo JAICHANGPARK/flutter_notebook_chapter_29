@@ -94,12 +94,19 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                                       color: Colors.white,
                                     ),
                                   ),
-                                  const Text("120 podcast"),
+                                  const Text(
+                                    "120 podcast",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
                                 ],
                               )
                             ],
                           ),
-                          Expanded(child: Stack()),
+                          Expanded(
+                            child: Stack(),
+                          ),
                           Row(
                             children: [
                               const Text("Hosted by: Dreamwalker"),
