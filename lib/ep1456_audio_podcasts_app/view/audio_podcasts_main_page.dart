@@ -70,14 +70,16 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
               ),
               Container(
                 height: 220,
-                color: Colors.blue,
+              
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
                     return Container(
                       width: 300,
-                      decoration:
-                          BoxDecoration(color: Color.fromRGBO(45, 45, 45, 1), borderRadius: BorderRadius.circular(16)),
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(45, 45, 45, 1),
+                        borderRadius: BorderRadius.circular(16),
+                      ),
                       padding: EdgeInsets.all(16),
                       margin: EdgeInsets.only(right: 16),
                       child: Column(
