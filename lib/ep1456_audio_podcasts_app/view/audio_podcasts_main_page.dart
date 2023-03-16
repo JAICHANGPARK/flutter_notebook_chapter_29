@@ -126,17 +126,19 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                                     scrollDirection: Axis.horizontal,
                                     itemCount: 30,
                                     itemBuilder: (context, index) {
-                                      double height = Random().nextDouble() * 40;
+                                      int height = Random().nextInt(24);
                                       return Container(
                                         margin: EdgeInsets.only(right: 4),
-                                        height: height,
+                                        height: height.toDouble(),
                                         width: 4,
                                         color: Colors.grey,
                                       );
                                     },
                                   ),
                                 ),
-                                Positioned(right: 0, child: CircleAvatar())
+                                Positioned(right: 0, child: CircleAvatar(
+                                  backgroundColor: Colors.deepPurple,
+                                ))
                               ],
                             ),
                           ),
