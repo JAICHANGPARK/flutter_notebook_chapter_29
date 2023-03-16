@@ -35,14 +35,14 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                   color: Colors.white,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               const Text(
                 "Find interesting podcasts & enjoy!",
                 style: TextStyle(color: Colors.grey),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 32,
               ),
               Row(
@@ -74,21 +74,27 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                   itemBuilder: (context, index) {
                     return Container(
                       width: 300,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color.fromRGBO(45, 45, 45, 1),
                       ),
                       child: Column(
                         children: [
                           Row(
                             children: [
-                              CircleAvatar(
+                              const CircleAvatar(
                                 radius: 30,
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Dream Life in not easy"),
-                                  Text("120 podcast"),
+                                  const Text(
+                                    "Dream Life in not easy",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  const Text("120 podcast"),
                                 ],
                               )
                             ],
@@ -96,8 +102,8 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                           Expanded(child: Stack()),
                           Row(
                             children: [
-                              Text("Hosted by: Dreamwalker"),
-                              Text("1:34:45")
+                              const Text("Hosted by: Dreamwalker"),
+                              const Text("1:34:45"),
                             ],
                           )
                         ],
@@ -106,7 +112,7 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                   },
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Row(
@@ -128,7 +134,7 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color.fromRGBO(45, 45, 45, 1),
+        backgroundColor: const Color.fromRGBO(45, 45, 45, 1),
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey,
