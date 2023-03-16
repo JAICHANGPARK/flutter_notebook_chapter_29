@@ -31,9 +31,12 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
               const Text(
                 "Listen to your\nFavourite Podcasts",
                 style: TextStyle(
-                  fontSize: 28,
+                  fontSize: 30,
                   color: Colors.white,
                 ),
+              ),
+              SizedBox(
+                height: 16,
               ),
               const Text(
                 "Find interesting podcasts & enjoy!",
