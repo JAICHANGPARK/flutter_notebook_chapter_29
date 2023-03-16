@@ -50,7 +50,10 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                 children: [
                   const Text(
                     "Trending now ",
-                    style: TextStyle(color: Colors.white, fontSize: 16),
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                    ),
                   ),
                   TextButton(
                     onPressed: () {},
@@ -64,12 +67,13 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                 ],
               ),
               Container(
-                height: 260,
+                height: 250,
                 color: Colors.blue,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
                     return Container(
+                      width: 300,
                       decoration: BoxDecoration(
                         color: Color.fromRGBO(45, 45, 45, 1),
                       ),
