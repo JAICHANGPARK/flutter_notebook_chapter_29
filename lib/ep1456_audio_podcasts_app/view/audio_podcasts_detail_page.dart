@@ -37,16 +37,44 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
                   borderRadius: BorderRadius.circular(16),
                 ),
               ),
-              Row(
-                children: [
-                  Column(
-                    children: [
-                      Text("Dream Life in not Easy"),
-                      Text('Hosted by: Dreamwalker'),
-                    ],
-                  ),
-                  CircleAvatar(),
-                ],
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Dream Life in not Easy",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24,
+                            color: Colors.white,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          'Hosted by: Dreamwalker',
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
+                        ),
+                      ],
+                    ),
+                    CircleAvatar(
+                      radius: 26,
+                      child: Icon(
+                        Icons.play_arrow,
+                        size: 28,
+                      ),
+                      foregroundColor: Colors.white,
+                      backgroundColor: Colors.purple,
+                    ),
+                  ],
+                ),
               )
             ],
           ),
