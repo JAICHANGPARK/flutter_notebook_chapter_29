@@ -77,12 +77,9 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
                   ],
                 ),
               ),
-              const SizedBox(
-                height: 16,
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 16),
-                child: const Text(
+              const Padding(
+                padding: EdgeInsets.symmetric(vertical: 16),
+                child: Text(
                   "Episode 🔥",
                   style: TextStyle(
                     color: Colors.white,
@@ -94,25 +91,54 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
                   10,
                   (index) => Container(
                     decoration: BoxDecoration(
-                      color: Color.fromRGBO(45, 45, 45, 1),
+                      color: const Color.fromRGBO(45, 45, 45, 1),
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    padding: EdgeInsets.all(16),
-                    margin:EdgeInsets.only(bottom: 16),
+                    padding: const EdgeInsets.all(16),
+                    margin: const EdgeInsets.only(bottom: 16),
                     child: Row(
                       children: [
-                        CircleAvatar(
+                        const CircleAvatar(
                           radius: 48,
+                        ),
+                        SizedBox(
+                          width: 16,
                         ),
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("S1 Eo${index}: Dreamwalker"),
                               Text(
-                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ',
-                                style: TextStyle(),
+                                "S1 Eo${index}: Dreamwalker",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(vertical: 16),
+                                child: const Text(
+                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  ',
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                              ),
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.timer_outlined,
+                                    size: 18,
+                                    color: Colors.white,
+                                  ),
+                                  Text(
+                                    "44 min 16 sec",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ],
+                              )
                             ],
                           ),
                         )
