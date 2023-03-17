@@ -14,9 +14,9 @@ class AudioPodcastsApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-    "/": (context) => const AudioPodcastsMainPage(),
-    "/detail" : (context) => const AudioPodcastsDetailPage();
-    },
+        "/": (context) => const AudioPodcastsMainPage(),
+        "/detail": (context) => const AudioPodcastsDetailPage(),
+      },
     );
   }
 }
