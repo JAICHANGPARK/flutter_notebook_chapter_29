@@ -251,6 +251,7 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                               child: IconButton(
                                 onPressed: () {},
                                 icon: Icon(Icons.play_arrow),
+                                iconSize: 28,
                               ),
                               foregroundColor: Colors.white,
                             ),
