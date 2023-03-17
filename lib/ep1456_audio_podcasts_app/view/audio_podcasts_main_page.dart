@@ -73,119 +73,124 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
-                    return Container(
-                      width: 300,
-                      decoration: BoxDecoration(
-                        color: const Color.fromRGBO(45, 45, 45, 1),
-                        borderRadius: BorderRadius.circular(16),
-                      ),
-                      padding: const EdgeInsets.all(16),
-                      margin: const EdgeInsets.only(right: 16),
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [
-                              const CircleAvatar(
-                                radius: 30,
-                              ),
-                              const SizedBox(
-                                width: 12,
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: const [
-                                  Text(
-                                    "Dream Life in not easy",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    height: 12,
-                                  ),
-                                  Text(
-                                    "120 podcast",
-                                    style: TextStyle(
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                ],
-                              )
-                            ],
-                          ),
-                          const SizedBox(
-                            height: 16,
-                          ),
-                          Expanded(
-                            child: Stack(
+                    return GestureDetector(
+                      onTap: (){
+                        
+                      },
+                      child: Container(
+                        width: 300,
+                        decoration: BoxDecoration(
+                          color: const Color.fromRGBO(45, 45, 45, 1),
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        padding: const EdgeInsets.all(16),
+                        margin: const EdgeInsets.only(right: 16),
+                        child: Column(
+                          children: [
+                            Row(
                               children: [
-                                Positioned(
-                                    left: 0,
-                                    right: 0,
-                                    bottom: 0,
-                                    top: 0,
-                                    child: Row(
-                                      children: List.generate(30, (index) {
-                                        int height = Random().nextInt(32);
-                                        return Container(
-                                          margin: const EdgeInsets.only(right: 4),
-                                          height: height.toDouble(),
-                                          width: 4,
-                                          color: Colors.grey,
-                                        );
-                                      }),
-                                    )
-                                    // ListView.builder(
-                                    //   scrollDirection: Axis.horizontal,
-                                    //   itemCount: 30,
-                                    //   itemBuilder: (context, index) {
-                                    //     int height = Random().nextInt(24);
-                                    //     return Container(
-                                    //       margin: EdgeInsets.only(right: 4),
-                                    //       height: height.toDouble(),
-                                    //       width: 4,
-                                    //       color: Colors.grey,
-                                    //     );
-                                    //   },
-                                    // ),
+                                const CircleAvatar(
+                                  radius: 30,
+                                ),
+                                const SizedBox(
+                                  width: 12,
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: const [
+                                    Text(
+                                      "Dream Life in not easy",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontSize: 16,
+                                      ),
                                     ),
-                                const Positioned(
-                                  right: 0,
-                                  top: 0,
-                                  bottom: 0,
-                                  child: CircleAvatar(
-                                    backgroundColor: Colors.deepPurple,
-                                    radius: 28,
-                                    foregroundColor: Colors.white,
-                                    child: Icon(Icons.play_arrow),
-                                  ),
+                                    SizedBox(
+                                      height: 12,
+                                    ),
+                                    Text(
+                                      "120 podcast",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                      ),
+                                    ),
+                                  ],
                                 )
                               ],
                             ),
-                          ),
-                          const SizedBox(
-                            height: 16,
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: const [
-                              Text(
-                                "Hosted by: Dreamwalker",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                ),
+                            const SizedBox(
+                              height: 16,
+                            ),
+                            Expanded(
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                      left: 0,
+                                      right: 0,
+                                      bottom: 0,
+                                      top: 0,
+                                      child: Row(
+                                        children: List.generate(30, (index) {
+                                          int height = Random().nextInt(32);
+                                          return Container(
+                                            margin: const EdgeInsets.only(right: 4),
+                                            height: height.toDouble(),
+                                            width: 4,
+                                            color: Colors.grey,
+                                          );
+                                        }),
+                                      )
+                                      // ListView.builder(
+                                      //   scrollDirection: Axis.horizontal,
+                                      //   itemCount: 30,
+                                      //   itemBuilder: (context, index) {
+                                      //     int height = Random().nextInt(24);
+                                      //     return Container(
+                                      //       margin: EdgeInsets.only(right: 4),
+                                      //       height: height.toDouble(),
+                                      //       width: 4,
+                                      //       color: Colors.grey,
+                                      //     );
+                                      //   },
+                                      // ),
+                                      ),
+                                  const Positioned(
+                                    right: 0,
+                                    top: 0,
+                                    bottom: 0,
+                                    child: CircleAvatar(
+                                      backgroundColor: Colors.deepPurple,
+                                      radius: 28,
+                                      foregroundColor: Colors.white,
+                                      child: Icon(Icons.play_arrow),
+                                    ),
+                                  )
+                                ],
                               ),
-                              Text(
-                                "1:34:45",
-                                style: TextStyle(
-                                  color: Colors.white,
+                            ),
+                            const SizedBox(
+                              height: 16,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: const [
+                                Text(
+                                  "Hosted by: Dreamwalker",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
                                 ),
-                              ),
-                            ],
-                          )
-                        ],
+                                Text(
+                                  "1:34:45",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                     );
                   },
