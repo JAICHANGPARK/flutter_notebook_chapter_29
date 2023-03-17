@@ -16,17 +16,41 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
         elevation: 0,
-        title: Text("Details"),
+        title: const Text("Details"),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.download),
+            icon: const Icon(Icons.download),
           ),
         ],
         centerTitle: true,
       ),
-      body: Column(
-        children: [],
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Container(
+                height: 340,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+              ),
+              Row(
+                children: [
+                  Column(
+                    children: [
+                      Text("Dream Life in not Easy"),
+                      Text('Hosted by: Dreamwalker'),
+                    ],
+                  ),
+                  CircleAvatar(),
+                ],
+              )
+            ],
+          ),
+        ),
       ),
     );
   }
