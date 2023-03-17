@@ -80,10 +80,13 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
               const SizedBox(
                 height: 16,
               ),
-              const Text(
-                "Episode 🔥",
-                style: TextStyle(
-                  color: Colors.white,
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                child: const Text(
+                  "Episode 🔥",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
                 ),
               ),
               Column(
@@ -95,6 +98,7 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
                       borderRadius: BorderRadius.circular(16),
                     ),
                     padding: EdgeInsets.all(16),
+                    margin:EdgeInsets.only(bottom: 16),
                     child: Row(
                       children: [
                         CircleAvatar(
