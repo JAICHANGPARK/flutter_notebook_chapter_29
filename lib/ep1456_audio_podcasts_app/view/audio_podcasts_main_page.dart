@@ -20,8 +20,8 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
           onPressed: () {},
           icon: const Icon(Icons.apps),
         ),
-        actions: [
-          const CircleAvatar(),
+        actions: const [
+          CircleAvatar(),
         ],
       ),
       body: SingleChildScrollView(
@@ -51,7 +51,7 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Text(
-                    "Trending now ",
+                    "Trending now 🔥",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
@@ -70,7 +70,6 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
               ),
               Container(
                 height: 220,
-
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
@@ -94,8 +93,8 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  const Text(
+                                children: const [
+                                  Text(
                                     "Dream Life in not easy",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
@@ -106,7 +105,7 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                                   SizedBox(
                                     height: 12,
                                   ),
-                                  const Text(
+                                  Text(
                                     "120 podcast",
                                     style: TextStyle(
                                       color: Colors.grey,
@@ -171,14 +170,14 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              const Text(
+                            children: const [
+                              Text(
                                 "Hosted by: Dreamwalker",
                                 style: TextStyle(
                                   color: Colors.white,
                                 ),
                               ),
-                              const Text(
+                              Text(
                                 "1:34:45",
                                 style: TextStyle(
                                   color: Colors.white,
@@ -199,7 +198,7 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Text(
-                    "Popular Albums",
+                    "Popular Albums 🔥",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
@@ -217,6 +216,19 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
               Container(
                 height: 300,
                 color: Colors.blue,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      width: 180,
+                      margin: EdgeInsets.only(right: 8),
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(45, 45, 45, 1),
+                        borderRadius: BorderRadius.circular(8)
+                      ),
+                    );
+                  },
+                ),
               ),
             ],
           ),
@@ -227,11 +239,11 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey,
-        items: [
-          const BottomNavigationBarItem(icon: Icon(Icons.mic_none_outlined), label: "Home"),
-          const BottomNavigationBarItem(icon: Icon(Icons.explore_outlined), label: "Explore"),
-          const BottomNavigationBarItem(icon: Icon(Icons.bookmarks_rounded), label: "Saved"),
-          const BottomNavigationBarItem(icon: Icon(Icons.account_circle_outlined), label: "Profile"),
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.mic_none_outlined), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.explore_outlined), label: "Explore"),
+          BottomNavigationBarItem(icon: Icon(Icons.bookmarks_rounded), label: "Saved"),
+          BottomNavigationBarItem(icon: Icon(Icons.account_circle_outlined), label: "Profile"),
         ],
       ),
     );
