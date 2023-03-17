@@ -235,7 +235,15 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                               color: Colors.white,
                             ),
                           ),
-                          Text("Weekend"),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              "Weekend",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            ),
+                          ),
                           CircleAvatar(radius: 72)
                         ],
                       ),
