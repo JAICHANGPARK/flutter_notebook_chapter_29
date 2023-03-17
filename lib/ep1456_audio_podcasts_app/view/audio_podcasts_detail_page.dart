@@ -90,7 +90,10 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
                 children: List.generate(
                   10,
                   (index) => Container(
-                    decoration: const BoxDecoration(color: Color.fromRGBO(45, 45, 45, 1)),
+                    decoration: BoxDecoration(
+                      color: Color.fromRGBO(45, 45, 45, 1),
+                      borderRadius: BorderRadius.circular(16),
+                    ),
                     padding: EdgeInsets.all(16),
                     child: Row(
                       children: [
@@ -99,11 +102,13 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
                         ),
                         Expanded(
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("S1 Eo${index}: Dreamwalker"),
                               Text(
-                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ',
-                                  style: TextStyle(),),
+                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ',
+                                style: TextStyle(),
+                              ),
                             ],
                           ),
                         )
