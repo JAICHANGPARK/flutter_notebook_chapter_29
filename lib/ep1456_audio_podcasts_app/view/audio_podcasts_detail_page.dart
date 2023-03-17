@@ -77,10 +77,10 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
-              Text(
+              const Text(
                 "Episode 🔥",
                 style: TextStyle(
                   color: Colors.white,
@@ -90,7 +90,7 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
                 children: List.generate(
                   10,
                   (index) => Container(
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: Row(
                       children: const [],
                     ),
