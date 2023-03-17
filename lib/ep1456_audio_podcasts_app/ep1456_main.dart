@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_29/ep1456_audio_podcasts_app/view/audio_podcasts_main_page.dart';
 
+import 'view/audio_podcasts_detail_page.dart';
+
 void main() {
   runApp(const AudioPodcastsApp());
 }
@@ -12,8 +14,9 @@ class AudioPodcastsApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        "/": (context) => const AudioPodcastsMainPage(),
-      },
+    "/": (context) => const AudioPodcastsMainPage(),
+    "/detail" : (context) => const AudioPodcastsDetailPage();
+    },
     );
   }
 }
