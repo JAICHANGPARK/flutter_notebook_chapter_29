@@ -101,7 +101,7 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
                         const CircleAvatar(
                           radius: 48,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 16,
                         ),
                         Expanded(
@@ -110,14 +110,14 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
                             children: [
                               Text(
                                 "S1 Eo${index}: Dreamwalker",
-                                style: TextStyle(
+                                style: const TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.symmetric(vertical: 16),
-                                child: const Text(
+                              const Padding(
+                                padding: EdgeInsets.symmetric(vertical: 16),
+                                child: Text(
                                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  ',
                                   style: TextStyle(
                                     color: Colors.grey,
@@ -126,12 +126,12 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
                               ),
                               Row(
                                 children: [
-                                  Icon(
+                                  const Icon(
                                     Icons.timer_outlined,
                                     size: 18,
                                     color: Colors.white,
                                   ),
-                                  Text(
+                                  const Text(
                                     "44 min 16 sec",
                                     style: TextStyle(
                                       color: Colors.grey,
