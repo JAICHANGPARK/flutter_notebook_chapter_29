@@ -59,16 +59,16 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: const Text(
-                      "See all",
-                    ),
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.grey,
+                    ),
+                    child: const Text(
+                      "See all",
                     ),
                   ),
                 ],
               ),
-              Container(
+              SizedBox(
                 height: 220,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
@@ -158,8 +158,8 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                                   child: CircleAvatar(
                                     backgroundColor: Colors.deepPurple,
                                     radius: 28,
-                                    child: Icon(Icons.play_arrow),
                                     foregroundColor: Colors.white,
+                                    child: Icon(Icons.play_arrow),
                                   ),
                                 )
                               ],
@@ -206,14 +206,14 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: const Text("See all"),
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.grey,
                     ),
+                    child: const Text("See all"),
                   ),
                 ],
               ),
-              Container(
+              SizedBox(
                 height: 300,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
@@ -247,12 +247,12 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                             padding: const EdgeInsets.all(8.0),
                             child: CircleAvatar(
                               radius: 72,
+                              foregroundColor: Colors.white,
                               child: IconButton(
                                 onPressed: () {},
                                 icon: const Icon(Icons.play_arrow),
                                 iconSize: 28,
                               ),
-                              foregroundColor: Colors.white,
                             ),
                           )
                         ],
