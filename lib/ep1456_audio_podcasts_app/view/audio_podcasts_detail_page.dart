@@ -45,7 +45,7 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           "Dream Life in not Easy",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -53,10 +53,10 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
                             color: Colors.white,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 8,
                         ),
-                        Text(
+                        const Text(
                           'Hosted by: Dreamwalker',
                           style: TextStyle(
                             color: Colors.grey,
@@ -64,16 +64,25 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
                         ),
                       ],
                     ),
-                    CircleAvatar(
+                    const CircleAvatar(
                       radius: 26,
+                      foregroundColor: Colors.white,
+                      backgroundColor: Colors.purple,
                       child: Icon(
                         Icons.play_arrow,
                         size: 28,
                       ),
-                      foregroundColor: Colors.white,
-                      backgroundColor: Colors.purple,
                     ),
                   ],
+                ),
+              ),
+              SizedBox(
+                height: 16,
+              ),
+              Text(
+                "Episode 🔥",
+                style: TextStyle(
+                  color: Colors.white,
                 ),
               )
             ],
