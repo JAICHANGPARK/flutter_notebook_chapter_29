@@ -76,11 +76,11 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                     return Container(
                       width: 300,
                       decoration: BoxDecoration(
-                        color: Color.fromRGBO(45, 45, 45, 1),
+                        color: const Color.fromRGBO(45, 45, 45, 1),
                         borderRadius: BorderRadius.circular(16),
                       ),
-                      padding: EdgeInsets.all(16),
-                      margin: EdgeInsets.only(right: 16),
+                      padding: const EdgeInsets.all(16),
+                      margin: const EdgeInsets.only(right: 16),
                       child: Column(
                         children: [
                           Row(
@@ -88,7 +88,7 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                               const CircleAvatar(
                                 radius: 30,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 12,
                               ),
                               Column(
@@ -115,7 +115,7 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                               )
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                           ),
                           Expanded(
@@ -130,7 +130,7 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                                       children: List.generate(30, (index) {
                                         int height = Random().nextInt(32);
                                         return Container(
-                                          margin: EdgeInsets.only(right: 4),
+                                          margin: const EdgeInsets.only(right: 4),
                                           height: height.toDouble(),
                                           width: 4,
                                           color: Colors.grey,
@@ -151,7 +151,7 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                                     //   },
                                     // ),
                                     ),
-                                Positioned(
+                                const Positioned(
                                   right: 0,
                                   top: 0,
                                   bottom: 0,
@@ -165,7 +165,7 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                               ],
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                           ),
                           Row(
@@ -215,28 +215,27 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
               ),
               Container(
                 height: 300,
-                color: Colors.blue,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
                     return Container(
                       width: 180,
-                      margin: EdgeInsets.only(right: 8),
+                      margin: const EdgeInsets.only(right: 8),
                       decoration: BoxDecoration(
-                        color: Color.fromRGBO(45, 45, 45, 1),
+                        color: const Color.fromRGBO(45, 45, 45, 1),
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      padding: EdgeInsets.symmetric(vertical: 16),
+                      padding: const EdgeInsets.symmetric(vertical: 16),
                       child: Column(
                         children: [
-                          Text(
+                          const Text(
                             "After House",
                             style: TextStyle(
                               color: Colors.white,
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
+                          const Padding(
+                            padding: EdgeInsets.all(8.0),
                             child: Text(
                               "Weekend",
                               style: TextStyle(
@@ -250,7 +249,7 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                               radius: 72,
                               child: IconButton(
                                 onPressed: () {},
-                                icon: Icon(Icons.play_arrow),
+                                icon: const Icon(Icons.play_arrow),
                                 iconSize: 28,
                               ),
                               foregroundColor: Colors.white,
