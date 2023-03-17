@@ -224,7 +224,20 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                       margin: EdgeInsets.only(right: 8),
                       decoration: BoxDecoration(
                         color: Color.fromRGBO(45, 45, 45, 1),
-                        borderRadius: BorderRadius.circular(8)
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      padding: EdgeInsets.symmetric(vertical: 16),
+                      child: Column(
+                        children: [
+                          Text(
+                            "After House",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                          Text("Weekend"),
+                          CircleAvatar(radius: 72)
+                        ],
                       ),
                     );
                   },
