@@ -244,7 +244,17 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                               ),
                             ),
                           ),
-                          CircleAvatar(radius: 72)
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: CircleAvatar(
+                              radius: 72,
+                              child: IconButton(
+                                onPressed: () {},
+                                icon: Icon(Icons.play_arrow),
+                              ),
+                              foregroundColor: Colors.white,
+                            ),
+                          )
                         ],
                       ),
                     );
