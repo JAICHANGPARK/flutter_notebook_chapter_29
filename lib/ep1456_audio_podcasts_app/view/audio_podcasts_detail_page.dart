@@ -45,8 +45,8 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
                   children: [
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text(
+                      children: const [
+                        Text(
                           "Dream Life in not Easy",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -54,10 +54,10 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
                             color: Colors.white,
                           ),
                         ),
-                        const SizedBox(
+                        SizedBox(
                           height: 8,
                         ),
-                        const Text(
+                        Text(
                           'Hosted by: Dreamwalker',
                           style: TextStyle(
                             color: Colors.grey,
@@ -92,7 +92,7 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
                   (index) => Container(
                     decoration: BoxDecoration(),
                     child: Row(
-                      children: [],
+                      children: const [],
                     ),
                   ),
                 ),
