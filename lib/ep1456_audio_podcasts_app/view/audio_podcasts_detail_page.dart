@@ -10,6 +10,19 @@ class AudioPodcastsDetailPage extends StatefulWidget {
 class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Details"),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.download),
+          )
+        ],
+      ),
+      body: Column(
+        children: [],
+      ),
+    );
   }
 }
