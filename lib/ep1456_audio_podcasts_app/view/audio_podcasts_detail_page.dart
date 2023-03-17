@@ -29,6 +29,7 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
                 height: 340,
@@ -83,6 +84,17 @@ class _AudioPodcastsDetailPageState extends State<AudioPodcastsDetailPage> {
                 "Episode 🔥",
                 style: TextStyle(
                   color: Colors.white,
+                ),
+              ),
+              Column(
+                children: List.generate(
+                  10,
+                  (index) => Container(
+                    decoration: BoxDecoration(),
+                    child: Row(
+                      children: [],
+                    ),
+                  ),
                 ),
               )
             ],
