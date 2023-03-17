@@ -74,8 +74,8 @@ class _AudioPodcastsMainPageState extends State<AudioPodcastsMainPage> {
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
                     return GestureDetector(
-                      onTap: (){
-                        
+                      onTap: () {
+                        Navigator.of(context).pushNamed("/detail");
                       },
                       child: Container(
                         width: 300,
