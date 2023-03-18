@@ -103,6 +103,23 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                   ],
                 ),
               ),
+            ),
+            Row(
+              children: [
+                const Text("Specialties"),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text("See all"),
+                )
+              ],
+            ),
+            Container(
+              height: 84,
+              child: ListView.builder(itemBuilder: (context, index) {
+                return Column(
+                  children: [],
+                );
+              }),
             )
           ],
         ),
