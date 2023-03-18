@@ -43,9 +43,10 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
             ),
             Container(
               height: 42,
-              decoration: BoxDecoration(
-                border: Border.all(),
-                borderRadius: BorderRadius.circular(8)
+              margin: EdgeInsets.symmetric(horizontal: 16),
+              decoration: BoxDecoration(border: Border.all(), borderRadius: BorderRadius.circular(8)),
+              child: TextField(
+                decoration: InputDecoration(),
               ),
             )
           ],
