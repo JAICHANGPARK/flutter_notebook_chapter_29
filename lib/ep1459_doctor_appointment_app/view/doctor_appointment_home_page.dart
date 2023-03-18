@@ -21,8 +21,8 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Text.rich(
+                    children: const [
+                      Text.rich(
                         TextSpan(children: [
                           TextSpan(
                             text: "Good morning,",
@@ -32,7 +32,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                           )
                         ]),
                       ),
-                      const Text("How are you feeling today?"),
+                      Text("How are you feeling today?"),
                     ],
                   ),
                   const CircleAvatar(
@@ -67,41 +67,42 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
             ),
             Column(
               children: List.generate(
-                  3,
-                  (index) => Row(
-                        children: [
-                          Container(
-                            height: 120,
-                            width: 120,
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                          ),
-                          Column(
-                            children: [
-                              Text("Dr. Walker"),
-                              Text("GP"),
-                              Text("Today 10:00 am"),
-                            ],
-                          ),
-                          Container(
-                            height: 42,
-                            width: 42,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(),
-                            ),
-                          ),
-                          Container(
-                            height: 42,
-                            width: 42,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(),
-                            ),
-                          )
-                        ],
-                      )),
+                3,
+                (index) => Row(
+                  children: [
+                    Container(
+                      height: 120,
+                      width: 120,
+                      decoration: const BoxDecoration(
+                        color: Colors.blue,
+                      ),
+                    ),
+                    Column(
+                      children: const [
+                        Text("Dr. Walker"),
+                        Text("GP"),
+                        Text("Today 10:00 am"),
+                      ],
+                    ),
+                    Container(
+                      height: 42,
+                      width: 42,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(),
+                      ),
+                    ),
+                    Container(
+                      height: 42,
+                      width: 42,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(),
+                      ),
+                    )
+                  ],
+                ),
+              ),
             )
           ],
         ),
