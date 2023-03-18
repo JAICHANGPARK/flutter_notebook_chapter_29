@@ -115,12 +115,37 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
             ),
             Container(
               height: 84,
-              child: ListView.builder(itemBuilder: (context, index) {
-                return Column(
-                  children: [],
-                );
-              }),
-            )
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return Column(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.blue,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text("Heart")
+                    ],
+                  );
+                },
+              ),
+            ),
+            Row(
+              children: [
+                const Text("Doctors"),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text("See all"),
+                )
+              ],
+            ),
           ],
         ),
       ),
