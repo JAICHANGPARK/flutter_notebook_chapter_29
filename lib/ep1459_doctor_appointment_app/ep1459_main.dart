@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_29/ep1459_doctor_appointment_app/view/doctor_appointment_home_page.dart';
 
 void main() {}
 
@@ -7,6 +8,8 @@ class DoctorAppointmentApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: DoctorAppointmentHomePage(),
+    );
   }
 }
