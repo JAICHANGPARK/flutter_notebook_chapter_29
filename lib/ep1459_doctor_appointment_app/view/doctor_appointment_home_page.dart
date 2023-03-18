@@ -33,6 +33,13 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                   radius: 26,
                 )
               ],
+            ),
+            Container(
+              height: 42,
+              decoration: BoxDecoration(
+                border: Border.all(),
+                borderRadius: BorderRadius.circular(8)
+              ),
             )
           ],
         ),
