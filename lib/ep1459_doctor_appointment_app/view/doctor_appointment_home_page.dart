@@ -48,8 +48,11 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                 border: Border.all(),
                 borderRadius: BorderRadius.circular(8),
               ),
+              padding: EdgeInsets.symmetric(horizontal: 8),
               child: TextField(
-                decoration: InputDecoration(),
+                decoration: InputDecoration(
+                  hintText: "Search..."
+                ),
               ),
             )
           ],
