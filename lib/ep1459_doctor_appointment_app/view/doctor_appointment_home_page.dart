@@ -50,10 +50,18 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
               ),
               padding: EdgeInsets.symmetric(horizontal: 8),
               child: TextField(
-                decoration: InputDecoration(
-                  hintText: "Search..."
-                ),
+                decoration: InputDecoration(hintText: "Search..."),
               ),
+            ),
+            Text("Notes help doctors better understand the problem"),
+            Row(
+              children: [
+                Text("Scheduled"),
+                TextButton(
+                  onPressed: () {},
+                  child: Text("See all"),
+                )
+              ],
             )
           ],
         ),
