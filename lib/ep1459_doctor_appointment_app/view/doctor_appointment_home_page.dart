@@ -14,25 +14,28 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text.rich(
-                      TextSpan(children: [
-                        TextSpan(
-                          text: "Good morning,",
-                        )
-                      ]),
-                    ),
-                    Text("How are you feeling today?"),
-                  ],
-                ),
-                CircleAvatar(
-                  radius: 26,
-                )
-              ],
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text.rich(
+                        TextSpan(children: [
+                          TextSpan(
+                            text: "Good morning,",
+                          )
+                        ]),
+                      ),
+                      Text("How are you feeling today?"),
+                    ],
+                  ),
+                  CircleAvatar(
+                    radius: 26,
+                  )
+                ],
+              ),
             ),
             Container(
               height: 42,
