@@ -10,6 +10,32 @@ class DoctorAppointmentHomePage extends StatefulWidget {
 class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Column(
+                  children: [
+                    Text.rich(
+                      TextSpan(children: [
+                        TextSpan(
+                          text: "Good morning,",
+                        )
+                      ]),
+                    ),
+                    Text("How are you feeling today?"),
+                  ],
+                ),
+                CircleAvatar(
+                  radius: 26,
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
