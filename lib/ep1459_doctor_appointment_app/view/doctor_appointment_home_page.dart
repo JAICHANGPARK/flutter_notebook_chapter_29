@@ -75,6 +75,13 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                       decoration: BoxDecoration(
                         color: Colors.blue,
                       ),
+                    ),
+                    Column(
+                      children: [
+                        Text("Dr. Walker"),
+                        Text("GP"),
+                        Text("Today 10:00 am"),
+                      ],
                     )
                   ],
                 )
