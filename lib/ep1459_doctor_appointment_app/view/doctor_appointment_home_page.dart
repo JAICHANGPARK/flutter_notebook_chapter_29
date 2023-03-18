@@ -17,6 +17,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -25,6 +26,9 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                         TextSpan(children: [
                           TextSpan(
                             text: "Good morning,",
+                          ),
+                          TextSpan(
+                            text: "Mr. Dream",
                           )
                         ]),
                       ),
