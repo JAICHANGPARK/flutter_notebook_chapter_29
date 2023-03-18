@@ -17,6 +17,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
             Row(
               children: [
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text.rich(
                       TextSpan(children: [
