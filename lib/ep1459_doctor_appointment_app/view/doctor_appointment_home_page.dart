@@ -22,7 +22,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text.rich(
+                      const Text.rich(
                         TextSpan(children: [
                           TextSpan(
                             text: "Good morning,",
@@ -32,10 +32,10 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                           )
                         ]),
                       ),
-                      Text("How are you feeling today?"),
+                      const Text("How are you feeling today?"),
                     ],
                   ),
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 26,
                   )
                 ],
@@ -43,23 +43,40 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
             ),
             Container(
               height: 42,
-              margin: EdgeInsets.symmetric(horizontal: 16),
+              margin: const EdgeInsets.symmetric(horizontal: 16),
               decoration: BoxDecoration(
                 border: Border.all(),
                 borderRadius: BorderRadius.circular(8),
               ),
-              padding: EdgeInsets.symmetric(horizontal: 8),
-              child: TextField(
-                decoration: InputDecoration(hintText: "Search..."),
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              child: const TextField(
+                decoration: InputDecoration(
+                  hintText: "Search...",
+                ),
               ),
             ),
-            Text("Notes help doctors better understand the problem"),
+            const Text("Notes help doctors better understand the problem"),
             Row(
               children: [
-                Text("Scheduled"),
+                const Text("Scheduled"),
                 TextButton(
                   onPressed: () {},
-                  child: Text("See all"),
+                  child: const Text("See all"),
+                )
+              ],
+            ),
+            Column(
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      height: 120,
+                      width: 120,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                      ),
+                    )
+                  ],
                 )
               ],
             )
