@@ -82,6 +82,22 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                         Text("GP"),
                         Text("Today 10:00 am"),
                       ],
+                    ),
+                    Container(
+                      height: 42,
+                      width: 42,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(),
+                      ),
+                    ),
+                    Container(
+                      height: 42,
+                      width: 42,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(),
+                      ),
                     )
                   ],
                 )
