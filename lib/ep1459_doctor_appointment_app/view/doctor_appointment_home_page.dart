@@ -66,7 +66,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.all(16.0),
+                      padding: const EdgeInsets.fromLTRB(16.0, 16, 16, 0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -167,14 +167,17 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                         ],
                       ),
                     ),
-                    Row(
-                      children: [
-                        const Text("Specialties"),
-                        TextButton(
-                          onPressed: () {},
-                          child: const Text("See all"),
-                        )
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Row(
+                        children: [
+                          const Text("Specialties"),
+                          TextButton(
+                            onPressed: () {},
+                            child: const Text("See all"),
+                          )
+                        ],
+                      ),
                     ),
                     Container(
                       height: 84,
