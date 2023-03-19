@@ -209,12 +209,8 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                   child: Container(
                                     padding: EdgeInsets.symmetric(horizontal: 16),
                                     decoration: BoxDecoration(
-                                      border: Border.all(
-                                        color: Colors.blue,
-                                        width: 1.5
-                                      ),
-                                      borderRadius: BorderRadius.circular(8)
-                                    ),
+                                        border: Border.all(color: Colors.blue, width: 1.5),
+                                        borderRadius: BorderRadius.circular(8)),
                                     child: Center(
                                       child: Text(
                                         "👂",
@@ -242,10 +238,18 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                       padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: Row(
                         children: [
-                          const Text("Doctors"),
+                          const Text(
+                            "Doctors",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           TextButton(
                             onPressed: () {},
                             child: const Text("See all"),
+                            style: TextButton.styleFrom(
+                              foregroundColor: Colors.grey,
+                            ),
                           )
                         ],
                       ),
