@@ -57,7 +57,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8),
+              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
               child: const Text("Notes help doctors better understand the problem"),
             ),
             Expanded(
@@ -66,7 +66,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(16.0, 16, 16, 0),
+                      padding: const EdgeInsets.fromLTRB(16.0, 0, 16, 0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -254,15 +254,23 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                       ),
                     ),
                     Container(
-                      height: 100,
+                      height: 120,
+                      margin: EdgeInsets.only(left: 16),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return Padding(
                             padding: const EdgeInsets.only(right: 16),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Expanded(child: Container()),
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.blue,
+                                    ),
+                                  ),
+                                ),
                                 SizedBox(
                                   height: 8,
                                 ),
