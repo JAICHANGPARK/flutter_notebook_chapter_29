@@ -67,10 +67,19 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              const Text("Scheduled"),
+                              const Text(
+                                "Scheduled",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
+                              ),
                               TextButton(
                                 onPressed: () {},
                                 child: const Text("See all"),
+                                style: TextButton.styleFrom(
+                                  foregroundColor: Colors.grey,
+                                ),
                               )
                             ],
                           ),
