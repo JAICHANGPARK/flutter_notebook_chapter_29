@@ -60,54 +60,59 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
               child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    Row(
-                      children: [
-                        const Text("Scheduled"),
-                        TextButton(
-                          onPressed: () {},
-                          child: const Text("See all"),
-                        )
-                      ],
-                    ),
                     Column(
-                      children: List.generate(
-                        3,
-                        (index) => Row(
+                      children: [
+                        Row(
                           children: [
-                            Container(
-                              height: 120,
-                              width: 120,
-                              decoration: const BoxDecoration(
-                                color: Colors.blue,
-                              ),
-                            ),
-                            Column(
-                              children: const [
-                                Text("Dr. Walker"),
-                                Text("GP"),
-                                Text("Today 10:00 am"),
-                              ],
-                            ),
-                            Container(
-                              height: 42,
-                              width: 42,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border: Border.all(),
-                              ),
-                            ),
-                            Container(
-                              height: 42,
-                              width: 42,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border: Border.all(),
-                              ),
+                            const Text("Scheduled"),
+                            TextButton(
+                              onPressed: () {},
+                              child: const Text("See all"),
                             )
                           ],
                         ),
-                      ),
-                    ),
+                        Column(
+                          children: List.generate(
+                            3,
+                                (index) => Row(
+                              children: [
+                                Container(
+                                  height: 120,
+                                  width: 120,
+                                  decoration: const BoxDecoration(
+                                    color: Colors.blue,
+                                  ),
+                                ),
+                                Column(
+                                  children: const [
+                                    Text("Dr. Walker"),
+                                    Text("GP"),
+                                    Text("Today 10:00 am"),
+                                  ],
+                                ),
+                                Container(
+                                  height: 42,
+                                  width: 42,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    border: Border.all(),
+                                  ),
+                                ),
+                                Container(
+                                  height: 42,
+                                  width: 42,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    border: Border.all(),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    )
+
                     Row(
                       children: [
                         const Text("Specialties"),
@@ -133,12 +138,15 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                         color: Colors.blue,
                                       ),
                                     ),
+                                    child: Center(
+                                      child: Text("👂"),
+                                    ),
                                   ),
                                 ),
                                 SizedBox(
                                   height: 8,
                                 ),
-                                Text("Heart")
+                                Text("Ear")
                               ],
                             ),
                           );
