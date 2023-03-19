@@ -126,8 +126,8 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                       ),
                                     ),
                                     Container(
-                                      height: 42,
-                                      width: 42,
+                                      height: 46,
+                                      width: 46,
                                       decoration: BoxDecoration(
                                         shape: BoxShape.circle,
                                         border: Border.all(),
