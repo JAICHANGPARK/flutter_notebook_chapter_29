@@ -202,7 +202,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return Padding(
-                            padding: const EdgeInsets.only(right: 12),
+                            padding: const EdgeInsets.only(right: 16),
                             child: Column(
                               children: [
                                 Expanded(
