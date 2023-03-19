@@ -92,77 +92,76 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                           Column(
                             children: List.generate(
                               3,
-                                  (index) =>
-                                  Padding(
-                                    padding: const EdgeInsets.only(bottom: 16),
-                                    child: Row(
-                                      children: [
-                                        Container(
-                                          height: 72,
-                                          width: 72,
-                                          decoration: BoxDecoration(
-                                            color: Colors.blue,
-                                            borderRadius: BorderRadius.circular(8),
-                                          ),
-                                        ),
-                                        SizedBox(
-                                          width: 16,
-                                        ),
-                                        Expanded(
-                                          child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: const [
-                                              Text(
-                                                "Dr. Walker",
-                                                style: TextStyle(
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                              ),
-                                              Text("GP"),
-                                              SizedBox(
-                                                height: 8,
-                                              ),
-                                              Text("Today 10:00 am"),
-                                            ],
-                                          ),
-                                        ),
-                                        Container(
-                                          height: 46,
-                                          width: 46,
-                                          decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            border: Border.all(),
-                                          ),
-                                          child: Center(
-                                            child: Icon(
-                                              Icons.chat_outlined,
-                                              color: Colors.blue,
-                                            ),
-                                          ),
-                                        ),
-                                        SizedBox(
-                                          width: 24,
-                                        ),
-                                        Container(
-                                          height: 46,
-                                          width: 46,
-                                          decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            border: Border.all(),
-                                          ),
-                                          child: Center(
-                                            child: Icon(
-                                              Icons.video_camera_back_outlined,
-                                              color: Colors.blue,
-                                            ),
-                                          ),
-                                        ),
-                                        SizedBox(
-                                          width: 16,
-                                        ),
-                                      ],
+                              (index) => Padding(
+                                padding: const EdgeInsets.only(bottom: 16),
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      height: 72,
+                                      width: 72,
+                                      decoration: BoxDecoration(
+                                        color: Colors.blue,
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
                                     ),
-                                  ),
+                                    SizedBox(
+                                      width: 16,
+                                    ),
+                                    Expanded(
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: const [
+                                          Text(
+                                            "Dr. Walker",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          Text("GP"),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
+                                          Text("Today 10:00 am"),
+                                        ],
+                                      ),
+                                    ),
+                                    Container(
+                                      height: 46,
+                                      width: 46,
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        border: Border.all(),
+                                      ),
+                                      child: Center(
+                                        child: Icon(
+                                          Icons.chat_outlined,
+                                          color: Colors.blue,
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 24,
+                                    ),
+                                    Container(
+                                      height: 46,
+                                      width: 46,
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        border: Border.all(),
+                                      ),
+                                      child: Center(
+                                        child: Icon(
+                                          Icons.video_camera_back_outlined,
+                                          color: Colors.blue,
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 16,
+                                    ),
+                                  ],
+                                ),
+                              ),
                             ),
                           ),
                         ],
@@ -255,7 +254,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                       ),
                     ),
                     Container(
-                      height: 120,
+                      height: 140,
                       margin: EdgeInsets.only(left: 16),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
@@ -267,8 +266,10 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                               children: [
                                 Expanded(
                                   child: Container(
-                                    decoration:
-                                    BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8).),
+                                    decoration: BoxDecoration(
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
                                   ),
                                 ),
                                 SizedBox(
@@ -286,6 +287,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                     Icon(
                                       Icons.star,
                                       size: 14,
+                                      color: Colors.orange,
                                     ),
                                     Text("5.0"),
                                     Text("(1734 reviews)"),
