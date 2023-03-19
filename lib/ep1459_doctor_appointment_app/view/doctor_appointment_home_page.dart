@@ -214,16 +214,22 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                       ),
                                     ),
                                     child: Center(
-                                      child: Text("👂", style: TextStyle(
-                                        fontSize: 24
-                                      ),),
+                                      child: Text(
+                                        "👂",
+                                        style: TextStyle(fontSize: 24),
+                                      ),
                                     ),
                                   ),
                                 ),
                                 SizedBox(
                                   height: 8,
                                 ),
-                                Text("Ear")
+                                Text(
+                                  "Ear",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                )
                               ],
                             ),
                           );
