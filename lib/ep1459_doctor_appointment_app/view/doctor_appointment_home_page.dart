@@ -238,14 +238,17 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                         },
                       ),
                     ),
-                    Row(
-                      children: [
-                        const Text("Doctors"),
-                        TextButton(
-                          onPressed: () {},
-                          child: const Text("See all"),
-                        )
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Row(
+                        children: [
+                          const Text("Doctors"),
+                          TextButton(
+                            onPressed: () {},
+                            child: const Text("See all"),
+                          )
+                        ],
+                      ),
                     ),
                   ],
                 ),
