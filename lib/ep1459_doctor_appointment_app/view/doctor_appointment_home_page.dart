@@ -120,23 +120,27 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                     Container(
                       height: 84,
                       child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
-                          return Column(
-                            children: [
-                              Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    border: Border.all(
-                                      color: Colors.blue,
+                          return Padding(
+                            padding: const EdgeInsets.only(right: 12),
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      border: Border.all(
+                                        color: Colors.blue,
+                                      ),
                                     ),
                                   ),
                                 ),
-                              ),
-                              SizedBox(
-                                height: 8,
-                              ),
-                              Text("Heart")
-                            ],
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text("Heart")
+                              ],
+                            ),
                           );
                         },
                       ),
