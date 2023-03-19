@@ -13,6 +13,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: const EdgeInsets.all(16.0),
@@ -55,7 +56,10 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                 ),
               ),
             ),
-            const Text("Notes help doctors better understand the problem"),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8),
+              child: const Text("Notes help doctors better understand the problem"),
+            ),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
@@ -88,39 +92,51 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                           Column(
                             children: List.generate(
                               3,
-                              (index) => Row(
-                                children: [
-                                  Container(
-                                    height: 120,
-                                    width: 120,
-                                    decoration: const BoxDecoration(
-                                      color: Colors.blue,
+                              (index) => Padding(
+                                padding: const EdgeInsets.only(bottom: 8),
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      height: 72,
+                                      width: 72,
+                                      decoration: const BoxDecoration(
+                                        color: Colors.blue,
+                                      ),
                                     ),
-                                  ),
-                                  Column(
-                                    children: const [
-                                      Text("Dr. Walker"),
-                                      Text("GP"),
-                                      Text("Today 10:00 am"),
-                                    ],
-                                  ),
-                                  Container(
-                                    height: 42,
-                                    width: 42,
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      border: Border.all(),
+                                    SizedBox(
+                                      width: 16,
                                     ),
-                                  ),
-                                  Container(
-                                    height: 42,
-                                    width: 42,
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      border: Border.all(),
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: const [
+                                        Text(
+                                          "Dr. Walker",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        Text("GP"),
+                                        Text("Today 10:00 am"),
+                                      ],
                                     ),
-                                  )
-                                ],
+                                    Container(
+                                      height: 42,
+                                      width: 42,
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        border: Border.all(),
+                                      ),
+                                    ),
+                                    Container(
+                                      height: 42,
+                                      width: 42,
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        border: Border.all(),
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                           ),
