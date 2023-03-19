@@ -194,7 +194,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                       ),
                     ),
                     Container(
-                      height: 84,
+                      height: 92,
                       margin: EdgeInsets.only(
                         left: 16,
                       ),
@@ -211,7 +211,9 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                     decoration: BoxDecoration(
                                       border: Border.all(
                                         color: Colors.blue,
+                                        width: 1.5
                                       ),
+                                      borderRadius: BorderRadius.circular(8)
                                     ),
                                     child: Center(
                                       child: Text(
