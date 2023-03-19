@@ -106,18 +106,23 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                     SizedBox(
                                       width: 16,
                                     ),
-                                    Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: const [
-                                        Text(
-                                          "Dr. Walker",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
+                                    Expanded(
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: const [
+                                          Text(
+                                            "Dr. Walker",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
                                           ),
-                                        ),
-                                        Text("GP"),
-                                        Text("Today 10:00 am"),
-                                      ],
+                                          Text("GP"),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
+                                          Text("Today 10:00 am"),
+                                        ],
+                                      ),
                                     ),
                                     Container(
                                       height: 42,
@@ -126,6 +131,9 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                         shape: BoxShape.circle,
                                         border: Border.all(),
                                       ),
+                                    ),
+                                    SizedBox(
+                                      width: 24,
                                     ),
                                     Container(
                                       height: 42,
