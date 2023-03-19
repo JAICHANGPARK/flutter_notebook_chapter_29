@@ -256,10 +256,30 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                     Container(
                       height: 100,
                       child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return Padding(
                             padding: const EdgeInsets.only(right: 16),
-                            child: Column(),
+                            child: Column(
+                              children: [
+                                Expanded(child: Container()),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text("Dr. Dream"),
+                                Text("GP"),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.star,
+                                      size: 14,
+                                    ),
+                                    Text("5.0"),
+                                    Text("(1734 reviews)"),
+                                  ],
+                                )
+                              ],
+                            ),
                           );
                         },
                       ),
