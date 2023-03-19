@@ -99,8 +99,9 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                     Container(
                                       height: 72,
                                       width: 72,
-                                      decoration: const BoxDecoration(
+                                      decoration: BoxDecoration(
                                         color: Colors.blue,
+                                        borderRadius: BorderRadius.circular(8),
                                       ),
                                     ),
                                     SizedBox(
@@ -143,7 +144,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                     ),
                                     Container(
                                       height: 46,
-                                      width:46,
+                                      width: 46,
                                       decoration: BoxDecoration(
                                         shape: BoxShape.circle,
                                         border: Border.all(),
