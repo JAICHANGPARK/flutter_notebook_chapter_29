@@ -170,11 +170,21 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Text("Specialties"),
+                          Text(
+                            "Specialties",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          ),
                           TextButton(
                             onPressed: () {},
                             child: const Text("See all"),
+                            style: TextButton.styleFrom(
+                              foregroundColor: Colors.grey,
+                            ),
                           )
                         ],
                       ),
