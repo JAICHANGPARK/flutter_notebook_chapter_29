@@ -93,7 +93,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                             children: List.generate(
                               3,
                               (index) => Padding(
-                                padding: const EdgeInsets.only(bottom: 8),
+                                padding: const EdgeInsets.only(bottom: 16),
                                 child: Row(
                                   children: [
                                     Container(
