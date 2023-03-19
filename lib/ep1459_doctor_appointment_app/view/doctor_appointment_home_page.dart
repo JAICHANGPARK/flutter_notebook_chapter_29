@@ -82,10 +82,10 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                               ),
                               TextButton(
                                 onPressed: () {},
-                                child: const Text("See all"),
                                 style: TextButton.styleFrom(
                                   foregroundColor: Colors.grey,
                                 ),
+                                child: const Text("See all"),
                               )
                             ],
                           ),
@@ -183,10 +183,10 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                               ),
                               TextButton(
                                 onPressed: () {},
-                                child: const Text("See all"),
                                 style: TextButton.styleFrom(
                                   foregroundColor: Colors.grey,
                                 ),
+                                child: const Text("See all"),
                               )
                             ],
                           ),
@@ -237,6 +237,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           const Text(
                             "Doctors",
@@ -246,10 +247,10 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                           ),
                           TextButton(
                             onPressed: () {},
-                            child: const Text("See all"),
                             style: TextButton.styleFrom(
                               foregroundColor: Colors.grey,
                             ),
+                            child: const Text("See all"),
                           )
                         ],
                       ),
