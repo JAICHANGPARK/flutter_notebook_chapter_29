@@ -142,7 +142,10 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                         shape: BoxShape.circle,
                                         border: Border.all(),
                                       ),
-                                    )
+                                    ),
+                                    SizedBox(
+                                      width: 16,
+                                    ),
                                   ],
                                 ),
                               ),
