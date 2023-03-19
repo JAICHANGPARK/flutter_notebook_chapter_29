@@ -56,101 +56,104 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
               ),
             ),
             const Text("Notes help doctors better understand the problem"),
-            Expanded(child: SingleChildScrollView(child: Column(
-              children: [
-
-              ],
-            ),))
-            Row(
-              children: [
-                const Text("Scheduled"),
-                TextButton(
-                  onPressed: () {},
-                  child: const Text("See all"),
-                )
-              ],
-            ),
-            Column(
-              children: List.generate(
-                3,
-                (index) => Row(
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
                   children: [
-                    Container(
-                      height: 120,
-                      width: 120,
-                      decoration: const BoxDecoration(
-                        color: Colors.blue,
-                      ),
+                    Row(
+                      children: [
+                        const Text("Scheduled"),
+                        TextButton(
+                          onPressed: () {},
+                          child: const Text("See all"),
+                        )
+                      ],
                     ),
                     Column(
-                      children: const [
-                        Text("Dr. Walker"),
-                        Text("GP"),
-                        Text("Today 10:00 am"),
+                      children: List.generate(
+                        3,
+                        (index) => Row(
+                          children: [
+                            Container(
+                              height: 120,
+                              width: 120,
+                              decoration: const BoxDecoration(
+                                color: Colors.blue,
+                              ),
+                            ),
+                            Column(
+                              children: const [
+                                Text("Dr. Walker"),
+                                Text("GP"),
+                                Text("Today 10:00 am"),
+                              ],
+                            ),
+                            Container(
+                              height: 42,
+                              width: 42,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(),
+                              ),
+                            ),
+                            Container(
+                              height: 42,
+                              width: 42,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        const Text("Specialties"),
+                        TextButton(
+                          onPressed: () {},
+                          child: const Text("See all"),
+                        )
                       ],
                     ),
                     Container(
-                      height: 42,
-                      width: 42,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(),
+                      height: 84,
+                      child: ListView.builder(
+                        itemBuilder: (context, index) {
+                          return Column(
+                            children: [
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(
+                                      color: Colors.blue,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text("Heart")
+                            ],
+                          );
+                        },
                       ),
                     ),
-                    Container(
-                      height: 42,
-                      width: 42,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(),
-                      ),
-                    )
+                    Row(
+                      children: [
+                        const Text("Doctors"),
+                        TextButton(
+                          onPressed: () {},
+                          child: const Text("See all"),
+                        )
+                      ],
+                    ),
                   ],
                 ),
               ),
-            ),
-            Row(
-              children: [
-                const Text("Specialties"),
-                TextButton(
-                  onPressed: () {},
-                  child: const Text("See all"),
-                )
-              ],
-            ),
-            Container(
-              height: 84,
-              child: ListView.builder(
-                itemBuilder: (context, index) {
-                  return Column(
-                    children: [
-                      Expanded(
-                        child: Container(
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.blue,
-                            ),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text("Heart")
-                    ],
-                  );
-                },
-              ),
-            ),
-            Row(
-              children: [
-                const Text("Doctors"),
-                TextButton(
-                  onPressed: () {},
-                  child: const Text("See all"),
-                )
-              ],
-            ),
+            )
           ],
         ),
       ),
