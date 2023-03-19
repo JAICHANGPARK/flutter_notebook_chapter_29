@@ -169,28 +169,35 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      child: Column(
                         children: [
-                          Text(
-                            "Specialties",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18,
-                            ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Specialties",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {},
+                                child: const Text("See all"),
+                                style: TextButton.styleFrom(
+                                  foregroundColor: Colors.grey,
+                                ),
+                              )
+                            ],
                           ),
-                          TextButton(
-                            onPressed: () {},
-                            child: const Text("See all"),
-                            style: TextButton.styleFrom(
-                              foregroundColor: Colors.grey,
-                            ),
-                          )
                         ],
                       ),
                     ),
                     Container(
                       height: 84,
+                      margin: EdgeInsets.only(
+                        left: 16,
+                      ),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
@@ -200,6 +207,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                               children: [
                                 Expanded(
                                   child: Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
                                     decoration: BoxDecoration(
                                       border: Border.all(
                                         color: Colors.blue,
