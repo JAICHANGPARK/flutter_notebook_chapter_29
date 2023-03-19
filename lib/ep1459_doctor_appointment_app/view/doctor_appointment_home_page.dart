@@ -56,6 +56,11 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
               ),
             ),
             const Text("Notes help doctors better understand the problem"),
+            Expanded(child: SingleChildScrollView(child: Column(
+              children: [
+
+              ],
+            ),))
             Row(
               children: [
                 const Text("Scheduled"),
