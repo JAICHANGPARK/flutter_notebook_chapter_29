@@ -235,15 +235,13 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           const Text(
                             "Doctors",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                           ),
                           TextButton(
                             onPressed: () {},
@@ -255,6 +253,17 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                         ],
                       ),
                     ),
+                    Container(
+                      height: 100,
+                      child: ListView.builder(
+                        itemBuilder: (context, index) {
+                          return Padding(
+                            padding: const EdgeInsets.only(right: 16),
+                            child: Column(),
+                          );
+                        },
+                      ),
+                    )
                   ],
                 ),
               ),
