@@ -92,76 +92,77 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                           Column(
                             children: List.generate(
                               3,
-                              (index) => Padding(
-                                padding: const EdgeInsets.only(bottom: 16),
-                                child: Row(
-                                  children: [
-                                    Container(
-                                      height: 72,
-                                      width: 72,
-                                      decoration: BoxDecoration(
-                                        color: Colors.blue,
-                                        borderRadius: BorderRadius.circular(8),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 16,
-                                    ),
-                                    Expanded(
-                                      child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: const [
-                                          Text(
-                                            "Dr. Walker",
-                                            style: TextStyle(
-                                              fontWeight: FontWeight.bold,
+                                  (index) =>
+                                  Padding(
+                                    padding: const EdgeInsets.only(bottom: 16),
+                                    child: Row(
+                                      children: [
+                                        Container(
+                                          height: 72,
+                                          width: 72,
+                                          decoration: BoxDecoration(
+                                            color: Colors.blue,
+                                            borderRadius: BorderRadius.circular(8),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 16,
+                                        ),
+                                        Expanded(
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: const [
+                                              Text(
+                                                "Dr. Walker",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              Text("GP"),
+                                              SizedBox(
+                                                height: 8,
+                                              ),
+                                              Text("Today 10:00 am"),
+                                            ],
+                                          ),
+                                        ),
+                                        Container(
+                                          height: 46,
+                                          width: 46,
+                                          decoration: BoxDecoration(
+                                            shape: BoxShape.circle,
+                                            border: Border.all(),
+                                          ),
+                                          child: Center(
+                                            child: Icon(
+                                              Icons.chat_outlined,
+                                              color: Colors.blue,
                                             ),
                                           ),
-                                          Text("GP"),
-                                          SizedBox(
-                                            height: 8,
+                                        ),
+                                        SizedBox(
+                                          width: 24,
+                                        ),
+                                        Container(
+                                          height: 46,
+                                          width: 46,
+                                          decoration: BoxDecoration(
+                                            shape: BoxShape.circle,
+                                            border: Border.all(),
                                           ),
-                                          Text("Today 10:00 am"),
-                                        ],
-                                      ),
-                                    ),
-                                    Container(
-                                      height: 46,
-                                      width: 46,
-                                      decoration: BoxDecoration(
-                                        shape: BoxShape.circle,
-                                        border: Border.all(),
-                                      ),
-                                      child: Center(
-                                        child: Icon(
-                                          Icons.chat_outlined,
-                                          color: Colors.blue,
+                                          child: Center(
+                                            child: Icon(
+                                              Icons.video_camera_back_outlined,
+                                              color: Colors.blue,
+                                            ),
+                                          ),
                                         ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 24,
-                                    ),
-                                    Container(
-                                      height: 46,
-                                      width: 46,
-                                      decoration: BoxDecoration(
-                                        shape: BoxShape.circle,
-                                        border: Border.all(),
-                                      ),
-                                      child: Center(
-                                        child: Icon(
-                                          Icons.video_camera_back_outlined,
-                                          color: Colors.blue,
+                                        SizedBox(
+                                          width: 16,
                                         ),
-                                      ),
+                                      ],
                                     ),
-                                    SizedBox(
-                                      width: 16,
-                                    ),
-                                  ],
-                                ),
-                              ),
+                                  ),
                             ),
                           ),
                         ],
@@ -266,15 +267,19 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                               children: [
                                 Expanded(
                                   child: Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.blue,
-                                    ),
+                                    decoration:
+                                    BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8).),
                                   ),
                                 ),
                                 SizedBox(
                                   height: 8,
                                 ),
-                                Text("Dr. Dream"),
+                                Text(
+                                  "Dr. Dream",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                                 Text("GP"),
                                 Row(
                                   children: [
