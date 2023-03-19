@@ -131,16 +131,28 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                         shape: BoxShape.circle,
                                         border: Border.all(),
                                       ),
+                                      child: Center(
+                                        child: Icon(
+                                          Icons.chat_outlined,
+                                          color: Colors.blue,
+                                        ),
+                                      ),
                                     ),
                                     SizedBox(
                                       width: 24,
                                     ),
                                     Container(
-                                      height: 42,
-                                      width: 42,
+                                      height: 46,
+                                      width:46,
                                       decoration: BoxDecoration(
                                         shape: BoxShape.circle,
                                         border: Border.all(),
+                                      ),
+                                      child: Center(
+                                        child: Icon(
+                                          Icons.video_camera_back_outlined,
+                                          color: Colors.blue,
+                                        ),
                                       ),
                                     ),
                                     SizedBox(
