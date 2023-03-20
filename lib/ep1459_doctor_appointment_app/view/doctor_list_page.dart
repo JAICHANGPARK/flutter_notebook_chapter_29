@@ -40,43 +40,49 @@ class _DoctorListPageState extends State<DoctorListPage> {
                 SizedBox(
                   width: 16,
                 ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        Text("Dr. Dream W"),
-                        Icon(
-                          Icons.star,
-                          color: Colors.orangeAccent,
-                        ),
-                        Text("4.9(1734)")
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Text("n years of experience"),
-                        Text("Walker Hospital"),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Text.rich(
-                          TextSpan(
-                            children: [
-                              TextSpan(
-                                text: "Book"
-                              ),
-                              TextSpan(
-                                text: "today 12:00 pm"
-                              ),
-                            ],
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: const [
+                          Text(
+                            "Dr. Dream W",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                            ),
                           ),
-                        ),
-                        Icon(Icons.arrow_forward_ios)
-                      ],
-                    )
-                  ],
+                          Spacer(),
+                          Icon(
+                            Icons.star,
+                            color: Colors.orangeAccent,
+                            size: 16,
+                          ),
+                          Text("4.9(1734)")
+                        ],
+                      ),
+                      Row(
+                        children: const [
+                          Text("n years of experience"),
+                          Text("Walker Hospital"),
+                        ],
+                      ),
+                      Row(
+                        children: const [
+                          Text.rich(
+                            TextSpan(
+                              children: [
+                                TextSpan(text: "Book"),
+                                TextSpan(text: "today 12:00 pm"),
+                              ],
+                            ),
+                          ),
+                          Icon(Icons.arrow_forward_ios)
+                        ],
+                      )
+                    ],
+                  ),
                 )
               ],
             ),
