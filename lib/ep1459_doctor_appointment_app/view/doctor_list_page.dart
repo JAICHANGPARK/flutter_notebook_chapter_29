@@ -27,35 +27,39 @@ class _DoctorListPageState extends State<DoctorListPage> {
         elevation: 0,
       ),
       body: ListView.builder(itemBuilder: (context, index) {
-        return Row(
-          children: [
-            CircleAvatar(
-              radius: 52,
-            ),
-            SizedBox(
-              width: 16,
-            ),
-            Column(
-              children: [
-                Row(
-                  children: [
-                    Text("Dr. Dream W"),
-                    Icon(
-                      Icons.star,
-                      color: Colors.orangeAccent,
-                    ),
-                    Text("4.9(1734)")
-                  ],
-                ),
-                Row(
-                  children: [
-                    Text("n years of experience"),
-                    Text("Walker Hospital"),
-                  ],
-                )
-              ],
-            )
-          ],
+        return Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Row(
+            children: [
+              CircleAvatar(
+                radius: 46,
+              ),
+              SizedBox(
+                width: 16,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Text("Dr. Dream W"),
+                      Icon(
+                        Icons.star,
+                        color: Colors.orangeAccent,
+                      ),
+                      Text("4.9(1734)")
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Text("n years of experience"),
+                      Text("Walker Hospital"),
+                    ],
+                  )
+                ],
+              )
+            ],
+          ),
         );
       }),
     );
