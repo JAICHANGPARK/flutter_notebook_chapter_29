@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_29/ep1459_doctor_appointment_app/view/doctor_list_page.dart';
 
 class DoctorAppointmentHomePage extends StatefulWidget {
   const DoctorAppointmentHomePage({Key? key}) : super(key: key);
@@ -201,34 +202,45 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
-                          return Padding(
-                            padding: const EdgeInsets.only(right: 16),
-                            child: Column(
-                              children: [
-                                Expanded(
-                                  child: Container(
-                                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                                    decoration: BoxDecoration(
-                                        border: Border.all(color: Colors.blue, width: 1.5),
-                                        borderRadius: BorderRadius.circular(8)),
-                                    child: const Center(
-                                      child: Text(
-                                        "👂",
-                                        style: TextStyle(fontSize: 24),
+                          return GestureDetector(
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) {
+                                    return DoctorListPage();
+                                  },
+                                ),
+                              );
+                            },
+                            child: Padding(
+                              padding: const EdgeInsets.only(right: 16),
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                                      decoration: BoxDecoration(
+                                          border: Border.all(color: Colors.blue, width: 1.5),
+                                          borderRadius: BorderRadius.circular(8)),
+                                      child: const Center(
+                                        child: Text(
+                                          "👂",
+                                          style: TextStyle(fontSize: 24),
+                                        ),
                                       ),
                                     ),
                                   ),
-                                ),
-                                const SizedBox(
-                                  height: 8,
-                                ),
-                                const Text(
-                                  "Ear",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
+                                  const SizedBox(
+                                    height: 8,
                                   ),
-                                )
-                              ],
+                                  const Text(
+                                    "Ear",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           );
                         },
