@@ -26,42 +26,63 @@ class _DoctorListPageState extends State<DoctorListPage> {
         foregroundColor: const Color.fromRGBO(5, 75, 255, 1),
         elevation: 0,
       ),
-      body: ListView.builder(itemBuilder: (context, index) {
-        return Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Row(
-            children: [
-              CircleAvatar(
-                radius: 46,
-              ),
-              SizedBox(
-                width: 16,
-              ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Text("Dr. Dream W"),
-                      Icon(
-                        Icons.star,
-                        color: Colors.orangeAccent,
-                      ),
-                      Text("4.9(1734)")
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Text("n years of experience"),
-                      Text("Walker Hospital"),
-                    ],
-                  )
-                ],
-              )
-            ],
-          ),
-        );
-      }),
+      backgroundColor: Colors.white,
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        child: ListView.builder(itemBuilder: (context, index) {
+          return Padding(
+            padding: const EdgeInsets.only(bottom: 16),
+            child: Row(
+              children: [
+                CircleAvatar(
+                  radius: 46,
+                ),
+                SizedBox(
+                  width: 16,
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Text("Dr. Dream W"),
+                        Icon(
+                          Icons.star,
+                          color: Colors.orangeAccent,
+                        ),
+                        Text("4.9(1734)")
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Text("n years of experience"),
+                        Text("Walker Hospital"),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Text.rich(
+                          TextSpan(
+                            children: [
+                              TextSpan(
+                                text: "Book"
+                              ),
+                              TextSpan(
+                                text: "today 12:00 pm"
+                              ),
+                            ],
+                          ),
+                        ),
+                        Icon(Icons.arrow_forward_ios)
+                      ],
+                    )
+                  ],
+                )
+              ],
+            ),
+          );
+        }),
+      ),
     );
   }
 }
