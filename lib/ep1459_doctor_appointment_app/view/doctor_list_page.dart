@@ -96,11 +96,11 @@ class _DoctorListPageState extends State<DoctorListPage> {
                                     fontSize: 16
                                   ),
                                 ),
-                                TextSpan(text: "today 12:00 pm"),
+                                TextSpan(text: " today 12:00 pm"),
                               ],
                             ),
                           ),
-                          Icon(Icons.arrow_forward_ios)
+                          Icon(Icons.arrow_forward_ios, size: 18,)
                         ],
                       )
                     ],
