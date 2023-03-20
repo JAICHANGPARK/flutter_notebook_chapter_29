@@ -93,6 +93,7 @@ class _DoctorListPageState extends State<DoctorListPage> {
                                   text: "Book",
                                   style: TextStyle(
                                     color: Color.fromRGBO(5, 75, 255, 1),
+                                    fontSize: 16
                                   ),
                                 ),
                                 TextSpan(text: "today 12:00 pm"),
