@@ -20,9 +20,10 @@ class _DoctorListPageState extends State<DoctorListPage> {
             onPressed: () {},
             icon: Icon(Icons.search),
           ),
-
         ],
         centerTitle: true,
+        backgroundColor: Colors.white,
+        foregroundColor: Color.fromRGBO(5, 75, 255, 1),
       ),
     );
   }
