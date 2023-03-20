@@ -34,7 +34,22 @@ class _DoctorListPageState extends State<DoctorListPage> {
             ),
             Column(
               children: [
-                
+                Row(
+                  children: [
+                    Text("Dr. Dream W"),
+                    Icon(
+                      Icons.star,
+                      color: Colors.orangeAccent,
+                    ),
+                    Text("4.9(1734)")
+                  ],
+                ),
+                Row(
+                  children: [
+                    Text("n years of experience"),
+                    Text("Walker Hospital"),
+                  ],
+                )
               ],
             )
           ],
