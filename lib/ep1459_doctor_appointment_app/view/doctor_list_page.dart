@@ -59,7 +59,12 @@ class _DoctorListPageState extends State<DoctorListPage> {
                             color: Colors.orangeAccent,
                             size: 16,
                           ),
-                          Text("4.9(1734)")
+                          Text(
+                            "4.9(1734)",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          )
                         ],
                       ),
                       Padding(
@@ -91,16 +96,16 @@ class _DoctorListPageState extends State<DoctorListPage> {
                               children: [
                                 TextSpan(
                                   text: "Book",
-                                  style: TextStyle(
-                                    color: Color.fromRGBO(5, 75, 255, 1),
-                                    fontSize: 16
-                                  ),
+                                  style: TextStyle(color: Color.fromRGBO(5, 75, 255, 1), fontSize: 16),
                                 ),
                                 TextSpan(text: " today 12:00 pm"),
                               ],
                             ),
                           ),
-                          Icon(Icons.arrow_forward_ios, size: 18,)
+                          Icon(
+                            Icons.arrow_forward_ios,
+                            size: 18,
+                          )
                         ],
                       )
                     ],
