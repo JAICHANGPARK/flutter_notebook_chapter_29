@@ -12,6 +12,18 @@ class DoctorListPage extends StatefulWidget {
 class _DoctorListPageState extends State<DoctorListPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.search),
+          ),
+
+        ],
+        centerTitle: true,
+      ),
+    );
   }
 }
