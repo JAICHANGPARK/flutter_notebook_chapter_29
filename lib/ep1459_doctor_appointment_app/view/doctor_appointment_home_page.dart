@@ -207,7 +207,9 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                               Navigator.of(context).push(
                                 MaterialPageRoute(
                                   builder: (context) {
-                                    return DoctorListPage();
+                                    return DoctorListPage(
+                                      title: "Ear",
+                                    );
                                   },
                                 ),
                               );
