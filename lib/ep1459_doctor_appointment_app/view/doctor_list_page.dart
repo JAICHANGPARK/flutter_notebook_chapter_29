@@ -32,6 +32,9 @@ class _DoctorListPageState extends State<DoctorListPage> {
             CircleAvatar(
               radius: 52,
             ),
+            SizedBox(
+              width: 16,
+            ),
             Column(
               children: [
                 Row(
