@@ -73,7 +73,14 @@ class _DoctorListPageState extends State<DoctorListPage> {
                                 color: Colors.grey,
                               ),
                             ),
-                            Text("Walker Hospital"),
+                            Spacer(),
+                            Text(
+                              "Walker Hospital",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.grey,
+                              ),
+                            ),
                           ],
                         ),
                       ),
@@ -82,7 +89,12 @@ class _DoctorListPageState extends State<DoctorListPage> {
                           Text.rich(
                             TextSpan(
                               children: [
-                                TextSpan(text: "Book"),
+                                TextSpan(
+                                  text: "Book",
+                                  style: TextStyle(
+                                    color: Color.fromRGBO(5, 75, 255, 1),
+                                  ),
+                                ),
                                 TextSpan(text: "today 12:00 pm"),
                               ],
                             ),
