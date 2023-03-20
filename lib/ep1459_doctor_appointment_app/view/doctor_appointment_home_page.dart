@@ -56,9 +56,9 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-              child: const Text("Notes help doctors better understand the problem"),
+            const Padding(
+              padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+              child: Text("Notes help doctors better understand the problem"),
             ),
             Expanded(
               child: SingleChildScrollView(
@@ -104,7 +104,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                         borderRadius: BorderRadius.circular(8),
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 16,
                                     ),
                                     Expanded(
@@ -132,14 +132,14 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                         shape: BoxShape.circle,
                                         border: Border.all(),
                                       ),
-                                      child: Center(
+                                      child: const Center(
                                         child: Icon(
                                           Icons.chat_outlined,
                                           color: Colors.blue,
                                         ),
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 24,
                                     ),
                                     Container(
@@ -149,14 +149,14 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                         shape: BoxShape.circle,
                                         border: Border.all(),
                                       ),
-                                      child: Center(
+                                      child: const Center(
                                         child: Icon(
                                           Icons.video_camera_back_outlined,
                                           color: Colors.blue,
                                         ),
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 16,
                                     ),
                                   ],
@@ -174,7 +174,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text(
+                              const Text(
                                 "Specialties",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -195,7 +195,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                     ),
                     Container(
                       height: 92,
-                      margin: EdgeInsets.only(
+                      margin: const EdgeInsets.only(
                         left: 16,
                       ),
                       child: ListView.builder(
@@ -207,11 +207,11 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                               children: [
                                 Expanded(
                                   child: Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    padding: const EdgeInsets.symmetric(horizontal: 16),
                                     decoration: BoxDecoration(
                                         border: Border.all(color: Colors.blue, width: 1.5),
                                         borderRadius: BorderRadius.circular(8)),
-                                    child: Center(
+                                    child: const Center(
                                       child: Text(
                                         "👂",
                                         style: TextStyle(fontSize: 24),
@@ -219,10 +219,10 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                     ),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 8,
                                 ),
-                                Text(
+                                const Text(
                                   "Ear",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
@@ -255,7 +255,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                     ),
                     Container(
                       height: 140,
-                      margin: EdgeInsets.only(left: 16),
+                      margin: const EdgeInsets.only(left: 16),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
@@ -272,25 +272,25 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                     ),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 8,
                                 ),
-                                Text(
+                                const Text(
                                   "Dr. Dream",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                Text("GP"),
+                                const Text("GP"),
                                 Row(
                                   children: [
-                                    Icon(
+                                    const Icon(
                                       Icons.star,
                                       size: 14,
                                       color: Colors.orange,
                                     ),
-                                    Text("5.0"),
-                                    Text("(1734 reviews)"),
+                                    const Text("5.0"),
+                                    const Text("(1734 reviews)"),
                                   ],
                                 )
                               ],
