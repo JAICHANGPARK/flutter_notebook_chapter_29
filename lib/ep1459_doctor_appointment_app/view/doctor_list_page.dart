@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class DoctorListPage extends StatefulWidget {
-  const DoctorListPage({Key? key}) : super(key: key);
+  final String title;
+
+  const DoctorListPage({Key? key, required this.title}) : super(key: key);
 
   @override
   State<DoctorListPage> createState() => _DoctorListPageState();
@@ -10,6 +12,6 @@ class DoctorListPage extends StatefulWidget {
 class _DoctorListPageState extends State<DoctorListPage> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold();
+    return Scaffold();
   }
 }
