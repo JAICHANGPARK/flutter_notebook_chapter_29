@@ -283,14 +283,14 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                 ),
                                 const Text("GP"),
                                 Row(
-                                  children: [
-                                    const Icon(
+                                  children: const [
+                                    Icon(
                                       Icons.star,
                                       size: 14,
                                       color: Colors.orange,
                                     ),
-                                    const Text("5.0"),
-                                    const Text("(1734 reviews)"),
+                                    Text("5.0"),
+                                    Text("(1734 reviews)"),
                                   ],
                                 )
                               ],
