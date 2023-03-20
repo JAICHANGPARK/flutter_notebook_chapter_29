@@ -18,13 +18,28 @@ class _DoctorListPageState extends State<DoctorListPage> {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
           ),
         ],
         centerTitle: true,
         backgroundColor: Colors.white,
-        foregroundColor: Color.fromRGBO(5, 75, 255, 1),
+        foregroundColor: const Color.fromRGBO(5, 75, 255, 1),
+        elevation: 0,
       ),
+      body: ListView.builder(itemBuilder: (context, index) {
+        return Row(
+          children: [
+            CircleAvatar(
+              radius: 52,
+            ),
+            Column(
+              children: [
+                
+              ],
+            )
+          ],
+        );
+      }),
     );
   }
 }
