@@ -62,11 +62,20 @@ class _DoctorListPageState extends State<DoctorListPage> {
                           Text("4.9(1734)")
                         ],
                       ),
-                      Row(
-                        children: const [
-                          Text("n years of experience"),
-                          Text("Walker Hospital"),
-                        ],
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 8),
+                        child: Row(
+                          children: const [
+                            Text(
+                              "n years of experience",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.grey,
+                              ),
+                            ),
+                            Text("Walker Hospital"),
+                          ],
+                        ),
                       ),
                       Row(
                         children: const [
