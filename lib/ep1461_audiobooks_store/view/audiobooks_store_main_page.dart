@@ -64,19 +64,23 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
             ),
             Text("Discover"),
             Container(
-              height: 160,
+              height: 200,
               color: Colors.grey,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Container(
+                    width: 120,
                     margin: EdgeInsets.only(right: 8),
                     color: Colors.pink,
                   );
                 },
               ),
             ),
-            Text("Trending")
+            Text("Trending"),
+            Container(
+              height: 120,
+            )
           ],
         ),
       ),
