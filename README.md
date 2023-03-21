@@ -8,7 +8,7 @@ A new Flutter project.
 - by Sigma Software Design
 - https://dribbble.com/shots/20929699-Audiobooks-Store-Mobile-Screens
 
-<img src="https://dribbble.com/shots/20529965-Online-Doctor-s-Appointment-App" width="500px"/>
+<img src="https://cdn.dribbble.com/userupload/5389768/file/original-c8b98e4a3b18adba94d88ffc981bdab5.jpg?compress=1&resize=1600x1200" width="500px"/>
 
 ### EP1459-1461
 
