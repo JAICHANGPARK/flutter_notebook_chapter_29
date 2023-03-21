@@ -15,72 +15,108 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              "Books",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 48,
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: const Text(
+                "Books",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 48,
+                ),
               ),
             ),
-            SizedBox(
-              height: 42,
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.yellow,
-                        borderRadius: BorderRadius.circular(24),
-                      ),
-                      child: const Center(
-                        child: Text("#Non-Fiction"),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.yellow,
-                        borderRadius: BorderRadius.circular(24),
-                      ),
-                      child: const Center(
-                        child: Text("#History"),
+            Padding(
+              padding: const EdgeInsets.only(left: 12),
+              child: SizedBox(
+                height: 42,
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.yellow,
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        child: const Center(
+                          child: Text("#Non-Fiction"),
+                        ),
                       ),
                     ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.yellow,
-                        borderRadius: BorderRadius.circular(24),
-                      ),
-                      child: const Center(
-                        child: Text("#Philosophy"),
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.yellow,
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        child: const Center(
+                          child: Text("#History"),
+                        ),
                       ),
                     ),
-                  )
-                ],
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.yellow,
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        child: const Center(
+                          child: Text("#Philosophy"),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
-            Text("Discover"),
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Text("Discover"),
+            ),
             Container(
               height: 200,
               color: Colors.grey,
+              margin: EdgeInsets.only(left: 12),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Container(
-                    width: 120,
+                    width: 140,
                     margin: EdgeInsets.only(right: 8),
                     color: Colors.pink,
                   );
                 },
               ),
             ),
-            Text("Trending"),
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Text("Trending"),
+            ),
             Container(
-              height: 120,
-            )
+              height: 140,
+              margin: EdgeInsets.symmetric(horizontal: 12),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(),
+              ),
+              child: Stack(
+                children: [],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Text("Continue Listening"),
+            ),
+            Expanded(
+                child: ListView.separated(
+                    itemBuilder: (context, index) {
+                      return Row(
+                        children: [],
+                      );
+                    },
+                    separatorBuilder: (context, _) => Divider(
+                          color: Colors.grey,
+                        ),
+                    itemCount: 10))
           ],
         ),
       ),
