@@ -23,6 +23,9 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
                       color: Colors.yellow,
                       borderRadius: BorderRadius.circular(24),
                     ),
+                    child: Center(
+                      child: Text("#Non-Fiction"),
+                    ),
                   ),
                 )
               ],
