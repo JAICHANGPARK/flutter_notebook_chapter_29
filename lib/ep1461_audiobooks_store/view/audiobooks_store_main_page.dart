@@ -1,0 +1,23 @@
+import 'package:flutter/material.dart';
+
+class AudioBooksStoreMainPage extends StatefulWidget {
+  const AudioBooksStoreMainPage({Key? key}) : super(key: key);
+
+  @override
+  State<AudioBooksStoreMainPage> createState() => _AudioBooksStoreMainPageState();
+}
+
+class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      ),
+    );
+  }
+}
