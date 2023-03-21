@@ -13,8 +13,12 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("Books"),
+            Text(
+              "Books",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 48),
+            ),
             Row(
               children: [
                 Expanded(
@@ -54,6 +58,22 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
             )
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        items: [
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home_filled,
+              ),
+              label: "Home"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.search,
+              ),
+              label: "Home")
+        ],
       ),
     );
   }
