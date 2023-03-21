@@ -14,7 +14,19 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            
+            Text("Books"),
+            Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.yellow,
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
