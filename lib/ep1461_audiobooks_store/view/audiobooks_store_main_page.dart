@@ -72,6 +72,21 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
               icon: Icon(
                 Icons.search,
               ),
+              label: "Home"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.play_circle_outline,
+              ),
+              label: "Home"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.featured_play_list_outlined,
+              ),
+              label: "Home"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person_outlined,
+              ),
               label: "Home")
         ],
       ),
