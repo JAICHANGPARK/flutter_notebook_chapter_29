@@ -17,7 +17,10 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
           children: [
             const Text(
               "Books",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 48),
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 48,
+              ),
             ),
             SizedBox(
               height: 42,
@@ -58,7 +61,22 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
                   )
                 ],
               ),
-            )
+            ),
+            Text("Discover"),
+            Container(
+              height: 160,
+              color: Colors.grey,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {
+                  return Container(
+                    margin: EdgeInsets.only(right: 8),
+                    color: Colors.pink,
+                  );
+                },
+              ),
+            ),
+            Text("Trending")
           ],
         ),
       ),
