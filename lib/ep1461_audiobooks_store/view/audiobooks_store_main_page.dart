@@ -62,6 +62,7 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
       bottomNavigationBar: BottomNavigationBar(
         showSelectedLabels: false,
         showUnselectedLabels: false,
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
               icon: Icon(
