@@ -22,6 +22,9 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
               fontWeight: FontWeight.bold,
             ),
           ),
+          SizedBox(
+            height: 16,
+          ),
           Column(
             children: [
               Container(
