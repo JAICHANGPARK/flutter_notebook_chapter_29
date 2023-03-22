@@ -28,6 +28,12 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
         showSelectedLabels: false,
         showUnselectedLabels: false,
         type: BottomNavigationBarType.fixed,
+        currentIndex: pageIndex,
+        onTap: (idx) {
+          setState(() {
+            pageIndex = idx;
+          });
+        },
         items: const [
           BottomNavigationBarItem(
               icon: Icon(
