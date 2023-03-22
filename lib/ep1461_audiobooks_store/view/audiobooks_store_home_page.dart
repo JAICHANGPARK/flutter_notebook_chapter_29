@@ -13,9 +13,9 @@ class _AudioBooksStoreHomePageState extends State<AudioBooksStoreHomePage> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Padding(
-          padding: const EdgeInsets.all(12.0),
-          child: const Text(
+        const Padding(
+          padding: EdgeInsets.all(12.0),
+          child: Text(
             "Books",
             style: TextStyle(
               fontWeight: FontWeight.bold,
@@ -81,19 +81,19 @@ class _AudioBooksStoreHomePageState extends State<AudioBooksStoreHomePage> {
             ),
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.all(12.0),
+        const Padding(
+          padding: EdgeInsets.all(12.0),
           child: Text("Discover"),
         ),
         Container(
           height: 200,
-          margin: EdgeInsets.only(left: 12),
+          margin: const EdgeInsets.only(left: 12),
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
               return Container(
                 width: 140,
-                margin: EdgeInsets.only(right: 8),
+                margin: const EdgeInsets.only(right: 8),
                 decoration: BoxDecoration(
                   color: Colors.pink,
                   borderRadius: BorderRadius.circular(8),
@@ -102,13 +102,13 @@ class _AudioBooksStoreHomePageState extends State<AudioBooksStoreHomePage> {
             },
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.all(12.0),
+        const Padding(
+          padding: EdgeInsets.all(12.0),
           child: Text("Trending"),
         ),
         Container(
           height: 140,
-          margin: EdgeInsets.symmetric(horizontal: 12),
+          margin: const EdgeInsets.symmetric(horizontal: 12),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),
             border: Border.all(),
@@ -123,28 +123,28 @@ class _AudioBooksStoreHomePageState extends State<AudioBooksStoreHomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       "Fight Club",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
                       ),
                     ),
-                    Text("Now reading 1,920"),
-                    Spacer(),
-                    Text("44k"),
-                    Text("Reviews"),
+                    const Text("Now reading 1,920"),
+                    const Spacer(),
+                    const Text("44k"),
+                    const Text("Reviews"),
                   ],
                 ),
               ),
             ],
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.all(12.0),
+        const Padding(
+          padding: EdgeInsets.all(12.0),
           child: Text("Continue Listening"),
         ),
-        Divider(
+        const Divider(
           color: Colors.grey,
         ),
         Expanded(
@@ -155,20 +155,20 @@ class _AudioBooksStoreHomePageState extends State<AudioBooksStoreHomePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       "Dreamwalker",
                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                     ),
                     Container(
-                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       decoration: BoxDecoration(
                         border: Border.all(),
                         borderRadius: BorderRadius.circular(24),
                       ),
                       child: Row(
                         children: [
-                          Icon(Icons.play_circle_outline),
-                          Text(
+                          const Icon(Icons.play_circle_outline),
+                          const Text(
                             "24:02",
                             style: TextStyle(
                               fontSize: 20,
@@ -181,7 +181,7 @@ class _AudioBooksStoreHomePageState extends State<AudioBooksStoreHomePage> {
                 ),
               );
             },
-            separatorBuilder: (context, _) => Divider(
+            separatorBuilder: (context, _) => const Divider(
               color: Colors.grey,
             ),
             itemCount: 10,
