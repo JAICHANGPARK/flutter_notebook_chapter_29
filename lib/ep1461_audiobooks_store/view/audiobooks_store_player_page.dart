@@ -42,12 +42,31 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: IconButton(onPressed: () {}, icon: Icon(Icons.one_x_mobiledata),
-                      iconSize: 32,),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.one_x_mobiledata),
+                      iconSize: 32,
+                    ),
                   ),
-                  IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz),   iconSize: 32,),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.more_horiz),
+                    iconSize: 32,
+                  ),
                 ],
-              )
+              ),
+              Row(
+                children: [
+                  Column(
+                    children: [
+                      Text("Fight Club"),
+                      Text("Dreamwalker"),
+                    ],
+                  ),
+                  IconButton(onPressed: (){}, icon: icon)
+                ],
+              ),
+
             ],
           ),
         ],
