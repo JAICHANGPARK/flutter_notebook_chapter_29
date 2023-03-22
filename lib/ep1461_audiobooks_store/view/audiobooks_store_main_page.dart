@@ -146,32 +146,44 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
               padding: const EdgeInsets.all(12.0),
               child: Text("Continue Listening"),
             ),
+            Divider(
+              color: Colors.grey,
+            ),
             Expanded(
               child: ListView.separated(
                 itemBuilder: (context, index) {
-                  return Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text("Dreamwalker"),
-                      Container(
-                        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                        decoration: BoxDecoration(
-                          border: Border.all(),
-                          borderRadius: BorderRadius.circular(24),
+                  return Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Dreamwalker",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20
+                          ),
                         ),
-                        child: Row(
-                          children: [
-                            Icon(Icons.play_circle_outline),
-                            Text(
-                              "24:02",
-                              style: TextStyle(
-                                fontSize: 20,
+                        Container(
+                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          decoration: BoxDecoration(
+                            border: Border.all(),
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          child: Row(
+                            children: [
+                              Icon(Icons.play_circle_outline),
+                              Text(
+                                "24:02",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                ),
                               ),
-                            ),
-                          ],
-                        ),
-                      )
-                    ],
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
                   );
                 },
                 separatorBuilder: (context, _) => Divider(
