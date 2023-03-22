@@ -38,9 +38,12 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
                           borderRadius: BorderRadius.circular(24),
                         ),
                         child: const Center(
-                          child: Text("#Non-Fiction", style: TextStyle(
-                            fontSize: 20,
-                          ),),
+                          child: Text(
+                            "#Non-Fiction",
+                            style: TextStyle(
+                              fontSize: 20,
+                            ),
+                          ),
                         ),
                       ),
                     ),
@@ -51,9 +54,12 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
                           borderRadius: BorderRadius.circular(24),
                         ),
                         child: const Center(
-                          child: Text("#History", style: TextStyle(
-                            fontSize: 20,
-                          ),),
+                          child: Text(
+                            "#History",
+                            style: TextStyle(
+                              fontSize: 20,
+                            ),
+                          ),
                         ),
                       ),
                     ),
@@ -64,9 +70,12 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
                           borderRadius: BorderRadius.circular(24),
                         ),
                         child: const Center(
-                          child: Text("#Philosophy", style: TextStyle(
-                            fontSize: 20,
-                          ),),
+                          child: Text(
+                            "#Philosophy",
+                            style: TextStyle(
+                              fontSize: 20,
+                            ),
+                          ),
                         ),
                       ),
                     )
@@ -88,7 +97,11 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
                   return Container(
                     width: 140,
                     margin: EdgeInsets.only(right: 8),
-                    color: Colors.pink,
+
+                    decoration: BoxDecoration(
+                      color: Colors.pink,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
                   );
                 },
               ),
