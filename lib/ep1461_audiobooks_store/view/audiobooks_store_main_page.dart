@@ -89,7 +89,6 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
             ),
             Container(
               height: 200,
-              color: Colors.grey,
               margin: EdgeInsets.only(left: 12),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
