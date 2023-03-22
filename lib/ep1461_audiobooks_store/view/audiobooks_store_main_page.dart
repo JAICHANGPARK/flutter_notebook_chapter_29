@@ -150,7 +150,23 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
               child: ListView.separated(
                 itemBuilder: (context, index) {
                   return Row(
-                    children: [],
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Dreamwalker"),
+                      Container(
+                        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                        decoration: BoxDecoration(
+                          border: Border.all(),
+                          borderRadius: BorderRadius.circular(24)
+                        ),
+                        child: Row(
+                          children: [
+                            Icon(Icons.play_circle_outline),
+                            Text("24:02"),
+                          ],
+                        ),
+                      )
+                    ],
                   );
                 },
                 separatorBuilder: (context, _) => Divider(
