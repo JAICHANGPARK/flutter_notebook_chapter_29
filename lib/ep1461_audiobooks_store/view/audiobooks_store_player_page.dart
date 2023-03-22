@@ -10,10 +10,34 @@ class AudiobooksStorePlayerPage extends StatefulWidget {
 class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-
-      ],
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            "Player",
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          Column(
+            children: [
+              Container(
+                height: 300,
+                color: Colors.blue,
+              ),
+              Row(
+                children: [
+                  IconButton(onPressed: () {}, icon: Icon(Icons.bookmark_border)),
+                  IconButton(onPressed: (){}, icon: Icon(Icons.one_x_mobiledata))
+                ],
+              )
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
