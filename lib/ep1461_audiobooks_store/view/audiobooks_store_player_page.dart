@@ -35,9 +35,17 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  IconButton(onPressed: () {}, icon: Icon(Icons.bookmark_border)),
-                  IconButton(onPressed: () {}, icon: Icon(Icons.one_x_mobiledata)),
-                  IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz)),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.bookmark_border),
+                    iconSize: 32,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: IconButton(onPressed: () {}, icon: Icon(Icons.one_x_mobiledata),
+                      iconSize: 32,),
+                  ),
+                  IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz),   iconSize: 32,),
                 ],
               )
             ],
