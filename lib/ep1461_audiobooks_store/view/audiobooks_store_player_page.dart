@@ -65,7 +65,10 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                     children: [
                       Text(
                         "Fight Club",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 28,
+                        ),
                       ),
                       Text("Dreamwalker"),
                     ],
