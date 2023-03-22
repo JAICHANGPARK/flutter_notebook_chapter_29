@@ -25,13 +25,16 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
           Column(
             children: [
               Container(
-                height: 300,
+                height: 240,
+                width: 200,
                 color: Colors.blue,
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   IconButton(onPressed: () {}, icon: Icon(Icons.bookmark_border)),
-                  IconButton(onPressed: (){}, icon: Icon(Icons.one_x_mobiledata))
+                  IconButton(onPressed: () {}, icon: Icon(Icons.one_x_mobiledata)),
+                  IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz)),
                 ],
               )
             ],
