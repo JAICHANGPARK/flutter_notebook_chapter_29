@@ -38,7 +38,9 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
                           borderRadius: BorderRadius.circular(24),
                         ),
                         child: const Center(
-                          child: Text("#Non-Fiction"),
+                          child: Text("#Non-Fiction", style: TextStyle(
+                            fontSize: 20,
+                          ),),
                         ),
                       ),
                     ),
@@ -49,7 +51,9 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
                           borderRadius: BorderRadius.circular(24),
                         ),
                         child: const Center(
-                          child: Text("#History"),
+                          child: Text("#History", style: TextStyle(
+                            fontSize: 20,
+                          ),),
                         ),
                       ),
                     ),
@@ -60,7 +64,9 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
                           borderRadius: BorderRadius.circular(24),
                         ),
                         child: const Center(
-                          child: Text("#Philosophy"),
+                          child: Text("#Philosophy", style: TextStyle(
+                            fontSize: 20,
+                          ),),
                         ),
                       ),
                     )
