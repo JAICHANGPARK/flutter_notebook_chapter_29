@@ -55,18 +55,30 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                   ),
                 ],
               ),
+              SizedBox(
+                height: 16,
+              ),
               Row(
                 children: [
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Fight Club"),
+                      Text(
+                        "Fight Club",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
+                      ),
                       Text("Dreamwalker"),
                     ],
                   ),
-                  IconButton(onPressed: (){}, icon: icon)
+                  Spacer(),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.chat_bubble_outline,
+                    ),
+                  )
                 ],
               ),
-
             ],
           ),
         ],
