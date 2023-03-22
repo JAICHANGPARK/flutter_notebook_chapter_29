@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_29/ep1461_audiobooks_store/view/audiobooks_store_home_page.dart';
+import 'package:flutter_notebook_chapter_29/ep1461_audiobooks_store/view/audiobooks_store_player_page.dart';
 
 class AudioBooksStoreMainPage extends StatefulWidget {
   const AudioBooksStoreMainPage({Key? key}) : super(key: key);
@@ -17,7 +19,8 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
         child: IndexedStack(
           index: pageIndex,
           children: [
-
+            AudioBooksStoreHomePage(),
+            AudiobooksStorePlayerPage(),
           ],
         ),
       ),
