@@ -18,7 +18,7 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
       body: SafeArea(
         child: IndexedStack(
           index: pageIndex,
-          children: [
+          children: const [
             AudioBooksStoreHomePage(),
             AudiobooksStorePlayerPage(),
           ],
