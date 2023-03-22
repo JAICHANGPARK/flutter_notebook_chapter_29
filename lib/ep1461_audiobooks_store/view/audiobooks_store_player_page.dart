@@ -10,6 +10,10 @@ class AudiobooksStorePlayerPage extends StatefulWidget {
 class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Column(
+      children: [
+
+      ],
+    );
   }
 }
