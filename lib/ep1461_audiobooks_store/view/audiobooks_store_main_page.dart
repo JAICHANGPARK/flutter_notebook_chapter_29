@@ -50,7 +50,7 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Colors.yellow,
+                          color: Colors.tealAccent,
                           borderRadius: BorderRadius.circular(24),
                         ),
                         child: const Center(
@@ -66,7 +66,7 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Colors.yellow,
+                          color: Colors.pinkAccent,
                           borderRadius: BorderRadius.circular(24),
                         ),
                         child: const Center(
