@@ -107,16 +107,18 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
               child: Text("Continue Listening"),
             ),
             Expanded(
-                child: ListView.separated(
-                    itemBuilder: (context, index) {
-                      return Row(
-                        children: [],
-                      );
-                    },
-                    separatorBuilder: (context, _) => Divider(
-                          color: Colors.grey,
-                        ),
-                    itemCount: 10))
+              child: ListView.separated(
+                itemBuilder: (context, index) {
+                  return Row(
+                    children: [],
+                  );
+                },
+                separatorBuilder: (context, _) => Divider(
+                  color: Colors.grey,
+                ),
+                itemCount: 10,
+              ),
+            )
           ],
         ),
       ),
