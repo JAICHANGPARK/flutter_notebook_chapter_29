@@ -97,7 +97,6 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
                   return Container(
                     width: 140,
                     margin: EdgeInsets.only(right: 8),
-
                     decoration: BoxDecoration(
                       color: Colors.pink,
                       borderRadius: BorderRadius.circular(8),
@@ -118,7 +117,30 @@ class _AudioBooksStoreMainPageState extends State<AudioBooksStoreMainPage> {
                 border: Border.all(),
               ),
               child: Stack(
-                children: [],
+                children: [
+                  Positioned(
+                    left: 16,
+                    top: 16,
+                    bottom: 8,
+                    right: 0,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Fight Club",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
+                        ),
+                        Text("Now reading 1,920"),
+                        Spacer(),
+                        Text("44k"),
+                        Text("Reviews"),
+                      ],
+                    ),
+                  ),
+                ],
               ),
             ),
             Padding(
