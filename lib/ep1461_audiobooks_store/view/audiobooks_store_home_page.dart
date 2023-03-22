@@ -122,18 +122,18 @@ class _AudioBooksStoreHomePageState extends State<AudioBooksStoreHomePage> {
                 right: 0,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text(
+                  children: const [
+                    Text(
                       "Fight Club",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
                       ),
                     ),
-                    const Text("Now reading 1,920"),
-                    const Spacer(),
-                    const Text("44k"),
-                    const Text("Reviews"),
+                    Text("Now reading 1,920"),
+                    Spacer(),
+                    Text("44k"),
+                    Text("Reviews"),
                   ],
                 ),
               ),
@@ -166,9 +166,9 @@ class _AudioBooksStoreHomePageState extends State<AudioBooksStoreHomePage> {
                         borderRadius: BorderRadius.circular(24),
                       ),
                       child: Row(
-                        children: [
-                          const Icon(Icons.play_circle_outline),
-                          const Text(
+                        children: const [
+                          Icon(Icons.play_circle_outline),
+                          Text(
                             "24:02",
                             style: TextStyle(
                               fontSize: 20,
