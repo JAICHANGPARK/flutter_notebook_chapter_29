@@ -29,7 +29,7 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
             children: [
               Container(
                 height: 240,
-                width: 200,
+                width: 180,
                 color: Colors.blue,
               ),
               Row(
