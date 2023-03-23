@@ -163,12 +163,15 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                   ),
                   Expanded(
                     child: Slider(
-                        value: soundValue,
-                        onChanged: (d) {
-                          setState(() {
-                            soundValue = d;
-                          });
-                        }),
+                      value: soundValue,
+                      activeColor: Colors.grey,
+                      secondaryActiveColor: Colors.grey[400],
+                      onChanged: (d) {
+                        setState(() {
+                          soundValue = d;
+                        });
+                      },
+                    ),
                   ),
                   Icon(
                     Icons.volume_up,
