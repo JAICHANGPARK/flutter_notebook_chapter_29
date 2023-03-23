@@ -128,7 +128,7 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                         child: IconButton(
                           onPressed: () {},
                           icon: Icon(Icons.pause),
-                          iconSize: 42,
+                          iconSize: 58,
                         ),
                       ),
                     ),
