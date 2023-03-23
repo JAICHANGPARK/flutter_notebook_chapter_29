@@ -32,11 +32,7 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
               Container(
                 height: 240,
                 width: 180,
-
-                decoration: BoxDecoration(
-                    color: Colors.blue,
-                  borderRadius: BorderRadius.circular(8)
-                ),
+                decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -52,13 +48,15 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                     child: IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.one_x_mobiledata),
-                      iconSize: 32, color: Colors.grey,
+                      iconSize: 32,
+                      color: Colors.grey,
                     ),
                   ),
                   IconButton(
                     onPressed: () {},
                     icon: Icon(Icons.more_horiz),
-                    iconSize: 32, color: Colors.grey,
+                    iconSize: 32,
+                    color: Colors.grey,
                   ),
                 ],
               ),
@@ -69,7 +67,7 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
+                    children: const [
                       Text(
                         "Fight Club",
                         style: TextStyle(
@@ -105,7 +103,7 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                     });
                   }),
               Row(
-                children: [
+                children: const [
                   Text("01:00:03"),
                   Expanded(
                     child: Center(
@@ -113,6 +111,13 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                     ),
                   ),
                   Text("5:00:37"),
+                ],
+              ),
+              Row(
+                children: [
+                  IconButton(onPressed: (){}, icon: Icon(Icons.skip_previous)),
+                  IconButton(onPressed: (){}, icon: Icon(Icons.play))
+                  IconButton(onPressed: (){}, icon: Icon(Icons.skip_next)),
                 ],
               )
             ],
