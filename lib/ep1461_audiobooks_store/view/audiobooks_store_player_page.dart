@@ -150,13 +150,23 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                   ],
                 ),
               ),
-              Slider(
-                  value: sliderValue,
-                  onChanged: (d) {
-                    setState(() {
-                      sliderValue = d;
-                    });
-                  }),
+              Row(
+                children: [
+                  Icon(Icons.volume_mute_outlined,),
+                  Expanded(
+                    child: Slider(
+                        value: soundValue,
+                        onChanged: (d) {
+                          setState(() {
+                            soundValue = d;
+                          });
+                        }),
+                  ),
+                  Icon(
+                    Icons.volume_up,
+                  ),
+                ],
+              ),
             ],
           ),
         ],
