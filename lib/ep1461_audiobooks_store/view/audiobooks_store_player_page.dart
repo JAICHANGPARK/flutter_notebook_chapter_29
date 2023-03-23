@@ -8,6 +8,8 @@ class AudiobooksStorePlayerPage extends StatefulWidget {
 }
 
 class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
+  double sliderValue = 0.0;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -82,6 +84,13 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                   )
                 ],
               ),
+              Slider(
+                  value: sliderValue,
+                  onChanged: (d) {
+                    setState(() {
+                      sliderValue = d;
+                    });
+                  })
             ],
           ),
         ],
