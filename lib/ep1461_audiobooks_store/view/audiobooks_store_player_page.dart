@@ -9,6 +9,7 @@ class AudiobooksStorePlayerPage extends StatefulWidget {
 
 class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
   double sliderValue = 0.0;
+  double soundValue = 0.0;
 
   @override
   Widget build(BuildContext context) {
@@ -122,7 +123,11 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                       icon: Icon(Icons.skip_previous),
                       color: Colors.grey,
                     ),
-                    IconButton(onPressed: () {}, icon: Icon(Icons.replay_10)),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.replay_10),
+                      iconSize: 32,
+                    ),
                     Expanded(
                       child: Center(
                         child: IconButton(
@@ -132,7 +137,11 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                         ),
                       ),
                     ),
-                    IconButton(onPressed: () {}, icon: Icon(Icons.forward_10)),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.forward_10),
+                      iconSize: 32,
+                    ),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.skip_next),
@@ -140,7 +149,14 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                     ),
                   ],
                 ),
-              )
+              ),
+              Slider(
+                  value: sliderValue,
+                  onChanged: (d) {
+                    setState(() {
+                      sliderValue = d;
+                    });
+                  }),
             ],
           ),
         ],
