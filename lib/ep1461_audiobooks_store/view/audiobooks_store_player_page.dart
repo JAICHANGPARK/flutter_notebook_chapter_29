@@ -33,33 +33,39 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
               Container(
                 height: 240,
                 width: 180,
-                decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(8),
+                ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.bookmark_border),
-                    iconSize: 32,
-                    color: Colors.grey,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: IconButton(
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.one_x_mobiledata),
+                      icon: Icon(Icons.bookmark_border),
                       iconSize: 32,
                       color: Colors.grey,
                     ),
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.more_horiz),
-                    iconSize: 32,
-                    color: Colors.grey,
-                  ),
-                ],
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.one_x_mobiledata),
+                        iconSize: 32,
+                        color: Colors.grey,
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.more_horiz),
+                      iconSize: 32,
+                      color: Colors.grey,
+                    ),
+                  ],
+                ),
               ),
               SizedBox(
                 height: 16,
@@ -152,7 +158,9 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
               ),
               Row(
                 children: [
-                  Icon(Icons.volume_mute_outlined,),
+                  Icon(
+                    Icons.volume_mute_outlined,
+                  ),
                   Expanded(
                     child: Slider(
                         value: soundValue,
