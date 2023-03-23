@@ -32,7 +32,11 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
               Container(
                 height: 240,
                 width: 180,
-                color: Colors.blue,
+
+                decoration: BoxDecoration(
+                    color: Colors.blue,
+                  borderRadius: BorderRadius.circular(8)
+                ),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -41,19 +45,20 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                     onPressed: () {},
                     icon: Icon(Icons.bookmark_border),
                     iconSize: 32,
+                    color: Colors.grey,
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.one_x_mobiledata),
-                      iconSize: 32,
+                      iconSize: 32, color: Colors.grey,
                     ),
                   ),
                   IconButton(
                     onPressed: () {},
                     icon: Icon(Icons.more_horiz),
-                    iconSize: 32,
+                    iconSize: 32, color: Colors.grey,
                   ),
                 ],
               ),
