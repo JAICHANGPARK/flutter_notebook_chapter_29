@@ -114,7 +114,7 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 24),
+                padding: const EdgeInsets.symmetric(vertical: 32),
                 child: Row(
                   children: [
                     IconButton(onPressed: () {}, icon: Icon(Icons.skip_previous)),
@@ -124,6 +124,7 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                         child: IconButton(
                           onPressed: () {},
                           icon: Icon(Icons.pause),
+                          iconSize: 42,
                         ),
                       ),
                     ),
