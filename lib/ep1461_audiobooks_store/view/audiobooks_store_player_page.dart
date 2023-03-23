@@ -113,21 +113,24 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                   Text("5:00:37"),
                 ],
               ),
-              Row(
-                children: [
-                  IconButton(onPressed: () {}, icon: Icon(Icons.skip_previous)),
-                  IconButton(onPressed: () {}, icon: Icon(Icons.replay_10)),
-                  Expanded(
-                    child: Center(
-                      child: IconButton(
-                        onPressed: () {},
-                        icon: Icon(Icons.pause),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 24),
+                child: Row(
+                  children: [
+                    IconButton(onPressed: () {}, icon: Icon(Icons.skip_previous)),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.replay_10)),
+                    Expanded(
+                      child: Center(
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.pause),
+                        ),
                       ),
                     ),
-                  ),
-                  IconButton(onPressed: () {}, icon: Icon(Icons.replay_10)),
-                  IconButton(onPressed: () {}, icon: Icon(Icons.skip_next)),
-                ],
+                    IconButton(onPressed: () {}, icon: Icon(Icons.replay_10)),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.skip_next)),
+                  ],
+                ),
               )
             ],
           ),
