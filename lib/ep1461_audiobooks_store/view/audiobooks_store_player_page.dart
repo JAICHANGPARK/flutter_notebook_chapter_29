@@ -117,6 +117,15 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                 children: [
                   IconButton(onPressed: () {}, icon: Icon(Icons.skip_previous)),
                   IconButton(onPressed: () {}, icon: Icon(Icons.replay_10)),
+                  Expanded(
+                    child: Center(
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.pause),
+                      ),
+                    ),
+                  ),
+                  IconButton(onPressed: () {}, icon: Icon(Icons.replay_10)),
                   IconButton(onPressed: () {}, icon: Icon(Icons.skip_next)),
                 ],
               )
