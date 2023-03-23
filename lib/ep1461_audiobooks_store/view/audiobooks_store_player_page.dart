@@ -165,6 +165,7 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                     child: Slider(
                       value: soundValue,
                       activeColor: Colors.grey,
+                      inactiveColor: Colors.grey[400],
                       secondaryActiveColor: Colors.grey[400],
                       onChanged: (d) {
                         setState(() {
