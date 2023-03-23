@@ -90,7 +90,18 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                     setState(() {
                       sliderValue = d;
                     });
-                  })
+                  }),
+              Row(
+                children: [
+                  Text("01:00:03"),
+                  Expanded(
+                    child: Center(
+                      child: Text("Chapter 6/29"),
+                    ),
+                  ),
+                  Text("5:00:37"),
+                ],
+              )
             ],
           ),
         ],
