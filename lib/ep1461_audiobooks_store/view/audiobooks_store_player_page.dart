@@ -68,11 +68,16 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                       Text(
                         "Fight Club",
                         style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 28,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 30,
                         ),
                       ),
-                      Text("Dreamwalker"),
+                      Text(
+                        "Dreamwalker",
+                        style: TextStyle(
+                          fontSize: 16,
+                        ),
+                      ),
                     ],
                   ),
                   Spacer(),
@@ -83,6 +88,9 @@ class _AudiobooksStorePlayerPageState extends State<AudiobooksStorePlayerPage> {
                     ),
                   )
                 ],
+              ),
+              SizedBox(
+                height: 16,
               ),
               Slider(
                   value: sliderValue,
