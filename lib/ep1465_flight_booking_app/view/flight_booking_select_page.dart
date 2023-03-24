@@ -180,7 +180,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                     ),
                   ),
                   Expanded(
-                    flex: 10,
+                    flex: 12,
                     child: Container(
                       color: Colors.white,
                     ),
