@@ -38,7 +38,46 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                 icon: Icon(Icons.more_horiz),
                               )
                             ],
-                          )
+                          ),
+                          Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Text(
+                                    "SUB",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Surabaya",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                  Text(
+                                    "16:25",
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Expanded(
+                                  child: Column(
+                                children: [],
+                              )),
+                              Column(
+                                children: [
+                                  Text("SUB"),
+                                  Text("Surabaya"),
+                                  Text("16:25"),
+                                ],
+                              ),
+                            ],
+                          ),
                         ],
                       ),
                     ),
