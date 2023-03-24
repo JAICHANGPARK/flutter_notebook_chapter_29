@@ -22,6 +22,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
               child: Column(
                 children: [
                   Expanded(
+                    flex: 9,
                     child: Container(
                       color: Color.fromRGBO(13, 23, 44, 1),
                       child: Column(
@@ -46,7 +47,6 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                               child: Column(
                                 children: [
                                   Expanded(
-                                    flex: 5,
                                     child: Row(
                                       children: [
                                         Column(
@@ -125,7 +125,6 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                     height: 42,
                                   ),
                                   Expanded(
-                                    flex: 10,
                                       child: Column(
                                     children: [
                                       Expanded(
@@ -181,6 +180,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                     ),
                   ),
                   Expanded(
+                    flex: 10,
                     child: Container(
                       color: Colors.white,
                     ),
