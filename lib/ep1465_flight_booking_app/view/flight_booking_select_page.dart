@@ -42,6 +42,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                           Row(
                             children: [
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
                                     "SUB",
