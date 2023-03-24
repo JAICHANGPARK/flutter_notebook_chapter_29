@@ -39,44 +39,72 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                               )
                             ],
                           ),
-                          Row(
+                          Column(
                             children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "SUB",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                  Text(
-                                    "Surabaya",
-                                    style: TextStyle(
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                  Text(
-                                    "16:25",
-                                    style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                ],
-                              ),
                               Expanded(
-                                  child: Column(
-                                children: [],
-                              )),
-                              Column(
-                                children: [
-                                  Text("SUB"),
-                                  Text("Surabaya"),
-                                  Text("16:25"),
-                                ],
+                                child: Row(
+                                  children: [
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: const [
+                                        Text(
+                                          "SUB",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        Text(
+                                          "Surabaya",
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                          ),
+                                        ),
+                                        Text(
+                                          "16:25",
+                                          style: TextStyle(
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Expanded(
+                                        child: Column(
+                                      children: const [],
+                                    )),
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.end,
+                                      children: const [
+                                        Text(
+                                          "DPS",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        Text(
+                                          "Denpasar",
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                          ),
+                                        ),
+                                        Text(
+                                          "18 : 20",
+                                          style: TextStyle(
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
                               ),
+                              Divider(
+                                color: Colors.grey,
+                              ),
+                              Expanded(child: Placeholder()),
                             ],
                           ),
                         ],
