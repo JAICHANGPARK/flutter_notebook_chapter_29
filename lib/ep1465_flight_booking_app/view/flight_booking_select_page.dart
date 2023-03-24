@@ -40,6 +40,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                             ],
                           ),
                           Expanded(
+                            flex: 6,
                             child: Padding(
                               padding: const EdgeInsets.all(24.0),
                               child: Column(
@@ -122,6 +123,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                     color: Colors.grey,
                                   ),
                                   Expanded(
+                                    flex: 7,
                                       child: Column(
                                     children: [
                                       Expanded(
