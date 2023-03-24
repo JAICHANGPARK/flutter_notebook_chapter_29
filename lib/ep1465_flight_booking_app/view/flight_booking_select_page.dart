@@ -134,11 +134,21 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                 children: [
-                                                  Text("Flight No."),
+                                                  Text(
+                                                    "Flight No.",
+                                                    style: TextStyle(
+                                                      color: Colors.grey,
+                                                    ),
+                                                  ),
                                                   SizedBox(
                                                     height: 12,
                                                   ),
-                                                  Text("JT - 910"),
+                                                  Text(
+                                                    "JT - 910",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
                                                 ],
                                               ),
                                             ),
@@ -150,11 +160,21 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                 crossAxisAlignment: CrossAxisAlignment.center,
                                                 children: [
-                                                  Text("Departure."),
+                                                  Text(
+                                                    "Departure.",
+                                                    style: TextStyle(
+                                                      color: Colors.grey,
+                                                    ),
+                                                  ),
                                                   SizedBox(
                                                     height: 12,
                                                   ),
-                                                  Text("16 : 25"),
+                                                  Text(
+                                                    "16 : 25",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
                                                 ],
                                               ),
                                             ),
@@ -166,11 +186,21 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                                 crossAxisAlignment: CrossAxisAlignment.end,
                                                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                 children: [
-                                                  Text("Arrival"),
+                                                  Text(
+                                                    "Arrival",
+                                                    style: TextStyle(
+                                                      color: Colors.grey,
+                                                    ),
+                                                  ),
                                                   SizedBox(
                                                     height: 12,
                                                   ),
-                                                  Text("18 : 20"),
+                                                  Text(
+                                                    "18 : 20",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
                                                 ],
                                               ),
                                             ),
