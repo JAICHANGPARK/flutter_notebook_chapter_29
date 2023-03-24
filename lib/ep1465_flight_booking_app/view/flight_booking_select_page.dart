@@ -133,7 +133,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                               child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                children: [
+                                                children: const [
                                                   Text(
                                                     "Flight No.",
                                                     style: TextStyle(
@@ -159,7 +159,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                               child: Column(
                                                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                 crossAxisAlignment: CrossAxisAlignment.center,
-                                                children: [
+                                                children: const [
                                                   Text(
                                                     "Departure.",
                                                     style: TextStyle(
@@ -185,7 +185,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                               child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.end,
                                                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                children: [
+                                                children: const [
                                                   Text(
                                                     "Arrival",
                                                     style: TextStyle(
