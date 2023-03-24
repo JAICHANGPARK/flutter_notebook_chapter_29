@@ -13,7 +13,16 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
     return Scaffold(
       body: SafeArea(
         child: Stack(
-          children: [],
+          children: [
+            Positioned(
+              child: Column(
+                children: [
+                  Expanded(child: Placeholder()),
+                  Expanded(child: Placeholder()),
+                ],
+              ),
+            )
+          ],
         ),
       ),
     );
