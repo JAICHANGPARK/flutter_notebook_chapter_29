@@ -10,6 +10,6 @@ class FlightBookingSelectPage extends StatefulWidget {
 class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold();
   }
 }
