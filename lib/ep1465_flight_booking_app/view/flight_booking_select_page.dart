@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class FlightBookingSelectPage extends StatefulWidget {
   const FlightBookingSelectPage({Key? key}) : super(key: key);
 
