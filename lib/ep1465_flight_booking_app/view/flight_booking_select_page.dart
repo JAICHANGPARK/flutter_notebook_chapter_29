@@ -28,6 +28,10 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                         children: [
                           AppBar(
                             backgroundColor: Colors.transparent,
+                            elevation: 0,
+                            centerTitle: true,
+                            foregroundColor: Colors.white,
+                            title: Text("Select Seat"),
                           )
                         ],
                       ),
