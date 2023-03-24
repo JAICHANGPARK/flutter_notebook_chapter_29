@@ -122,25 +122,28 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                     color: Colors.grey,
                                   ),
                                   Expanded(
-                                    child: GridView.count(
-                                      crossAxisCount: 3,
-                                      mainAxisSpacing: 16,
-                                      crossAxisSpacing: 16,
-                                      childAspectRatio: 1.5,
-                                      children: [
-                                        Container(
-                                          color: Colors.blue,
-                                          child: Column(
-                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                            children: [
-                                              Text("Flight No."),
-                                              Text("JT - 910"),
-                                            ],
+                                      child: Column(
+                                    children: [
+                                      Expanded(
+                                          child: Row(
+                                        children: [
+                                          Expanded(
+                                            child: Container(
+                                              color: Colors.blue,
+                                              child: Column(
+                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                children: [
+                                                  Text("Flight No."),
+                                                  Text("JT - 910"),
+                                                ],
+                                              ),
+                                            ),
                                           ),
-                                        )
-                                      ],
-                                    ),
-                                  ),
+                                        ],
+                                      )),
+                                      Expanded(child: Placeholder())
+                                    ],
+                                  )),
                                 ],
                               ),
                             ),
