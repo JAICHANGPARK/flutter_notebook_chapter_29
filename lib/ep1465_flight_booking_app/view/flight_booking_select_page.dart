@@ -32,6 +32,12 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                             centerTitle: true,
                             foregroundColor: Colors.white,
                             title: Text("Select Seat"),
+                            actions: [
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(Icons.more_horiz),
+                              )
+                            ],
                           )
                         ],
                       ),
