@@ -129,7 +129,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                         children: [
                                           Expanded(
                                             child: Container(
-                                              color: Colors.blue,
+                                              // color: Colors.blue,
                                               child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -145,7 +145,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                           ),
                                           Expanded(
                                             child: Container(
-                                              color: Colors.blue,
+                                              // color: Colors.blue,
                                               child: Column(
                                                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -161,7 +161,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                           ),
                                           Expanded(
                                             child: Container(
-                                              color: Colors.blue,
+                                              // color: Colors.blue,
                                               child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.end,
                                                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
