@@ -54,18 +54,21 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                               "SUB",
                                               style: TextStyle(
                                                 color: Colors.white,
+                                                fontSize: 16,
                                               ),
                                             ),
+                                            SizedBox(height: 6,),
                                             Text(
                                               "Surabaya",
                                               style: TextStyle(
                                                 color: Colors.grey,
                                               ),
                                             ),
+                                            SizedBox(height: 16,),
                                             Text(
                                               "16 : 25",
                                               style: TextStyle(
-                                                fontSize: 20,
+                                                fontSize: 24,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.white,
                                               ),
@@ -83,18 +86,21 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                               "DPS",
                                               style: TextStyle(
                                                 color: Colors.white,
+                                                fontSize: 16,
                                               ),
                                             ),
+                                            SizedBox(height: 6,),
                                             Text(
                                               "Denpasar",
                                               style: TextStyle(
                                                 color: Colors.grey,
                                               ),
                                             ),
+                                            SizedBox(height: 16,),
                                             Text(
                                               "18 : 20",
                                               style: TextStyle(
-                                                fontSize: 20,
+                                                fontSize: 24,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.white,
                                               ),
