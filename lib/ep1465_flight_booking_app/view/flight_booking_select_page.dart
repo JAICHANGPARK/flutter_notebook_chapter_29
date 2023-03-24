@@ -17,8 +17,16 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
             Positioned(
               child: Column(
                 children: [
-                  Expanded(child: Placeholder()),
-                  Expanded(child: Placeholder()),
+                  Expanded(
+                    child: Container(
+                      color: Color.fromRGBO(13, 23, 44, 1),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      color: Colors.white,
+                    ),
+                  ),
                 ],
               ),
             )
