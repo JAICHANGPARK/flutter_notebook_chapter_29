@@ -15,11 +15,22 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
         child: Stack(
           children: [
             Positioned(
+              left: 0,
+              right: 0,
+              bottom: 0,
+              top: 0,
               child: Column(
                 children: [
                   Expanded(
                     child: Container(
                       color: Color.fromRGBO(13, 23, 44, 1),
+                      child: Column(
+                        children: [
+                          AppBar(
+                            backgroundColor: Colors.transparent,
+                          )
+                        ],
+                      ),
                     ),
                   ),
                   Expanded(
@@ -29,7 +40,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                   ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
