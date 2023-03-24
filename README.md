@@ -8,7 +8,7 @@ A new Flutter project.
 - by Zakaria for 10am Studio
 - https://dribbble.com/shots/21002232-Flight-Booking-Mobile-App
 
-<img src="https://cdn.dribbble.com/userupload/5389768/file/original-c8b98e4a3b18adba94d88ffc981bdab5.jpg?compress=1&resize=1600x1200" width="500px"/>
+<img src="https://cdn.dribbble.com/userupload/5581362/file/original-2d7a6f6dab7740efc2575fdf5be660c6.png?compress=1&resize=1600x1200" width="500px"/>
 
 ### EP1462-1464
 
