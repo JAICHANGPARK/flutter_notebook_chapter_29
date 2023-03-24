@@ -57,14 +57,18 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                                 fontSize: 16,
                                               ),
                                             ),
-                                            SizedBox(height: 6,),
+                                            SizedBox(
+                                              height: 6,
+                                            ),
                                             Text(
                                               "Surabaya",
                                               style: TextStyle(
                                                 color: Colors.grey,
                                               ),
                                             ),
-                                            SizedBox(height: 16,),
+                                            SizedBox(
+                                              height: 16,
+                                            ),
                                             Text(
                                               "16 : 25",
                                               style: TextStyle(
@@ -89,14 +93,18 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                                 fontSize: 16,
                                               ),
                                             ),
-                                            SizedBox(height: 6,),
+                                            SizedBox(
+                                              height: 6,
+                                            ),
                                             Text(
                                               "Denpasar",
                                               style: TextStyle(
                                                 color: Colors.grey,
                                               ),
                                             ),
-                                            SizedBox(height: 16,),
+                                            SizedBox(
+                                              height: 16,
+                                            ),
                                             Text(
                                               "18 : 20",
                                               style: TextStyle(
@@ -113,7 +121,22 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                   Divider(
                                     color: Colors.grey,
                                   ),
-                                  Expanded(child: Placeholder()),
+                                  Expanded(
+                                    child: GridView.count(
+                                      crossAxisCount: 3,
+                                      children: [
+                                        Container(
+                                          color: Colors.blue,
+                                          child: Column(
+                                            children: [
+                                              Text("Flight No."),
+                                              Text("JT - 910"),
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
