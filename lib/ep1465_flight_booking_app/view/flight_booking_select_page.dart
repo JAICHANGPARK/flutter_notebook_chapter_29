@@ -134,9 +134,11 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                             child: Container(
                                               color: Colors.blue,
                                               child: Column(
-                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                 children: [
                                                   Text("Flight No."),
+                                                  SizedBox(height: 12,),
                                                   Text("JT - 910"),
                                                 ],
                                               ),
@@ -146,10 +148,11 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                             child: Container(
                                               color: Colors.blue,
                                               child: Column(
-                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                 children: [
-                                                  Text("Flight No."),
-                                                  Text("JT - 910"),
+                                                  Text("Departure."),
+                                                  SizedBox(height: 12,),
+                                                  Text("16 : 25"),
                                                 ],
                                               ),
                                             ),
@@ -158,10 +161,12 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                             child: Container(
                                               color: Colors.blue,
                                               child: Column(
-                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+                                                // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                 children: [
-                                                  Text("Flight No."),
-                                                  Text("JT - 910"),
+                                                  Text("Arrival"),
+                                                  SizedBox(height: 12,),
+                                                  Text("18 : 20"),
                                                 ],
                                               ),
                                             ),
