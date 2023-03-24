@@ -139,6 +139,30 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                               ),
                                             ),
                                           ),
+                                          Expanded(
+                                            child: Container(
+                                              color: Colors.blue,
+                                              child: Column(
+                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                children: [
+                                                  Text("Flight No."),
+                                                  Text("JT - 910"),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: Container(
+                                              color: Colors.blue,
+                                              child: Column(
+                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                children: [
+                                                  Text("Flight No."),
+                                                  Text("JT - 910"),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
                                         ],
                                       )),
                                       Expanded(child: Placeholder())
