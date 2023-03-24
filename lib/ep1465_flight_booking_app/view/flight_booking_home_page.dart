@@ -10,6 +10,13 @@ class FlightBookingHomePage extends StatefulWidget {
 class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {  },
+          child: Text("Search"),
+        ),
+      ),
+    );
   }
 }
