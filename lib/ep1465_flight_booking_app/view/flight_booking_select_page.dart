@@ -323,6 +323,44 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                   ),
                                   Text("Available")
                                 ],
+                              ),
+                              Row(
+                                children: [
+                                  Container(
+                                    height: 12,
+                                    width: 12,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(2),
+                                      color: Colors.grey[400],
+                                      border: Border.all(
+                                        color: Colors.grey[400]!,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 4,
+                                  ),
+                                  Text("Booked")
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Container(
+                                    height: 12,
+                                    width: 12,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(2),
+                                      color: Color.fromRGBO(53, 112, 255, 1),
+                                      border: Border.all(
+                                        color: Colors.grey[400]!,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 4,
+                                  ),
+                                  Text("Selected")
+                                ],
                               )
                             ],
                           ),
