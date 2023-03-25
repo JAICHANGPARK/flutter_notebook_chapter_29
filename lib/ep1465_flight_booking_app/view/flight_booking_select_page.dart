@@ -365,7 +365,10 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                               )
                             ],
                           ),
-                          Expanded(child: Placeholder()),
+                          Expanded(child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Placeholder(),
+                          )),
                           Container(
                             padding: EdgeInsets.symmetric(vertical: 20),
                             decoration: BoxDecoration(
