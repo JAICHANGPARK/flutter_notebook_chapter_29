@@ -369,8 +369,16 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                               child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: GridView.builder(
-                              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(),
-                              itemBuilder: (context, index) {},
+                              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                                crossAxisCount: 7,
+                              ),
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(),
+                                  ),
+                                );
+                              },
                             ),
                           )),
                           Container(
