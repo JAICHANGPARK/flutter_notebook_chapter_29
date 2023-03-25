@@ -372,9 +372,18 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                             child: GridView.builder(
                               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                                 crossAxisCount: 7,
+                                crossAxisSpacing: 8,
+                                mainAxisSpacing: 8,
+                                childAspectRatio: 1.1,
                               ),
                               itemCount: flightSeatItems.length,
                               itemBuilder: (context, index) {
+                                final item = flightSeatItems[index];
+                                if(item.seatType == SeatType.aisle){
+                                  return Container(
+
+                                  );
+                                }
                                 return Container(
                                   decoration: BoxDecoration(
                                     border: Border.all(),
