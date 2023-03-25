@@ -301,6 +301,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                     flex: 12,
                     child: Container(
                       color: Colors.white,
+                      padding: EdgeInsets.all(16),
                       child: Column(
                         children: [
                           Row(
@@ -324,6 +325,12 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                 ],
                               )
                             ],
+                          ),
+                          Expanded(child: Placeholder()),
+                          Container(
+                            child: Center(
+                              child: Text("Book A Flight"),
+                            ),
                           )
                         ],
                       ),
