@@ -221,7 +221,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                                     // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                     children: const [
                                                       Text(
-                                                        "Flight No.",
+                                                        "Flight Date.",
                                                         style: TextStyle(
                                                           color: Colors.grey,
                                                         ),
@@ -230,7 +230,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                                         height: 12,
                                                       ),
                                                       Text(
-                                                        "JT - 910",
+                                                        "March 18",
                                                         style: TextStyle(
                                                           color: Colors.white,
                                                         ),
@@ -247,7 +247,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                                     crossAxisAlignment: CrossAxisAlignment.center,
                                                     children: const [
                                                       Text(
-                                                        "Departure.",
+                                                        "Passenger.",
                                                         style: TextStyle(
                                                           color: Colors.grey,
                                                         ),
@@ -256,7 +256,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                                         height: 12,
                                                       ),
                                                       Text(
-                                                        "16 : 25",
+                                                        "2 Adult",
                                                         style: TextStyle(
                                                           color: Colors.white,
                                                         ),
@@ -273,7 +273,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                                     // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                     children: const [
                                                       Text(
-                                                        "Arrival",
+                                                        "Class",
                                                         style: TextStyle(
                                                           color: Colors.grey,
                                                         ),
@@ -282,7 +282,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                                         height: 12,
                                                       ),
                                                       Text(
-                                                        "18 : 20",
+                                                        "Economy",
                                                         style: TextStyle(
                                                           color: Colors.white,
                                                         ),
