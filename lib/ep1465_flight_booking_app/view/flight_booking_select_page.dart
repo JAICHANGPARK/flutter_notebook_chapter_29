@@ -266,29 +266,26 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                                 ),
                                               ),
                                               Expanded(
-                                                child: Container(
-                                                  // color: Colors.blue,
-                                                  child: Column(
-                                                    crossAxisAlignment: CrossAxisAlignment.end,
-                                                    // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                    children: const [
-                                                      Text(
-                                                        "Class",
-                                                        style: TextStyle(
-                                                          color: Colors.grey,
-                                                        ),
+                                                child: Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.end,
+                                                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                  children: const [
+                                                    Text(
+                                                      "Class",
+                                                      style: TextStyle(
+                                                        color: Colors.grey,
                                                       ),
-                                                      SizedBox(
-                                                        height: 12,
+                                                    ),
+                                                    SizedBox(
+                                                      height: 12,
+                                                    ),
+                                                    Text(
+                                                      "Economy",
+                                                      style: TextStyle(
+                                                        color: Colors.white,
                                                       ),
-                                                      Text(
-                                                        "Economy",
-                                                        style: TextStyle(
-                                                          color: Colors.white,
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
+                                                    ),
+                                                  ],
                                                 ),
                                               ),
                                             ],
