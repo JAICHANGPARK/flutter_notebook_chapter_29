@@ -367,9 +367,19 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                           ),
                           Expanded(child: Placeholder()),
                           Container(
-                            decoration: BoxDecoration(),
+                            padding: EdgeInsets.symmetric(vertical: 20),
+                            decoration: BoxDecoration(
+                              color: Color.fromRGBO(53, 112, 255, 1),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
                             child: Center(
-                              child: Text("Book A Flight"),
+                              child: Text(
+                                "Book A Flight",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
                           )
                         ],
