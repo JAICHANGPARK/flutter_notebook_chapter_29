@@ -305,6 +305,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                       child: Column(
                         children: [
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
                               Row(
                                 children: [
@@ -366,6 +367,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                           ),
                           Expanded(child: Placeholder()),
                           Container(
+                            decoration: BoxDecoration(),
                             child: Center(
                               child: Text("Book A Flight"),
                             ),
