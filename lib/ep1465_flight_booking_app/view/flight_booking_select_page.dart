@@ -24,7 +24,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                   Expanded(
                     flex: 9,
                     child: Container(
-                      color: Color.fromRGBO(13, 23, 44, 1),
+                      color: const Color.fromRGBO(13, 23, 44, 1),
                       child: Column(
                         children: [
                           AppBar(
@@ -32,11 +32,11 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                             elevation: 0,
                             centerTitle: true,
                             foregroundColor: Colors.white,
-                            title: Text("Select Seat"),
+                            title: const Text("Select Seat"),
                             actions: [
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(Icons.more_horiz),
+                                icon: const Icon(Icons.more_horiz),
                               )
                             ],
                           ),
@@ -117,7 +117,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                       ),
                                     ],
                                   ),
-                                  Divider(
+                                  const Divider(
                                     color: Colors.grey,
                                     height: 42,
                                   ),
@@ -207,10 +207,12 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                           ),
                                         ],
                                       )),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 24,
                                       ),
-                                      Expanded(child: Placeholder())
+                                      const Expanded(
+                                        child: Placeholder(),
+                                      )
                                     ],
                                   )),
                                 ],
