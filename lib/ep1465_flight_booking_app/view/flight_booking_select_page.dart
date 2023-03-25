@@ -374,20 +374,26 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                 crossAxisCount: 7,
                                 crossAxisSpacing: 8,
                                 mainAxisSpacing: 8,
-                                childAspectRatio: 1.1,
+                                childAspectRatio: 0.68,
                               ),
                               itemCount: flightSeatItems.length,
                               itemBuilder: (context, index) {
                                 final item = flightSeatItems[index];
-                                if(item.seatType == SeatType.aisle){
-                                  return Container(
-
-                                  );
+                                if (item.seatType == SeatType.aisle) {
+                                  return Container();
                                 }
-                                return Container(
-                                  decoration: BoxDecoration(
-                                    border: Border.all(),
-                                  ),
+                                return Column(
+                                  children: [
+                                    Expanded(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          border: Border.all(),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(height: 4,),
+                                    Text(item.seatName),
+                                  ],
                                 );
                               },
                             ),
