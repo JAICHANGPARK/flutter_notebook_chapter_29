@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_29/ep1465_flight_booking_app/domain/flight_data.dart';
 
 class FlightBookingSelectPage extends StatefulWidget {
   const FlightBookingSelectPage({Key? key}) : super(key: key);
@@ -372,6 +373,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                                 crossAxisCount: 7,
                               ),
+                              itemCount: flightSeatItems.length,
                               itemBuilder: (context, index) {
                                 return Container(
                                   decoration: BoxDecoration(
