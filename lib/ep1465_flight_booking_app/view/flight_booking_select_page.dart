@@ -212,84 +212,81 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                       ),
                                       Expanded(
                                           child: Row(
-                                            children: [
-                                              Expanded(
-                                                child: Container(
-                                                  // color: Colors.blue,
-                                                  child: Column(
-                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                    // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                    children: const [
-                                                      Text(
-                                                        "Flight Date.",
-                                                        style: TextStyle(
-                                                          color: Colors.grey,
-                                                        ),
-                                                      ),
-                                                      SizedBox(
-                                                        height: 12,
-                                                      ),
-                                                      Text(
-                                                        "March 18",
-                                                        style: TextStyle(
-                                                          color: Colors.white,
-                                                        ),
-                                                      ),
-                                                    ],
+                                        children: [
+                                          Expanded(
+                                            child: Container(
+                                              // color: Colors.blue,
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                children: const [
+                                                  Text(
+                                                    "Flight Date.",
+                                                    style: TextStyle(
+                                                      color: Colors.grey,
+                                                    ),
+                                                  ),
+                                                  SizedBox(
+                                                    height: 12,
+                                                  ),
+                                                  Text(
+                                                    "March 18",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: Column(
+                                              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              crossAxisAlignment: CrossAxisAlignment.center,
+                                              children: const [
+                                                Text(
+                                                  "Passenger.",
+                                                  style: TextStyle(
+                                                    color: Colors.grey,
                                                   ),
                                                 ),
-                                              ),
-                                              Expanded(
-                                                child: Container(
-                                                  // color: Colors.blue,
-                                                  child: Column(
-                                                    // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                                    children: const [
-                                                      Text(
-                                                        "Passenger.",
-                                                        style: TextStyle(
-                                                          color: Colors.grey,
-                                                        ),
-                                                      ),
-                                                      SizedBox(
-                                                        height: 12,
-                                                      ),
-                                                      Text(
-                                                        "2 Adult",
-                                                        style: TextStyle(
-                                                          color: Colors.white,
-                                                        ),
-                                                      ),
-                                                    ],
+                                                SizedBox(
+                                                  height: 12,
+                                                ),
+                                                Text(
+                                                  "2 Adult",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
                                                   ),
                                                 ),
-                                              ),
-                                              Expanded(
-                                                child: Column(
-                                                  crossAxisAlignment: CrossAxisAlignment.end,
-                                                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                  children: const [
-                                                    Text(
-                                                      "Class",
-                                                      style: TextStyle(
-                                                        color: Colors.grey,
-                                                      ),
-                                                    ),
-                                                    SizedBox(
-                                                      height: 12,
-                                                    ),
-                                                    Text(
-                                                      "Economy",
-                                                      style: TextStyle(
-                                                        color: Colors.white,
-                                                      ),
-                                                    ),
-                                                  ],
+                                              ],
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.end,
+                                              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              children: const [
+                                                Text(
+                                                  "Class",
+                                                  style: TextStyle(
+                                                    color: Colors.grey,
+                                                  ),
                                                 ),
-                                              ),
-                                            ],
-                                          )),
+                                                SizedBox(
+                                                  height: 12,
+                                                ),
+                                                Text(
+                                                  "Economy",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        ],
+                                      )),
                                     ],
                                   )),
                                 ],
@@ -304,6 +301,26 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                     flex: 12,
                     child: Container(
                       color: Colors.white,
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Row(
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(2),
+                                        border: Border.all(
+                                          color: Colors.grey[400],
+                                        )),
+                                  ),
+                                  Text("Available")
+                                ],
+                              )
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ],
