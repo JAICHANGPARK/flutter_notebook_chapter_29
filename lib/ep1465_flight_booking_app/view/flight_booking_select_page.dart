@@ -308,6 +308,8 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                               Row(
                                 children: [
                                   Container(
+                                    height: 8,
+                                    width: 8,
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(2),
                                       border: Border.all(
