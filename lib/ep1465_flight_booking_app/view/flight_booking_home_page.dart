@@ -17,11 +17,11 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
           onPressed: () {
             Navigator.of(context).push(
               MaterialPageRoute(
-                builder: (context) => FlightBookingSelectPage(),
+                builder: (context) => const FlightBookingSelectPage(),
               ),
             );
           },
-          child: Text("Search"),
+          child: const Text("Search"),
         ),
       ),
     );
