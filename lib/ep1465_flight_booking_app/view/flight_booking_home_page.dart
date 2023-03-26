@@ -63,17 +63,22 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                   child: IconButton(
                 icon: Icon(Icons.airplane_ticket),
                 onPressed: () {},
+                    color: Colors.grey,
               )),
               Expanded(
                   child: IconButton(
                 icon: Icon(Icons.favorite_border),
                 onPressed: () {},
+                    color: Colors.grey,
               )),
               Expanded(
-                  child: IconButton(
-                icon: Icon(Icons.person_outline),
-                onPressed: () {},
-              )),
+                child: IconButton(
+                  icon: Icon(Icons.person_outline),
+                  onPressed: () {},
+                  color: Colors.grey,
+                ),
+
+              ),
             ],
           ),
         ),
