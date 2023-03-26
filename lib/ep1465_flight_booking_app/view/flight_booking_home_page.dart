@@ -35,6 +35,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
           Positioned(
               left: 16,
               right: 16,
+              top: 24,
               child: SafeArea(
                 child: Column(
                   children: [
