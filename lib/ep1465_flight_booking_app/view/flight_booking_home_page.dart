@@ -15,22 +15,43 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
       body: Stack(
         children: [
           Positioned(
-              left: 0,
-              right: 0,
-              bottom: 0,
-              top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            top: 0,
+            child: Column(
+              children: [
+                Expanded(
+                    child: Container(
+                  color: const Color.fromRGBO(13, 23, 44, 1),
+                )),
+                Expanded(
+                    child: Container(
+                  color: Colors.white,
+                )),
+              ],
+            ),
+          ),
+          Positioned(
               child: Column(
+            children: [
+              Row(
                 children: [
-                  Expanded(
-                      child: Container(
-                    color: const Color.fromRGBO(13, 23, 44, 1),
-                  )),
-                  Expanded(
-                      child: Container(
-                    color: Colors.white,
-                  )),
+                  Column(
+                    children: [
+                      Text("Good Morning Dream"),
+                      Text("Where Are You Going Today?"),
+                    ],
+                  ),
+                  Container(
+                    height: 48,
+                    width: 48,
+                    decoration: BoxDecoration(),
+                  )
                 ],
-              )),
+              )
+            ],
+          )),
           Center(
             child: ElevatedButton(
               onPressed: () {
