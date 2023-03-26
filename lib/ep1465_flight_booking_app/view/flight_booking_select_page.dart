@@ -394,7 +394,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                           color: item.seatType == SeatType.available
                                               ? Colors.white
                                               : item.seatType == SeatType.booked
-                                                  ? Colors.blueGrey[100]
+                                                  ? Colors.blueGrey[50]
                                                   : Color.fromRGBO(53, 112, 255, 1),
                                         ),
                                       ),
