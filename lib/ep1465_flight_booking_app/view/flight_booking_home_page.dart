@@ -36,8 +36,29 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
         ],
       ),
       bottomNavigationBar: BottomAppBar(
-        child: Row(
-          children: [],
+        child: Container(
+          height: 80,
+          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+          child: Row(
+            children: [
+              Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.blue[100],
+                      borderRadius: BorderRadius.circular(24)
+                    ),
+                child: Row(
+                  children: [
+                    Icon(Icons.home_filled),
+                    Text("Home"),
+                  ],
+                ),
+              )),
+              Expanded(child: Placeholder()),
+              Expanded(child: Placeholder()),
+              Expanded(child: Placeholder()),
+            ],
+          ),
         ),
       ),
     );
