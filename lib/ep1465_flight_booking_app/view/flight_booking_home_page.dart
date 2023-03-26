@@ -33,53 +33,137 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
             ),
           ),
           Positioned(
-              left: 16,
-              right: 16,
-              top: 24,
-              child: SafeArea(
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        Column(
-                          children: [
-                            Text(
-                              "Good Morning Dream",
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),
+            left: 16,
+            right: 16,
+            top: 24,
+            child: SafeArea(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Good Morning Dream",
+                            style: TextStyle(
+                              color: Colors.white,
                             ),
-                            Text(
-                              "Where Are You Going Today?",
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),
-                            ),
-                          ],
-                        ),
-                        Container(
-                          height: 48,
-                          width: 48,
-                          decoration: BoxDecoration(
-                            border: Border.all(color: Colors.white),
-                            shape: BoxShape.circle,
                           ),
-                        )
-                      ],
-                    )
-                  ],
-                ),
-              )),
-          Center(
-            child: ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => const FlightBookingSelectPage(),
+                          Text(
+                            "Where Are You Going Today?",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
+                      ),
+                      Container(
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.white),
+                          shape: BoxShape.circle,
+                        ),
+                      ),
+                    ],
                   ),
-                );
-              },
-              child: const Text("Search"),
+                  Card(
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 48,
+                            margin: EdgeInsets.only(bottom: 12),
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[300]!,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            height: 120,
+                            margin: EdgeInsets.only(bottom: 12),
+                            child: Stack(
+                              children: [
+                                Column(
+                                  children: [
+                                    Container(
+                                      height: 48,
+                                      margin: EdgeInsets.only(bottom: 12),
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.grey[300]!,
+                                        ),
+                                      ),
+                                    ),
+                                    Container(
+                                      height: 48,
+                                      margin: EdgeInsets.only(bottom: 12),
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.grey[300]!,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: 48,
+                            margin: EdgeInsets.only(bottom: 12),
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[300]!,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            height: 48,
+                            margin: EdgeInsets.only(bottom: 12),
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[300]!,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            height: 48,
+                            margin: EdgeInsets.only(bottom: 12),
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[300]!,
+                              ),
+                            ),
+                          ),
+                          GestureDetector(
+                            onTap: (){
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => const FlightBookingSelectPage(),
+                                ),
+                              );
+                            },
+                            child: Container(
+                              height: 48,
+                              margin: EdgeInsets.only(bottom: 12),
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                              ),
+                              child: Center(
+                                child: const Text("Search"),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
         ],
