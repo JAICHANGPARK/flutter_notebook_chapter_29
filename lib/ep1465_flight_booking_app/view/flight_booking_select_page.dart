@@ -389,8 +389,8 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                         decoration: BoxDecoration(
                                           border: Border.all(
                                             color: Colors.grey,
-
                                           ),
+                                          borderRadius: BorderRadius.circular(4),
                                           color: item.seatType == SeatType.available
                                               ? Colors.white
                                               : item.seatType == SeatType.booked
