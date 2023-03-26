@@ -43,13 +43,18 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
             children: [
               Expanded(
                   child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.blue[100],
-                      borderRadius: BorderRadius.circular(24)
-                    ),
+                decoration: BoxDecoration(
+                  color: Colors.blue[100],
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                padding: EdgeInsets.symmetric(vertical: 8),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(Icons.home_filled),
+                    SizedBox(
+                      width: 4,
+                    ),
                     Text("Home"),
                   ],
                 ),
