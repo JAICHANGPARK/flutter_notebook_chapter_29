@@ -302,7 +302,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                     flex: 12,
                     child: Container(
                       color: Colors.white,
-                      padding: EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(16),
                       child: Column(
                         children: [
                           Row(
@@ -320,10 +320,10 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                       ),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 4,
                                   ),
-                                  Text("Available")
+                                  const Text("Available")
                                 ],
                               ),
                               Row(
@@ -339,10 +339,10 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                       ),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 4,
                                   ),
-                                  Text("Booked")
+                                  const Text("Booked")
                                 ],
                               ),
                               Row(
@@ -352,16 +352,16 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                     width: 12,
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(2),
-                                      color: Color.fromRGBO(53, 112, 255, 1),
+                                      color: const Color.fromRGBO(53, 112, 255, 1),
                                       border: Border.all(
                                         color: Colors.grey[400]!,
                                       ),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 4,
                                   ),
-                                  Text("Selected")
+                                  const Text("Selected")
                                 ],
                               )
                             ],
@@ -371,7 +371,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                               child: Padding(
                             padding: const EdgeInsets.fromLTRB(16,24,16,24),
                             child: GridView.builder(
-                              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                                 crossAxisCount: 7,
                                 crossAxisSpacing: 8,
                                 mainAxisSpacing: 16,
@@ -392,7 +392,7 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                                         ),
                                       ),
                                     ),
-                                    SizedBox(height: 4,),
+                                    const SizedBox(height: 4,),
                                     Text(item.seatName),
                                   ],
                                 );
@@ -400,12 +400,12 @@ class _FlightBookingSelectPageState extends State<FlightBookingSelectPage> {
                             ),
                           )),
                           Container(
-                            padding: EdgeInsets.symmetric(vertical: 20),
+                            padding: const EdgeInsets.symmetric(vertical: 20),
                             decoration: BoxDecoration(
-                              color: Color.fromRGBO(53, 112, 255, 1),
+                              color: const Color.fromRGBO(53, 112, 255, 1),
                               borderRadius: BorderRadius.circular(12),
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Text(
                                 "Book A Flight",
                                 style: TextStyle(
