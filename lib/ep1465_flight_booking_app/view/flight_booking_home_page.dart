@@ -68,97 +68,100 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                       ),
                     ],
                   ),
-                  Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Column(
-                        children: [
-                          Container(
-                            height: 48,
-                            margin: EdgeInsets.only(bottom: 12),
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey[300]!,
-                              ),
-                            ),
-                          ),
-                          Container(
-                            height: 120,
-                            margin: EdgeInsets.only(bottom: 12),
-                            child: Stack(
-                              children: [
-                                Column(
-                                  children: [
-                                    Container(
-                                      height: 48,
-                                      margin: EdgeInsets.only(bottom: 12),
-                                      decoration: BoxDecoration(
-                                        border: Border.all(
-                                          color: Colors.grey[300]!,
-                                        ),
-                                      ),
-                                    ),
-                                    Container(
-                                      height: 48,
-                                      margin: EdgeInsets.only(bottom: 12),
-                                      decoration: BoxDecoration(
-                                        border: Border.all(
-                                          color: Colors.grey[300]!,
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                )
-                              ],
-                            ),
-                          ),
-                          Container(
-                            height: 48,
-                            margin: EdgeInsets.only(bottom: 12),
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey[300]!,
-                              ),
-                            ),
-                          ),
-                          Container(
-                            height: 48,
-                            margin: EdgeInsets.only(bottom: 12),
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey[300]!,
-                              ),
-                            ),
-                          ),
-                          Container(
-                            height: 48,
-                            margin: EdgeInsets.only(bottom: 12),
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey[300]!,
-                              ),
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: (){
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (context) => const FlightBookingSelectPage(),
-                                ),
-                              );
-                            },
-                            child: Container(
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 20),
+                    child: Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Column(
+                          children: [
+                            Container(
                               height: 48,
                               margin: EdgeInsets.only(bottom: 12),
                               decoration: BoxDecoration(
-                                color: Colors.blue,
-                              ),
-                              child: Center(
-                                child: const Text("Search"),
+                                border: Border.all(
+                                  color: Colors.grey[300]!,
+                                ),
                               ),
                             ),
-                          ),
-                        ],
+                            Container(
+                              height: 120,
+                              margin: EdgeInsets.only(bottom: 12),
+                              child: Stack(
+                                children: [
+                                  Column(
+                                    children: [
+                                      Container(
+                                        height: 48,
+                                        margin: EdgeInsets.only(bottom: 12),
+                                        decoration: BoxDecoration(
+                                          border: Border.all(
+                                            color: Colors.grey[300]!,
+                                          ),
+                                        ),
+                                      ),
+                                      Container(
+                                        height: 48,
+                                        margin: EdgeInsets.only(bottom: 12),
+                                        decoration: BoxDecoration(
+                                          border: Border.all(
+                                            color: Colors.grey[300]!,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ),
+                            Container(
+                              height: 48,
+                              margin: EdgeInsets.only(bottom: 12),
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey[300]!,
+                                ),
+                              ),
+                            ),
+                            Container(
+                              height: 48,
+                              margin: EdgeInsets.only(bottom: 12),
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey[300]!,
+                                ),
+                              ),
+                            ),
+                            Container(
+                              height: 48,
+                              margin: EdgeInsets.only(bottom: 12),
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey[300]!,
+                                ),
+                              ),
+                            ),
+                            GestureDetector(
+                              onTap: (){
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => const FlightBookingSelectPage(),
+                                  ),
+                                );
+                              },
+                              child: Container(
+                                height: 48,
+                                margin: EdgeInsets.only(bottom: 12),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                ),
+                                child: Center(
+                                  child: const Text("Search"),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   )
