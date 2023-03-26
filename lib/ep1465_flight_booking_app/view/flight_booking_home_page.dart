@@ -12,8 +12,15 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body: Stack(
         children: [
+          Positioned(
+              child: Column(
+            children: [
+              Expanded(child: Placeholder()),
+              Expanded(child: Placeholder()),
+            ],
+          )),
           Center(
             child: ElevatedButton(
               onPressed: () {
@@ -27,6 +34,11 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
             ),
           ),
         ],
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          children: [],
+        ),
       ),
     );
   }
