@@ -39,4 +39,14 @@ List<FlightSeat> flightSeatItems = [
   FlightSeat(seatName: "C4", seatType: SeatType.booked),
   FlightSeat(seatName: "C5", seatType: SeatType.selected),
   FlightSeat(seatName: "C6", seatType: SeatType.selected),
+
+  FlightSeat(seatName: "D1", seatType: SeatType.available),
+  FlightSeat(seatName: "D2", seatType: SeatType.booked),
+  FlightSeat(seatName: "D3", seatType: SeatType.booked),
+  FlightSeat(seatName: "", seatType: SeatType.aisle),
+  FlightSeat(seatName: "D4", seatType: SeatType.booked),
+  FlightSeat(seatName: "D5", seatType: SeatType.selected),
+  FlightSeat(seatName: "D6", seatType: SeatType.selected),
+
+
 ];
