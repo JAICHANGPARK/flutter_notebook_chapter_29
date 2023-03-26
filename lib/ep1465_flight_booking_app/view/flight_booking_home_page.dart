@@ -33,25 +33,42 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
             ),
           ),
           Positioned(
-              child: Column(
-            children: [
-              Row(
-                children: [
-                  Column(
-                    children: [
-                      Text("Good Morning Dream"),
-                      Text("Where Are You Going Today?"),
-                    ],
-                  ),
-                  Container(
-                    height: 48,
-                    width: 48,
-                    decoration: BoxDecoration(),
-                  )
-                ],
-              )
-            ],
-          )),
+              left: 16,
+              right: 16,
+              child: SafeArea(
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Column(
+                          children: [
+                            Text(
+                              "Good Morning Dream",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                            Text(
+                              "Where Are You Going Today?",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Container(
+                          height: 48,
+                          width: 48,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.white),
+                            shape: BoxShape.circle,
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              )),
           Center(
             child: ElevatedButton(
               onPressed: () {
