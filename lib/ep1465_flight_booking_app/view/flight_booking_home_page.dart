@@ -51,11 +51,19 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.home_filled),
+                    Icon(
+                      Icons.home_filled,
+                      color: Colors.blue,
+                    ),
                     SizedBox(
                       width: 4,
                     ),
-                    Text("Home"),
+                    Text(
+                      "Home",
+                      style: TextStyle(
+                        color: Colors.blue,
+                      ),
+                    ),
                   ],
                 ),
               )),
@@ -63,13 +71,13 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                   child: IconButton(
                 icon: Icon(Icons.airplane_ticket),
                 onPressed: () {},
-                    color: Colors.grey,
+                color: Colors.grey,
               )),
               Expanded(
                   child: IconButton(
                 icon: Icon(Icons.favorite_border),
                 onPressed: () {},
-                    color: Colors.grey,
+                color: Colors.grey,
               )),
               Expanded(
                 child: IconButton(
@@ -77,7 +85,6 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                   onPressed: () {},
                   color: Colors.grey,
                 ),
-
               ),
             ],
           ),
