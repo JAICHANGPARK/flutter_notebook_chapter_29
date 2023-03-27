@@ -226,6 +226,29 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                   color: Colors.grey[300]!,
                                 ),
                               ),
+                              padding: const EdgeInsets.symmetric(horizontal: 8),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Icon(Icons.airline_seat_recline_extra),
+                                  SizedBox(
+                                    width: 16,
+                                  ),
+                                  Expanded(
+                                    child: DropdownButton<String>(
+                                      value: "Economy",
+                                      items: [
+                                        DropdownMenuItem(
+                                          child: Text("Economy"),
+                                          value: 'Economy',
+                                        )
+                                      ],
+                                      isExpanded: true,
+                                      onChanged: (v) {},
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                             GestureDetector(
                               onTap: () {
