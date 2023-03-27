@@ -199,10 +199,17 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Icon(Icons.supervisor_account_rounded),
+                                  SizedBox(
+                                    width: 16,
+                                  ),
                                   Expanded(
                                     child: DropdownButton<String>(
+                                      value: "2 Adult",
                                       items: [
-
+                                        DropdownMenuItem(
+                                          child: Text("2 Adult"),
+                                          value: '2 Adult',
+                                        )
                                       ],
                                       isExpanded: true,
                                       onChanged: (v) {},
