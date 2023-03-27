@@ -301,6 +301,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                               ),
                               borderRadius: BorderRadius.circular(8),
                             ),
+                            padding: EdgeInsets.all(16),
                             child: Column(
                               children: [
                                 Container(
@@ -311,6 +312,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                 Container(
                                   height: 100,
                                   color: Colors.grey,
+                                  margin: EdgeInsets.symmetric(vertical: 8),
                                   child: Row(
                                     children: [
                                       Column(
