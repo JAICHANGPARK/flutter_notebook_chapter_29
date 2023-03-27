@@ -37,6 +37,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
             left: 16,
             right: 16,
             top: 24,
+            bottom: 0,
             child: SafeArea(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -81,254 +82,257 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                       ),
                     ],
                   ),
-                  Expanded(child: SingleChildScrollView(child: Column(
-                    children: [
-
-                    ],
-                  ),)),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 20),
-                    child: Card(
-                      child: Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Column(
-                          children: [
-                            Container(
-                              height: 48,
-                              margin: const EdgeInsets.only(bottom: 12),
-                              decoration: BoxDecoration(
-                                border: Border.all(
-                                  color: Colors.grey[300]!,
-                                ),
-                              ),
-                              padding: const EdgeInsets.symmetric(horizontal: 16),
-                              child: DropdownButton<String>(
-                                isExpanded: true,
-                                value: "One-Way Flight",
-                                underline: Container(),
-                                items: const [
-                                  DropdownMenuItem(
-                                    value: "One-Way Flight",
-                                    child: Text("One-Way Flight"),
-                                  )
-                                ],
-                                onChanged: (Object? value) {},
-                              ),
-                            ),
-                            Container(
-                              height: 120,
-                              margin: const EdgeInsets.only(bottom: 12),
-                              child: Stack(
-                                children: [
-                                  Column(
-                                    children: [
-                                      Container(
-                                        height: 48,
-                                        margin: const EdgeInsets.only(bottom: 12),
-                                        decoration: BoxDecoration(
-                                          border: Border.all(
-                                            color: Colors.grey[300]!,
-                                          ),
-                                        ),
-                                        padding: const EdgeInsets.symmetric(horizontal: 8),
-                                        child: const TextField(
-                                          decoration: InputDecoration(
-                                            icon: Icon(Icons.flight_takeoff),
-                                            border: InputBorder.none,
-                                          ),
-                                        ),
-                                      ),
-                                      Container(
-                                        height: 48,
-                                        margin: const EdgeInsets.only(bottom: 12),
-                                        decoration: BoxDecoration(
-                                          border: Border.all(
-                                            color: Colors.grey[300]!,
-                                          ),
-                                        ),
-                                        padding: const EdgeInsets.symmetric(horizontal: 8),
-                                        child: const TextField(
-                                          decoration: InputDecoration(
-                                            icon: Icon(Icons.flight_land),
-                                            border: InputBorder.none,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  Positioned(
-                                    right: 16,
-                                    top: 0,
-                                    bottom: 0,
-                                    child: Container(
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 20),
+                            child: Card(
+                              child: Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Column(
+                                  children: [
+                                    Container(
                                       height: 48,
-                                      width: 48,
+                                      margin: const EdgeInsets.only(bottom: 12),
                                       decoration: BoxDecoration(
-                                        border: Border.all(color: Colors.blue),
-                                        shape: BoxShape.circle,
-                                        color: Colors.blue[100],
+                                        border: Border.all(
+                                          color: Colors.grey[300]!,
+                                        ),
                                       ),
-                                      child: IconButton(
-                                        icon: const Icon(Icons.import_export),
-                                        onPressed: () {},
+                                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                                      child: DropdownButton<String>(
+                                        isExpanded: true,
+                                        value: "One-Way Flight",
+                                        underline: Container(),
+                                        items: const [
+                                          DropdownMenuItem(
+                                            value: "One-Way Flight",
+                                            child: Text("One-Way Flight"),
+                                          )
+                                        ],
+                                        onChanged: (Object? value) {},
                                       ),
                                     ),
-                                  )
-                                ],
-                              ),
-                            ),
-                            Container(
-                              height: 48,
-                              margin: const EdgeInsets.only(bottom: 12),
-                              decoration: BoxDecoration(
-                                border: Border.all(
-                                  color: Colors.grey[300]!,
-                                ),
-                              ),
-                              padding: const EdgeInsets.symmetric(horizontal: 8),
-                              child: const TextField(
-                                decoration: InputDecoration(
-                                  icon: Icon(Icons.calendar_month),
-                                  border: InputBorder.none,
-                                ),
-                              ),
-                            ),
-                            Container(
-                              height: 48,
-                              margin: const EdgeInsets.only(bottom: 12),
-                              decoration: BoxDecoration(
-                                border: Border.all(
-                                  color: Colors.grey[300]!,
-                                ),
-                              ),
-                              padding: const EdgeInsets.symmetric(horizontal: 8),
-                              child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  const Icon(Icons.supervisor_account_rounded),
-                                  const SizedBox(
-                                    width: 16,
-                                  ),
-                                  Expanded(
-                                    child: DropdownButton<String>(
-                                      value: "2 Adult",
-                                      items: const [
-                                        DropdownMenuItem(
-                                          value: '2 Adult',
-                                          child: Text("2 Adult"),
-                                        )
-                                      ],
-                                      isExpanded: true,
-                                      onChanged: (v) {},
+                                    Container(
+                                      height: 120,
+                                      margin: const EdgeInsets.only(bottom: 12),
+                                      child: Stack(
+                                        children: [
+                                          Column(
+                                            children: [
+                                              Container(
+                                                height: 48,
+                                                margin: const EdgeInsets.only(bottom: 12),
+                                                decoration: BoxDecoration(
+                                                  border: Border.all(
+                                                    color: Colors.grey[300]!,
+                                                  ),
+                                                ),
+                                                padding: const EdgeInsets.symmetric(horizontal: 8),
+                                                child: const TextField(
+                                                  decoration: InputDecoration(
+                                                    icon: Icon(Icons.flight_takeoff),
+                                                    border: InputBorder.none,
+                                                  ),
+                                                ),
+                                              ),
+                                              Container(
+                                                height: 48,
+                                                margin: const EdgeInsets.only(bottom: 12),
+                                                decoration: BoxDecoration(
+                                                  border: Border.all(
+                                                    color: Colors.grey[300]!,
+                                                  ),
+                                                ),
+                                                padding: const EdgeInsets.symmetric(horizontal: 8),
+                                                child: const TextField(
+                                                  decoration: InputDecoration(
+                                                    icon: Icon(Icons.flight_land),
+                                                    border: InputBorder.none,
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          Positioned(
+                                            right: 16,
+                                            top: 0,
+                                            bottom: 0,
+                                            child: Container(
+                                              height: 48,
+                                              width: 48,
+                                              decoration: BoxDecoration(
+                                                border: Border.all(color: Colors.blue),
+                                                shape: BoxShape.circle,
+                                                color: Colors.blue[100],
+                                              ),
+                                              child: IconButton(
+                                                icon: const Icon(Icons.import_export),
+                                                onPressed: () {},
+                                              ),
+                                            ),
+                                          )
+                                        ],
+                                      ),
                                     ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Container(
-                              height: 48,
-                              margin: const EdgeInsets.only(bottom: 12),
-                              decoration: BoxDecoration(
-                                border: Border.all(
-                                  color: Colors.grey[300]!,
+                                    Container(
+                                      height: 48,
+                                      margin: const EdgeInsets.only(bottom: 12),
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.grey[300]!,
+                                        ),
+                                      ),
+                                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                                      child: const TextField(
+                                        decoration: InputDecoration(
+                                          icon: Icon(Icons.calendar_month),
+                                          border: InputBorder.none,
+                                        ),
+                                      ),
+                                    ),
+                                    Container(
+                                      height: 48,
+                                      margin: const EdgeInsets.only(bottom: 12),
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.grey[300]!,
+                                        ),
+                                      ),
+                                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                                      child: Row(
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          const Icon(Icons.supervisor_account_rounded),
+                                          const SizedBox(
+                                            width: 16,
+                                          ),
+                                          Expanded(
+                                            child: DropdownButton<String>(
+                                              value: "2 Adult",
+                                              items: const [
+                                                DropdownMenuItem(
+                                                  value: '2 Adult',
+                                                  child: Text("2 Adult"),
+                                                )
+                                              ],
+                                              isExpanded: true,
+                                              onChanged: (v) {},
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Container(
+                                      height: 48,
+                                      margin: const EdgeInsets.only(bottom: 12),
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.grey[300]!,
+                                        ),
+                                      ),
+                                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                                      child: Row(
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          const Icon(Icons.airline_seat_recline_extra),
+                                          const SizedBox(
+                                            width: 16,
+                                          ),
+                                          Expanded(
+                                            child: DropdownButton<String>(
+                                              value: "Economy",
+                                              items: const [
+                                                DropdownMenuItem(
+                                                  value: 'Economy',
+                                                  child: Text("Economy"),
+                                                )
+                                              ],
+                                              isExpanded: true,
+                                              onChanged: (v) {},
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    GestureDetector(
+                                      onTap: () {
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                            builder: (context) => const FlightBookingSelectPage(),
+                                          ),
+                                        );
+                                      },
+                                      child: Container(
+                                        height: 48,
+                                        margin: const EdgeInsets.only(bottom: 12),
+                                        decoration: BoxDecoration(
+                                          color: Colors.blue,
+                                          borderRadius: BorderRadius.circular(8),
+                                        ),
+                                        child: const Center(
+                                          child: Text(
+                                            "Search",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ),
-                              padding: const EdgeInsets.symmetric(horizontal: 8),
-                              child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  const Icon(Icons.airline_seat_recline_extra),
-                                  const SizedBox(
-                                    width: 16,
-                                  ),
-                                  Expanded(
-                                    child: DropdownButton<String>(
-                                      value: "Economy",
-                                      items: const [
-                                        DropdownMenuItem(
-                                          value: 'Economy',
-                                          child: Text("Economy"),
-                                        )
-                                      ],
-                                      isExpanded: true,
-                                      onChanged: (v) {},
-                                    ),
-                                  ),
-                                ],
-                              ),
                             ),
-                            GestureDetector(
-                              onTap: () {
-                                Navigator.of(context).push(
-                                  MaterialPageRoute(
-                                    builder: (context) => const FlightBookingSelectPage(),
-                                  ),
-                                );
-                              },
-                              child: Container(
-                                height: 48,
-                                margin: const EdgeInsets.only(bottom: 12),
-                                decoration: BoxDecoration(
+                          ),
+                          Text(
+                            "Travel History",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[300]!,
+                              ),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              children: [
+                                Container(
+                                  height: 42,
+                                  width: 100,
                                   color: Colors.blue,
-                                  borderRadius: BorderRadius.circular(8),
                                 ),
-                                child: const Center(
-                                  child: Text(
-                                    "Search",
-                                    style: TextStyle(
-                                      color: Colors.white,
+                                Container(
+                                  height: 140,
+                                  color: Colors.grey,
+                                ),
+                                Row(
+                                  children: [
+                                    Text(
+                                      "\$ 34.92",
                                     ),
-                                  ),
-                                ),
-                              ),
+                                    Text("/per"),
+                                    Container(
+                                      child: Center(
+                                        child: Text(
+                                          "Free Reschedule",
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                )
+                              ],
                             ),
-                          ],
-                        ),
+                          )
+                        ],
                       ),
                     ),
                   ),
-                  Text(
-                    "Travel History",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.grey[300]!,
-                      ),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: Column(
-                      children: [
-                        Container(
-                          height: 42,
-                          width: 100,
-                          color: Colors.blue,
-                        ),
-                        Container(
-                          height: 140,
-                          color: Colors.grey,
-                        ),
-                        Row(
-                          children: [
-                            Text(
-                              "\$ 34.92",
-                            ),
-                            Text("/per"),
-                            Container(
-                              child: Center(
-                                child: Text(
-                                  "Free Reschedule",
-                                ),
-                              ),
-                            )
-                          ],
-                        )
-                      ],
-                    ),
-                  )
                 ],
               ),
             ),
