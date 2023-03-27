@@ -94,6 +94,19 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                   color: Colors.grey[300]!,
                                 ),
                               ),
+                              padding: EdgeInsets.symmetric(horizontal: 16),
+                              child: DropdownButton<String>(
+                                isExpanded: true,
+                                value: "One-Way Flight",
+                                underline: Container(),
+                                items: [
+                                  DropdownMenuItem(
+                                    child: Text("One-Way Flight"),
+                                    value: "One-Way Flight",
+                                  )
+                                ],
+                                onChanged: (Object? value) {},
+                              ),
                             ),
                             Container(
                               height: 120,
@@ -110,7 +123,6 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                             color: Colors.grey[300]!,
                                           ),
                                         ),
-
                                       ),
                                       Container(
                                         height: 48,
