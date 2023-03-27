@@ -66,13 +66,14 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                         height: 48,
                         width: 48,
                         decoration: BoxDecoration(
-                          border: Border.all(color: Colors.white),
-                          shape: BoxShape.circle,
-                        ),
+                            border: Border.all(color: Colors.white),
+                            shape: BoxShape.circle,
+                            color: Colors.white.withOpacity(0.2)),
                         child: Center(
                           child: IconButton(
                             onPressed: () {},
                             icon: const Icon(Icons.notifications_none),
+                            color: Colors.white,
                           ),
                         ),
                       ),
@@ -109,6 +110,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                             color: Colors.grey[300]!,
                                           ),
                                         ),
+
                                       ),
                                       Container(
                                         height: 48,
