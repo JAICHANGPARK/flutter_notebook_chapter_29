@@ -316,7 +316,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                           ),
                                           Container(
                                             height: 84,
-                                            color: Colors.grey,
+                                            // color: Colors.grey,
                                             margin: const EdgeInsets.symmetric(vertical: 8),
                                             child: Row(
                                               children: [
