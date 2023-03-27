@@ -295,6 +295,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                             ),
                           ),
                           Container(
+                            margin: EdgeInsets.symmetric(vertical: 8),
                             decoration: BoxDecoration(
                               border: Border.all(
                                 color: Colors.grey[300]!,
@@ -310,7 +311,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                   color: Colors.blue,
                                 ),
                                 Container(
-                                  height: 100,
+                                  height: 84,
                                   color: Colors.grey,
                                   margin: EdgeInsets.symmetric(vertical: 8),
                                   child: Row(
@@ -324,7 +325,10 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                           Text("12 : 20"),
                                         ],
                                       ),
-                                      Expanded(child: Placeholder()),
+                                      Expanded(child: Padding(
+                                        padding: const EdgeInsets.symmetric(horizontal: 12),
+                                        child: Placeholder(),
+                                      )),
                                       Column(
                                         crossAxisAlignment: CrossAxisAlignment.end,
                                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
