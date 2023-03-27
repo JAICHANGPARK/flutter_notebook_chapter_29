@@ -123,6 +123,13 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                             color: Colors.grey[300]!,
                                           ),
                                         ),
+                                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                                        child: const TextField(
+                                          decoration: InputDecoration(
+                                            icon: Icon(Icons.flight_takeoff),
+                                            border: InputBorder.none,
+                                          ),
+                                        ),
                                       ),
                                       Container(
                                         height: 48,
@@ -135,7 +142,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                         padding: const EdgeInsets.symmetric(horizontal: 8),
                                         child: const TextField(
                                           decoration: InputDecoration(
-                                            icon: Icon(Icons.flight_takeoff),
+                                            icon: Icon(Icons.flight_land),
                                             border: InputBorder.none,
                                           ),
                                         ),
@@ -171,6 +178,13 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                   color: Colors.grey[300]!,
                                 ),
                               ),
+                              padding: const EdgeInsets.symmetric(horizontal: 8),
+                              child: const TextField(
+                                decoration: InputDecoration(
+                                  icon: Icon(Icons.calendar_month),
+                                  border: InputBorder.none,
+                                ),
+                              ),
                             ),
                             Container(
                               height: 48,
@@ -179,6 +193,22 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                 border: Border.all(
                                   color: Colors.grey[300]!,
                                 ),
+                              ),
+                              padding: const EdgeInsets.symmetric(horizontal: 8),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Icon(Icons.supervisor_account_rounded),
+                                  Expanded(
+                                    child: DropdownButton<String>(
+                                      items: [
+
+                                      ],
+                                      isExpanded: true,
+                                      onChanged: (v) {},
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                             Container(
