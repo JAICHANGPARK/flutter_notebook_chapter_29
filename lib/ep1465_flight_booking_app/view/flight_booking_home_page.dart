@@ -139,7 +139,14 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                     child: Container(
                                       height: 48,
                                       width: 48,
-                                      decoration: BoxDecoration(),
+                                      decoration: BoxDecoration(
+                                        border: Border.all(color: Colors.blue),
+                                        shape: BoxShape.circle,
+                                      ),
+                                      child: IconButton(
+                                        icon: Icon(Icons.import_export),
+                                        onPressed: () {},
+                                      ),
                                     ),
                                   )
                                 ],
