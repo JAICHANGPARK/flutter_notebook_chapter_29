@@ -295,14 +295,14 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.symmetric(vertical: 8),
+                            margin: const EdgeInsets.symmetric(vertical: 8),
                             decoration: BoxDecoration(
                               border: Border.all(
                                 color: Colors.grey[300]!,
                               ),
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            padding: EdgeInsets.all(16),
+                            padding: const EdgeInsets.all(16),
                             child: Column(
                               children: [
                                 Container(
@@ -313,7 +313,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                 Container(
                                   height: 84,
                                   color: Colors.grey,
-                                  margin: EdgeInsets.symmetric(vertical: 8),
+                                  margin: const EdgeInsets.symmetric(vertical: 8),
                                   child: Row(
                                     children: [
                                       Column(
@@ -325,8 +325,8 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                           Text("12 : 20"),
                                         ],
                                       ),
-                                      Expanded(child: Padding(
-                                        padding: const EdgeInsets.symmetric(horizontal: 12),
+                                      const Expanded(child: Padding(
+                                        padding: EdgeInsets.symmetric(horizontal: 12),
                                         child: Placeholder(),
                                       )),
                                       Column(
@@ -347,13 +347,13 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                       "\$ 34.92",
                                     ),
                                     const Text("/per"),
-                                    Spacer(),
+                                    const Spacer(),
                                     Container(
                                       decoration: BoxDecoration(
                                         color: Colors.green[100],
                                         borderRadius: BorderRadius.circular(4),
                                       ),
-                                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                       child: const Center(
                                         child: Text(
                                           "Free Reschedule",
