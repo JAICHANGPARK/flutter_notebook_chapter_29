@@ -134,6 +134,13 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                         ),
                                       ),
                                     ],
+                                  ),
+                                  Positioned(
+                                    child: Container(
+                                      height: 48,
+                                      width: 48,
+                                      decoration: BoxDecoration(),
+                                    ),
                                   )
                                 ],
                               ),
