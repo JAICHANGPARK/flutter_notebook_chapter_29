@@ -132,16 +132,26 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                             color: Colors.grey[300]!,
                                           ),
                                         ),
+                                        padding: EdgeInsets.symmetric(horizontal: 8),
+                                        child: TextField(
+                                          decoration: InputDecoration(
+                                            icon: Icon(Icons.flight_takeoff),
+                                          ),
+                                        ),
                                       ),
                                     ],
                                   ),
                                   Positioned(
+                                    right: 16,
+                                    top: 0,
+                                    bottom: 0,
                                     child: Container(
                                       height: 48,
                                       width: 48,
                                       decoration: BoxDecoration(
                                         border: Border.all(color: Colors.blue),
                                         shape: BoxShape.circle,
+                                        color: Colors.blue[100],
                                       ),
                                       child: IconButton(
                                         icon: Icon(Icons.import_export),
