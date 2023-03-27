@@ -94,13 +94,13 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                   color: Colors.grey[300]!,
                                 ),
                               ),
-                              padding: EdgeInsets.symmetric(horizontal: 16),
+                              padding: const EdgeInsets.symmetric(horizontal: 16),
                               child: DropdownButton<String>(
                                 isExpanded: true,
                                 value: "One-Way Flight",
                                 underline: Container(),
                                 items: [
-                                  DropdownMenuItem(
+                                  const DropdownMenuItem(
                                     child: Text("One-Way Flight"),
                                     value: "One-Way Flight",
                                   )
@@ -132,10 +132,11 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                             color: Colors.grey[300]!,
                                           ),
                                         ),
-                                        padding: EdgeInsets.symmetric(horizontal: 8),
-                                        child: TextField(
+                                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                                        child: const TextField(
                                           decoration: InputDecoration(
                                             icon: Icon(Icons.flight_takeoff),
+                                            border: InputBorder.none,
                                           ),
                                         ),
                                       ),
@@ -154,7 +155,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                         color: Colors.blue[100],
                                       ),
                                       child: IconButton(
-                                        icon: Icon(Icons.import_export),
+                                        icon: const Icon(Icons.import_export),
                                         onPressed: () {},
                                       ),
                                     ),
