@@ -26,9 +26,10 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                   color: const Color.fromRGBO(13, 23, 44, 1),
                 )),
                 Expanded(
-                    child: Container(
-                  color: Colors.white,
-                )),
+                  child: Container(
+                    color: Colors.white,
+                  ),
+                ),
               ],
             ),
           ),
@@ -38,6 +39,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
             top: 24,
             child: SafeArea(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     children: [
@@ -274,6 +276,18 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                       ),
                     ),
                   ),
+                  Text("Travel History"),
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[300]!,
+                      ),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Column(
+                      children: [],
+                    ),
+                  )
                 ],
               ),
             ),
