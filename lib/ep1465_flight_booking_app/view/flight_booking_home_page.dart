@@ -85,6 +85,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                   Expanded(
                     child: SingleChildScrollView(
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
                             padding: const EdgeInsets.symmetric(vertical: 20),
@@ -287,7 +288,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                               ),
                             ),
                           ),
-                          Text(
+                          const Text(
                             "Travel History",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -308,17 +309,39 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                   color: Colors.blue,
                                 ),
                                 Container(
-                                  height: 140,
+                                  height: 100,
                                   color: Colors.grey,
+                                  child: Row(
+                                    children: [
+                                      Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                        children: [
+                                          Text("SUB"),
+                                          Text("Surabaya"),
+                                          Text("12 : 20"),
+                                        ],
+                                      ),
+                                      Expanded(child: Placeholder()),
+                                      Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text("DPS"),
+                                          Text("Denpasar"),
+                                          Text("14 : 15"),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
                                 ),
                                 Row(
                                   children: [
-                                    Text(
+                                    const Text(
                                       "\$ 34.92",
                                     ),
-                                    Text("/per"),
+                                    const Text("/per"),
                                     Container(
-                                      child: Center(
+                                      child: const Center(
                                         child: Text(
                                           "Free Reschedule",
                                         ),
