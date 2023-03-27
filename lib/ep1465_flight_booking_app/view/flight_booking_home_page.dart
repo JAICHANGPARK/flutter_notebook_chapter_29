@@ -198,15 +198,15 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  Icon(Icons.supervisor_account_rounded),
-                                  SizedBox(
+                                  const Icon(Icons.supervisor_account_rounded),
+                                  const SizedBox(
                                     width: 16,
                                   ),
                                   Expanded(
                                     child: DropdownButton<String>(
                                       value: "2 Adult",
                                       items: [
-                                        DropdownMenuItem(
+                                        const DropdownMenuItem(
                                           child: Text("2 Adult"),
                                           value: '2 Adult',
                                         )
@@ -230,15 +230,15 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  Icon(Icons.airline_seat_recline_extra),
-                                  SizedBox(
+                                  const Icon(Icons.airline_seat_recline_extra),
+                                  const SizedBox(
                                     width: 16,
                                   ),
                                   Expanded(
                                     child: DropdownButton<String>(
                                       value: "Economy",
                                       items: [
-                                        DropdownMenuItem(
+                                        const DropdownMenuItem(
                                           child: Text("Economy"),
                                           value: 'Economy',
                                         )
@@ -274,7 +274,6 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                       ),
                     ),
                   ),
-                  
                 ],
               ),
             ),
