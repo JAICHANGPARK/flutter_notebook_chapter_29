@@ -282,7 +282,12 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                       ),
                     ),
                   ),
-                  Text("Travel History"),
+                  Text(
+                    "Travel History",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   Container(
                     decoration: BoxDecoration(
                       border: Border.all(
@@ -291,7 +296,24 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Column(
-                      children: [],
+                      children: [
+                        Container(
+                          height: 42,
+                          width: 100,
+                          color: Colors.blue,
+                        ),
+                        Container(
+                          height: 140,
+                          color: Colors.grey,
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              "\$ 34.92",
+                            ),
+                          ],
+                        )
+                      ],
                     ),
                   )
                 ],
