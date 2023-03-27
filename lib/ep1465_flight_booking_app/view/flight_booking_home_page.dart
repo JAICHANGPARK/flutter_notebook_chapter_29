@@ -99,10 +99,10 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                 isExpanded: true,
                                 value: "One-Way Flight",
                                 underline: Container(),
-                                items: [
-                                  const DropdownMenuItem(
-                                    child: Text("One-Way Flight"),
+                                items: const [
+                                  DropdownMenuItem(
                                     value: "One-Way Flight",
+                                    child: Text("One-Way Flight"),
                                   )
                                 ],
                                 onChanged: (Object? value) {},
@@ -205,10 +205,10 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                   Expanded(
                                     child: DropdownButton<String>(
                                       value: "2 Adult",
-                                      items: [
-                                        const DropdownMenuItem(
-                                          child: Text("2 Adult"),
+                                      items: const [
+                                        DropdownMenuItem(
                                           value: '2 Adult',
+                                          child: Text("2 Adult"),
                                         )
                                       ],
                                       isExpanded: true,
@@ -237,10 +237,10 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                   Expanded(
                                     child: DropdownButton<String>(
                                       value: "Economy",
-                                      items: [
-                                        const DropdownMenuItem(
-                                          child: Text("Economy"),
+                                      items: const [
+                                        DropdownMenuItem(
                                           value: 'Economy',
+                                          child: Text("Economy"),
                                         )
                                       ],
                                       isExpanded: true,
