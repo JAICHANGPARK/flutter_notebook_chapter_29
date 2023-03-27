@@ -263,11 +263,17 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                               child: Container(
                                 height: 48,
                                 margin: const EdgeInsets.only(bottom: 12),
-                                decoration: const BoxDecoration(
+                                decoration: BoxDecoration(
                                   color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(8),
                                 ),
                                 child: const Center(
-                                  child: Text("Search"),
+                                  child: Text(
+                                    "Search",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
