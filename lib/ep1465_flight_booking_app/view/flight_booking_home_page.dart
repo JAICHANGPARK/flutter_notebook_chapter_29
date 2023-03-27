@@ -315,7 +315,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                     children: [
                                       Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
-                                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                         children: [
                                           Text("SUB"),
                                           Text("Surabaya"),
@@ -324,7 +324,8 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                       ),
                                       Expanded(child: Placeholder()),
                                       Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.end,
+                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                         children: [
                                           Text("DPS"),
                                           Text("Denpasar"),
