@@ -81,6 +81,11 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                       ),
                     ],
                   ),
+                  Expanded(child: SingleChildScrollView(child: Column(
+                    children: [
+
+                    ],
+                  ),)),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 20),
                     child: Card(
@@ -311,6 +316,14 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                             Text(
                               "\$ 34.92",
                             ),
+                            Text("/per"),
+                            Container(
+                              child: Center(
+                                child: Text(
+                                  "Free Reschedule",
+                                ),
+                              ),
+                            )
                           ],
                         )
                       ],
