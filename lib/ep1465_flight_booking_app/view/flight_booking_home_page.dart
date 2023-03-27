@@ -43,12 +43,15 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                     children: [
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                        children: const [
                           Text(
                             "Good Morning Dream",
                             style: TextStyle(
                               color: Colors.white,
                             ),
+                          ),
+                          SizedBox(
+                            height: 8,
                           ),
                           Text(
                             "Where Are You Going Today?",
@@ -58,12 +61,19 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                           ),
                         ],
                       ),
+                      const Spacer(),
                       Container(
                         height: 48,
                         width: 48,
                         decoration: BoxDecoration(
                           border: Border.all(color: Colors.white),
                           shape: BoxShape.circle,
+                        ),
+                        child: Center(
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: const Icon(Icons.notifications_none),
+                          ),
                         ),
                       ),
                     ],
@@ -77,7 +87,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                           children: [
                             Container(
                               height: 48,
-                              margin: EdgeInsets.only(bottom: 12),
+                              margin: const EdgeInsets.only(bottom: 12),
                               decoration: BoxDecoration(
                                 border: Border.all(
                                   color: Colors.grey[300]!,
@@ -86,14 +96,14 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                             ),
                             Container(
                               height: 120,
-                              margin: EdgeInsets.only(bottom: 12),
+                              margin: const EdgeInsets.only(bottom: 12),
                               child: Stack(
                                 children: [
                                   Column(
                                     children: [
                                       Container(
                                         height: 48,
-                                        margin: EdgeInsets.only(bottom: 12),
+                                        margin: const EdgeInsets.only(bottom: 12),
                                         decoration: BoxDecoration(
                                           border: Border.all(
                                             color: Colors.grey[300]!,
@@ -102,7 +112,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                       ),
                                       Container(
                                         height: 48,
-                                        margin: EdgeInsets.only(bottom: 12),
+                                        margin: const EdgeInsets.only(bottom: 12),
                                         decoration: BoxDecoration(
                                           border: Border.all(
                                             color: Colors.grey[300]!,
@@ -116,7 +126,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                             ),
                             Container(
                               height: 48,
-                              margin: EdgeInsets.only(bottom: 12),
+                              margin: const EdgeInsets.only(bottom: 12),
                               decoration: BoxDecoration(
                                 border: Border.all(
                                   color: Colors.grey[300]!,
@@ -125,7 +135,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                             ),
                             Container(
                               height: 48,
-                              margin: EdgeInsets.only(bottom: 12),
+                              margin: const EdgeInsets.only(bottom: 12),
                               decoration: BoxDecoration(
                                 border: Border.all(
                                   color: Colors.grey[300]!,
@@ -134,7 +144,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                             ),
                             Container(
                               height: 48,
-                              margin: EdgeInsets.only(bottom: 12),
+                              margin: const EdgeInsets.only(bottom: 12),
                               decoration: BoxDecoration(
                                 border: Border.all(
                                   color: Colors.grey[300]!,
@@ -142,7 +152,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                               ),
                             ),
                             GestureDetector(
-                              onTap: (){
+                              onTap: () {
                                 Navigator.of(context).push(
                                   MaterialPageRoute(
                                     builder: (context) => const FlightBookingSelectPage(),
@@ -151,12 +161,12 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                               },
                               child: Container(
                                 height: 48,
-                                margin: EdgeInsets.only(bottom: 12),
-                                decoration: BoxDecoration(
+                                margin: const EdgeInsets.only(bottom: 12),
+                                decoration: const BoxDecoration(
                                   color: Colors.blue,
                                 ),
-                                child: Center(
-                                  child: const Text("Search"),
+                                child: const Center(
+                                  child: Text("Search"),
                                 ),
                               ),
                             ),
@@ -174,7 +184,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 80,
-          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
           child: Row(
             children: [
               Expanded(
@@ -183,10 +193,10 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                   color: Colors.blue[100],
                   borderRadius: BorderRadius.circular(24),
                 ),
-                padding: EdgeInsets.symmetric(vertical: 8),
+                padding: const EdgeInsets.symmetric(vertical: 8),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
+                  children: const [
                     Icon(
                       Icons.home_filled,
                       color: Colors.blue,
@@ -205,19 +215,19 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
               )),
               Expanded(
                   child: IconButton(
-                icon: Icon(Icons.airplane_ticket),
+                icon: const Icon(Icons.airplane_ticket),
                 onPressed: () {},
                 color: Colors.grey,
               )),
               Expanded(
                   child: IconButton(
-                icon: Icon(Icons.favorite_border),
+                icon: const Icon(Icons.favorite_border),
                 onPressed: () {},
                 color: Colors.grey,
               )),
               Expanded(
                 child: IconButton(
-                  icon: Icon(Icons.person_outline),
+                  icon: const Icon(Icons.person_outline),
                   onPressed: () {},
                   color: Colors.grey,
                 ),
