@@ -347,11 +347,15 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                     Container(
                                       decoration: BoxDecoration(
                                         color: Colors.green[100],
-                                        borderRadius: BorderRadius.circular(4)
+                                        borderRadius: BorderRadius.circular(4),
                                       ),
+                                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                       child: const Center(
                                         child: Text(
                                           "Free Reschedule",
+                                          style: TextStyle(
+                                            color: Colors.green,
+                                          ),
                                         ),
                                       ),
                                     )
