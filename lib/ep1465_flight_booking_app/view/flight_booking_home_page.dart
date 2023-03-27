@@ -318,7 +318,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                       Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                        children: [
+                                        children: const [
                                           Text("SUB"),
                                           Text("Surabaya"),
                                           Text("12 : 20"),
@@ -328,7 +328,7 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                       Column(
                                         crossAxisAlignment: CrossAxisAlignment.end,
                                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                        children: [
+                                        children: const [
                                           Text("DPS"),
                                           Text("Denpasar"),
                                           Text("14 : 15"),
@@ -343,7 +343,12 @@ class _FlightBookingHomePageState extends State<FlightBookingHomePage> {
                                       "\$ 34.92",
                                     ),
                                     const Text("/per"),
+                                    Spacer(),
                                     Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.green[100],
+                                        borderRadius: BorderRadius.circular(4)
+                                      ),
                                       child: const Center(
                                         child: Text(
                                           "Free Reschedule",
