@@ -1,3 +1,4 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
 class NewsAppOnboardingPage extends StatefulWidget {
@@ -32,7 +33,7 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
             right: 0,
             bottom: 0,
             child: Container(
-              height: MediaQuery.of(context).size.height / 2.3,
+              height: MediaQuery.of(context).size.height / 2.4,
               decoration: BoxDecoration(
                 color: Colors.white,
               ),
@@ -47,12 +48,16 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
                     ),
                   ),
                   SizedBox(
-                    height: 8,
+                    height: 16,
                   ),
                   Text(
                     "Easily stay informed and up-to-date on the lastest news with just a tap.",
                   ),
 
+                  Padding(
+                    padding: const EdgeInsets.only(top: 32, bottom: 24),
+                    child: DotsIndicator(dotsCount: 3),
+                  ),
                 ],
               ),
             ),
