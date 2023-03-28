@@ -40,6 +40,10 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
                 children: [
                   Text(
                     "Stay in the know with just one tap",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
                   ),
                   Text(
                     "Easily stay informed and up-to-date on the lastest news with just a tap.",
