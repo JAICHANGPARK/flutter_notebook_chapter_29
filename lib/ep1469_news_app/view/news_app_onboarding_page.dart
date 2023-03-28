@@ -20,10 +20,14 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
             bottom: 0,
             top: 0,
             child: Container(
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage("https://cdn.pixabay.com/photo/2016/11/08/03/40/police-1807409_1280.jpg"),
                   fit: BoxFit.cover,
+                  colorFilter: ColorFilter.mode(
+                    Colors.black.withOpacity(0.2),
+                    BlendMode.darken,
+                  ),
                 ),
               ),
             ),
