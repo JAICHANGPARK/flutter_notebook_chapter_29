@@ -20,7 +20,7 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
             bottom: 0,
             top: 0,
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage("https://cdn.pixabay.com/photo/2016/11/08/03/40/police-1807409_1280.jpg"),
                   fit: BoxFit.cover,
@@ -34,24 +34,28 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
             bottom: 0,
             child: Container(
               height: MediaQuery.of(context).size.height / 2.4,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
               ),
-              padding: EdgeInsets.all(28),
+              padding: const EdgeInsets.all(28),
               child: Column(
                 children: [
-                  Text(
+                  const Text(
                     "Stay in the know with just one tap",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 38,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
-                  Text(
-                    "Easily stay informed and up-to-date on the lastest news with just a tap.",
+                  const Text(
+                    "Easily stay informed and up-to-date on the latest news with just a tap.",
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.grey,
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 32, bottom: 24),
@@ -61,8 +65,9 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
                     height: 64,
                     decoration: BoxDecoration(
                       color: Colors.blueAccent,
+                      borderRadius: BorderRadius.circular(32),
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Text(
                         "Here We Go",
                         style: TextStyle(
