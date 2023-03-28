@@ -32,9 +32,19 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
             right: 0,
             bottom: 0,
             child: Container(
-              height: MediaQuery.of(context).size.height / 2.5,
+              height: MediaQuery.of(context).size.height / 2.3,
               decoration: BoxDecoration(
                 color: Colors.white,
+              ),
+              child: Column(
+                children: [
+                  Text(
+                    "Stay in the know with just one tap",
+                  ),
+                  Text(
+                    "Easily stay informed and up-to-date on the lastest news with just a tap.",
+                  )
+                ],
               ),
             ),
           )
