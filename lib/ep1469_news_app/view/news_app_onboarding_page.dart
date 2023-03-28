@@ -36,18 +36,23 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
               decoration: BoxDecoration(
                 color: Colors.white,
               ),
+              padding: EdgeInsets.all(28),
               child: Column(
                 children: [
                   Text(
                     "Stay in the know with just one tap",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 20,
+                      fontSize: 38,
                     ),
+                  ),
+                  SizedBox(
+                    height: 8,
                   ),
                   Text(
                     "Easily stay informed and up-to-date on the lastest news with just a tap.",
-                  )
+                  ),
+
                 ],
               ),
             ),
