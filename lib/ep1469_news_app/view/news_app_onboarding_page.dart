@@ -53,10 +53,25 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
                   Text(
                     "Easily stay informed and up-to-date on the lastest news with just a tap.",
                   ),
-
                   Padding(
                     padding: const EdgeInsets.only(top: 32, bottom: 24),
                     child: DotsIndicator(dotsCount: 3),
+                  ),
+                  Container(
+                    height: 64,
+                    decoration: BoxDecoration(
+                      color: Colors.blueAccent,
+                    ),
+                    child: Center(
+                      child: Text(
+                        "Here We Go",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
                   ),
                 ],
               ),
