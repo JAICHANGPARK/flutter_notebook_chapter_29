@@ -34,8 +34,9 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
             bottom: 0,
             child: Container(
               height: MediaQuery.of(context).size.height / 2.4,
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                 color: Colors.white,
+                borderRadius: BorderRadius.circular(18),
               ),
               padding: const EdgeInsets.all(28),
               child: Column(
@@ -58,7 +59,7 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 32, bottom: 24),
+                    padding: const EdgeInsets.only(top: 48, bottom: 32),
                     child: DotsIndicator(dotsCount: 3),
                   ),
                   Container(
