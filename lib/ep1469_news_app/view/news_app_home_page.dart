@@ -1,3 +1,4 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
 class NewsAppHomePage extends StatefulWidget {
@@ -84,6 +85,22 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                           child: Text("See All"),
                         )
                       ],
+                    ),
+                  ),
+                  Container(
+                    height: 180,
+                    color: Colors.blue,
+                  ),
+                  DotsIndicator(dotsCount: 3),
+                  Container(
+                    height: 42,
+                    color: Colors.grey,
+                    child: ListView.builder(
+                      
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container();
+                      },
                     ),
                   )
                 ],
