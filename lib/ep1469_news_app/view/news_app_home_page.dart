@@ -67,20 +67,24 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                 child: SingleChildScrollView(
               child: Column(
                 children: [
-                  Row(
-                    children: [
-                      Text(
-                        "Breaking News",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 24
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Breaking News",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24,
+                          ),
                         ),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text("See All"),
-                      )
-                    ],
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("See All"),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
