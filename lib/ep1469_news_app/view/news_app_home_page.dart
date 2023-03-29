@@ -72,82 +72,83 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
               ),
             ),
             Expanded(
-                child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          "Breaking News",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 24,
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "Breaking News",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 24,
+                            ),
                           ),
-                        ),
-                        TextButton(
-                          onPressed: () {},
-                          child: Text("See All"),
-                        )
-                      ],
+                          TextButton(
+                            onPressed: () {},
+                            child: Text("See All"),
+                          )
+                        ],
+                      ),
                     ),
-                  ),
-                  Container(
-                    height: 180,
-                    color: Colors.blue,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 24, top: 8),
-                    child: DotsIndicator(dotsCount: 3),
-                  ),
-                  Container(
-                    height: 46,
-                    color: Colors.grey,
-                    padding: EdgeInsets.only(left: 16),
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: tabItems.length,
-                      itemBuilder: (context, index) {
-                        final item = tabItems[index];
-                        return Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey[200],
-                            borderRadius: BorderRadius.circular(23),
+                    Container(
+                      height: 180,
+                      color: Colors.blue,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 24, top: 8),
+                      child: DotsIndicator(dotsCount: 3),
+                    ),
+                    Container(
+                      height: 46,
+                      color: Colors.grey,
+                      padding: EdgeInsets.only(left: 16),
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: tabItems.length,
+                        itemBuilder: (context, index) {
+                          final item = tabItems[index];
+                          return Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                              borderRadius: BorderRadius.circular(23),
+                            ),
+                            margin: EdgeInsets.only(right: 16),
+                            padding: EdgeInsets.symmetric(horizontal: 24),
+                            child: Center(child: Text(item)),
+                          );
+                        },
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                        vertical: 8,
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "Only For You",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 24,
+                            ),
                           ),
-                          margin: EdgeInsets.only(right: 16),
-                          padding: EdgeInsets.symmetric(horizontal: 24),
-                          child: Center(child: Text(item)),
-                        );
-                      },
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 16,
-                      vertical: 8,
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          "Only For You",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 24,
-                          ),
-                        ),
-                        TextButton(
-                          onPressed: () {},
-                          child: Text("See All"),
-                        )
-                      ],
-                    ),
-                  )
-                ],
+                          TextButton(
+                            onPressed: () {},
+                            child: Text("See All"),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
-            ))
+            )
           ],
         ),
       ),
