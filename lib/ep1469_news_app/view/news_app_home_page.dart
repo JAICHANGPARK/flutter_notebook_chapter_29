@@ -9,6 +9,13 @@ class NewsAppHomePage extends StatefulWidget {
 }
 
 class _NewsAppHomePageState extends State<NewsAppHomePage> {
+  List<String> tabItems = [
+    "All",
+    "Sport",
+    "Public",
+    "Education",
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -96,9 +103,10 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                     height: 42,
                     color: Colors.grey,
                     child: ListView.builder(
-                      
                       scrollDirection: Axis.horizontal,
+                      itemCount: tabItems.length,
                       itemBuilder: (context, index) {
+                        final item = tabItems[index];
                         return Container();
                       },
                     ),
