@@ -169,8 +169,26 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                     height: 4,
                   ),
                   CircleAvatar(
-                    radius: 6,
+                    radius: 4,
                   )
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.explore_outlined,
+                    size: 32,
+                  ),
+                  SizedBox(
+                    height: 4,
+                  ),
+                  Text(
+                    "Discovery",
+                    style: TextStyle(
+                      fontSize: 12,
+                    ),
+                  ),
                 ],
               )
             ],
