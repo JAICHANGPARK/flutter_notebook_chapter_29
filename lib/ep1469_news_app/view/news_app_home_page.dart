@@ -144,6 +144,18 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                           )
                         ],
                       ),
+                    ),
+                    Column(
+                      children: List.generate(
+                        10,
+                        (index) => Container(
+                          height: 180,
+                          color: Colors.blueAccent,
+                          child: Row(
+                            children: [],
+                          ),
+                        ),
+                      ),
                     )
                   ],
                 ),
