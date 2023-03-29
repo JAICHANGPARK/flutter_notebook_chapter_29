@@ -152,6 +152,31 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 72,
+          padding: EdgeInsets.symmetric(horizontal: 24),
+          child: Row(
+            children: [
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.home_filled,
+                    size: 32,
+                  ),
+                  SizedBox(
+                    height: 4,
+                  ),
+                  CircleAvatar(
+                    radius: 6,
+                  )
+                ],
+              )
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
