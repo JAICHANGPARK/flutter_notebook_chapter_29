@@ -44,6 +44,8 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                   CircleAvatar(
                     radius: 28,
                     backgroundColor: Colors.grey[200],
+                    foregroundColor: Colors.black,
+                    child: Icon(Icons.search),
                   ),
                   SizedBox(
                     width: 8,
@@ -51,10 +53,38 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                   CircleAvatar(
                     radius: 28,
                     backgroundColor: Colors.grey[200],
+                    foregroundColor: Colors.black,
+                    child: Badge(
+                      child: Icon(
+                        Icons.notifications_none,
+                      ),
+                    ),
                   ),
                 ],
               ),
-            )
+            ),
+            Expanded(
+                child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text(
+                        "Breaking News",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text("See All"),
+                      )
+                    ],
+                  )
+                ],
+              ),
+            ))
           ],
         ),
       ),
