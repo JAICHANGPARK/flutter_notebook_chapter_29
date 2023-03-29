@@ -11,7 +11,23 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                CircleAvatar(),
+                Column(
+                  children: [
+                    Text("Good Morning"),
+                    Text("Dream Walker"),
+                  ],
+                ),
+              ],
+            )
+          ],
+        ),
+      ),
     );
   }
 }
