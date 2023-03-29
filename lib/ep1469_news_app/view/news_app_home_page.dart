@@ -14,16 +14,33 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                CircleAvatar(),
-                Column(
-                  children: [
-                    Text("Good Morning"),
-                    Text("Dream Walker"),
-                  ],
-                ),
-              ],
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    radius: 28,
+                  ),
+                  Column(
+                    children: [
+                      Text("Good Morning"),
+                      Text("Dream Walker"),
+                    ],
+                  ),
+                  Spacer(),
+                  CircleAvatar(
+                    radius: 28,
+                    backgroundColor: Colors.grey[200],
+                  ),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  CircleAvatar(
+                    radius: 28,
+                    backgroundColor: Colors.grey[200],
+                  ),
+                ],
+              ),
             )
           ],
         ),
