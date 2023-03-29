@@ -1,5 +1,6 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_29/ep1469_news_app/view/news_app_home_page.dart';
 
 class NewsAppOnboardingPage extends StatefulWidget {
   const NewsAppOnboardingPage({Key? key}) : super(key: key);
@@ -66,19 +67,28 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
                     padding: const EdgeInsets.only(top: 48, bottom: 32),
                     child: DotsIndicator(dotsCount: 3),
                   ),
-                  Container(
-                    height: 64,
-                    decoration: BoxDecoration(
-                      color: Colors.blueAccent,
-                      borderRadius: BorderRadius.circular(32),
-                    ),
-                    child: const Center(
-                      child: Text(
-                        "Here We Go",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 24,
-                          color: Colors.white,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => NewsAppHomePage(),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      height: 64,
+                      decoration: BoxDecoration(
+                        color: Colors.blueAccent,
+                        borderRadius: BorderRadius.circular(32),
+                      ),
+                      child: const Center(
+                        child: Text(
+                          "Here We Go",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                     ),
