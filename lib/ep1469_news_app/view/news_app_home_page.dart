@@ -21,10 +21,23 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                   CircleAvatar(
                     radius: 28,
                   ),
+                  SizedBox(
+                    width: 8,
+                  ),
                   Column(
                     children: [
-                      Text("Good Morning"),
-                      Text("Dream Walker"),
+                      Text(
+                        "Good Morning",
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
+                      ),
+                      Text(
+                        "Dream Walker",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ],
                   ),
                   Spacer(),
