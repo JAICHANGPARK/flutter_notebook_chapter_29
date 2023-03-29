@@ -98,16 +98,28 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                     height: 180,
                     color: Colors.blue,
                   ),
-                  DotsIndicator(dotsCount: 3),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 24, top: 16),
+                    child: DotsIndicator(dotsCount: 3),
+                  ),
                   Container(
                     height: 46,
                     color: Colors.grey,
+                    padding: EdgeInsets.only(left: 16),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: tabItems.length,
                       itemBuilder: (context, index) {
                         final item = tabItems[index];
-                        return Container();
+                        return Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          margin: EdgeInsets.only(right: 16),
+                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          child: Center(child: Text(item)),
+                        );
                       },
                     ),
                   )
