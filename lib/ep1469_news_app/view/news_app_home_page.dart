@@ -99,7 +99,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                     color: Colors.blue,
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(bottom: 24, top: 16),
+                    padding: const EdgeInsets.only(bottom: 24, top: 8),
                     child: DotsIndicator(dotsCount: 3),
                   ),
                   Container(
@@ -121,6 +121,28 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                           child: Center(child: Text(item)),
                         );
                       },
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 8,
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Only For You",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24,
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("See All"),
+                        )
+                      ],
                     ),
                   )
                 ],
