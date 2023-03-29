@@ -114,10 +114,10 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                         return Container(
                           decoration: BoxDecoration(
                             color: Colors.grey[200],
-                            borderRadius: BorderRadius.circular(24),
+                            borderRadius: BorderRadius.circular(23),
                           ),
                           margin: EdgeInsets.only(right: 16),
-                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          padding: EdgeInsets.symmetric(horizontal: 24),
                           child: Center(child: Text(item)),
                         );
                       },
