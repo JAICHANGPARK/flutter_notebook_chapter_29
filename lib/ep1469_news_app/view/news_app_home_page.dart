@@ -196,14 +196,14 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    Icons.explore_outlined,
+                    Icons.bookmark_border,
                     size: 32,
                   ),
                   SizedBox(
                     height: 4,
                   ),
                   Text(
-                    "Discovery",
+                    "Saved",
                     style: TextStyle(
                       fontSize: 12,
                     ),
@@ -214,14 +214,14 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    Icons.explore_outlined,
+                    Icons.account_circle_outlined,
                     size: 32,
                   ),
                   SizedBox(
                     height: 4,
                   ),
                   Text(
-                    "Discovery",
+                    "Profile",
                     style: TextStyle(
                       fontSize: 12,
                     ),
