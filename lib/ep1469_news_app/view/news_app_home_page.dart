@@ -100,7 +100,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                   ),
                   DotsIndicator(dotsCount: 3),
                   Container(
-                    height: 42,
+                    height: 46,
                     color: Colors.grey,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
