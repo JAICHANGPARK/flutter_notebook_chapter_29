@@ -157,6 +157,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
           height: 72,
           padding: EdgeInsets.symmetric(horizontal: 24),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -171,6 +172,42 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                   CircleAvatar(
                     radius: 4,
                   )
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.explore_outlined,
+                    size: 32,
+                  ),
+                  SizedBox(
+                    height: 4,
+                  ),
+                  Text(
+                    "Discovery",
+                    style: TextStyle(
+                      fontSize: 12,
+                    ),
+                  ),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.explore_outlined,
+                    size: 32,
+                  ),
+                  SizedBox(
+                    height: 4,
+                  ),
+                  Text(
+                    "Discovery",
+                    style: TextStyle(
+                      fontSize: 12,
+                    ),
+                  ),
                 ],
               ),
               Column(
