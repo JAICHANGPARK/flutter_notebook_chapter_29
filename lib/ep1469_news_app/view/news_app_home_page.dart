@@ -241,7 +241,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                           10,
                           (index) => Container(
                             height: 160,
-                            color: Colors.blueAccent,
+                            
                             child: Row(
                               children: [
                                 Container(
