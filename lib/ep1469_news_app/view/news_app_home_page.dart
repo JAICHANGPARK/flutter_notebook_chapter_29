@@ -260,16 +260,16 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                       children: [
-                                        Text(
+                                        const Text(
                                           "Dream",
                                           style: TextStyle(
                                             color: Colors.grey,
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 12,
                                         ),
-                                        Text(
+                                        const Text(
                                           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
@@ -278,10 +278,10 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                                         ),
                                         Row(
                                           children: [
-                                            CircleAvatar(
+                                            const CircleAvatar(
                                               radius: 16,
                                             ),
-                                            Text(
+                                            const Text(
                                               "John Doe - 3 hours ago",
                                               style: TextStyle(
                                                 color: Colors.grey,
