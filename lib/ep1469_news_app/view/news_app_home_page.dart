@@ -96,8 +96,11 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                       ),
                     ),
                     Container(
-                      height: 180,
+                      height: 160,
                       color: Colors.blue,
+                      padding: EdgeInsets.only(
+                        left: 16,
+                      ),
                       child: PageView(
                         controller: _pageController,
                         padEnds: false,
@@ -108,6 +111,26 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                             decoration: BoxDecoration(
                               color: Colors.pink,
                               borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                    right: 8,
+                                    top: 8,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.blueAccent,
+                                        borderRadius: BorderRadius.circular(32),
+                                      ),
+                                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                      child: Center(
+                                        child: Text(
+                                          "Sport",
+                                          style: TextStyle(color: Colors.white),
+                                        ),
+                                      ),
+                                    ))
+                              ],
                             ),
                           ),
                           Container(
