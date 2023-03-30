@@ -258,6 +258,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                                     padding: const EdgeInsets.all(8.0),
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                       children: [
                                         Text(
                                           "Dream",
@@ -275,6 +276,19 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                                             fontSize: 16,
                                           ),
                                         ),
+                                        Row(
+                                          children: [
+                                            CircleAvatar(
+                                              radius: 16,
+                                            ),
+                                            Text(
+                                              "John Doe - 3 hours ago",
+                                              style: TextStyle(
+                                                color: Colors.grey,
+                                              ),
+                                            )
+                                          ],
+                                        )
                                       ],
                                     ),
                                   ),
