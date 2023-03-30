@@ -141,7 +141,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                                 ),
                                 Positioned(
                                   left: 8,
-                                  bottom: 8,
+                                  bottom: 16,
                                   right: 24,
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
