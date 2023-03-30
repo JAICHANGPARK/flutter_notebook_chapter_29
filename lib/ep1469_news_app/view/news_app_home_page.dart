@@ -104,6 +104,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                         pageSnapping: false,
                         children: [
                           Container(
+                            margin: EdgeInsets.only(right: 16),
                             decoration: BoxDecoration(
                               color: Colors.pink,
                               borderRadius: BorderRadius.circular(8),
