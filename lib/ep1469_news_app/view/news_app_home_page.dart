@@ -27,21 +27,21 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 28,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 8,
                   ),
                   Column(
                     children: [
-                      Text(
+                      const Text(
                         "Good Morning",
                         style: TextStyle(
                           color: Colors.grey,
                         ),
                       ),
-                      Text(
+                      const Text(
                         "Dream Walker",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -49,21 +49,21 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                       ),
                     ],
                   ),
-                  Spacer(),
+                  const Spacer(),
                   CircleAvatar(
                     radius: 28,
                     backgroundColor: Colors.grey[200],
                     foregroundColor: Colors.black,
-                    child: Icon(Icons.search),
+                    child: const Icon(Icons.search),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 8,
                   ),
                   CircleAvatar(
                     radius: 28,
                     backgroundColor: Colors.grey[200],
                     foregroundColor: Colors.black,
-                    child: Badge(
+                    child: const Badge(
                       child: Icon(
                         Icons.notifications_none,
                       ),
@@ -81,7 +81,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "Breaking News",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -90,7 +90,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                           ),
                           TextButton(
                             onPressed: () {},
-                            child: Text("See All"),
+                            child: const Text("See All"),
                           )
                         ],
                       ),
@@ -98,7 +98,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                     Container(
                       height: 160,
                       color: Colors.blue,
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         left: 16,
                       ),
                       child: PageView(
@@ -107,7 +107,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                         pageSnapping: false,
                         children: [
                           Container(
-                            margin: EdgeInsets.only(right: 16),
+                            margin: const EdgeInsets.only(right: 16),
                             decoration: BoxDecoration(
                               color: Colors.pink,
                               borderRadius: BorderRadius.circular(8),
@@ -115,21 +115,25 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                             child: Stack(
                               children: [
                                 Positioned(
-                                    right: 8,
-                                    top: 8,
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.blueAccent,
-                                        borderRadius: BorderRadius.circular(32),
+                                  right: 8,
+                                  top: 8,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.blueAccent,
+                                      borderRadius: BorderRadius.circular(32),
+                                    ),
+                                    padding: const EdgeInsets.symmetric(
+                                      horizontal: 8,
+                                      vertical: 4,
+                                    ),
+                                    child: const Center(
+                                      child: Text(
+                                        "Sport",
+                                        style: TextStyle(color: Colors.white),
                                       ),
-                                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                      child: Center(
-                                        child: Text(
-                                          "Sport",
-                                          style: TextStyle(color: Colors.white),
-                                        ),
-                                      ),
-                                    ))
+                                    ),
+                                  ),
+                                )
                               ],
                             ),
                           ),
@@ -155,7 +159,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                     Container(
                       height: 46,
                       color: Colors.grey,
-                      padding: EdgeInsets.only(left: 16),
+                      padding: const EdgeInsets.only(left: 16),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount: tabItems.length,
@@ -166,8 +170,8 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                               color: Colors.grey[200],
                               borderRadius: BorderRadius.circular(23),
                             ),
-                            margin: EdgeInsets.only(right: 16),
-                            padding: EdgeInsets.symmetric(horizontal: 24),
+                            margin: const EdgeInsets.only(right: 16),
+                            padding: const EdgeInsets.symmetric(horizontal: 24),
                             child: Center(child: Text(item)),
                           );
                         },
@@ -181,7 +185,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "Only For You",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -190,7 +194,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                           ),
                           TextButton(
                             onPressed: () {},
-                            child: Text("See All"),
+                            child: const Text("See All"),
                           )
                         ],
                       ),
@@ -217,21 +221,21 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 72,
-          padding: EdgeInsets.symmetric(horizontal: 24),
+          padding: const EdgeInsets.symmetric(horizontal: 24),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.home_filled,
                     size: 32,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 4,
                   ),
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 4,
                   )
                 ],
@@ -239,14 +243,14 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.explore_outlined,
                     size: 32,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 4,
                   ),
-                  Text(
+                  const Text(
                     "Discovery",
                     style: TextStyle(
                       fontSize: 12,
@@ -257,14 +261,14 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.bookmark_border,
                     size: 32,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 4,
                   ),
-                  Text(
+                  const Text(
                     "Saved",
                     style: TextStyle(
                       fontSize: 12,
@@ -275,14 +279,14 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.account_circle_outlined,
                     size: 32,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 4,
                   ),
-                  Text(
+                  const Text(
                     "Profile",
                     style: TextStyle(
                       fontSize: 12,
