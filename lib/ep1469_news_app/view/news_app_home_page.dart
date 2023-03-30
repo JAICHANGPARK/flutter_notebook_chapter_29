@@ -34,14 +34,14 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                     width: 8,
                   ),
                   Column(
-                    children: [
-                      const Text(
+                    children: const [
+                      Text(
                         "Good Morning",
                         style: TextStyle(
                           color: Colors.grey,
                         ),
                       ),
-                      const Text(
+                      Text(
                         "Dream Walker",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -146,7 +146,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Row(
-                                        children: [
+                                        children: const [
                                           CircleAvatar(
                                             radius: 8,
                                           ),
@@ -189,9 +189,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                       padding: const EdgeInsets.only(bottom: 24, top: 8),
                       child: DotsIndicator(
                         dotsCount: 3,
-                        decorator: DotsDecorator(
-
-                        ),
+                        decorator: DotsDecorator(),
                       ),
                     ),
                     Container(
@@ -243,7 +241,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                           height: 180,
                           color: Colors.blueAccent,
                           child: Row(
-                            children: [],
+                            children: const [],
                           ),
                         ),
                       ),
@@ -264,30 +262,30 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
             children: [
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Icon(
+                children: const [
+                  Icon(
                     Icons.home_filled,
                     size: 32,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: 4,
                   ),
-                  const CircleAvatar(
+                  CircleAvatar(
                     radius: 4,
                   )
                 ],
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Icon(
+                children: const [
+                  Icon(
                     Icons.explore_outlined,
                     size: 32,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: 4,
                   ),
-                  const Text(
+                  Text(
                     "Discovery",
                     style: TextStyle(
                       fontSize: 12,
@@ -297,15 +295,15 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Icon(
+                children: const [
+                  Icon(
                     Icons.bookmark_border,
                     size: 32,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: 4,
                   ),
-                  const Text(
+                  Text(
                     "Saved",
                     style: TextStyle(
                       fontSize: 12,
@@ -315,15 +313,15 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Icon(
+                children: const [
+                  Icon(
                     Icons.account_circle_outlined,
                     size: 32,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: 4,
                   ),
-                  const Text(
+                  Text(
                     "Profile",
                     style: TextStyle(
                       fontSize: 12,
