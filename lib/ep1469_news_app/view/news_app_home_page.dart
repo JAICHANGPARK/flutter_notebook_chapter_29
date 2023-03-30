@@ -240,14 +240,14 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                         children: List.generate(
                           10,
                           (index) => Container(
-                            height: 160,
-
+                            height: 140,
+                            margin: const EdgeInsets.only(bottom: 16),
                             child: Row(
                               children: [
                                 Container(
-                                  height: 160,
-                                  width: 160,
-                                  margin: const EdgeInsets.only(bottom: 8),
+                                  height: 140,
+                                  width: 140,
+
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(8),
                                     color: Colors.grey,
