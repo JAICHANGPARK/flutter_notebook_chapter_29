@@ -140,7 +140,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                                   ),
                                 ),
                                 Positioned(
-                                  left:8,
+                                  left: 8,
                                   bottom: 8,
                                   right: 24,
                                   child: Column(
@@ -159,7 +159,12 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                                           )
                                         ],
                                       ),
-                                      Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit,")
+                                      Text(
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      )
                                     ],
                                   ),
                                 )
