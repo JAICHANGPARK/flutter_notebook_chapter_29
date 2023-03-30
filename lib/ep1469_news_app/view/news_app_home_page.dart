@@ -110,7 +110,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                             decoration: BoxDecoration(
                               color: Colors.pink,
                               borderRadius: BorderRadius.circular(8),
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: NetworkImage(
                                     "https://cdn.pixabay.com/photo/2016/11/29/02/05/audience-1866738_1280.jpg"),
                                 fit: BoxFit.cover,
@@ -158,7 +158,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                                           )
                                         ],
                                       ),
-                                      Text(
+                                      const Text(
                                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
                                         style: TextStyle(
                                           color: Colors.white,
@@ -189,7 +189,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                       padding: const EdgeInsets.only(bottom: 24, top: 8),
                       child: DotsIndicator(
                         dotsCount: 3,
-                        decorator: DotsDecorator(),
+                        decorator: const DotsDecorator(),
                       ),
                     ),
                     Container(
@@ -247,12 +247,32 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                                 Container(
                                   height: 160,
                                   width: 160,
-                                  margin: EdgeInsets.only(bottom: 8),
+                                  margin: const EdgeInsets.only(bottom: 8),
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(8),
                                     color: Colors.grey,
                                   ),
                                 ),
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Dream",
+                                        style: TextStyle(
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                      Text(
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 16,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                )
                               ],
                             ),
                           ),
