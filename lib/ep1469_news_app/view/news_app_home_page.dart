@@ -111,6 +111,11 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                             decoration: BoxDecoration(
                               color: Colors.pink,
                               borderRadius: BorderRadius.circular(8),
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2016/11/29/02/05/audience-1866738_1280.jpg"),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                             child: Stack(
                               children: [
@@ -132,6 +137,30 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                                         style: TextStyle(color: Colors.white),
                                       ),
                                     ),
+                                  ),
+                                ),
+                                Positioned(
+                                  left:8,
+                                  bottom: 8,
+                                  right: 24,
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          CircleAvatar(
+                                            radius: 8,
+                                          ),
+                                          Text(
+                                            "Dream",
+                                          ),
+                                          Text(
+                                            "1 hours ago",
+                                          )
+                                        ],
+                                      ),
+                                      Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit,")
+                                    ],
                                   ),
                                 )
                               ],
