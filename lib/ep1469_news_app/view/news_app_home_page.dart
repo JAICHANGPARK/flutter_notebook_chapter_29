@@ -247,7 +247,6 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                                 Container(
                                   height: 140,
                                   width: 140,
-
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(8),
                                     color: Colors.grey,
@@ -255,7 +254,9 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                                 ),
                                 Expanded(
                                   child: Padding(
-                                    padding: const EdgeInsets.only(left: 16, ),
+                                    padding: const EdgeInsets.only(
+                                      left: 16,
+                                    ),
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -279,7 +280,10 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                                         Row(
                                           children: [
                                             const CircleAvatar(
-                                              radius: 16,
+                                              radius: 12,
+                                            ),
+                                            SizedBox(
+                                              width: 7,
                                             ),
                                             const Text(
                                               "John Doe - 3 hours ago",
