@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_29/ep1469_news_app/view/news_app_onboarding_page.dart';
 
 void main() {
-  runApp(NewsApp());
+  runApp(const NewsApp());
 }
 
 class NewsApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class NewsApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: NewsAppOnboardingPage(),
     );
   }
