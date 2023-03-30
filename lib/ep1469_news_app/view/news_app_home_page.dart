@@ -274,7 +274,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                                             fontWeight: FontWeight.bold,
                                             fontSize: 16,
                                           ),
-                                        )
+                                        ),
                                       ],
                                     ),
                                   ),
