@@ -15,6 +15,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
     "Public",
     "Education",
   ];
+  var _pageController = PageController(initialPage: 0, viewportFraction: .7);
 
   @override
   Widget build(BuildContext context) {
@@ -97,6 +98,23 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                     Container(
                       height: 180,
                       color: Colors.blue,
+                      child: PageView(
+                        controller: _pageController,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.pink,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.pink,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(bottom: 24, top: 8),
