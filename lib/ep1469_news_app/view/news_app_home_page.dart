@@ -254,23 +254,29 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                                   ),
                                 ),
                                 Expanded(
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        "Dream",
-                                        style: TextStyle(
-                                          color: Colors.grey,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Dream",
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                          ),
                                         ),
-                                      ),
-                                      Text(
-                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 16,
+                                        SizedBox(
+                                          height: 12,
                                         ),
-                                      )
-                                    ],
+                                        Text(
+                                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 16,
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 )
                               ],
