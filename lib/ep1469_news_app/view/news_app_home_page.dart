@@ -234,14 +234,26 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                         ],
                       ),
                     ),
-                    Column(
-                      children: List.generate(
-                        10,
-                        (index) => Container(
-                          height: 180,
-                          color: Colors.blueAccent,
-                          child: Row(
-                            children: const [],
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Column(
+                        children: List.generate(
+                          10,
+                          (index) => Container(
+                            height: 160,
+                            color: Colors.blueAccent,
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 160,
+                                  width: 160,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
