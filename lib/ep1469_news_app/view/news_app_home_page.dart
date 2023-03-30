@@ -100,6 +100,8 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                       color: Colors.blue,
                       child: PageView(
                         controller: _pageController,
+                        padEnds: false,
+                        pageSnapping: false,
                         children: [
                           Container(
                             decoration: BoxDecoration(
@@ -112,7 +114,13 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                               color: Colors.pink,
                               borderRadius: BorderRadius.circular(8),
                             ),
-                          )
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.pink,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
                         ],
                       ),
                     ),
