@@ -97,7 +97,6 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                     ),
                     Container(
                       height: 160,
-                      color: Colors.blue,
                       padding: const EdgeInsets.only(
                         left: 16,
                       ),
@@ -188,11 +187,15 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                     ),
                     Padding(
                       padding: const EdgeInsets.only(bottom: 24, top: 8),
-                      child: DotsIndicator(dotsCount: 3),
+                      child: DotsIndicator(
+                        dotsCount: 3,
+                        decorator: DotsDecorator(
+
+                        ),
+                      ),
                     ),
                     Container(
                       height: 46,
-                      color: Colors.grey,
                       padding: const EdgeInsets.only(left: 16),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
