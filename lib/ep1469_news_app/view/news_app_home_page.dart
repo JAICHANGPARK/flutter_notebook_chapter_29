@@ -15,7 +15,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
     "Public",
     "Education",
   ];
-  var _pageController = PageController(initialPage: 0, viewportFraction: .7);
+  var _pageController = PageController(initialPage: 0, viewportFraction: .8);
 
   @override
   Widget build(BuildContext context) {
