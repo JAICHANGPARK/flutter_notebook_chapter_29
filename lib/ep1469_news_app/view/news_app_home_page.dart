@@ -247,6 +247,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                                 Container(
                                   height: 160,
                                   width: 160,
+                                  margin: EdgeInsets.only(bottom: 8),
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(8),
                                     color: Colors.grey,
