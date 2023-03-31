@@ -14,7 +14,9 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
       body: SafeArea(
         child: Column(),
       ),
-      
+      bottomNavigationBar: BottomNavigationBar(
+        items: [],
+      ),
     );
   }
 }
