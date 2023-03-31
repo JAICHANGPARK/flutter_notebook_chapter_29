@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class NewsAppDetailPage extends StatefulWidget {
   const NewsAppDetailPage({Key? key}) : super(key: key);
 
@@ -11,6 +10,12 @@ class NewsAppDetailPage extends StatefulWidget {
 class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Column(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
