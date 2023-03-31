@@ -11,10 +11,18 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+              Row(
+                children: [
+                  CircleAvatar(
+                    radius: 24,
+                  )
+                ],
+              )
+          ],
+        ),
       ),
     );
   }
