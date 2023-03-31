@@ -34,13 +34,10 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
           child: Row(
             children: [
               IconButton(onPressed: () {}, icon: Icon(Icons.home_outlined)),
-              IconButton(onPressed: () {}, icon: Icon(Icons.home_outlined)),
-              IconButton(onPressed: () {}, icon: Icon(Icons.home_outlined)),
-              IconButton(onPressed: () {}, icon: Icon(Icons.home_outlined)),
-              CircleAvatar(
-
-              )
-
+              IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+              IconButton(onPressed: () {}, icon: Icon(Icons.grid_view)),
+              IconButton(onPressed: () {}, icon: Icon(Icons.chat_bubble_outline)),
+              CircleAvatar()
             ],
           ),
         ),
