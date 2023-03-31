@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() {}
+void main() {
+  runApp(MusicPlayerUI());
+}
 
 class MusicPlayerUI extends StatelessWidget {
   const MusicPlayerUI({Key? key}) : super(key: key);
