@@ -97,7 +97,7 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                             color: Colors.grey,
                           ),
                         ),
-                        Text("Photo by abcdefg", )
+                        Center(child: Text("Photo by abcdefg", ))
                       ],
                     ),
                   ),
