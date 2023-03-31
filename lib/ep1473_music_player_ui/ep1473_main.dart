@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'view/music_player_home_page.dart';
+
 void main() {
   runApp(MusicPlayerUI());
 }
@@ -9,6 +11,8 @@ class MusicPlayerUI extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: MusicPlayerHomePage(),
+    );
   }
 }
