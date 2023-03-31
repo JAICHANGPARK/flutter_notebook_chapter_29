@@ -202,13 +202,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                         itemBuilder: (context, index) {
                           final item = tabItems[index];
                           return GestureDetector(
-                            onTap: () {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (context) => NewsAppDetailPage(),
-                                ),
-                              );
-                            },
+                            onTap: () {},
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.grey[200],
@@ -249,65 +243,74 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                       child: Column(
                         children: List.generate(
                           10,
-                          (index) => Container(
-                            height: 140,
-                            margin: const EdgeInsets.only(bottom: 16),
-                            child: Row(
-                              children: [
-                                Container(
-                                  height: 140,
-                                  width: 140,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(8),
-                                    color: Colors.grey,
-                                  ),
+                          (index) => GestureDetector(
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => NewsAppDetailPage(),
                                 ),
-                                Expanded(
-                                  child: Padding(
-                                    padding: const EdgeInsets.only(
-                                      left: 16,
-                                    ),
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                      children: [
-                                        const Text(
-                                          "Dream",
-                                          style: TextStyle(
-                                            color: Colors.grey,
-                                          ),
-                                        ),
-                                        const SizedBox(
-                                          height: 12,
-                                        ),
-                                        const Text(
-                                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 16,
-                                          ),
-                                        ),
-                                        Row(
-                                          children: [
-                                            const CircleAvatar(
-                                              radius: 12,
-                                            ),
-                                            SizedBox(
-                                              width: 7,
-                                            ),
-                                            const Text(
-                                              "John Doe - 3 hours ago",
-                                              style: TextStyle(
-                                                color: Colors.grey,
-                                              ),
-                                            )
-                                          ],
-                                        )
-                                      ],
+                              );
+                            },
+                            child: Container(
+                              height: 140,
+                              margin: const EdgeInsets.only(bottom: 16),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    height: 140,
+                                    width: 140,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                      color: Colors.grey,
                                     ),
                                   ),
-                                )
-                              ],
+                                  Expanded(
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(
+                                        left: 16,
+                                      ),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                        children: [
+                                          const Text(
+                                            "Dream",
+                                            style: TextStyle(
+                                              color: Colors.grey,
+                                            ),
+                                          ),
+                                          const SizedBox(
+                                            height: 12,
+                                          ),
+                                          const Text(
+                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 16,
+                                            ),
+                                          ),
+                                          Row(
+                                            children: [
+                                              const CircleAvatar(
+                                                radius: 12,
+                                              ),
+                                              SizedBox(
+                                                width: 7,
+                                              ),
+                                              const Text(
+                                                "John Doe - 3 hours ago",
+                                                style: TextStyle(
+                                                  color: Colors.grey,
+                                                ),
+                                              )
+                                            ],
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                         ),
