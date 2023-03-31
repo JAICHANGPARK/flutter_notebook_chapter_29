@@ -71,14 +71,14 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
-                          children: [
-                            const CircleAvatar(
+                          children: const [
+                            CircleAvatar(
                               radius: 14,
                             ),
-                            const SizedBox(
+                            SizedBox(
                               width: 8,
                             ),
-                            const Text("Dream Walker Mar 31, 2023 Sports")
+                            Text("Dream Walker Mar 31, 2023 Sports")
                           ],
                         ),
                         const Padding(
