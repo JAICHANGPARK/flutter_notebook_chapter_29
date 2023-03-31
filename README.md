@@ -4,8 +4,8 @@ A new Flutter project.
 
 ### EP1473
 
-- Wacana - News Mobile App
-- by Yohanes Nico for Matriks Studio
+- Music player UI KIT
+- by Julia Shagofferova 🇺🇦
 - https://dribbble.com/shots/21035602-Wacana-News-Mobile-App
 
 <img src="https://cdn.dribbble.com/userupload/5800142/file/original-ad191cd90712efe5a23207001e8d142f.png?compress=1&resize=1600x1200" width="500px"/>
