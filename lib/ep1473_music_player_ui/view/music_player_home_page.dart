@@ -29,7 +29,21 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        child: Container(),
+        child: Container(
+          height: 72,
+          child: Row(
+            children: [
+              IconButton(onPressed: () {}, icon: Icon(Icons.home_outlined)),
+              IconButton(onPressed: () {}, icon: Icon(Icons.home_outlined)),
+              IconButton(onPressed: () {}, icon: Icon(Icons.home_outlined)),
+              IconButton(onPressed: () {}, icon: Icon(Icons.home_outlined)),
+              CircleAvatar(
+
+              )
+
+            ],
+          ),
+        ),
       ),
     );
   }
