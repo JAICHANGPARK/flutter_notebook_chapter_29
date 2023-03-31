@@ -10,6 +10,11 @@ class MusicPlayerHomePage extends StatefulWidget {
 class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(),
+      ),
+      
+    );
   }
 }
