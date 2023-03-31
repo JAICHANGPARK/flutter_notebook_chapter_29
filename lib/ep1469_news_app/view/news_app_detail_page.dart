@@ -24,28 +24,28 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                       onPressed: () {
                         Navigator.of(context).pop();
                       },
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios,
                       ),
                     ),
                     backgroundColor: Colors.grey[200],
                     foregroundColor: Colors.black,
                   ),
-                  Spacer(),
+                  const Spacer(),
                   CircleAvatar(
                     radius: 24,
                     child: IconButton(
                       onPressed: () {
                         Navigator.of(context).pop();
                       },
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.bookmark_border,
                       ),
                     ),
                     backgroundColor: Colors.grey[200],
                     foregroundColor: Colors.black,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 8,
                   ),
                   CircleAvatar(
@@ -54,7 +54,7 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                       onPressed: () {
                         Navigator.of(context).pop();
                       },
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.share,
                       ),
                     ),
@@ -72,17 +72,17 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                       children: [
                         Row(
                           children: [
-                            CircleAvatar(
+                            const CircleAvatar(
                               radius: 14,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 8,
                             ),
-                            Text("Dream Walker Mar 31, 2023 Sports")
+                            const Text("Dream Walker Mar 31, 2023 Sports")
                           ],
                         ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 8),
+                        const Padding(
+                          padding: EdgeInsets.symmetric(vertical: 8),
                           child: Text(
                             "Lorem ipsum is placeholder text commonly used in the graphic",
                             style: TextStyle(
@@ -93,11 +93,14 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                         ),
                         Container(
                           height: 240,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.grey,
                           ),
                         ),
-                        Center(child: Text("Photo by abcdefg", ))
+                        const Center(
+                            child: Text(
+                          "Photo by abcdefg",
+                        ))
                       ],
                     ),
                   ),
