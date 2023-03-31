@@ -20,6 +20,8 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                 children: [
                   CircleAvatar(
                     radius: 24,
+                    backgroundColor: Colors.grey[200],
+                    foregroundColor: Colors.black,
                     child: IconButton(
                       onPressed: () {
                         Navigator.of(context).pop();
@@ -28,12 +30,12 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                         Icons.arrow_back_ios,
                       ),
                     ),
-                    backgroundColor: Colors.grey[200],
-                    foregroundColor: Colors.black,
                   ),
                   const Spacer(),
                   CircleAvatar(
                     radius: 24,
+                    backgroundColor: Colors.grey[200],
+                    foregroundColor: Colors.black,
                     child: IconButton(
                       onPressed: () {
                         Navigator.of(context).pop();
@@ -42,14 +44,14 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                         Icons.bookmark_border,
                       ),
                     ),
-                    backgroundColor: Colors.grey[200],
-                    foregroundColor: Colors.black,
                   ),
                   const SizedBox(
                     width: 8,
                   ),
                   CircleAvatar(
                     radius: 24,
+                    backgroundColor: Colors.grey[200],
+                    foregroundColor: Colors.black,
                     child: IconButton(
                       onPressed: () {
                         Navigator.of(context).pop();
@@ -58,8 +60,6 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                         Icons.share,
                       ),
                     ),
-                    backgroundColor: Colors.grey[200],
-                    foregroundColor: Colors.black,
                   ),
                 ],
               ),
