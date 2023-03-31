@@ -250,6 +250,7 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                                   builder: (context) => NewsAppDetailPage(),
                                 ),
                               );
+
                             },
                             child: Container(
                               height: 140,
