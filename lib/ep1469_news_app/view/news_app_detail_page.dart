@@ -92,7 +92,7 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                           ),
                         ),
                         Hero(
-                          tag: "hello",
+                          tag: "hello_0",
                           child: Container(
                             height: 240,
                             decoration: BoxDecoration(
