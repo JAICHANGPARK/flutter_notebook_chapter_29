@@ -73,7 +73,7 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                         Row(
                           children: [
                             CircleAvatar(
-                              radius: 12,
+                              radius: 14,
                             ),
                             SizedBox(
                               width: 8,
@@ -87,10 +87,17 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                             "Lorem ipsum is placeholder text commonly used in the graphic",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 24,
+                              fontSize: 26,
                             ),
                           ),
                         ),
+                        Container(
+                          height: 240,
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                          ),
+                        ),
+                        Text("Photo by abcdefg", )
                       ],
                     ),
                   ),
