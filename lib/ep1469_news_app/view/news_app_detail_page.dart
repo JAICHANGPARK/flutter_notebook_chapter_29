@@ -91,12 +91,16 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                             ),
                           ),
                         ),
-                        Container(
-                          height: 240,
-                          decoration: const BoxDecoration(
-                            color: Colors.grey,
+                        Hero(
+                          tag: "hello",
+                          child: Container(
+                            height: 240,
+                            decoration: BoxDecoration(
+                              color: Colors.grey,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            margin: EdgeInsets.symmetric(vertical: 16),
                           ),
-                          margin: EdgeInsets.symmetric(vertical: 16),
                         ),
                         const Center(
                           child: Text(
