@@ -1,5 +1,6 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_29/ep1469_news_app/view/news_app_detail_page.dart';
 
 class NewsAppHomePage extends StatefulWidget {
   const NewsAppHomePage({Key? key}) : super(key: key);
@@ -200,14 +201,23 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                         itemCount: tabItems.length,
                         itemBuilder: (context, index) {
                           final item = tabItems[index];
-                          return Container(
-                            decoration: BoxDecoration(
-                              color: Colors.grey[200],
-                              borderRadius: BorderRadius.circular(23),
+                          return GestureDetector(
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => NewsAppDetailPage(),
+                                ),
+                              );
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey[200],
+                                borderRadius: BorderRadius.circular(23),
+                              ),
+                              margin: const EdgeInsets.only(right: 16),
+                              padding: const EdgeInsets.symmetric(horizontal: 24),
+                              child: Center(child: Text(item)),
                             ),
-                            margin: const EdgeInsets.only(right: 16),
-                            padding: const EdgeInsets.symmetric(horizontal: 24),
-                            child: Center(child: Text(item)),
                           );
                         },
                       ),
