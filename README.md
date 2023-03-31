@@ -6,9 +6,9 @@ A new Flutter project.
 
 - Music player UI KIT
 - by Julia Shagofferova 🇺🇦
-- https://dribbble.com/shots/21035602-Wacana-News-Mobile-App
+- https://dribbble.com/shots/21073149-Music-player-UI-KIT
 
-<img src="https://cdn.dribbble.com/userupload/5800142/file/original-ad191cd90712efe5a23207001e8d142f.png?compress=1&resize=1600x1200" width="500px"/>
+<img src="https://cdn.dribbble.com/userupload/5896771/file/original-fcf8ae5cf50bfda4d2a8526b0ba3be29.png?compress=1&resize=2400x1600" width="500px"/>
 
 ### EP1469-1472
 
