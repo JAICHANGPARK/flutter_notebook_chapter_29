@@ -12,10 +12,23 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(),
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Text("streaming now"),
+                CircleAvatar(
+                  backgroundColor: Colors.white,
+                  foregroundColor: Colors.black,
+                  child: Icon(Icons.search),
+                )
+              ],
+            )
+          ],
+        ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [],
+      bottomNavigationBar: BottomAppBar(
+        child: Container(),
       ),
     );
   }
