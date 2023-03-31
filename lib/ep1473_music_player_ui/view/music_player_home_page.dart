@@ -16,6 +16,7 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
         child: Column(
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("streaming now"),
                 CircleAvatar(
@@ -38,7 +39,9 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
               IconButton(onPressed: () {}, icon: Icon(Icons.search)),
               IconButton(onPressed: () {}, icon: Icon(Icons.grid_view)),
               IconButton(onPressed: () {}, icon: Icon(Icons.chat_bubble_outline)),
-              CircleAvatar()
+              CircleAvatar(
+                radius: 18,
+              )
             ],
           ),
         ),
