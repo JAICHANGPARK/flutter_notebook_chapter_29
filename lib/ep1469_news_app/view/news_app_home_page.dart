@@ -254,65 +254,67 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                             },
                             child: Hero(
                               tag: "hello_$index",
-                              child: Container(
-                                height: 140,
-                                margin: const EdgeInsets.only(bottom: 16),
-                                child: Row(
-                                  children: [
-                                    Container(
-                                      height: 140,
-                                      width: 140,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(8),
-                                        color: Colors.grey,
-                                      ),
-                                    ),
-                                    Expanded(
-                                      child: Padding(
-                                        padding: const EdgeInsets.only(
-                                          left: 16,
+                              child: Material(
+                                child: Container(
+                                  height: 140,
+                                  margin: const EdgeInsets.only(bottom: 16),
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        height: 140,
+                                        width: 140,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(8),
+                                          color: Colors.grey,
                                         ),
-                                        child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                          children: [
-                                            const Text(
-                                              "Dream",
-                                              style: TextStyle(
-                                                color: Colors.grey,
-                                              ),
-                                            ),
-                                            const SizedBox(
-                                              height: 12,
-                                            ),
-                                            const Text(
-                                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 16,
-                                              ),
-                                            ),
-                                            Row(
-                                              children: [
-                                                const CircleAvatar(
-                                                  radius: 12,
+                                      ),
+                                      Expanded(
+                                        child: Padding(
+                                          padding: const EdgeInsets.only(
+                                            left: 16,
+                                          ),
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                            children: [
+                                              const Text(
+                                                "Dream",
+                                                style: TextStyle(
+                                                  color: Colors.grey,
                                                 ),
-                                                SizedBox(
-                                                  width: 7,
+                                              ),
+                                              const SizedBox(
+                                                height: 12,
+                                              ),
+                                              const Text(
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 16,
                                                 ),
-                                                const Text(
-                                                  "John Doe - 3 hours ago",
-                                                  style: TextStyle(
-                                                    color: Colors.grey,
+                                              ),
+                                              Row(
+                                                children: [
+                                                  const CircleAvatar(
+                                                    radius: 12,
                                                   ),
-                                                )
-                                              ],
-                                            )
-                                          ],
+                                                  SizedBox(
+                                                    width: 7,
+                                                  ),
+                                                  const Text(
+                                                    "John Doe - 3 hours ago",
+                                                    style: TextStyle(
+                                                      color: Colors.grey,
+                                                    ),
+                                                  )
+                                                ],
+                                              )
+                                            ],
+                                          ),
                                         ),
-                                      ),
-                                    )
-                                  ],
+                                      )
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),
