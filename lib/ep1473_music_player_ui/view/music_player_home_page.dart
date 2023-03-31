@@ -32,6 +32,7 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
         child: Container(
           height: 72,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               IconButton(onPressed: () {}, icon: Icon(Icons.home_outlined)),
               IconButton(onPressed: () {}, icon: Icon(Icons.search)),
