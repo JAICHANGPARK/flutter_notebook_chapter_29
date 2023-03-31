@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class MusicPlayerHomePage extends StatefulWidget {
   const MusicPlayerHomePage({Key? key}) : super(key: key);
 
@@ -11,6 +10,6 @@ class MusicPlayerHomePage extends StatefulWidget {
 class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold();
   }
 }
