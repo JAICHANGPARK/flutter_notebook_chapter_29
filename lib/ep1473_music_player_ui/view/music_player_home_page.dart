@@ -36,22 +36,26 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
+              padding: const EdgeInsets.only(
+                left: 16,
+                top: 16,
+                bottom: 16,
+              ),
               child: SizedBox(
-                height: 72,
+                height: 74,
                 child: ListView.builder(
                   itemCount: 10,
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
                     return Container(
                       width: 54,
-                      margin: EdgeInsets.only(right: 16),
-                      decoration: BoxDecoration(),
+                      margin: const EdgeInsets.only(right: 16),
+                      decoration: const BoxDecoration(),
                       child: Column(
                         children: [
                           Expanded(
                             child: Container(
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 color: Colors.blueAccent,
                                 borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(16),
@@ -60,10 +64,10 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 6,
                           ),
-                          Text("Dream")
+                          const Text("Dream")
                         ],
                       ),
                     );
