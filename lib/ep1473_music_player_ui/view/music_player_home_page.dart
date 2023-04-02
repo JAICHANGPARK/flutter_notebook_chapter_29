@@ -15,16 +15,42 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Text("streaming now"),
-                const CircleAvatar(
-                  backgroundColor: Colors.white,
-                  foregroundColor: Colors.black,
-                  child: Icon(Icons.search),
-                )
-              ],
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: const [
+                  Text(
+                    "streaming now",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
+                    ),
+                  ),
+                  CircleAvatar(
+                    backgroundColor: Colors.white,
+                    foregroundColor: Colors.black,
+                    child: Icon(Icons.search),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 56,
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return Column(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          
+                        ),
+                      ),
+                      Text("Dream")
+                    ],
+                  );
+                },
+              ),
             )
           ],
         ),
