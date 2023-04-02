@@ -102,121 +102,124 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
             // ),
             Expanded(
               child: SingleChildScrollView(
-                child: StaggeredGrid.count(
-                  crossAxisCount: 2,
-                  mainAxisSpacing: 16,
-                  crossAxisSpacing: 16,
-                  axisDirection: AxisDirection.down,
-                  children: [
-                    SizedBox(
-                      height: 300,
-                      child:
-                      Container(
-                        color: Colors.blue,
-                        child: Center(
-                          child: Text("0"),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: StaggeredGrid.count(
+                    crossAxisCount: 2,
+                    mainAxisSpacing: 16,
+                    crossAxisSpacing: 16,
+                    axisDirection: AxisDirection.down,
+                    children: [
+                      SizedBox(
+                        height: 300,
+                        child:
+                        Container(
+                          color: Colors.blue,
+                          child: Center(
+                            child: Text("0"),
+                          ),
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 150,
-                      child: Container(
-                        color: Colors.blue,
-                        child: Center(
-                          child: Text("1"),
+                      SizedBox(
+                        height: 150,
+                        child: Container(
+                          color: Colors.blue,
+                          child: Center(
+                            child: Text("1"),
+                          ),
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 300,
-                      child:
-                      Container(
-                        color: Colors.blue,
-                        child: Center(
-                          child: Text("0"),
+                      SizedBox(
+                        height: 300,
+                        child:
+                        Container(
+                          color: Colors.blue,
+                          child: Center(
+                            child: Text("0"),
+                          ),
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 150,
-                      child: Container(
-                        color: Colors.blue,
-                        child: Center(
-                          child: Text("1"),
+                      SizedBox(
+                        height: 150,
+                        child: Container(
+                          color: Colors.blue,
+                          child: Center(
+                            child: Text("1"),
+                          ),
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 300,
-                      child:
-                      Container(
-                        color: Colors.blue,
-                        child: Center(
-                          child: Text("0"),
+                      SizedBox(
+                        height: 300,
+                        child:
+                        Container(
+                          color: Colors.blue,
+                          child: Center(
+                            child: Text("0"),
+                          ),
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 150,
-                      child: Container(
-                        color: Colors.blue,
-                        child: Center(
-                          child: Text("1"),
+                      SizedBox(
+                        height: 150,
+                        child: Container(
+                          color: Colors.blue,
+                          child: Center(
+                            child: Text("1"),
+                          ),
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 300,
-                      child:
-                      Container(
-                        color: Colors.blue,
-                        child: Center(
-                          child: Text("0"),
+                      SizedBox(
+                        height: 300,
+                        child:
+                        Container(
+                          color: Colors.blue,
+                          child: Center(
+                            child: Text("0"),
+                          ),
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 150,
-                      child: Container(
-                        color: Colors.blue,
-                        child: Center(
-                          child: Text("1"),
+                      SizedBox(
+                        height: 150,
+                        child: Container(
+                          color: Colors.blue,
+                          child: Center(
+                            child: Text("1"),
+                          ),
                         ),
                       ),
-                    ),
-                    // SizedBox(
-                    //   height: 300,
-                    //   child: StaggeredGridTile.count(
-                    //     crossAxisCellCount: 1,
-                    //     mainAxisCellCount: 1,
-                    //     child:Container(
-                    //       color: Colors.blue,
-                    //       child: Center(
-                    //         child: Text("2"),
-                    //       ),
-                    //     ),
-                    //   ),
-                    // ),
-                    // SizedBox(
-                    //   height: 150,
-                    //   child: StaggeredGridTile.count(
-                    //     crossAxisCellCount: 1,
-                    //     mainAxisCellCount: 1,
-                    //     child:Container(
-                    //       color: Colors.blue,
-                    //       child: Center(
-                    //         child: Text("2"),
-                    //       ),
-                    //     ),
-                    //   ),
-                    // ),
-                    // StaggeredGridTile.count(
-                    //     crossAxisCellCount: 1,
-                    //     mainAxisCellCount: 2,
-                    //     child: Center(
-                    //       child: Text("4"),
-                    //     )),
-                  ],
+                      // SizedBox(
+                      //   height: 300,
+                      //   child: StaggeredGridTile.count(
+                      //     crossAxisCellCount: 1,
+                      //     mainAxisCellCount: 1,
+                      //     child:Container(
+                      //       color: Colors.blue,
+                      //       child: Center(
+                      //         child: Text("2"),
+                      //       ),
+                      //     ),
+                      //   ),
+                      // ),
+                      // SizedBox(
+                      //   height: 150,
+                      //   child: StaggeredGridTile.count(
+                      //     crossAxisCellCount: 1,
+                      //     mainAxisCellCount: 1,
+                      //     child:Container(
+                      //       color: Colors.blue,
+                      //       child: Center(
+                      //         child: Text("2"),
+                      //       ),
+                      //     ),
+                      //   ),
+                      // ),
+                      // StaggeredGridTile.count(
+                      //     crossAxisCellCount: 1,
+                      //     mainAxisCellCount: 2,
+                      //     child: Center(
+                      //       child: Text("4"),
+                      //     )),
+                    ],
+                  ),
                 ),
               ),
             ),
