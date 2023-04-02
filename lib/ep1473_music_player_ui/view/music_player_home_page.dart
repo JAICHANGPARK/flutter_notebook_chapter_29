@@ -43,7 +43,9 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                     children: [
                       Expanded(
                         child: Container(
-                          
+                          decoration: BoxDecoration(
+                            color: Colors.blueAccent,
+                          ),
                         ),
                       ),
                       Text("Dream")
