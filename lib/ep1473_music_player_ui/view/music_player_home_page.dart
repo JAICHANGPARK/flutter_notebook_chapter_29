@@ -35,37 +35,40 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                 ],
               ),
             ),
-            SizedBox(
-              height: 72,
-              child: ListView.builder(
-                itemCount: 10,
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) {
-                  return Container(
-                    width: 54,
-                    margin: EdgeInsets.only(right: 16),
-                    decoration: BoxDecoration(),
-                    child: Column(
-                      children: [
-                        Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.blueAccent,
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(16),
-                                bottomRight: Radius.circular(16),
+            Padding(
+              padding: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
+              child: SizedBox(
+                height: 72,
+                child: ListView.builder(
+                  itemCount: 10,
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      width: 54,
+                      margin: EdgeInsets.only(right: 16),
+                      decoration: BoxDecoration(),
+                      child: Column(
+                        children: [
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.blueAccent,
+                                borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(16),
+                                  bottomRight: Radius.circular(16),
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                        SizedBox(
-                          height: 6,
-                        ),
-                        Text("Dream")
-                      ],
-                    ),
-                  );
-                },
+                          SizedBox(
+                            height: 6,
+                          ),
+                          Text("Dream")
+                        ],
+                      ),
+                    );
+                  },
+                ),
               ),
             )
           ],
