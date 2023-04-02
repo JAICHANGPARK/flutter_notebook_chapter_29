@@ -11,15 +11,15 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[100],
+      backgroundColor: const Color.fromRGBO(209, 213, 214, 1),
       body: SafeArea(
         child: Column(
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("streaming now"),
-                CircleAvatar(
+                const Text("streaming now"),
+                const CircleAvatar(
                   backgroundColor: Colors.white,
                   foregroundColor: Colors.black,
                   child: Icon(Icons.search),
@@ -35,11 +35,11 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              IconButton(onPressed: () {}, icon: Icon(Icons.home_outlined)),
-              IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-              IconButton(onPressed: () {}, icon: Icon(Icons.grid_view)),
-              IconButton(onPressed: () {}, icon: Icon(Icons.chat_bubble_outline)),
-              CircleAvatar(
+              IconButton(onPressed: () {}, icon: const Icon(Icons.home_outlined)),
+              IconButton(onPressed: () {}, icon: const Icon(Icons.search)),
+              IconButton(onPressed: () {}, icon: const Icon(Icons.grid_view)),
+              IconButton(onPressed: () {}, icon: const Icon(Icons.chat_bubble_outline)),
+              const CircleAvatar(
                 radius: 18,
               )
             ],
