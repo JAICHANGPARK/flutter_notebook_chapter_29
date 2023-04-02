@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'view/music_player_home_page.dart';
 
 void main() {
-  runApp(MusicPlayerUI());
+  runApp(const MusicPlayerUI());
 }
 
 class MusicPlayerUI extends StatelessWidget {
