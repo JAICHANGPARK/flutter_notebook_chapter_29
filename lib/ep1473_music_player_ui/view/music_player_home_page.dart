@@ -146,6 +146,44 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                         ),
                       ),
                     ),
+                    SizedBox(
+                      height: 300,
+                      child:
+                      Container(
+                        color: Colors.blue,
+                        child: Center(
+                          child: Text("0"),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 150,
+                      child: Container(
+                        color: Colors.blue,
+                        child: Center(
+                          child: Text("1"),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 300,
+                      child:
+                      Container(
+                        color: Colors.blue,
+                        child: Center(
+                          child: Text("0"),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 150,
+                      child: Container(
+                        color: Colors.blue,
+                        child: Center(
+                          child: Text("1"),
+                        ),
+                      ),
+                    ),
                     // SizedBox(
                     //   height: 300,
                     //   child: StaggeredGridTile.count(
