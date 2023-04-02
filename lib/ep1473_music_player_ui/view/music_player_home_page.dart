@@ -84,10 +84,19 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
             Expanded(
               child: MasonryGridView.count(
                 crossAxisCount: 2,
+                crossAxisSpacing: 16,
+                mainAxisSpacing: 16,
                 itemBuilder: (context, index) {
-                  return Center(
-                    child: Text("$index"),
+                  return Container(
+                    color: Colors.blue,
+                    child: Center(
+                      child: Text("$index"),
+                    ),
+                    height: (index % 2 + 1) * 100,
                   );
+                  // return Center(
+                  //   child: Text("$index"),
+                  // );
                 },
               ),
             ),
