@@ -36,16 +36,15 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
               ),
             ),
             SizedBox(
-              height: 64,
+              height: 72,
               child: ListView.builder(
                 itemCount: 10,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Container(
-                    width: 64,
-                    decoration: BoxDecoration(
-
-                    ),
+                    width: 54,
+                    margin: EdgeInsets.only(right: 16),
+                    decoration: BoxDecoration(),
                     child: Column(
                       children: [
                         Expanded(
@@ -53,11 +52,14 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                             decoration: BoxDecoration(
                               color: Colors.blueAccent,
                               borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(16),
-                                  bottomRight: Radius.circular(16)
+                                topLeft: Radius.circular(16),
+                                bottomRight: Radius.circular(16),
                               ),
                             ),
                           ),
+                        ),
+                        SizedBox(
+                          height: 6,
                         ),
                         Text("Dream")
                       ],
