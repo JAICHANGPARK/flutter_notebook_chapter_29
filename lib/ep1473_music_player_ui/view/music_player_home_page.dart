@@ -82,24 +82,13 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
               ),
             ),
             Expanded(
-              child: SingleChildScrollView(
-                child: StaggeredGrid.count(
-                  crossAxisCount: 2,
-                  mainAxisSpacing: 4,
-                  crossAxisSpacing: 4,
-                  axisDirection: AxisDirection.down,
-                  children: List.generate(
-                    100,
-                    (index) => StaggeredGridTile.count(
-                      child: Container(
-                        color: Colors.pink,
-                        child: Center(
-                          child: Text("${index}"),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
+              child: MasonryGridView.count(
+                crossAxisCount: 2,
+                itemBuilder: (context, index) {
+                  return Center(
+                    child: Text("$index"),
+                  );
+                },
               ),
             ),
           ],
