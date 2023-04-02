@@ -82,90 +82,92 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
               ),
             ),
             Expanded(
-              child: StaggeredGrid.count(
-                crossAxisCount: 4,
-                mainAxisSpacing: 4,
-                crossAxisSpacing: 4,
-                axisDirection: AxisDirection.down,
+              child: SingleChildScrollView(
+                child: StaggeredGrid.count(
+                  crossAxisCount: 4,
+                  mainAxisSpacing: 4,
+                  crossAxisSpacing: 4,
+                  axisDirection: AxisDirection.down,
 
-                children: [
-                  StaggeredGridTile.count(
-                    crossAxisCellCount: 2,
-                    mainAxisCellCount: 2,
-                    child: Text('alpha'),
-                  ),
-                  StaggeredGridTile.count(
-                    crossAxisCellCount: 2,
-                    mainAxisCellCount: 1,
-                    child: Text('alpha'),
-                  ),
-                  StaggeredGridTile.count(
-                    crossAxisCellCount: 1,
-                    mainAxisCellCount: 1,
-                    child: Text('alpha'),
-                  ),
-                  StaggeredGridTile.count(
-                    crossAxisCellCount: 1,
-                    mainAxisCellCount: 1,
-                    child: Text('alpha'),
-                  ),
-                  StaggeredGridTile.count(
-                    crossAxisCellCount: 4,
-                    mainAxisCellCount: 2,
-                    child: Text('alpha'),
-                  ),
-                  StaggeredGridTile.count(
-                    crossAxisCellCount: 2,
-                    mainAxisCellCount: 2,
-                    child: Text('alpha'),
-                  ),
-                  StaggeredGridTile.count(
-                    crossAxisCellCount: 2,
-                    mainAxisCellCount: 1,
-                    child: Text('alpha'),
-                  ),
-                  StaggeredGridTile.count(
-                    crossAxisCellCount: 1,
-                    mainAxisCellCount: 1,
-                    child: Text('alpha'),
-                  ),
-                  StaggeredGridTile.count(
-                    crossAxisCellCount: 1,
-                    mainAxisCellCount: 1,
-                    child: Text('alpha'),
-                  ),
-                  StaggeredGridTile.count(
-                    crossAxisCellCount: 4,
-                    mainAxisCellCount: 2,
-                    child: Text('alpha'),
-                  ),
-                  StaggeredGridTile.count(
-                    crossAxisCellCount: 2,
-                    mainAxisCellCount: 2,
-                    child: Text('alpha'),
-                  ),
-                  StaggeredGridTile.count(
-                    crossAxisCellCount: 2,
-                    mainAxisCellCount: 1,
-                    child: Text('alpha'),
-                  ),
-                  StaggeredGridTile.count(
-                    crossAxisCellCount: 1,
-                    mainAxisCellCount: 1,
-                    child: Text('alpha'),
-                  ),
-                  StaggeredGridTile.count(
-                    crossAxisCellCount: 1,
-                    mainAxisCellCount: 1,
-                    child: Text('alpha'),
-                  ),
-                  StaggeredGridTile.count(
-                    crossAxisCellCount: 4,
-                    mainAxisCellCount: 2,
-                    child: Text('alpha'),
-                  ),
-                ],
+                  children: [
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 2,
+                      mainAxisCellCount: 2,
+                      child: Text('alpha'),
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 2,
+                      mainAxisCellCount: 1,
+                      child: Text('alpha'),
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 1,
+                      mainAxisCellCount: 1,
+                      child: Text('alpha'),
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 1,
+                      mainAxisCellCount: 1,
+                      child: Text('alpha'),
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 4,
+                      mainAxisCellCount: 2,
+                      child: Text('alpha'),
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 2,
+                      mainAxisCellCount: 2,
+                      child: Text('alpha'),
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 2,
+                      mainAxisCellCount: 1,
+                      child: Text('alpha'),
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 1,
+                      mainAxisCellCount: 1,
+                      child: Text('alpha'),
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 1,
+                      mainAxisCellCount: 1,
+                      child: Text('alpha'),
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 4,
+                      mainAxisCellCount: 2,
+                      child: Text('alpha'),
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 2,
+                      mainAxisCellCount: 2,
+                      child: Text('alpha'),
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 2,
+                      mainAxisCellCount: 1,
+                      child: Text('alpha'),
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 1,
+                      mainAxisCellCount: 1,
+                      child: Text('alpha'),
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 1,
+                      mainAxisCellCount: 1,
+                      child: Text('alpha'),
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 4,
+                      mainAxisCellCount: 2,
+                      child: Text('alpha'),
+                    ),
+                  ],
 
+                ),
               ),
             ),
           ],
