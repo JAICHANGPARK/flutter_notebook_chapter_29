@@ -81,23 +81,73 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                 ),
               ),
             ),
+            // Expanded(
+            //   child: MasonryGridView.count(
+            //     crossAxisCount: 2,
+            //     crossAxisSpacing: 16,
+            //     mainAxisSpacing: 16,
+            //     itemBuilder: (context, index) {
+            //       return Container(
+            //         color: Colors.blue,
+            //         child: Center(
+            //           child: Text("$index"),
+            //         ),
+            //         // height: index %(index % 2 ) * 300,
+            //       );
+            //       // return Center(
+            //       //   child: Text("$index"),
+            //       // );
+            //     },
+            //   ),
+            // ),
             Expanded(
-              child: MasonryGridView.count(
-                crossAxisCount: 2,
-                crossAxisSpacing: 16,
-                mainAxisSpacing: 16,
-                itemBuilder: (context, index) {
-                  return Container(
-                    color: Colors.blue,
-                    child: Center(
-                      child: Text("$index"),
+              child: SingleChildScrollView(
+                child: StaggeredGrid.count(
+                  crossAxisCount: 2,
+                  mainAxisSpacing: 4,
+                  crossAxisSpacing: 4,
+                  axisDirection: AxisDirection.down,
+                  children:  [
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 1,
+                      mainAxisCellCount: 2,
+                      child: Container(
+                        color: Colors.blue,
+                        child: Center(
+                          child: Text("0"),
+                        ),
+                      )
                     ),
-                    height: (index % 2 + 1) * 100,
-                  );
-                  // return Center(
-                  //   child: Text("$index"),
-                  // );
-                },
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 1,
+                      mainAxisCellCount: 1,
+                        child: Center(
+                          child: Text("1"),
+                        )
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 1,
+                      mainAxisCellCount: 2,
+                        child: Center(
+                          child: Text("2"),
+                        )
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 1,
+                      mainAxisCellCount: 1,
+                        child: Center(
+                          child: Text("3"),
+                        )
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 1,
+                      mainAxisCellCount: 2,
+                        child: Center(
+                          child: Text("4"),
+                        )
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
