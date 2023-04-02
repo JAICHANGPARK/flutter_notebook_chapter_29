@@ -86,12 +86,34 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                 crossAxisCount: 2,
                 crossAxisSpacing: 8,
                 mainAxisSpacing: 7,
+                axisDirection: AxisDirection.down,
 
                 children: [
-                  Container(color: Colors.blue,),
-                  Container(color: Colors.blue,),
-                  Container(color: Colors.blue,),
-                  Container(color: Colors.blue,),
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 2,
+                    mainAxisCellCount: 2,
+                    child: Text('alpha'),
+                  ),
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 2,
+                    mainAxisCellCount: 1,
+                    child: Text('alpha'),
+                  ),
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 1,
+                    mainAxisCellCount: 1,
+                    child: Text('alpha'),
+                  ),
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 1,
+                    mainAxisCellCount: 1,
+                    child: Text('alpha'),
+                  ),
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 4,
+                    mainAxisCellCount: 2,
+                    child: Text('alpha'),
+                  ),
                 ],
 
               ),
