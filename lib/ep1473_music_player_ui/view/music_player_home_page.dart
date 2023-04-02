@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 class MusicPlayerHomePage extends StatefulWidget {
   const MusicPlayerHomePage({Key? key}) : super(key: key);
@@ -79,7 +80,13 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                   },
                 ),
               ),
-            )
+            ),
+            Expanded(
+              child: StaggeredGrid.count(
+                crossAxisCount: 2,
+
+              ),
+            ),
           ],
         ),
       ),
