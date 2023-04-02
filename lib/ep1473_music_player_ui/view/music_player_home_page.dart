@@ -38,7 +38,7 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
             Padding(
               padding: const EdgeInsets.only(
                 left: 16,
-                top: 16,
+                top: 8,
                 bottom: 16,
               ),
               child: SizedBox(
@@ -67,7 +67,12 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                           const SizedBox(
                             height: 6,
                           ),
-                          const Text("Dream")
+                          const Text(
+                            "Dream",
+                            style: TextStyle(
+                              fontSize: 12,
+                            ),
+                          )
                         ],
                       ),
                     );
