@@ -107,45 +107,54 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                   mainAxisSpacing: 4,
                   crossAxisSpacing: 4,
                   axisDirection: AxisDirection.down,
-                  children:  [
-                    StaggeredGridTile.count(
-                      crossAxisCellCount: 1,
-                      mainAxisCellCount: 2,
-                      child: Container(
-                        color: Colors.blue,
-                        child: Center(
-                          child: Text("0"),
+                  children: [
+                    SizedBox(
+                      height: 200,
+                      child: StaggeredGridTile.count(
+                        crossAxisCellCount: 1,
+                        mainAxisCellCount: 2,
+                        child: Container(
+                          color: Colors.blue,
+                          child: Center(
+                            child: Text("0"),
+                          ),
                         ),
-                      )
+                      ),
+                    ),
+                    SizedBox(
+                      height: 100,
+                      child: StaggeredGridTile.count(
+                        crossAxisCellCount: 1,
+                        mainAxisCellCount: 1,
+                        child:Container(
+                          color: Colors.blue,
+                          child: Center(
+                            child: Text("1"),
+                          ),
+                        ),
+                      ),
                     ),
                     StaggeredGridTile.count(
-                      crossAxisCellCount: 1,
-                      mainAxisCellCount: 1,
-                        child: Center(
-                          child: Text("1"),
-                        )
-                    ),
+                        crossAxisCellCount: 1,
+                        mainAxisCellCount: 2,
+                        child: Container(
+                          color: Colors.blue,
+                          child: Center(
+                            child: Text("2"),
+                          ),
+                        ),),
                     StaggeredGridTile.count(
-                      crossAxisCellCount: 1,
-                      mainAxisCellCount: 2,
-                        child: Center(
-                          child: Text("2"),
-                        )
-                    ),
-                    StaggeredGridTile.count(
-                      crossAxisCellCount: 1,
-                      mainAxisCellCount: 1,
+                        crossAxisCellCount: 1,
+                        mainAxisCellCount: 1,
                         child: Center(
                           child: Text("3"),
-                        )
-                    ),
+                        )),
                     StaggeredGridTile.count(
-                      crossAxisCellCount: 1,
-                      mainAxisCellCount: 2,
+                        crossAxisCellCount: 1,
+                        mainAxisCellCount: 2,
                         child: Center(
                           child: Text("4"),
-                        )
-                    ),
+                        )),
                   ],
                 ),
               ),
