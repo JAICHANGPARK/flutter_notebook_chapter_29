@@ -37,19 +37,25 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
             ),
             SizedBox(
               height: 56,
+            
               child: ListView.builder(
+                itemCount: 10,
+                scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  return Column(
-                    children: [
-                      Expanded(
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.blueAccent,
+                  return Container(
+                    width: 56,
+                    child: Column(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.blueAccent,
+                            ),
                           ),
                         ),
-                      ),
-                      Text("Dream")
-                    ],
+                        Text("Dream")
+                      ],
+                    ),
                   );
                 },
               ),
