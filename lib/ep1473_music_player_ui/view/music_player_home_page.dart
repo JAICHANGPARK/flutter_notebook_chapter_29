@@ -84,6 +84,15 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
             Expanded(
               child: StaggeredGrid.count(
                 crossAxisCount: 2,
+                crossAxisSpacing: 8,
+                mainAxisSpacing: 7,
+
+                children: [
+                  Container(color: Colors.blue,),
+                  Container(color: Colors.blue,),
+                  Container(color: Colors.blue,),
+                  Container(color: Colors.blue,),
+                ],
 
               ),
             ),
