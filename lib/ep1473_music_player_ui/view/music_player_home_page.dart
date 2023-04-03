@@ -179,8 +179,19 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                                               padding: const EdgeInsets.all(8),
                                               child: Row(
                                                 children: [
-                                                  const Icon(Icons.supervisor_account_outlined),
-                                                  const Text("1.2K"),
+                                                  const Icon(
+                                                    Icons.supervisor_account_outlined,
+                                                    color: Colors.white,
+                                                  ),
+                                                  SizedBox(
+                                                    width: 8,
+                                                  ),
+                                                  const Text(
+                                                    "1.2K",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
                                                 ],
                                               ),
                                             ),
