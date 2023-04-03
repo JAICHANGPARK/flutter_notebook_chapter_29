@@ -112,8 +112,47 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                     children: [
                       SizedBox(
                         height: 300,
-                        child:
-                        Container(
+                        child: Container(
+                            color: Colors.blue,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.pink,
+                                    ),
+                                  ),
+                                ),
+                                Text(
+                                  "Title Title Title",
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                                Row(
+                                  children: [
+                                    CircleAvatar(
+                                      radius: 12,
+                                      backgroundColor: Colors.pink,
+                                    ),
+                                    Text("Dream Walker"),
+                                  ],
+                                )
+                              ],
+                            )),
+                      ),
+                      SizedBox(
+                        height: 150,
+                        child: Container(
+                          color: Colors.blue,
+                          child: Center(
+                            child: Text("1"),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 300,
+                        child: Container(
                           color: Colors.blue,
                           child: Center(
                             child: Text("0"),
@@ -131,8 +170,7 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                       ),
                       SizedBox(
                         height: 300,
-                        child:
-                        Container(
+                        child: Container(
                           color: Colors.blue,
                           child: Center(
                             child: Text("0"),
@@ -150,27 +188,7 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                       ),
                       SizedBox(
                         height: 300,
-                        child:
-                        Container(
-                          color: Colors.blue,
-                          child: Center(
-                            child: Text("0"),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 150,
                         child: Container(
-                          color: Colors.blue,
-                          child: Center(
-                            child: Text("1"),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 300,
-                        child:
-                        Container(
                           color: Colors.blue,
                           child: Center(
                             child: Text("0"),
