@@ -1113,7 +1113,7 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        child: Container(
+        child: SizedBox(
           height: 72,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
