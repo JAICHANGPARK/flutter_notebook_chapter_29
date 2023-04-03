@@ -121,6 +121,12 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                                   child: Container(
                                     decoration: BoxDecoration(
                                       color: Colors.pink,
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(24),
+                                        bottomRight: Radius.circular(24),
+                                        topRight: Radius.circular(8),
+                                        bottomLeft: Radius.circular(8),
+                                      ),
                                     ),
                                   ),
                                 ),
