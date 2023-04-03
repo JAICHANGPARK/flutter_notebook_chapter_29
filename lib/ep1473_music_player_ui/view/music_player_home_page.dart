@@ -145,62 +145,63 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                                 child: Stack(
                                   children: [
                                     Positioned(
-                                        left: 8,
-                                        top: 16,
-                                        right: 8,
-                                        child: Row(
-                                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                          children: [
-                                            Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.white.withOpacity(0.3),
-                                                borderRadius: BorderRadius.circular(8),
-                                              ),
-                                              padding: const EdgeInsets.all(8),
-                                              child: Row(
-                                                children: const [
-                                                  Icon(
-                                                    Icons.videocam_outlined,
+                                      left: 8,
+                                      top: 16,
+                                      right: 8,
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                        children: [
+                                          Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.white.withOpacity(0.3),
+                                              borderRadius: BorderRadius.circular(8),
+                                            ),
+                                            padding: const EdgeInsets.all(8),
+                                            child: Row(
+                                              children: const [
+                                                Icon(
+                                                  Icons.videocam_outlined,
+                                                  color: Colors.white,
+                                                ),
+                                                SizedBox(
+                                                  width: 8,
+                                                ),
+                                                Text(
+                                                  "Live",
+                                                  style: TextStyle(
                                                     color: Colors.white,
                                                   ),
-                                                  SizedBox(
-                                                    width: 8,
-                                                  ),
-                                                  Text(
-                                                    "Live",
-                                                    style: TextStyle(
-                                                      color: Colors.white,
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
+                                                ),
+                                              ],
                                             ),
-                                            Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.white.withOpacity(0.3),
-                                                borderRadius: BorderRadius.circular(8),
-                                              ),
-                                              padding: const EdgeInsets.all(8),
-                                              child: Row(
-                                                children: const [
-                                                  Icon(
-                                                    Icons.supervisor_account_outlined,
+                                          ),
+                                          Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.white.withOpacity(0.3),
+                                              borderRadius: BorderRadius.circular(8),
+                                            ),
+                                            padding: const EdgeInsets.all(8),
+                                            child: Row(
+                                              children: const [
+                                                Icon(
+                                                  Icons.supervisor_account_outlined,
+                                                  color: Colors.white,
+                                                ),
+                                                SizedBox(
+                                                  width: 8,
+                                                ),
+                                                Text(
+                                                  "1.2K",
+                                                  style: TextStyle(
                                                     color: Colors.white,
                                                   ),
-                                                  SizedBox(
-                                                    width: 8,
-                                                  ),
-                                                  Text(
-                                                    "1.2K",
-                                                    style: TextStyle(
-                                                      color: Colors.white,
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
+                                                ),
+                                              ],
                                             ),
-                                          ],
-                                        ))
+                                          ),
+                                        ],
+                                      ),
+                                    )
                                   ],
                                 ),
                               ),
@@ -212,6 +213,9 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                               "Title Title Title",
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                             const SizedBox(
                               height: 8,
@@ -221,6 +225,9 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                                 CircleAvatar(
                                   radius: 10,
                                   backgroundColor: Colors.pink,
+                                ),
+                                SizedBox(
+                                  width: 8,
                                 ),
                                 Text("Dream Walker"),
                               ],
