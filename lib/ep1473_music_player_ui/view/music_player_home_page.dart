@@ -236,11 +236,122 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                         )),
                       ),
                       SizedBox(
-                        height: 150,
+                        height: 180,
                         child: Container(
-                          color: Colors.blue,
-                          child: const Center(
-                            child: Text("1"),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.pink,
+                                    borderRadius: const BorderRadius.only(
+                                      topLeft: Radius.circular(24),
+                                      bottomRight: Radius.circular(24),
+                                      topRight: Radius.circular(8),
+                                      bottomLeft: Radius.circular(8),
+                                    ),
+                                    image: DecorationImage(
+                                      image: const NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2016/06/21/23/05/girl-1472185_1280.jpg"),
+                                      fit: BoxFit.cover,
+                                      colorFilter: ColorFilter.mode(
+                                        Colors.black.withOpacity(0.3),
+                                        BlendMode.darken,
+                                      ),
+                                    ),
+                                  ),
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        left: 8,
+                                        top: 16,
+                                        right: 8,
+                                        child: Row(
+                                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                          children: [
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.white.withOpacity(0.3),
+                                                borderRadius: BorderRadius.circular(8),
+                                              ),
+                                              padding: const EdgeInsets.all(8),
+                                              child: Row(
+                                                children: const [
+                                                  Icon(
+                                                    Icons.videocam_outlined,
+                                                    color: Colors.white,
+                                                  ),
+                                                  SizedBox(
+                                                    width: 8,
+                                                  ),
+                                                  Text(
+                                                    "Live",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.white.withOpacity(0.3),
+                                                borderRadius: BorderRadius.circular(8),
+                                              ),
+                                              padding: const EdgeInsets.all(8),
+                                              child: Row(
+                                                children: const [
+                                                  Icon(
+                                                    Icons.supervisor_account_outlined,
+                                                    color: Colors.white,
+                                                  ),
+                                                  SizedBox(
+                                                    width: 8,
+                                                  ),
+                                                  Text(
+                                                    "1.2K",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 8,
+                              ),
+                              const Text(
+                                "Title Title Title",
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 8,
+                              ),
+                              Row(
+                                children: const [
+                                  CircleAvatar(
+                                    radius: 10,
+                                    backgroundColor: Colors.pink,
+                                  ),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Text("Dream Walker"),
+                                ],
+                              )
+                            ],
                           ),
                         ),
                       ),
