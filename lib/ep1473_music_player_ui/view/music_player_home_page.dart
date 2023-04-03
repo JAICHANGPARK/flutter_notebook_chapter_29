@@ -1072,38 +1072,6 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                           ),
                         ),
                       ),
-                      // SizedBox(
-                      //   height: 300,
-                      //   child: StaggeredGridTile.count(
-                      //     crossAxisCellCount: 1,
-                      //     mainAxisCellCount: 1,
-                      //     child:Container(
-                      //       color: Colors.blue,
-                      //       child: Center(
-                      //         child: Text("2"),
-                      //       ),
-                      //     ),
-                      //   ),
-                      // ),
-                      // SizedBox(
-                      //   height: 150,
-                      //   child: StaggeredGridTile.count(
-                      //     crossAxisCellCount: 1,
-                      //     mainAxisCellCount: 1,
-                      //     child:Container(
-                      //       color: Colors.blue,
-                      //       child: Center(
-                      //         child: Text("2"),
-                      //       ),
-                      //     ),
-                      //   ),
-                      // ),
-                      // StaggeredGridTile.count(
-                      //     crossAxisCellCount: 1,
-                      //     mainAxisCellCount: 2,
-                      //     child: Center(
-                      //       child: Text("4"),
-                      //     )),
                     ],
                   ),
                 ),
