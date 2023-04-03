@@ -124,7 +124,7 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                           children: [
                             Expanded(
                               child: Container(
-                                decoration: const BoxDecoration(
+                                decoration: BoxDecoration(
                                   color: Colors.pink,
                                   borderRadius: BorderRadius.only(
                                     topLeft: Radius.circular(24),
@@ -133,10 +133,13 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                                     bottomLeft: Radius.circular(8),
                                   ),
                                   image: DecorationImage(
-                                    image: NetworkImage(
-                                        "https://cdn.pixabay.com/photo/2016/06/21/23/05/girl-1472185_1280.jpg"),
-                                    fit: BoxFit.cover,
-                                  ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2016/06/21/23/05/girl-1472185_1280.jpg"),
+                                      fit: BoxFit.cover,
+                                      colorFilter: ColorFilter.mode(
+                                        Colors.black.withOpacity(0.2),
+                                        BlendMode.darken,
+                                      )),
                                 ),
                                 child: Stack(
                                   children: [
