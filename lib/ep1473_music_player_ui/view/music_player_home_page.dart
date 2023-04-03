@@ -155,8 +155,19 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                                               padding: const EdgeInsets.all(8),
                                               child: Row(
                                                 children: [
-                                                  const Icon(Icons.videocam_outlined),
-                                                  const Text("Live"),
+                                                  const Icon(
+                                                    Icons.videocam_outlined,
+                                                    color: Colors.white,
+                                                  ),
+                                                  SizedBox(
+                                                    width: 8,
+                                                  ),
+                                                  const Text(
+                                                    "Live",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
                                                 ],
                                               ),
                                             ),
