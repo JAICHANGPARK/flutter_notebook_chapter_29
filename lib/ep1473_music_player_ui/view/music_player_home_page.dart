@@ -62,6 +62,11 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                                   topLeft: Radius.circular(16),
                                   bottomRight: Radius.circular(16),
                                 ),
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2017/03/30/18/17/girl-2189247_1280.jpg",
+                                  ),
+                                ),
                               ),
                             ),
                           ),
@@ -132,9 +137,10 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                                       children: [
                                         Positioned(
                                             left: 8,
-                                            top: 8,
-                                            bottom: 8,
+                                            top: 16,
+                                            right: 8,
                                             child: Row(
+                                              mainAxisAlignment: MainAxisAlignment.spaceAround,
                                               children: [
                                                 Container(
                                                   decoration: BoxDecoration(
