@@ -133,6 +133,11 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                                         topRight: Radius.circular(8),
                                         bottomLeft: Radius.circular(8),
                                       ),
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2016/06/21/23/05/girl-1472185_1280.jpg"),
+                                        fit: BoxFit.cover,
+                                      ),
                                     ),
                                     child: Stack(
                                       children: [
