@@ -124,15 +124,21 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                                     ),
                                   ),
                                 ),
+                                SizedBox(
+                                  height: 16,
+                                ),
                                 Text(
                                   "Title Title Title",
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                 ),
+                                SizedBox(
+                                  height: 8,
+                                ),
                                 Row(
                                   children: [
                                     CircleAvatar(
-                                      radius: 12,
+                                      radius: 10,
                                       backgroundColor: Colors.pink,
                                     ),
                                     Text("Dream Walker"),
