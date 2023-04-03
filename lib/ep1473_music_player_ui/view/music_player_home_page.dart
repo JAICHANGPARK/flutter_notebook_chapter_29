@@ -128,10 +128,48 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                                         bottomLeft: Radius.circular(8),
                                       ),
                                     ),
+                                    child: Stack(
+                                      children: [
+                                        Positioned(
+                                            left: 8,
+                                            top: 8,
+                                            bottom: 8,
+                                            child: Row(
+                                              children: [
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.white.withOpacity(0.3),
+                                                    borderRadius: BorderRadius.circular(8),
+                                                  ),
+                                                  padding: EdgeInsets.all(8),
+                                                  child: Row(
+                                                    children: [
+                                                      Icon(Icons.videocam_outlined),
+                                                      Text("Live"),
+                                                    ],
+                                                  ),
+                                                ),
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.white.withOpacity(0.3),
+                                                    borderRadius: BorderRadius.circular(8),
+                                                  ),
+                                                  padding: EdgeInsets.all(8),
+                                                  child: Row(
+                                                    children: [
+                                                      Icon(Icons.supervisor_account_outlined),
+                                                      Text("1.2K"),
+                                                    ],
+                                                  ),
+                                                ),
+                                              ],
+                                            ))
+                                      ],
+                                    ),
                                   ),
                                 ),
                                 SizedBox(
-                                  height: 16,
+                                  height: 8,
                                 ),
                                 Text(
                                   "Title Title Title",
