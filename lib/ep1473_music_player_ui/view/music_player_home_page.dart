@@ -158,15 +158,15 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                                               ),
                                               padding: const EdgeInsets.all(8),
                                               child: Row(
-                                                children: [
-                                                  const Icon(
+                                                children: const [
+                                                  Icon(
                                                     Icons.videocam_outlined,
                                                     color: Colors.white,
                                                   ),
-                                                  const SizedBox(
+                                                  SizedBox(
                                                     width: 8,
                                                   ),
-                                                  const Text(
+                                                  Text(
                                                     "Live",
                                                     style: TextStyle(
                                                       color: Colors.white,
@@ -182,15 +182,15 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                                               ),
                                               padding: const EdgeInsets.all(8),
                                               child: Row(
-                                                children: [
-                                                  const Icon(
+                                                children: const [
+                                                  Icon(
                                                     Icons.supervisor_account_outlined,
                                                     color: Colors.white,
                                                   ),
-                                                  const SizedBox(
+                                                  SizedBox(
                                                     width: 8,
                                                   ),
-                                                  const Text(
+                                                  Text(
                                                     "1.2K",
                                                     style: TextStyle(
                                                       color: Colors.white,
@@ -217,12 +217,12 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                               height: 8,
                             ),
                             Row(
-                              children: [
-                                const CircleAvatar(
+                              children: const [
+                                CircleAvatar(
                                   radius: 10,
                                   backgroundColor: Colors.pink,
                                 ),
-                                const Text("Dream Walker"),
+                                Text("Dream Walker"),
                               ],
                             )
                           ],
