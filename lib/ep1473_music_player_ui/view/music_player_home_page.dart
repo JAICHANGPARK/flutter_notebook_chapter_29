@@ -126,20 +126,21 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                               child: Container(
                                 decoration: BoxDecoration(
                                   color: Colors.pink,
-                                  borderRadius: BorderRadius.only(
+                                  borderRadius: const BorderRadius.only(
                                     topLeft: Radius.circular(24),
                                     bottomRight: Radius.circular(24),
                                     topRight: Radius.circular(8),
                                     bottomLeft: Radius.circular(8),
                                   ),
                                   image: DecorationImage(
-                                      image: NetworkImage(
-                                          "https://cdn.pixabay.com/photo/2016/06/21/23/05/girl-1472185_1280.jpg"),
-                                      fit: BoxFit.cover,
-                                      colorFilter: ColorFilter.mode(
-                                        Colors.black.withOpacity(0.2),
-                                        BlendMode.darken,
-                                      )),
+                                    image: const NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2016/06/21/23/05/girl-1472185_1280.jpg"),
+                                    fit: BoxFit.cover,
+                                    colorFilter: ColorFilter.mode(
+                                      Colors.black.withOpacity(0.3),
+                                      BlendMode.darken,
+                                    ),
+                                  ),
                                 ),
                                 child: Stack(
                                   children: [
@@ -162,7 +163,7 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                                                     Icons.videocam_outlined,
                                                     color: Colors.white,
                                                   ),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     width: 8,
                                                   ),
                                                   const Text(
@@ -186,7 +187,7 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                                                     Icons.supervisor_account_outlined,
                                                     color: Colors.white,
                                                   ),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     width: 8,
                                                   ),
                                                   const Text(
