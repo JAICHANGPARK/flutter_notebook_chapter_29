@@ -60,7 +60,15 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                     SizedBox(
                       height: 24,
                     ),
-                    Expanded(child: Placeholder()),
+                    Expanded(
+                        child: Column(
+                      children: [
+                        Text(
+                          "Like it Doesn't Hurt",
+                        ),
+                        Text("Dreamwalker")
+                      ],
+                    )),
                   ],
                 ),
               )
