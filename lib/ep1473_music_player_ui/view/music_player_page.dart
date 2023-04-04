@@ -30,6 +30,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                     child: IconButton(
                       onPressed: () {
                         Navigator.of(context).pop();
+
                       },
                       icon: Icon(Icons.arrow_back),
                     ),
