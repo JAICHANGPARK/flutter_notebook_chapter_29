@@ -14,7 +14,18 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
       body: SafeArea(
         child: Column(
           children: [
-            
+            Row(
+              children: [
+                Container(
+                  height: 42,
+                  width: 42,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(16)
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
