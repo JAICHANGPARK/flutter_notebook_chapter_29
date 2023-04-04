@@ -84,25 +84,31 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                               ),
                               IconButton(
                                 onPressed: () {},
-                                icon:  Icon(Icons.skip_previous_outlined),
+                                icon: Icon(Icons.skip_previous_outlined),
                               ),
                               IconButton(
                                 onPressed: () {},
-                                icon:  Icon(Icons.fast_rewind_outlined),
+                                icon: Icon(Icons.fast_rewind_outlined),
                               ),
-                              Expanded(child: Container()),
-
+                              Expanded(
+                                  child: Container(
+                                height: 64,
+                                width: 64,
+                                decoration: BoxDecoration(
+                                  color: Colors.purple,
+                                ),
+                              )),
                               IconButton(
                                 onPressed: () {},
                                 icon: Icon(Icons.fast_forward_outlined),
                               ),
                               IconButton(
                                 onPressed: () {},
-                                icon:  Icon(Icons.skip_next_outlined),
+                                icon: Icon(Icons.skip_next_outlined),
                               ),
                               IconButton(
                                 onPressed: () {},
-                                icon:  Icon(Icons.more_horiz),
+                                icon: Icon(Icons.more_horiz),
                               ),
                             ],
                           )
