@@ -69,8 +69,8 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                           ),
                           Center(
                             child: Container(
-                              height: 84,
-                              width: 84,
+                              height: 78,
+                              width: 78,
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
                                 color: Colors.grey,
