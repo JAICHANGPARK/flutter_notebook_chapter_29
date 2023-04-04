@@ -55,11 +55,23 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                 height: 24,
               ),
               Expanded(
+
                 child: Column(
                   children: [
-                    Expanded(child: Placeholder()),
+                    Expanded(
+                      child: Stack(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Colors.blue,
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
                     SizedBox(
-                      height: 24,
+                      height: 64,
                     ),
                     Expanded(
                       child: Column(
