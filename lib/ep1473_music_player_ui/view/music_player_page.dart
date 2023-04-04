@@ -50,6 +50,9 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                   ),
                 ],
               ),
+              SizedBox(
+                height: 24,
+              ),
               Expanded(
                 child: Column(
                   children: [
