@@ -77,6 +77,9 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                             ],
                           ),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween
+
+                            ,
                             children: [
                               IconButton(
                                 onPressed: () {},
@@ -90,14 +93,13 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                                 onPressed: () {},
                                 icon: Icon(Icons.fast_rewind_outlined),
                               ),
-                              Expanded(
-                                  child: Container(
-                                height: 64,
-                                width: 64,
+                              Container(
+                                height: 58,
+                                width: 58,
                                 decoration: BoxDecoration(
-                                  color: Colors.purple,
+                              color: Colors.purple,
                                 ),
-                              )),
+                              ),
                               IconButton(
                                 onPressed: () {},
                                 icon: Icon(Icons.fast_forward_outlined),
