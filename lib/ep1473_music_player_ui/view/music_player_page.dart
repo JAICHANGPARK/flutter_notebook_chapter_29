@@ -61,14 +61,15 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                       height: 24,
                     ),
                     Expanded(
-                        child: Column(
-                      children: [
-                        Text(
-                          "Like it Doesn't Hurt",
-                        ),
-                        Text("Dreamwalker")
-                      ],
-                    )),
+                      child: Column(
+                        children: [
+                          Text(
+                            "Flutter Development",
+                          ),
+                          Text("Dreamwalker")
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               )
