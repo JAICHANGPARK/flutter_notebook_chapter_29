@@ -77,9 +77,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                             ],
                           ),
                           Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween
-
-                            ,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               IconButton(
                                 onPressed: () {},
@@ -97,7 +95,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                                 height: 58,
                                 width: 58,
                                 decoration: BoxDecoration(
-                              color: Colors.purple,
+                                  color: Colors.purple,
                                 ),
                               ),
                               IconButton(
@@ -112,6 +110,13 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                                 onPressed: () {},
                                 icon: Icon(Icons.more_horiz),
                               ),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              IconButton(onPressed: () {}, icon: Icon(Icons.volume_mute_outlined)),
+                              Expanded(child: LinearPercentIndicator()),
+                              IconButton(onPressed: () {}, icon: Icon(Icons.volume_mute_outlined)),
                             ],
                           )
                         ],
