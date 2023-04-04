@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.5
   dots_indicator: any
   flutter_staggered_grid_view: any
+  percent_indicator: any
 
 dev_dependencies:
   flutter_test:
