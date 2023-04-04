@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class MusicPlayerPage extends StatefulWidget {
   const MusicPlayerPage({Key? key}) : super(key: key);
@@ -66,7 +67,14 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                           Text(
                             "Flutter Development",
                           ),
-                          Text("Dreamwalker")
+                          Text("Dreamwalker"),
+                          LinearPercentIndicator(),
+                          Row(
+                            children: [
+                              Text("3:20"),
+                              Text("-1:48")
+                            ],
+                          )
                         ],
                       ),
                     ),
