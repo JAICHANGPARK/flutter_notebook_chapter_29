@@ -70,9 +70,28 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                           Text("Dreamwalker"),
                           LinearPercentIndicator(),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text("3:20"),
-                              Text("-1:48")
+                              Text("-1:48"),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(Icons.forward_30),
+                              ),
+                              IconButton(
+                                onPressed: () {},
+                                icon:  Icon(Icons.skip_previous),
+                              ),
+                              IconButton(
+                                onPressed: () {},
+                                icon:  Icon(Icons.fast_rewind_outlined),
+                              ),
+
+
                             ],
                           )
                         ],
