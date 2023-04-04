@@ -47,8 +47,16 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                       },
                       icon: Icon(Icons.more_vert),
                     ),
-                  )
+                  ),
                 ],
+              ),
+              Expanded(
+                child: Column(
+                  children: [
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                  ],
+                ),
               )
             ],
           ),
