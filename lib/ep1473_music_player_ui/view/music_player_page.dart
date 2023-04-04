@@ -18,6 +18,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
           child: Column(
             children: [
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     height: 42,
@@ -25,6 +26,12 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: IconButton(
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
+                      icon: Icon(Icons.arrow_back),
                     ),
                   ),
                   Container(
