@@ -30,7 +30,6 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                     child: IconButton(
                       onPressed: () {
                         Navigator.of(context).pop();
-
                       },
                       icon: Icon(Icons.arrow_back),
                     ),
@@ -41,6 +40,12 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: IconButton(
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
+                      icon: Icon(Icons.more_vert),
                     ),
                   )
                 ],
