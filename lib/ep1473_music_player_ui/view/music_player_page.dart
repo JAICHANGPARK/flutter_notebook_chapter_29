@@ -179,6 +179,9 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                               ],
                             ),
                           ),
+                          SizedBox(
+                            height: 24,
+                          ),
                           Row(
                             children: [
                               const Icon(Icons.volume_mute_outlined),
@@ -187,7 +190,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                                   barRadius: Radius.circular(8),
                                   percent: 0.4,
                                   progressColor: Colors.black,
-
+                                  lineHeight: 4,
                                 ),
                               ),
                               const Icon(Icons.volume_mute_outlined),
