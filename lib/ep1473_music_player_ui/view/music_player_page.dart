@@ -55,7 +55,6 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                 height: 24,
               ),
               Expanded(
-
                 child: Column(
                   children: [
                     Expanded(
@@ -65,6 +64,11 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               color: Colors.blue,
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                  "https://cdn.pixabay.com/photo/2019/03/02/02/02/neon-4029048_1280.jpg",
+                                ),
+                              ),
                             ),
                           ),
                           Center(
