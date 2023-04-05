@@ -126,12 +126,12 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                             padding: const EdgeInsets.symmetric(horizontal: 8),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                const Text(
+                              children: const [
+                                Text(
                                   "3:20",
                                   style: TextStyle(fontSize: 12),
                                 ),
-                                const Text(
+                                Text(
                                   "-1:48",
                                   style: TextStyle(fontSize: 12),
                                 ),
