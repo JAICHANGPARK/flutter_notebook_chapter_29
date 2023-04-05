@@ -102,7 +102,11 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                             padding: const EdgeInsets.symmetric(vertical: 16),
                             child: const Text("Dreamwalker"),
                           ),
-                          LinearPercentIndicator(),
+                          LinearPercentIndicator(
+                            percent: 0.24,
+                            progressColor: Colors.indigo,
+                            linearStrokeCap: LinearStrokeCap.round,
+                          ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
