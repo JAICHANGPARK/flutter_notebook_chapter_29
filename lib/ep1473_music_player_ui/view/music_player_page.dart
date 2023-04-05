@@ -182,7 +182,10 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                           Row(
                             children: [
                               const Icon(Icons.volume_mute_outlined),
-                              Expanded(child: LinearPercentIndicator()),
+                              Expanded(
+                                  child: LinearPercentIndicator(
+                                barRadius: Radius.circular(8),
+                              )),
                               const Icon(Icons.volume_mute_outlined),
                             ],
                           )
