@@ -146,6 +146,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                                 IconButton(
                                   onPressed: () {},
                                   icon: const Icon(Icons.forward_30),
+                                  color: Colors.grey,
                                 ),
                                 IconButton(
                                   onPressed: () {},
@@ -187,6 +188,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                                 IconButton(
                                   onPressed: () {},
                                   icon: const Icon(Icons.more_horiz),
+                                  color: Colors.grey,
                                 ),
                               ],
                             ),
