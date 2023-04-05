@@ -93,6 +93,10 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                         children: [
                           const Text(
                             "Flutter Development",
+                            style: TextStyle(
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                           const Text("Dreamwalker"),
                           LinearPercentIndicator(),
