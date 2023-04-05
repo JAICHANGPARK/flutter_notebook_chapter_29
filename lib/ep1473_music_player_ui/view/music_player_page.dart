@@ -125,7 +125,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 24),
+                            padding: const EdgeInsets.symmetric(vertical: 28),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
