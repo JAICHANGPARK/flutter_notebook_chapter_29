@@ -68,6 +68,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                                 image: NetworkImage(
                                   "https://cdn.pixabay.com/photo/2019/03/02/02/02/neon-4029048_1280.jpg",
                                 ),
+                                fit: BoxFit.cover,
                               ),
                             ),
                           ),
