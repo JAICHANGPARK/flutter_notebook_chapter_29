@@ -183,7 +183,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                             children: [
                               const Icon(Icons.volume_mute_outlined),
                               Expanded(child: LinearPercentIndicator()),
-                              IconButton(onPressed: () {}, icon: const Icon(Icons.volume_mute_outlined)),
+                              const Icon(Icons.volume_mute_outlined),
                             ],
                           )
                         ],
