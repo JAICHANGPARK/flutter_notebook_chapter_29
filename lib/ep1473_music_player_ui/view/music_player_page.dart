@@ -105,8 +105,9 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                           LinearPercentIndicator(
                             percent: 0.24,
                             progressColor: Colors.indigo,
-                            linearStrokeCap: LinearStrokeCap.round,
+                            barRadius: Radius.circular(9),
                           ),
+                          Su
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
