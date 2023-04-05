@@ -64,7 +64,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               color: Colors.blue,
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: NetworkImage(
                                   "https://cdn.pixabay.com/photo/2019/03/02/02/02/neon-4029048_1280.jpg",
                                 ),
@@ -75,12 +75,12 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                                     color: Colors.red.withOpacity(0.6),
                                     spreadRadius: 8,
                                     blurRadius: 16,
-                                    offset: Offset(8, 8)),
+                                    offset: const Offset(8, 8)),
                                 BoxShadow(
                                     color: Colors.blue.withOpacity(0.6),
                                     spreadRadius: 8,
                                     blurRadius: 16,
-                                    offset: Offset(16, 16))
+                                    offset: const Offset(16, 16))
                               ],
                             ),
                           ),
@@ -110,16 +110,16 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 16),
-                            child: const Text("Dreamwalker"),
+                          const Padding(
+                            padding: EdgeInsets.symmetric(vertical: 16),
+                            child: Text("Dreamwalker"),
                           ),
                           LinearPercentIndicator(
                             percent: 0.24,
                             progressColor: Colors.indigo,
-                            barRadius: Radius.circular(9),
+                            barRadius: const Radius.circular(9),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                           Padding(
@@ -150,38 +150,38 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                                 IconButton(
                                   onPressed: () {},
                                   icon: const Icon(Icons.skip_previous_outlined),
-                                  color: Color.fromRGBO(47, 35, 239, 1),
+                                  color: const Color.fromRGBO(47, 35, 239, 1),
                                   iconSize: 32,
                                 ),
                                 IconButton(
                                   onPressed: () {},
                                   icon: const Icon(Icons.fast_rewind_outlined),
-                                  color: Color.fromRGBO(47, 35, 239, 1),
+                                  color: const Color.fromRGBO(47, 35, 239, 1),
                                   iconSize: 32,
                                 ),
                                 Container(
                                   height: 58,
                                   width: 58,
                                   decoration: BoxDecoration(
-                                    color: Color.fromRGBO(47, 35, 239, 1),
+                                    color: const Color.fromRGBO(47, 35, 239, 1),
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: IconButton(
                                     onPressed: () {},
-                                    icon: Icon(Icons.play_arrow),
+                                    icon: const Icon(Icons.play_arrow),
                                     color: Colors.white,
                                   ),
                                 ),
                                 IconButton(
                                   onPressed: () {},
                                   icon: const Icon(Icons.fast_forward_outlined),
-                                  color: Color.fromRGBO(47, 35, 239, 1),
+                                  color: const Color.fromRGBO(47, 35, 239, 1),
                                   iconSize: 32,
                                 ),
                                 IconButton(
                                   onPressed: () {},
                                   icon: const Icon(Icons.skip_next_outlined),
-                                  color: Color.fromRGBO(47, 35, 239, 1),
+                                  color: const Color.fromRGBO(47, 35, 239, 1),
                                   iconSize: 32,
                                 ),
                                 IconButton(
@@ -191,7 +191,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                               ],
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 24,
                           ),
                           Row(
@@ -199,7 +199,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                               const Icon(Icons.volume_mute_outlined),
                               Expanded(
                                 child: LinearPercentIndicator(
-                                  barRadius: Radius.circular(8),
+                                  barRadius: const Radius.circular(8),
                                   percent: 0.4,
                                   progressColor: Colors.black,
                                   lineHeight: 4,
