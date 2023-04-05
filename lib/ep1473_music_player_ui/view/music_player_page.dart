@@ -141,14 +141,13 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                                   height: 58,
                                   width: 58,
                                   decoration: BoxDecoration(
-                                      color: Colors.purple,
-                                      borderRadius: BorderRadius.circular(8)
+                                    color: Color.fromRGBO(47, 35, 239, 1),
+                                    borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: IconButton(
-                                      onPressed: () {},
-                                      icon: Icon(Icons.play_arrow),
-                                      color: Colors.white
-                                      ,
+                                    onPressed: () {},
+                                    icon: Icon(Icons.play_arrow),
+                                    color: Colors.white,
                                   ),
                                 ),
                                 IconButton(
