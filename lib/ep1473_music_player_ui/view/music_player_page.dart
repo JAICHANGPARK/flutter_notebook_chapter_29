@@ -115,8 +115,12 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                const Text("3:20"),
-                                const Text("-1:48"),
+                                const Text("3:20", style: TextStyle(
+                                  fontSize: 12
+                                ),),
+                                const Text("-1:48", style: TextStyle(
+                                    fontSize: 12
+                                ),),
                               ],
                             ),
                           ),
