@@ -140,8 +140,9 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                                 Container(
                                   height: 58,
                                   width: 58,
-                                  decoration: const BoxDecoration(
+                                  decoration: BoxDecoration(
                                     color: Colors.purple,
+                                    borderRadius: BorderRadius.circular(8)
                                   ),
                                 ),
                                 IconButton(
