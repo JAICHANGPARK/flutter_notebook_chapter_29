@@ -120,41 +120,44 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                               ],
                             ),
                           ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              IconButton(
-                                onPressed: () {},
-                                icon: const Icon(Icons.forward_30),
-                              ),
-                              IconButton(
-                                onPressed: () {},
-                                icon: const Icon(Icons.skip_previous_outlined),
-                              ),
-                              IconButton(
-                                onPressed: () {},
-                                icon: const Icon(Icons.fast_rewind_outlined),
-                              ),
-                              Container(
-                                height: 58,
-                                width: 58,
-                                decoration: const BoxDecoration(
-                                  color: Colors.purple,
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 24),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(Icons.forward_30),
                                 ),
-                              ),
-                              IconButton(
-                                onPressed: () {},
-                                icon: const Icon(Icons.fast_forward_outlined),
-                              ),
-                              IconButton(
-                                onPressed: () {},
-                                icon: const Icon(Icons.skip_next_outlined),
-                              ),
-                              IconButton(
-                                onPressed: () {},
-                                icon: const Icon(Icons.more_horiz),
-                              ),
-                            ],
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(Icons.skip_previous_outlined),
+                                ),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(Icons.fast_rewind_outlined),
+                                ),
+                                Container(
+                                  height: 58,
+                                  width: 58,
+                                  decoration: const BoxDecoration(
+                                    color: Colors.purple,
+                                  ),
+                                ),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(Icons.fast_forward_outlined),
+                                ),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(Icons.skip_next_outlined),
+                                ),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(Icons.more_horiz),
+                                ),
+                              ],
+                            ),
                           ),
                           Row(
                             children: [
