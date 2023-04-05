@@ -61,7 +61,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                       child: Stack(
                         children: [
                           Container(
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               color: Colors.blue,
                               image: DecorationImage(
@@ -70,6 +70,18 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                                 ),
                                 fit: BoxFit.cover,
                               ),
+                              boxShadow: [
+                                BoxShadow(
+                                    color: Colors.red.withOpacity(0.6),
+                                    spreadRadius: 8,
+                                    blurRadius: 16,
+                                    offset: Offset(8, 8)),
+                                BoxShadow(
+                                    color: Colors.blue.withOpacity(0.6),
+                                    spreadRadius: 8,
+                                    blurRadius: 16,
+                                    offset: Offset(16, 16))
+                              ],
                             ),
                           ),
                           Center(
