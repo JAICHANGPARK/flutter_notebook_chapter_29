@@ -98,7 +98,10 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          const Text("Dreamwalker"),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                            child: const Text("Dreamwalker"),
+                          ),
                           LinearPercentIndicator(),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
