@@ -107,13 +107,18 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                             progressColor: Colors.indigo,
                             barRadius: Radius.circular(9),
                           ),
-                          Su
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              const Text("3:20"),
-                              const Text("-1:48"),
-                            ],
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                const Text("3:20"),
+                                const Text("-1:48"),
+                              ],
+                            ),
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
