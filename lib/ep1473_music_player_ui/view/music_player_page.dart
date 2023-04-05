@@ -132,10 +132,14 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                                 IconButton(
                                   onPressed: () {},
                                   icon: const Icon(Icons.skip_previous_outlined),
+                                  color: Color.fromRGBO(47, 35, 239, 1),
+                                  iconSize: 32,
                                 ),
                                 IconButton(
                                   onPressed: () {},
                                   icon: const Icon(Icons.fast_rewind_outlined),
+                                  color: Color.fromRGBO(47, 35, 239, 1),
+                                  iconSize: 32,
                                 ),
                                 Container(
                                   height: 58,
