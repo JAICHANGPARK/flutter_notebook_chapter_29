@@ -32,7 +32,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                       onPressed: () {
                         Navigator.of(context).pop();
                       },
-                      icon: Icon(Icons.arrow_back),
+                      icon: const Icon(Icons.arrow_back),
                     ),
                   ),
                   Container(
@@ -46,12 +46,12 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                       onPressed: () {
                         Navigator.of(context).pop();
                       },
-                      icon: Icon(Icons.more_vert),
+                      icon: const Icon(Icons.more_vert),
                     ),
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 24,
               ),
               Expanded(
@@ -61,7 +61,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                       child: Stack(
                         children: [
                           Container(
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               shape: BoxShape.circle,
                               color: Colors.blue,
                               image: DecorationImage(
@@ -76,7 +76,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                             child: Container(
                               height: 78,
                               width: 78,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 shape: BoxShape.circle,
                                 color: Colors.grey,
                               ),
@@ -85,22 +85,22 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 64,
                     ),
                     Expanded(
                       child: Column(
                         children: [
-                          Text(
+                          const Text(
                             "Flutter Development",
                           ),
-                          Text("Dreamwalker"),
+                          const Text("Dreamwalker"),
                           LinearPercentIndicator(),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text("3:20"),
-                              Text("-1:48"),
+                              const Text("3:20"),
+                              const Text("-1:48"),
                             ],
                           ),
                           Row(
@@ -108,42 +108,42 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                             children: [
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(Icons.forward_30),
+                                icon: const Icon(Icons.forward_30),
                               ),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(Icons.skip_previous_outlined),
+                                icon: const Icon(Icons.skip_previous_outlined),
                               ),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(Icons.fast_rewind_outlined),
+                                icon: const Icon(Icons.fast_rewind_outlined),
                               ),
                               Container(
                                 height: 58,
                                 width: 58,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Colors.purple,
                                 ),
                               ),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(Icons.fast_forward_outlined),
+                                icon: const Icon(Icons.fast_forward_outlined),
                               ),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(Icons.skip_next_outlined),
+                                icon: const Icon(Icons.skip_next_outlined),
                               ),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(Icons.more_horiz),
+                                icon: const Icon(Icons.more_horiz),
                               ),
                             ],
                           ),
                           Row(
                             children: [
-                              IconButton(onPressed: () {}, icon: Icon(Icons.volume_mute_outlined)),
+                              IconButton(onPressed: () {}, icon: const Icon(Icons.volume_mute_outlined)),
                               Expanded(child: LinearPercentIndicator()),
-                              IconButton(onPressed: () {}, icon: Icon(Icons.volume_mute_outlined)),
+                              IconButton(onPressed: () {}, icon: const Icon(Icons.volume_mute_outlined)),
                             ],
                           )
                         ],
