@@ -183,9 +183,13 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                             children: [
                               const Icon(Icons.volume_mute_outlined),
                               Expanded(
-                                  child: LinearPercentIndicator(
-                                barRadius: Radius.circular(8),
-                              )),
+                                child: LinearPercentIndicator(
+                                  barRadius: Radius.circular(8),
+                                  percent: 0.4,
+                                  progressColor: Colors.black,
+
+                                ),
+                              ),
                               const Icon(Icons.volume_mute_outlined),
                             ],
                           )
