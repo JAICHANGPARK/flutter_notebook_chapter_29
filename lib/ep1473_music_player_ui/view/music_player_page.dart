@@ -115,12 +115,14 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                const Text("3:20", style: TextStyle(
-                                  fontSize: 12
-                                ),),
-                                const Text("-1:48", style: TextStyle(
-                                    fontSize: 12
-                                ),),
+                                const Text(
+                                  "3:20",
+                                  style: TextStyle(fontSize: 12),
+                                ),
+                                const Text(
+                                  "-1:48",
+                                  style: TextStyle(fontSize: 12),
+                                ),
                               ],
                             ),
                           ),
@@ -179,7 +181,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                           ),
                           Row(
                             children: [
-                              IconButton(onPressed: () {}, icon: const Icon(Icons.volume_mute_outlined)),
+                              const Icon(Icons.volume_mute_outlined),
                               Expanded(child: LinearPercentIndicator()),
                               IconButton(onPressed: () {}, icon: const Icon(Icons.volume_mute_outlined)),
                             ],
