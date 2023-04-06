@@ -154,10 +154,26 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                         ],
                       ),
                     ),
+                    Container(
+                      height: 100,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                      ),
+                    ),
 
                   ],
                 ),
               ),
+            ],
+          ),
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: SizedBox(
+          height: 72,
+          child: Row(
+            children: [
+
             ],
           ),
         ),
