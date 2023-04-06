@@ -34,7 +34,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                             ),
                           ),
                         ),
-                        Positioned(
+                        const Positioned(
                           right: 0,
                           top: 0,
                           child: CircleAvatar(
@@ -45,10 +45,10 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 16,
                   ),
-                  Text(
+                  const Text(
                     "Hello, ",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -56,14 +56,14 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                       fontSize: 20,
                     ),
                   ),
-                  Text(
+                  const Text(
                     "Dream 👋",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 20,
                     ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Container(
                     height: 48,
                     width: 48,
@@ -75,7 +75,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                     ),
                     child: Center(
                       child: IconButton(
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.more_horiz,
                         ),
                         onPressed: () {},
@@ -83,6 +83,22 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                       ),
                     ),
                   ),
+                ],
+              ),
+              Row(
+                children: [
+                  Column(
+                    children: [
+                      Text("DEC"),
+                      Text("15"),
+                    ],
+                  ),
+                  Text(
+                    "TODAY, SATURDAY",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  )
                 ],
               )
             ],
