@@ -89,14 +89,27 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                 children: [
                   Column(
                     children: [
-                      Text("DEC"),
-                      Text("15"),
+                      Text(
+                        "DEC",
+                        style: TextStyle(
+                          color: Colors.red[100],
+                        ),
+                      ),
+                      Text(
+                        "15",
+                        style: TextStyle(
+                          color: Colors.red[100],
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ],
                   ),
                   Text(
                     "TODAY, SATURDAY",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
+                      color: Colors.white,
                     ),
                   )
                 ],
