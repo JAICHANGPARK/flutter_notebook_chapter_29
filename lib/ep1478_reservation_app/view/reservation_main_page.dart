@@ -22,7 +22,6 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                   Container(
                     height: 58,
                     width: 58,
-
                     child: Stack(
                       children: [
                         Positioned(
@@ -33,6 +32,14 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                 color: Colors.grey[200]!,
                               ),
                             ),
+                          ),
+                        ),
+                        Positioned(
+                          right: 0,
+                          top: 0,
+                          child: CircleAvatar(
+                            radius: 6,
+                            backgroundColor: Colors.red,
                           ),
                         )
                       ],
