@@ -85,34 +85,40 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                   ),
                 ],
               ),
-              Row(
-                children: [
-                  Column(
-                    children: [
-                      Text(
-                        "DEC",
-                        style: TextStyle(
-                          color: Colors.red[100],
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                child: Row(
+                  children: [
+                    Column(
+                      children: [
+                        Text(
+                          "DEC",
+                          style: TextStyle(
+                            color: Colors.red[100],
+                          ),
                         ),
-                      ),
-                      Text(
-                        "15",
-                        style: TextStyle(
-                          color: Colors.red[100],
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
+                        Text(
+                          "15",
+                          style: TextStyle(
+                            color: Colors.red[100],
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                  Text(
-                    "TODAY, SATURDAY",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      ],
                     ),
-                  )
-                ],
+                    SizedBox(
+                      width: 16,
+                    ),
+                    Text(
+                      "TODAY, SATURDAY",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
               )
             ],
           ),
