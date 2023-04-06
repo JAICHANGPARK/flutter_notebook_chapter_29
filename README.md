@@ -4,9 +4,9 @@ A new Flutter project.
 
 ### EP1478
 
-- Music player UI KIT
-- by Julia Shagofferova 🇺🇦
-- https://dribbble.com/shots/21073149-Music-player-UI-KIT
+- BookInn App Concept
+- by Shahram Shahbazi
+- https://dribbble.com/shots/21125853-BookInn-App-Concept
 
 <img src="https://cdn.dribbble.com/userupload/5896771/file/original-fcf8ae5cf50bfda4d2a8526b0ba3be29.png?compress=1&resize=2400x1600" width="500px"/>
 
