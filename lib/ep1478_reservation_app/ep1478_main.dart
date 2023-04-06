@@ -9,13 +9,14 @@ void main() {
 class ReservationApp extends StatelessWidget {
   ReservationApp({Key? key}) : super(key: key);
   final _router = GoRouter(
+
     routes: [
       GoRoute(
         path: "/",
         builder: (context, state) {
           return ReservationMainPage();
         },
-        routes: [ShellRoute(routes: [])],
+        routes: [],
       )
     ],
   );
