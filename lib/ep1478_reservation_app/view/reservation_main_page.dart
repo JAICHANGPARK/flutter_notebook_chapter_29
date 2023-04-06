@@ -121,27 +121,43 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                 ),
               ),
               Expanded(
-                  child: Column(
-                children: [
-                  Container(
-                    height: 100,
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
+                child: Column(
+                  children: [
+                    Container(
+                      height: 120,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                      ),
                     ),
-                  ),
-                  Expanded(
+                    Expanded(
                       child: Row(
-                    children: [
-                      Expanded(
-                          child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.orange,
-                        ),
-                      ))
-                    ],
-                  ))
-                ],
-              )),
+                        children: [
+                          Expanded(
+                              child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                            ),
+                          )),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                              ),
+                              child: Column(
+                                children: [
+                                  Expanded(child: Placeholder()),
+                                  Expanded(child: Placeholder()),
+                                ],
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+
+                  ],
+                ),
+              ),
             ],
           ),
         ),
