@@ -7,15 +7,15 @@ class ReservationApp extends StatelessWidget {
     routes: [
       GoRoute(
         path: "/",
-        routes: [ShellRoute(routes: [
-
-        ])],
+        routes: [ShellRoute(routes: [])],
       )
     ],
   );
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router();
+    return MaterialApp.router(
+      routerConfig: _router,
+    );
   }
 }
