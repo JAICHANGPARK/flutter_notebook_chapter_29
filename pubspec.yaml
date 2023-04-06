@@ -38,6 +38,7 @@ dependencies:
   dots_indicator: any
   flutter_staggered_grid_view: any
   percent_indicator: any
+  go_router: any
 
 dev_dependencies:
   flutter_test:
