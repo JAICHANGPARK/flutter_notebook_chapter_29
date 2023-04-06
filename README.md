@@ -8,7 +8,7 @@ A new Flutter project.
 - by Shahram Shahbazi
 - https://dribbble.com/shots/21125853-BookInn-App-Concept
 
-<img src="https://cdn.dribbble.com/userupload/5896771/file/original-fcf8ae5cf50bfda4d2a8526b0ba3be29.png?compress=1&resize=2400x1600" width="500px"/>
+<img src="https://cdn.dribbble.com/userupload/6047739/file/original-5dd24d37869e9b3e41a63a76d1055cc2.png?compress=1&resize=1600x1200" width="500px"/>
 
 ### EP1473-1477
 
