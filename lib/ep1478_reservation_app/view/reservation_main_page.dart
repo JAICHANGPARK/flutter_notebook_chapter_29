@@ -119,7 +119,29 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                     )
                   ],
                 ),
-              )
+              ),
+              Expanded(
+                  child: Column(
+                children: [
+                  Container(
+                    height: 100,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                    ),
+                  ),
+                  Expanded(
+                      child: Row(
+                    children: [
+                      Expanded(
+                          child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.orange,
+                        ),
+                      ))
+                    ],
+                  ))
+                ],
+              )),
             ],
           ),
         ),
