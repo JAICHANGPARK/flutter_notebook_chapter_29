@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+void main() {
+  runApp(ReservationApp());
+}
+
 class ReservationApp extends StatelessWidget {
   ReservationApp({Key? key}) : super(key: key);
   final _router = GoRouter(
