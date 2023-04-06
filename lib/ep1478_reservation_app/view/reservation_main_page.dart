@@ -22,9 +22,20 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                   Container(
                     height: 58,
                     width: 58,
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                      shape: BoxShape.circle,
+
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: Colors.grey[200]!,
+                              ),
+                            ),
+                          ),
+                        )
+                      ],
                     ),
                   ),
                   SizedBox(
@@ -47,8 +58,8 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                   ),
                   Spacer(),
                   Container(
-                    height: 52,
-                    width: 52,
+                    height: 48,
+                    width: 48,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
@@ -61,6 +72,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                           Icons.more_horiz,
                         ),
                         onPressed: () {},
+                        color: Colors.white,
                       ),
                     ),
                   ),
