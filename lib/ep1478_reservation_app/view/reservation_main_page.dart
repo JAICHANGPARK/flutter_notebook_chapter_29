@@ -135,13 +135,26 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                             width: 120,
                             decoration: BoxDecoration(
                               color: Colors.yellow,
-                              borderRadius: BorderRadius.circular(16)
+                              borderRadius: BorderRadius.circular(16),
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2019/08/31/07/01/bezel-4442913_1280.jpg"),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
-                          Column(
-                            children: [
-                              
-                            ],
+                          Expanded(
+                            child: Column(
+                              children: [
+                                Text(
+                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, ',
+                                  maxLines: 2,
+                                  style: TextStyle(
+                                    color: Colors.white
+                                  ),
+                                )
+                              ],
+                            ),
                           )
                         ],
                       ),
