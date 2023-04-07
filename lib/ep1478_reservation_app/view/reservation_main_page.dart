@@ -151,13 +151,25 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                   Text(
                                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, ',
                                     maxLines: 2,
-                                    style: TextStyle(
-                                      color: Colors.white
-                                    ),
+                                    style: TextStyle(color: Colors.white),
                                   ),
                                   Row(
                                     children: [
-                                      
+                                      Icon(Icons.calendar_month),
+                                      Text("DEC 18 - DEC 22"),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Expanded(child: Stack()),
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                        ),
+                                        child: Center(
+                                          child: Text("CHAT NOW"),
+                                        ),
+                                      )
                                     ],
                                   )
                                 ],
