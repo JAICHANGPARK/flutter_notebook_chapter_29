@@ -11,7 +11,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(18, 20, 24, 1),
+      backgroundColor: const Color.fromRGBO(18, 20, 24, 1),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -126,7 +126,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                     Container(
                       height: 120,
                       decoration: BoxDecoration(
-                        color: Color.fromRGBO(31, 32, 41, 1),
+                        color: const Color.fromRGBO(31, 32, 41, 1),
                         borderRadius: BorderRadius.circular(16),
                       ),
                       child: Row(
@@ -136,7 +136,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                             decoration: BoxDecoration(
                               color: Colors.yellow,
                               borderRadius: BorderRadius.circular(16),
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: NetworkImage(
                                     "https://cdn.pixabay.com/photo/2019/08/31/07/01/bezel-4442913_1280.jpg"),
                                 fit: BoxFit.cover,
@@ -149,7 +149,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                                 children: [
-                                  Text(
+                                  const Text(
                                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, ',
                                     maxLines: 2,
                                     style: TextStyle(
@@ -159,12 +159,12 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                   ),
                                   Row(
                                     children: [
-                                      Icon(
+                                      const Icon(
                                         Icons.calendar_month,
                                         size: 12,
                                         color: Colors.grey,
                                       ),
-                                      Text(
+                                      const Text(
                                         "DEC 18 - DEC 22",
                                         style: TextStyle(
                                           fontSize: 12,
@@ -178,16 +178,16 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                       Expanded(
                                         child: Stack(
                                           children: [
-                                            CircleAvatar(
+                                            const CircleAvatar(
                                               radius: 16,
                                             ),
-                                            Positioned(
+                                            const Positioned(
                                               left: 16,
                                               child: CircleAvatar(
                                                 radius: 16,
                                               ),
                                             ),
-                                            Positioned(
+                                            const Positioned(
                                               left: 32,
                                               child: CircleAvatar(
                                                 radius: 16,
@@ -197,12 +197,12 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                         ),
                                       ),
                                       Container(
-                                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                         decoration: BoxDecoration(
                                           color: Colors.white,
                                           borderRadius: BorderRadius.circular(8),
                                         ),
-                                        child: Center(
+                                        child: const Center(
                                           child: Text(
                                             "CHAT NOW",
                                             style: TextStyle(
