@@ -154,7 +154,8 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                 children: [
                                   Expanded(child: Placeholder()),
                                   SizedBox(
-                                    height: 12,
+                                    height
+                                        : 12,
                                   ),
                                   Expanded(child: Placeholder()),
                                 ],
