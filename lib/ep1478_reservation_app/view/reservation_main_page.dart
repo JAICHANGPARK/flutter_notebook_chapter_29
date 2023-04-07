@@ -11,7 +11,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Color.fromRGBO(18, 20, 24, 1),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
