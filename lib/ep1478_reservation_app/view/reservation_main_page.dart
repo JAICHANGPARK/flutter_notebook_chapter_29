@@ -280,27 +280,63 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                             children: [
                                               Text(
                                                 "Hunter Vallet Loft",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 8,
                                               ),
                                               Row(
                                                 children: [
                                                   Icon(
                                                     Icons.calendar_month,
-                                                    size: 12,
+                                                    size: 10,
+                                                    color: Colors.grey,
                                                   ),
-                                                  Text("DEC 16"),
+                                                  SizedBox(
+                                                    width: 8,
+                                                  ),
+                                                  Text(
+                                                    "DEC 16",
+                                                    style: TextStyle(color: Colors.grey, fontSize: 10),
+                                                  ),
                                                 ],
                                               ),
-                                              Text("Burger & Chips"),
+                                              Spacer(),
+                                              Text(
+                                                "Burger & Chips",
+                                                style: TextStyle(
+                                                  color: Colors.grey,
+                                                ),
+                                              ),
                                               Row(
+                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                 children: [
-                                                  Text("12.00"),
-                                                  Text("USD"),
+                                                  Text(
+                                                    "12.00",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    "USD",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
                                                 ],
                                               ),
+                                              Spacer(),
                                               Row(
                                                 children: [
                                                   Expanded(
-                                                    child: Text("BOOK\nPAY"),
+                                                    child: Text(
+                                                      "BOOK\nPAY",
+                                                      style: TextStyle(
+                                                        color: Colors.white,
+                                                      ),
+                                                    ),
                                                   ),
                                                   Container(
                                                     decoration: BoxDecoration(),
@@ -328,6 +364,11 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                   ),
                                   Expanded(
                                       child: Container(
+                                    padding: EdgeInsets.all(16),
+                                    decoration: BoxDecoration(
+                                      color: const Color.fromRGBO(31, 32, 41, 1),
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
                                     child: Stack(
                                       children: [
                                         Positioned(
