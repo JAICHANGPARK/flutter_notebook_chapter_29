@@ -147,16 +147,30 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                             child: Padding(
                               padding: const EdgeInsets.all(16.0),
                               child: Column(
+                                mainAxisAlignment: MainAxisAlignment.spaceAround,
                                 children: [
                                   Text(
                                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, ',
                                     maxLines: 2,
-                                    style: TextStyle(color: Colors.white),
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
                                   Row(
                                     children: [
-                                      Icon(Icons.calendar_month),
-                                      Text("DEC 18 - DEC 22"),
+                                      Icon(
+                                        Icons.calendar_month,
+                                        size: 12,
+                                        color: Colors.grey,
+                                      ),
+                                      Text(
+                                        "DEC 18 - DEC 22",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
                                     ],
                                   ),
                                   Row(
