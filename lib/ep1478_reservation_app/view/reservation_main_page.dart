@@ -299,7 +299,10 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                                   ),
                                                   Text(
                                                     "DEC 16",
-                                                    style: TextStyle(color: Colors.grey, fontSize: 10),
+                                                    style: TextStyle(
+                                                      color: Colors.grey,
+                                                      fontSize: 10,
+                                                    ),
                                                   ),
                                                 ],
                                               ),
@@ -309,6 +312,9 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                                 style: TextStyle(
                                                   color: Colors.grey,
                                                 ),
+                                              ),
+                                              SizedBox(
+                                                height: 8,
                                               ),
                                               Row(
                                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
