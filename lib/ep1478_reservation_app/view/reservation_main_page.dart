@@ -261,9 +261,9 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                           ),
                           Expanded(
                             child: Container(
-                              decoration: const BoxDecoration(
-                                color: Colors.red,
-                              ),
+                              // decoration: const BoxDecoration(
+                              //   color: Colors.red,
+                              // ),
                               child: Column(
                                 children: [
                                   Expanded(
