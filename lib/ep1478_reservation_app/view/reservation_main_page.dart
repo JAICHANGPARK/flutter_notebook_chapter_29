@@ -163,13 +163,19 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                     children: [
                                       Expanded(child: Stack()),
                                       Container(
-                                        padding: EdgeInsets.symmetric(horizontal: 8,vertical: 4),
+                                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                         decoration: BoxDecoration(
                                           color: Colors.white,
-                                          borderRadius: BorderRadius.circular(8)
+                                          borderRadius: BorderRadius.circular(8),
                                         ),
                                         child: Center(
-                                          child: Text("CHAT NOW"),
+                                          child: Text(
+                                            "CHAT NOW",
+                                            style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
                                         ),
                                       )
                                     ],
