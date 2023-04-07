@@ -238,6 +238,22 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                   fit: BoxFit.cover,
                                 ),
                               ),
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    left: 8,
+                                    right: 8,
+                                    bottom: 8,
+                                    child: Text(
+                                      "FIND A RESERVATION",
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                           const SizedBox(
@@ -260,9 +276,11 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                             borderRadius: BorderRadius.circular(16),
                                           ),
                                           child: Column(
-                                            
+                                            crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
-                                              Text("Hunter Vallet Loft"),
+                                              Text(
+                                                "Hunter Vallet Loft",
+                                              ),
                                               Row(
                                                 children: [
                                                   Icon(
