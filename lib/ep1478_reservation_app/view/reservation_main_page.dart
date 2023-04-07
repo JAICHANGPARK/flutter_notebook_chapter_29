@@ -125,9 +125,25 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                   children: [
                     Container(
                       height: 120,
-                      decoration:  BoxDecoration(
+                      decoration: BoxDecoration(
                         color: Color.fromRGBO(31, 32, 41, 1),
                         borderRadius: BorderRadius.circular(16),
+                      ),
+                      child: Row(
+                        children: [
+                          Container(
+                            width: 120,
+                            decoration: BoxDecoration(
+                              color: Colors.yellow,
+                              borderRadius: BorderRadius.circular(16)
+                            ),
+                          ),
+                          Column(
+                            children: [
+                              
+                            ],
+                          )
+                        ],
                       ),
                     ),
                     const SizedBox(
