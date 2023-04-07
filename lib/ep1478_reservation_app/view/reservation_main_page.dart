@@ -232,7 +232,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(16),
-                                image: DecorationImage(
+                                image: const DecorationImage(
                                   image: NetworkImage(
                                       "https://cdn.pixabay.com/photo/2016/03/23/22/33/run-1275788_1280.jpg"),
                                   fit: BoxFit.cover,
@@ -240,7 +240,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                               ),
                               child: Stack(
                                 children: [
-                                  Positioned(
+                                  const Positioned(
                                     left: 8,
                                     right: 8,
                                     bottom: 8,
@@ -270,7 +270,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                     child: Stack(
                                       children: [
                                         Container(
-                                          padding: EdgeInsets.all(16),
+                                          padding: const EdgeInsets.all(16),
                                           decoration: BoxDecoration(
                                             color: const Color.fromRGBO(31, 32, 41, 1),
                                             borderRadius: BorderRadius.circular(16),
@@ -278,26 +278,26 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
-                                              Text(
+                                              const Text(
                                                 "Hunter Vallet Loft",
                                                 style: TextStyle(
                                                   color: Colors.white,
                                                 ),
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 height: 8,
                                               ),
                                               Row(
                                                 children: [
-                                                  Icon(
+                                                  const Icon(
                                                     Icons.calendar_month,
                                                     size: 10,
                                                     color: Colors.grey,
                                                   ),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     width: 8,
                                                   ),
-                                                  Text(
+                                                  const Text(
                                                     "DEC 16",
                                                     style: TextStyle(
                                                       color: Colors.grey,
@@ -306,26 +306,26 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                                   ),
                                                 ],
                                               ),
-                                              Spacer(),
-                                              Text(
+                                              const Spacer(),
+                                              const Text(
                                                 "Burger & Chips",
                                                 style: TextStyle(
                                                   color: Colors.grey,
                                                 ),
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 height: 8,
                                               ),
                                               Row(
                                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                 children: [
-                                                  Text(
+                                                  const Text(
                                                     "12.00",
                                                     style: TextStyle(
                                                       color: Colors.white,
                                                     ),
                                                   ),
-                                                  Text(
+                                                  const Text(
                                                     "USD",
                                                     style: TextStyle(
                                                       color: Colors.white,
@@ -333,10 +333,10 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                                   ),
                                                 ],
                                               ),
-                                              Spacer(),
+                                              const Spacer(),
                                               Row(
                                                 children: [
-                                                  Expanded(
+                                                  const Expanded(
                                                     child: Text(
                                                       "BOOK\nPAY",
                                                       style: TextStyle(
@@ -345,8 +345,8 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                                     ),
                                                   ),
                                                   Container(
-                                                    decoration: BoxDecoration(),
-                                                    child: Icon(
+                                                    decoration: const BoxDecoration(),
+                                                    child: const Icon(
                                                       Icons.arrow_forward_ios,
                                                     ),
                                                   )
@@ -365,19 +365,24 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 12,
                                   ),
                                   Expanded(
                                       child: Container(
-                                    padding: EdgeInsets.all(16),
+                                    padding: const EdgeInsets.all(12),
                                     decoration: BoxDecoration(
                                       color: const Color.fromRGBO(31, 32, 41, 1),
                                       borderRadius: BorderRadius.circular(16),
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2017/03/07/14/19/mountain-climbing-2124113_1280.jpg"),
+                                        fit: BoxFit.cover,
+                                      ),
                                     ),
                                     child: Stack(
                                       children: [
-                                        Positioned(
+                                        const Positioned(
                                           left: 8,
                                           right: 8,
                                           bottom: 8,
