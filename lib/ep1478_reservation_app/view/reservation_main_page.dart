@@ -326,7 +326,25 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                   SizedBox(
                                     height: 12,
                                   ),
-                                  Expanded(child: Placeholder()),
+                                  Expanded(
+                                      child: Container(
+                                    child: Stack(
+                                      children: [
+                                        Positioned(
+                                          left: 8,
+                                          right: 8,
+                                          bottom: 8,
+                                          child: Text(
+                                            "NEARBY\nTHINGS TODOS",
+                                            style: TextStyle(
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  )),
                                 ],
                               ),
                             ),
