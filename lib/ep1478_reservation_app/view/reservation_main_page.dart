@@ -229,8 +229,14 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                         children: [
                           Expanded(
                             child: Container(
-                              decoration: const BoxDecoration(
-                                color: Colors.orange,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(16),
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2016/03/23/22/33/run-1275788_1280.jpg"),
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
                           ),
@@ -243,8 +249,62 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                 color: Colors.red,
                               ),
                               child: Column(
-                                children: const [
-                                  Expanded(child: Placeholder()),
+                                children: [
+                                  Expanded(
+                                    child: Stack(
+                                      children: [
+                                        Container(
+                                          padding: EdgeInsets.all(16),
+                                          decoration: BoxDecoration(
+                                            color: const Color.fromRGBO(31, 32, 41, 1),
+                                            borderRadius: BorderRadius.circular(16),
+                                          ),
+                                          child: Column(
+                                            
+                                            children: [
+                                              Text("Hunter Vallet Loft"),
+                                              Row(
+                                                children: [
+                                                  Icon(
+                                                    Icons.calendar_month,
+                                                    size: 12,
+                                                  ),
+                                                  Text("DEC 16"),
+                                                ],
+                                              ),
+                                              Text("Burger & Chips"),
+                                              Row(
+                                                children: [
+                                                  Text("12.00"),
+                                                  Text("USD"),
+                                                ],
+                                              ),
+                                              Row(
+                                                children: [
+                                                  Expanded(
+                                                    child: Text("BOOK\nPAY"),
+                                                  ),
+                                                  Container(
+                                                    decoration: BoxDecoration(),
+                                                    child: Icon(
+                                                      Icons.arrow_forward_ios,
+                                                    ),
+                                                  )
+                                                ],
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        Positioned(
+                                            right: 0,
+                                            top: 0,
+                                            child: CircleAvatar(
+                                              radius: 12,
+                                              backgroundColor: Colors.red[100],
+                                            ))
+                                      ],
+                                    ),
+                                  ),
                                   SizedBox(
                                     height: 12,
                                   ),
