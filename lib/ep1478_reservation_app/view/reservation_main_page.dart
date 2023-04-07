@@ -107,10 +107,10 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 16,
                     ),
-                    Text(
+                    const Text(
                       "TODAY, SATURDAY",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -125,11 +125,11 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                   children: [
                     Container(
                       height: 120,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.blue,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 12,
                     ),
                     Expanded(
@@ -137,27 +137,26 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                         children: [
                           Expanded(
                             child: Container(
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 color: Colors.orange,
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 12,
                           ),
                           Expanded(
                             child: Container(
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 color: Colors.red,
                               ),
                               child: Column(
                                 children: [
-                                  Expanded(child: Placeholder()),
-                                  SizedBox(
-                                    height
-                                        : 12,
+                                  const Expanded(child: Placeholder()),
+                                  const SizedBox(
+                                    height: 12,
                                   ),
-                                  Expanded(child: Placeholder()),
+                                  const Expanded(child: Placeholder()),
                                 ],
                               ),
                             ),
@@ -165,12 +164,12 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 12,
                     ),
                     Container(
                       height: 100,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.blue,
                       ),
                     ),
