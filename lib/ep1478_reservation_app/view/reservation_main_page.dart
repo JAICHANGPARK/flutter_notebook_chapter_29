@@ -144,16 +144,24 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                             ),
                           ),
                           Expanded(
-                            child: Column(
-                              children: [
-                                Text(
-                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, ',
-                                  maxLines: 2,
-                                  style: TextStyle(
-                                    color: Colors.white
+                            child: Padding(
+                              padding: const EdgeInsets.all(16.0),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, ',
+                                    maxLines: 2,
+                                    style: TextStyle(
+                                      color: Colors.white
+                                    ),
                                   ),
-                                )
-                              ],
+                                  Row(
+                                    children: [
+                                      
+                                    ],
+                                  )
+                                ],
+                              ),
                             ),
                           )
                         ],
