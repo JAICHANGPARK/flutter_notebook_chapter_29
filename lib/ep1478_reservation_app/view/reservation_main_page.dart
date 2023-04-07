@@ -175,7 +175,27 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                   ),
                                   Row(
                                     children: [
-                                      Expanded(child: Stack()),
+                                      Expanded(
+                                        child: Stack(
+                                          children: [
+                                            CircleAvatar(
+                                              radius: 16,
+                                            ),
+                                            Positioned(
+                                              left: 16,
+                                              child: CircleAvatar(
+                                                radius: 16,
+                                              ),
+                                            ),
+                                            Positioned(
+                                              left: 32,
+                                              child: CircleAvatar(
+                                                radius: 16,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
                                       Container(
                                         padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                         decoration: BoxDecoration(
