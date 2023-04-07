@@ -151,12 +151,12 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                 color: Colors.red,
                               ),
                               child: Column(
-                                children: [
-                                  const Expanded(child: Placeholder()),
-                                  const SizedBox(
+                                children: const [
+                                  Expanded(child: Placeholder()),
+                                  SizedBox(
                                     height: 12,
                                   ),
-                                  const Expanded(child: Placeholder()),
+                                  Expanded(child: Placeholder()),
                                 ],
                               ),
                             ),
@@ -184,7 +184,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
         child: SizedBox(
           height: 72,
           child: Row(
-            children: [],
+            children: const [],
           ),
         ),
       ),
