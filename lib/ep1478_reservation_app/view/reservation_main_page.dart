@@ -480,7 +480,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                   child: Center(
                     child: IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.location_on_outlined),
+                      icon: Icon(Icons.person_outline),
                       color: Colors.white,
                     ),
                   ),
