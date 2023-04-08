@@ -463,6 +463,9 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                       )
                                     ],
                                   ),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
                                   Text(
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
                                     style: TextStyle(
