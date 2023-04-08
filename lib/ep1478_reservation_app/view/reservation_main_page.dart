@@ -467,7 +467,13 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                     ),
                   ),
                 ),
-                const Expanded(child: Placeholder()),
+                 Expanded(
+                    child: Center(
+                  child: IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.location_on_outlined),
+                  ),
+                )),
                 const Expanded(child: Placeholder()),
               ],
             ),
