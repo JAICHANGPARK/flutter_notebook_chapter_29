@@ -374,7 +374,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                     decoration: BoxDecoration(
                                       color: const Color.fromRGBO(31, 32, 41, 1),
                                       borderRadius: BorderRadius.circular(16),
-                                      image: DecorationImage(
+                                      image: const DecorationImage(
                                         image: NetworkImage(
                                             "https://cdn.pixabay.com/photo/2017/03/07/14/19/mountain-climbing-2124113_1280.jpg"),
                                         fit: BoxFit.cover,
