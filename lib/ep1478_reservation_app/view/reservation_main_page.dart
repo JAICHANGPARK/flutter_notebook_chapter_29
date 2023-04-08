@@ -420,7 +420,27 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                               ),
                               child: Column(
                                 children: [
-                                  
+                                  Row(
+                                    children: [
+                                      CircleAvatar(
+                                        radius: 18,
+                                      ),
+                                      Column(
+                                        children: [
+                                          Text("Dream Walker"),
+                                          Row(
+                                            children: [
+                                              Icon(Icons.calendar_month),
+                                              SizedBox(
+                                                width: 8,
+                                              ),
+                                              Text("DEC 18")
+                                            ],
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  )
                                 ],
                               ),
                             ),
