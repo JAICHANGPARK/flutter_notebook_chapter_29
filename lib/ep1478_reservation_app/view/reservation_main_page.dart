@@ -448,7 +448,10 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                       ),
                       Text(
                         "Home",
-                        style: TextStyle(fontSize: 12),
+                        style: TextStyle(
+                          fontSize: 10,
+                          fontWeight: FontWeight.bold,
+                        ),
                       )
                     ],
                   ),
