@@ -429,7 +429,9 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                   child: Container(
                 child: Row(
                   children: [
-                    Icon(Icons.home_outlined),
+                    Icon(
+                      Icons.home_outlined,
+                    ),
                     SizedBox(
                       width: 8,
                     ),
