@@ -412,6 +412,11 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                       decoration: const BoxDecoration(
                         color: Colors.blue,
                       ),
+                      child: Stack(
+                        children: [
+                          
+                        ],
+                      ),
                     ),
                   ],
                 ),
