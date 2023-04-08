@@ -435,8 +435,8 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(16),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 8),
-                  margin: EdgeInsets.symmetric(horizontal: 8),
+                  padding: const EdgeInsets.symmetric(vertical: 8),
+                  margin: const EdgeInsets.symmetric(horizontal: 8),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: const [
@@ -446,13 +446,23 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                       SizedBox(
                         width: 8,
                       ),
-                      Text("Home",style: TextStyle(
-                        fontSize: 12
-                      ),)
+                      Text(
+                        "Home",
+                        style: TextStyle(fontSize: 12),
+                      )
                     ],
                   ),
                 )),
-                const Expanded(child: Placeholder()),
+                 Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    margin: const EdgeInsets.symmetric(horizontal: 8),
+                  ),
+                ),
                 const Expanded(child: Placeholder()),
                 const Expanded(child: Placeholder()),
               ],
