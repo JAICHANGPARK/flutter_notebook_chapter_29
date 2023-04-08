@@ -418,6 +418,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                 color: const Color.fromRGBO(31, 32, 41, 1),
                                 borderRadius: BorderRadius.circular(16),
                               ),
+                              padding: EdgeInsets.all(16),
                               child: Column(
                                 children: [
                                   Row(
@@ -425,20 +426,37 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                       CircleAvatar(
                                         radius: 18,
                                       ),
+                                      SizedBox(
+                                        width: 8,
+                                      ),
                                       Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Text("Dream Walker"),
+                                          Text(
+                                            "Dream Walker",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                          SizedBox(
+                                            height: 4,
+                                          ),
                                           Row(
                                             children: [
                                               Icon(
                                                 Icons.calendar_month,
                                                 size: 12,
+                                                color: Colors.grey,
                                               ),
                                               SizedBox(
                                                 width: 8,
                                               ),
-                                              Text("DEC 18")
+                                              Text(
+                                                "DEC 18",
+                                                style: TextStyle(
+                                                  color: Colors.grey,
+                                                ),
+                                              )
                                             ],
                                           )
                                         ],
