@@ -439,14 +439,14 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                   margin: EdgeInsets.symmetric(horizontal: 8),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      const Icon(
+                    children: const [
+                      Icon(
                         Icons.home_outlined,
                       ),
-                      const SizedBox(
+                      SizedBox(
                         width: 8,
                       ),
-                      const Text("Home",style: TextStyle(
+                      Text("Home",style: TextStyle(
                         fontSize: 12
                       ),)
                     ],
