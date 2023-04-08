@@ -446,7 +446,9 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                       const SizedBox(
                         width: 8,
                       ),
-                      const Text("Home")
+                      const Text("Home",style: TextStyle(
+                        fontSize: 12
+                      ),)
                     ],
                   ),
                 )),
