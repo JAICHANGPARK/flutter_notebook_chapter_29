@@ -433,6 +433,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                     child: Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
+                    borderRadius: BorderRadius.circular(16),
                   ),
                   padding: EdgeInsets.symmetric(vertical: 8),
                   child: Row(
