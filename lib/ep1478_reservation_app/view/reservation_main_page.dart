@@ -418,6 +418,11 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                 color: const Color.fromRGBO(31, 32, 41, 1),
                                 borderRadius: BorderRadius.circular(16),
                               ),
+                              child: Column(
+                                children: [
+                                  
+                                ],
+                              ),
                             ),
                           ),
                           Positioned(
