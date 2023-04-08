@@ -426,7 +426,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
         child: SizedBox(
           height: 72,
           child: Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(8.0),
             child: Row(
               children: [
                 Expanded(
@@ -436,6 +436,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                     borderRadius: BorderRadius.circular(16),
                   ),
                   padding: EdgeInsets.symmetric(vertical: 8),
+                  margin: EdgeInsets.symmetric(horizontal: 8),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
