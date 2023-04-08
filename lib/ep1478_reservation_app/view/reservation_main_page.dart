@@ -424,7 +424,13 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
         child: SizedBox(
           height: 72,
           child: Row(
-            children: const [],
+            children:  [
+              Expanded(child: Placeholder()),
+              Expanded(child: Placeholder()),
+              Expanded(child: Placeholder()),
+              Expanded(child: Placeholder()),
+
+            ],
           ),
         ),
       ),
