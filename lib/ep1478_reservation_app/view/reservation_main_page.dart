@@ -421,6 +421,8 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
+        color: Colors.transparent,
+        elevation: 0,
         child: SizedBox(
           height: 72,
           child: Padding(
@@ -432,7 +434,9 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                   decoration: BoxDecoration(
                     color: Colors.white,
                   ),
+                  padding: EdgeInsets.symmetric(vertical: 8),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Icon(
                         Icons.home_outlined,
