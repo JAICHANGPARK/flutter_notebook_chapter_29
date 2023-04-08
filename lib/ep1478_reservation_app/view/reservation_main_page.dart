@@ -418,40 +418,40 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                 color: const Color.fromRGBO(31, 32, 41, 1),
                                 borderRadius: BorderRadius.circular(16),
                               ),
-                              padding: EdgeInsets.all(16),
+                              padding: const EdgeInsets.all(16),
                               child: Column(
                                 children: [
                                   Row(
                                     children: [
-                                      CircleAvatar(
+                                      const CircleAvatar(
                                         radius: 18,
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 8,
                                       ),
                                       Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Text(
+                                          const Text(
                                             "Dream Walker",
                                             style: TextStyle(
                                               color: Colors.white,
                                             ),
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             height: 4,
                                           ),
                                           Row(
                                             children: [
-                                              Icon(
+                                              const Icon(
                                                 Icons.calendar_month,
                                                 size: 12,
                                                 color: Colors.grey,
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 width: 8,
                                               ),
-                                              Text(
+                                              const Text(
                                                 "DEC 18",
                                                 style: TextStyle(
                                                   color: Colors.grey,
@@ -525,7 +525,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                   child: Container(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     margin: const EdgeInsets.symmetric(horizontal: 8),
-                    child: Center(
+                    child: const Center(
                       child: Badge(
                         child: Icon(
                           Icons.chat_outlined,
@@ -539,7 +539,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                   child: Center(
                     child: IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.location_on_outlined),
+                      icon: const Icon(Icons.location_on_outlined),
                       color: Colors.white,
                     ),
                   ),
@@ -548,7 +548,7 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                   child: Center(
                     child: IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.person_outline),
+                      icon: const Icon(Icons.person_outline),
                       color: Colors.white,
                     ),
                   ),
