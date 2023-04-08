@@ -158,13 +158,13 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                     ),
                                   ),
                                   Row(
-                                    children: [
-                                      const Icon(
+                                    children: const [
+                                      Icon(
                                         Icons.calendar_month,
                                         size: 12,
                                         color: Colors.grey,
                                       ),
-                                      const Text(
+                                      Text(
                                         "DEC 18 - DEC 22",
                                         style: TextStyle(
                                           fontSize: 12,
@@ -177,17 +177,17 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                     children: [
                                       Expanded(
                                         child: Stack(
-                                          children: [
-                                            const CircleAvatar(
+                                          children: const [
+                                            CircleAvatar(
                                               radius: 16,
                                             ),
-                                            const Positioned(
+                                            Positioned(
                                               left: 16,
                                               child: CircleAvatar(
                                                 radius: 16,
                                               ),
                                             ),
-                                            const Positioned(
+                                            Positioned(
                                               left: 32,
                                               child: CircleAvatar(
                                                 radius: 16,
@@ -239,8 +239,8 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                 ),
                               ),
                               child: Stack(
-                                children: [
-                                  const Positioned(
+                                children: const [
+                                  Positioned(
                                     left: 8,
                                     right: 8,
                                     bottom: 8,
@@ -288,16 +288,16 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                                 height: 8,
                                               ),
                                               Row(
-                                                children: [
-                                                  const Icon(
+                                                children: const [
+                                                  Icon(
                                                     Icons.calendar_month,
                                                     size: 10,
                                                     color: Colors.grey,
                                                   ),
-                                                  const SizedBox(
+                                                  SizedBox(
                                                     width: 8,
                                                   ),
-                                                  const Text(
+                                                  Text(
                                                     "DEC 16",
                                                     style: TextStyle(
                                                       color: Colors.grey,
@@ -318,14 +318,14 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                               ),
                                               Row(
                                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                children: [
-                                                  const Text(
+                                                children: const [
+                                                  Text(
                                                     "12.00",
                                                     style: TextStyle(
                                                       color: Colors.white,
                                                     ),
                                                   ),
-                                                  const Text(
+                                                  Text(
                                                     "USD",
                                                     style: TextStyle(
                                                       color: Colors.white,
@@ -381,8 +381,8 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                       ),
                                     ),
                                     child: Stack(
-                                      children: [
-                                        const Positioned(
+                                      children: const [
+                                        Positioned(
                                           left: 8,
                                           right: 8,
                                           bottom: 8,
