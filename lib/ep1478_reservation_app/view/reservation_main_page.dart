@@ -426,11 +426,15 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                         radius: 18,
                                       ),
                                       Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Text("Dream Walker"),
                                           Row(
                                             children: [
-                                              Icon(Icons.calendar_month),
+                                              Icon(
+                                                Icons.calendar_month,
+                                                size: 12,
+                                              ),
                                               SizedBox(
                                                 width: 8,
                                               ),
