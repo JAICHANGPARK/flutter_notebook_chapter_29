@@ -414,7 +414,13 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                       ),
                       child: Stack(
                         children: [
-                          Positioned(child: Container()),
+                          Positioned(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: const Color.fromRGBO(31, 32, 41, 1),
+                              ),
+                            ),
+                          ),
                           Positioned(
                               right: 0,
                               top: 0,
