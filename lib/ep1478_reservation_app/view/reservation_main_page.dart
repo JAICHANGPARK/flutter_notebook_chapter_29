@@ -423,26 +423,32 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
       bottomNavigationBar: BottomAppBar(
         child: SizedBox(
           height: 72,
-          child: Row(
-            children: [
-              Expanded(
-                  child: Container(
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.home_outlined,
-                    ),
-                    SizedBox(
-                      width: 8,
-                    ),
-                    Text("Home")
-                  ],
-                ),
-              )),
-              Expanded(child: Placeholder()),
-              Expanded(child: Placeholder()),
-              Expanded(child: Placeholder()),
-            ],
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Row(
+              children: [
+                Expanded(
+                    child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),
+                  child: Row(
+                    children: [
+                      const Icon(
+                        Icons.home_outlined,
+                      ),
+                      const SizedBox(
+                        width: 8,
+                      ),
+                      const Text("Home")
+                    ],
+                  ),
+                )),
+                const Expanded(child: Placeholder()),
+                const Expanded(child: Placeholder()),
+                const Expanded(child: Placeholder()),
+              ],
+            ),
           ),
         ),
       ),
