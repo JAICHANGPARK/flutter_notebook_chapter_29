@@ -453,14 +453,18 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                     ],
                   ),
                 )),
-                 Expanded(
+                Expanded(
                   child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(16),
-                    ),
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     margin: const EdgeInsets.symmetric(horizontal: 8),
+                    child: Center(
+                      child: Badge(
+                        child: Icon(
+                          Icons.chat_outlined,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
                   ),
                 ),
                 const Expanded(child: Placeholder()),
