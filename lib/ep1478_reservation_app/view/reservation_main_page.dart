@@ -462,6 +462,13 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                                         ],
                                       )
                                     ],
+                                  ),
+                                  Text(
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.grey,
+                                    ),
                                   )
                                 ],
                               ),
