@@ -409,26 +409,25 @@ class _ReservationMainPageState extends State<ReservationMainPage> {
                     ),
                     Container(
                       height: 100,
-                      decoration: const BoxDecoration(
-                        
-                      ),
+                      decoration: const BoxDecoration(),
                       child: Stack(
                         children: [
                           Positioned(
                             child: Container(
                               decoration: BoxDecoration(
                                 color: const Color.fromRGBO(31, 32, 41, 1),
-                                borderRadius: BorderRadius.circular(16)
+                                borderRadius: BorderRadius.circular(16),
                               ),
                             ),
                           ),
                           Positioned(
-                              right: 0,
-                              top: 0,
-                              child: CircleAvatar(
-                                radius: 12,
-                                backgroundColor: Colors.red[200],
-                              ))
+                            right: 0,
+                            top: 0,
+                            child: CircleAvatar(
+                              radius: 12,
+                              backgroundColor: Colors.red[200],
+                            ),
+                          )
                         ],
                       ),
                     ),
