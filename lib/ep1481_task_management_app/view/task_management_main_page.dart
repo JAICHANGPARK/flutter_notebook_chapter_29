@@ -29,7 +29,10 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                 height: 80,
                 decoration: const ShapeDecoration(
                   shape: StadiumBorder(),
-                  color: Colors.black
+                  color: Colors.black,
+                ),
+                child: Row(
+                  children: [],
                 ),
               ),
             ),
