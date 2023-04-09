@@ -37,19 +37,22 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                       ],
                     ),
                   ),
-                  Row(
-                    children: [
-                      Text("Manage Your Task"),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          "See all",
-                        ),
-                      )
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      children: [
+                        Text("Manage Your Task"),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            "See all",
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                   Container(
-
+                    margin: EdgeInsets.symmetric(vertical: 16),
                     height: 64,
                     color: Colors.blue,
                   ),
