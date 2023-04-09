@@ -4,9 +4,10 @@ A new Flutter project.
 
 ### EP1481
 
-- BookInn App Concept
-- by Shahram Shahbazi
-- https://dribbble.com/shots/21125853-BookInn-App-Concept
+- Task management mobile app design
+- by Antora Yeasmin (Nataliya) for DesignOps
+
+- https://dribbble.com/shots/21144421-Task-management-mobile-app-design
 
 <img src="https://cdn.dribbble.com/userupload/6047739/file/original-5dd24d37869e9b3e41a63a76d1055cc2.png?compress=1&resize=1600x1200" width="500px"/>
 
