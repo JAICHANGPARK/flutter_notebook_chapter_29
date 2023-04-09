@@ -27,7 +27,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
               right: 32,
               child: Container(
                 height: 80,
-                decoration: ShapeDecoration(
+                decoration: const ShapeDecoration(
                   shape: StadiumBorder(),
                   color: Colors.black
                 ),
