@@ -6,10 +6,9 @@ A new Flutter project.
 
 - Task management mobile app design
 - by Antora Yeasmin (Nataliya) for DesignOps
-
 - https://dribbble.com/shots/21144421-Task-management-mobile-app-design
 
-<img src="https://cdn.dribbble.com/userupload/6047739/file/original-5dd24d37869e9b3e41a63a76d1055cc2.png?compress=1&resize=1600x1200" width="500px"/>
+<img src="https://cdn.dribbble.com/userupload/6097739/file/original-72c391703935b506e9e8af33fe99bda2.jpg?compress=1&resize=1600x1200" width="500px"/>
 
 ### EP1478-1480
 
