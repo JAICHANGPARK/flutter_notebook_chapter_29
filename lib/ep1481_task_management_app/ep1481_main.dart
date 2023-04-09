@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(TaskManagementApp());
+}
+
 class TaskManagementApp extends StatelessWidget {
   const TaskManagementApp({Key? key}) : super(key: key);
 
