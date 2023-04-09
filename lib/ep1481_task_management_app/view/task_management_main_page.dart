@@ -24,6 +24,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Container(
                           decoration: BoxDecoration(
@@ -40,6 +41,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text("Manage Your Task"),
                         TextButton(
