@@ -11,7 +11,13 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      body: SafeArea(
+        child: Stack(
+          children: [
+            
+          ],
+        ),
+      ),
     );
   }
 }
