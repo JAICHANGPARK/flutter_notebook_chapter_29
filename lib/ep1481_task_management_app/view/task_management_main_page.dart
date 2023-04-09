@@ -37,7 +37,12 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                   Row(
                     children: [
                       Text("Manage Your Task"),
-                      
+                      TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "See all",
+                        ),
+                      )
                     ],
                   )
                 ],
