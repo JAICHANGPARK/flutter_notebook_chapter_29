@@ -14,7 +14,22 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
       body: SafeArea(
         child: Stack(
           children: [
-            
+            Positioned(
+              left: 0,
+              right: 0,
+              bottom: 0,
+              top: 0,
+              child: Column(),
+            ),
+            Positioned(
+              bottom: 16,
+              child: Container(
+                height: 80,
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                ),
+              ),
+            ),
           ],
         ),
       ),
