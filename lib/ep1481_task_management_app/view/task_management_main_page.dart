@@ -43,7 +43,12 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Manage Your Task"),
+                        Text(
+                          "Manage Your Task",
+                          style: TextStyle(
+                            fontSize: 24,
+                          ),
+                        ),
                         TextButton(
                           onPressed: () {},
                           child: Text(
