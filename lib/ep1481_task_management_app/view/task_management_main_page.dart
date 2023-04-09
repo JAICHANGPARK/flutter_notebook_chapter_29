@@ -31,8 +31,23 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                   shape: StadiumBorder(),
                   color: Colors.black,
                 ),
+                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                 child: Row(
-                  children: [],
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    CircleAvatar(
+                      radius: 30,
+                    ),
+                    CircleAvatar(
+                      radius: 30,
+                    ),
+                    CircleAvatar(
+                      radius: 30,
+                    ),
+                    CircleAvatar(
+                      radius: 30,
+                    ),
+                  ],
                 ),
               ),
             ),
