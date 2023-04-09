@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_29/ep1481_task_management_app/view/task_management_main_page.dart';
 
 void main() {
-  runApp(TaskManagementApp());
+  runApp(const TaskManagementApp());
 }
 
 class TaskManagementApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class TaskManagementApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: TaskManagementMainPage(),
     );
   }
