@@ -23,10 +23,13 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
             ),
             Positioned(
               bottom: 16,
+              left: 32,
+              right: 32,
               child: Container(
                 height: 80,
-                decoration: BoxDecoration(
-                  color: Colors.black,
+                decoration: ShapeDecoration(
+                  shape: StadiumBorder(),
+                  color: Colors.black
                 ),
               ),
             ),
