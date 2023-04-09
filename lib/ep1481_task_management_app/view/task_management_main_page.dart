@@ -19,7 +19,29 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
               right: 0,
               bottom: 0,
               top: 0,
-              child: Column(),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.yellow,
+                        ),
+                        child: Row(
+                          children: [CircleAvatar(), Text("Create New Task")],
+                        ),
+                      ),
+                      CircleAvatar(),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Text("Manage Your Task"),
+                      
+                    ],
+                  )
+                ],
+              ),
             ),
             Positioned(
               bottom: 16,
