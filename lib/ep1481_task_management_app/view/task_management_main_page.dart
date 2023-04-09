@@ -21,18 +21,21 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
               top: 0,
               child: Column(
                 children: [
-                  Row(
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.yellow,
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.yellow,
+                          ),
+                          child: Row(
+                            children: [CircleAvatar(), Text("Create New Task")],
+                          ),
                         ),
-                        child: Row(
-                          children: [CircleAvatar(), Text("Create New Task")],
-                        ),
-                      ),
-                      CircleAvatar(),
-                    ],
+                        CircleAvatar(),
+                      ],
+                    ),
                   ),
                   Row(
                     children: [
@@ -44,7 +47,12 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                         ),
                       )
                     ],
-                  )
+                  ),
+                  Container(
+
+                    height: 64,
+                    color: Colors.blue,
+                  ),
                 ],
               ),
             ),
