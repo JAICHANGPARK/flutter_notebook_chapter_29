@@ -96,7 +96,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                       child: ListView(
                         children: [
                           Container(
-                            
+                            margin: EdgeInsets.only(bottom: 16),
                             decoration: BoxDecoration(
                               color: _greenColor,
                               borderRadius: BorderRadius.circular(24),
@@ -209,6 +209,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                             ),
                           ),
                           Container(
+                            margin: EdgeInsets.only(bottom: 16),
                             decoration: BoxDecoration(
                               color: _yellowColor,
                               borderRadius: BorderRadius.circular(24),
@@ -241,24 +242,24 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                     children: [
                                       Expanded(
                                           child: Row(
-                                            children: [
-                                              Icon(Icons.calendar_month),
-                                              SizedBox(
-                                                width: 12,
-                                              ),
-                                              Text("26 Feb"),
-                                            ],
-                                          )),
+                                        children: [
+                                          Icon(Icons.calendar_month),
+                                          SizedBox(
+                                            width: 12,
+                                          ),
+                                          Text("26 Feb"),
+                                        ],
+                                      )),
                                       Expanded(
                                           child: Row(
-                                            children: [
-                                              Icon(Icons.access_time_filled),
-                                              SizedBox(
-                                                width: 12,
-                                              ),
-                                              Text("10:15pm"),
-                                            ],
-                                          ))
+                                        children: [
+                                          Icon(Icons.access_time_filled),
+                                          SizedBox(
+                                            width: 12,
+                                          ),
+                                          Text("10:15pm"),
+                                        ],
+                                      ))
                                     ],
                                   ),
                                 ),
@@ -272,44 +273,47 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                     children: [
                                       Expanded(
                                           child: Stack(
-                                            children: [
-                                              Positioned(
-                                                child: CircleAvatar(
-                                                  radius: 14,
-                                                ),
+                                        children: [
+                                          Positioned(
+                                            child: CircleAvatar(
+                                              radius: 14,
+                                            ),
+                                          ),
+                                          Positioned(
+                                            left: 20,
+                                            child: CircleAvatar(
+                                              radius: 14,
+                                            ),
+                                          ),
+                                          Positioned(
+                                            left: 40,
+                                            child: CircleAvatar(
+                                              radius: 14,
+                                            ),
+                                          ),
+                                          Positioned(
+                                            left: 60,
+                                            child: CircleAvatar(
+                                              radius: 14,
+                                              backgroundColor: _yellowColor,
+                                              foregroundColor: Colors.black,
+                                              child: Icon(
+                                                Icons.add,
+                                                size: 16,
                                               ),
-                                              Positioned(
-                                                left: 20,
-                                                child: CircleAvatar(
-                                                  radius: 14,
-                                                ),
-                                              ),
-                                              Positioned(
-                                                left: 40,
-                                                child: CircleAvatar(
-                                                  radius: 14,
-                                                ),
-                                              ),
-                                              Positioned(
-                                                left: 60,
-                                                child: CircleAvatar(
-                                                  radius: 14,
-                                                  backgroundColor: _greenColor,
-                                                  foregroundColor: Colors.black,
-                                                  child: Icon(
-                                                    Icons.add,
-                                                    size: 16,
-                                                  ),
-                                                ),
-                                              ),
-                                            ],
-                                          )),
+                                            ),
+                                          ),
+                                        ],
+                                      )),
                                       Container(
                                         decoration: BoxDecoration(
-                                          color: _greenColor,
+                                          color: _yellowColor,
                                           borderRadius: BorderRadius.circular(24),
                                         ),
-                                        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                        padding: EdgeInsets.symmetric(
+                                          horizontal: 16,
+                                          vertical: 8,
+                                        ),
                                         child: Center(
                                           child: Text("Medium"),
                                         ),
@@ -320,7 +324,6 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                               ],
                             ),
                           ),
-
                         ],
                       ),
                     ),
