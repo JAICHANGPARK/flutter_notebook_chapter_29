@@ -91,15 +91,42 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                     color: Colors.blue,
                   ),
                   Expanded(
-                    child: ListView(
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            color: _greenColor,
-                            borderRadius: BorderRadius.circular(16),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: ListView(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: _greenColor,
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                            padding: EdgeInsets.all(16),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Expanded(
+                                      child: Text(
+                                        "February Dribble\nshot Design",
+                                        style: TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ),
+                                    CircleAvatar(
+                                      radius: 30,
+                                      backgroundColor: Colors.black,
+                                      foregroundColor: _greenColor,
+                                      child: Icon(Icons.share),
+                                    ),
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
-                        )
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ],
