@@ -98,7 +98,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                           Container(
                             decoration: BoxDecoration(
                               color: _greenColor,
-                              borderRadius: BorderRadius.circular(16),
+                              borderRadius: BorderRadius.circular(24),
                             ),
                             padding: EdgeInsets.all(16),
                             child: Column(
@@ -194,7 +194,9 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                       Container(
                                         decoration: BoxDecoration(
                                           color: _greenColor,
+                                          borderRadius: BorderRadius.circular(24),
                                         ),
+                                        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                         child: Center(
                                           child: Text("Medium"),
                                         ),
