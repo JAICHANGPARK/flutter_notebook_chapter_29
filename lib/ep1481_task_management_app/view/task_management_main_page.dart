@@ -33,10 +33,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Container(
-                          decoration: BoxDecoration(
-                            color: _yellowColor,
-                            borderRadius: BorderRadius.circular(24)
-                          ),
+                          decoration: BoxDecoration(color: _yellowColor, borderRadius: BorderRadius.circular(24)),
                           padding: EdgeInsets.symmetric(
                             horizontal: 4,
                             vertical: 4,
@@ -76,6 +73,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                           "Manage Your Task",
                           style: TextStyle(
                             fontSize: 24,
+                            color: Colors.white,
                           ),
                         ),
                         TextButton(
@@ -92,7 +90,18 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                     height: 64,
                     color: Colors.blue,
                   ),
-                  Expanded(child: Placeholder()),
+                  Expanded(
+                    child: ListView(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: _greenColor,
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
