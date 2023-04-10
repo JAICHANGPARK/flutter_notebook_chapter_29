@@ -109,7 +109,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                       child: Text(
                                         "February Dribble\nshot Design",
                                         style: TextStyle(
-                                          fontSize: 20,
+                                          fontSize: 22,
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
@@ -146,6 +146,25 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                           Text("10:15pm"),
                                         ],
                                       ))
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  padding: EdgeInsets.all(16),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Expanded(child: Stack()),
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: _greenColor,
+                                        ),
+                                        child: Center(
+                                          child: Text("Medium"),
+                                        ),
+                                      )
                                     ],
                                   ),
                                 )
