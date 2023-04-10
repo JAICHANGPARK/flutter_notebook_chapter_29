@@ -8,9 +8,12 @@ class TaskManagementMainPage extends StatefulWidget {
 }
 
 class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
+  Color _yellowColor = Color.fromRGBO(248, 205, 97, 1);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(31, 31, 31, 1),
       body: SafeArea(
         child: Stack(
           children: [
