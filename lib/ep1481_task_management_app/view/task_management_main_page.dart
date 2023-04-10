@@ -96,6 +96,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                       child: ListView(
                         children: [
                           Container(
+                            
                             decoration: BoxDecoration(
                               color: _greenColor,
                               borderRadius: BorderRadius.circular(24),
@@ -207,6 +208,119 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                               ],
                             ),
                           ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: _yellowColor,
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            padding: EdgeInsets.all(16),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Expanded(
+                                      child: Text(
+                                        "February Dribble\nshot Design",
+                                        style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ),
+                                    CircleAvatar(
+                                      radius: 30,
+                                      backgroundColor: Colors.black,
+                                      foregroundColor: _greenColor,
+                                      child: Icon(Icons.share),
+                                    ),
+                                  ],
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 16),
+                                  child: Row(
+                                    children: [
+                                      Expanded(
+                                          child: Row(
+                                            children: [
+                                              Icon(Icons.calendar_month),
+                                              SizedBox(
+                                                width: 12,
+                                              ),
+                                              Text("26 Feb"),
+                                            ],
+                                          )),
+                                      Expanded(
+                                          child: Row(
+                                            children: [
+                                              Icon(Icons.access_time_filled),
+                                              SizedBox(
+                                                width: 12,
+                                              ),
+                                              Text("10:15pm"),
+                                            ],
+                                          ))
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  padding: EdgeInsets.fromLTRB(12, 12, 12, 12),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(24),
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Expanded(
+                                          child: Stack(
+                                            children: [
+                                              Positioned(
+                                                child: CircleAvatar(
+                                                  radius: 14,
+                                                ),
+                                              ),
+                                              Positioned(
+                                                left: 20,
+                                                child: CircleAvatar(
+                                                  radius: 14,
+                                                ),
+                                              ),
+                                              Positioned(
+                                                left: 40,
+                                                child: CircleAvatar(
+                                                  radius: 14,
+                                                ),
+                                              ),
+                                              Positioned(
+                                                left: 60,
+                                                child: CircleAvatar(
+                                                  radius: 14,
+                                                  backgroundColor: _greenColor,
+                                                  foregroundColor: Colors.black,
+                                                  child: Icon(
+                                                    Icons.add,
+                                                    size: 16,
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          )),
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: _greenColor,
+                                          borderRadius: BorderRadius.circular(24),
+                                        ),
+                                        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                        child: Center(
+                                          child: Text("Medium"),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+
                         ],
                       ),
                     ),
