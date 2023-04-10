@@ -130,14 +130,22 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                           child: Row(
                                         children: [
                                           Icon(Icons.calendar_month),
+                                          SizedBox(
+                                            width: 12,
+                                          ),
                                           Text("26 Feb"),
                                         ],
                                       )),
-                                      Expanded(child: Row(children: [
-                                        Icon(Icons.access_time_filled),
-                                        Text("10:15pm"),
-                                      ],))
-
+                                      Expanded(
+                                          child: Row(
+                                        children: [
+                                          Icon(Icons.access_time_filled),
+                                          SizedBox(
+                                            width: 12,
+                                          ),
+                                          Text("10:15pm"),
+                                        ],
+                                      ))
                                     ],
                                   ),
                                 )
