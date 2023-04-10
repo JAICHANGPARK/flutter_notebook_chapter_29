@@ -35,12 +35,16 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                         Container(
                           decoration: BoxDecoration(
                             color: _yellowColor,
+                            borderRadius: BorderRadius.circular(24)
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 4,
+                            vertical: 4,
+                          ),
                           child: Row(
                             children: [
                               CircleAvatar(
-                                radius: 18,
+                                radius: 16,
                                 child: Icon(Icons.add),
                                 foregroundColor: _yellowColor,
                                 backgroundColor: Colors.black,
@@ -50,11 +54,16 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                               ),
                               Text(
                                 "Create New Task",
-                              )
+                              ),
+                              SizedBox(
+                                width: 8,
+                              ),
                             ],
                           ),
                         ),
-                        CircleAvatar(),
+                        CircleAvatar(
+                          backgroundColor: Colors.grey,
+                        ),
                       ],
                     ),
                   ),
