@@ -150,7 +150,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                   ),
                                 ),
                                 Container(
-                                  padding: EdgeInsets.fromLTRB(12, 16, 12, 16),
+                                  padding: EdgeInsets.fromLTRB(12, 12, 12, 12),
                                   decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(24),
@@ -159,10 +159,31 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                     children: [
                                       Expanded(child: Stack(
                                         children: [
-                                          CircleAvatar(
-                                            radius: 14,
+                                          Positioned(
+                                            child: CircleAvatar(
+                                              radius: 14,
+                                            ),
+                                          ),
+                                          Positioned(
+                                            left:20,
+                                            child: CircleAvatar(
+                                              radius: 14,
+                                            ),
+                                          ),
+                                          Positioned(
+                                            left:40,
+                                            child: CircleAvatar(
+                                              radius: 14,
+                                            ),
+                                          ),
+                                          Positioned(
+                                            left:80,
+                                            child: CircleAvatar(
+                                              radius: 14,
+                                              child: Icon(Icons.add),
+                                            ),
 
-                                          )
+                                          ),
                                         ],
                                       )),
                                       Container(
