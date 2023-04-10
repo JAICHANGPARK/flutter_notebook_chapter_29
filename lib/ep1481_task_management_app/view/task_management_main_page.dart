@@ -132,22 +132,22 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                     children: [
                                       Expanded(
                                           child: Row(
-                                        children: [
-                                          const Icon(Icons.calendar_month),
-                                          const SizedBox(
+                                        children: const [
+                                          Icon(Icons.calendar_month),
+                                          SizedBox(
                                             width: 12,
                                           ),
-                                          const Text("26 Feb"),
+                                          Text("26 Feb"),
                                         ],
                                       )),
                                       Expanded(
                                           child: Row(
-                                        children: [
-                                          const Icon(Icons.access_time_filled),
-                                          const SizedBox(
+                                        children: const [
+                                          Icon(Icons.access_time_filled),
+                                          SizedBox(
                                             width: 12,
                                           ),
-                                          const Text("10:15pm"),
+                                          Text("10:15pm"),
                                         ],
                                       ))
                                     ],
@@ -245,22 +245,22 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                     children: [
                                       Expanded(
                                           child: Row(
-                                        children: [
-                                          const Icon(Icons.calendar_month),
-                                          const SizedBox(
+                                        children: const [
+                                          Icon(Icons.calendar_month),
+                                          SizedBox(
                                             width: 12,
                                           ),
-                                          const Text("26 Feb"),
+                                          Text("26 Feb"),
                                         ],
                                       )),
                                       Expanded(
                                           child: Row(
-                                        children: [
-                                          const Icon(Icons.access_time_filled),
-                                          const SizedBox(
+                                        children: const [
+                                          Icon(Icons.access_time_filled),
+                                          SizedBox(
                                             width: 12,
                                           ),
-                                          const Text("10:15pm"),
+                                          Text("10:15pm"),
                                         ],
                                       ))
                                     ],
@@ -361,22 +361,22 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                     children: [
                                       Expanded(
                                           child: Row(
-                                        children: [
-                                          const Icon(Icons.calendar_month),
-                                          const SizedBox(
+                                        children: const [
+                                          Icon(Icons.calendar_month),
+                                          SizedBox(
                                             width: 12,
                                           ),
-                                          const Text("26 Feb"),
+                                          Text("26 Feb"),
                                         ],
                                       )),
                                       Expanded(
                                           child: Row(
-                                        children: [
-                                          const Icon(Icons.access_time_filled),
-                                          const SizedBox(
+                                        children: const [
+                                          Icon(Icons.access_time_filled),
+                                          SizedBox(
                                             width: 12,
                                           ),
-                                          const Text("10:15pm"),
+                                          Text("10:15pm"),
                                         ],
                                       ))
                                     ],
