@@ -157,7 +157,8 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                   ),
                                   child: Row(
                                     children: [
-                                      Expanded(child: Stack(
+                                      Expanded(
+                                          child: Stack(
                                         children: [
                                           Positioned(
                                             child: CircleAvatar(
@@ -165,24 +166,23 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                             ),
                                           ),
                                           Positioned(
-                                            left:20,
+                                            left: 20,
                                             child: CircleAvatar(
                                               radius: 14,
                                             ),
                                           ),
                                           Positioned(
-                                            left:40,
+                                            left: 40,
                                             child: CircleAvatar(
                                               radius: 14,
                                             ),
                                           ),
                                           Positioned(
-                                            left:80,
+                                            left: 60,
                                             child: CircleAvatar(
                                               radius: 14,
                                               child: Icon(Icons.add),
                                             ),
-
                                           ),
                                         ],
                                       )),
