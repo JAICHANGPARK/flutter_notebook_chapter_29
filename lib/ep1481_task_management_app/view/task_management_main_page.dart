@@ -8,15 +8,15 @@ class TaskManagementMainPage extends StatefulWidget {
 }
 
 class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
-  Color _yellowColor = Color.fromRGBO(248, 205, 97, 1);
-  Color _greenColor = Color.fromRGBO(203, 216, 125, 1);
-  Color _lightGreyColor = Color.fromRGBO(111, 111, 107, 1);
-  Color _deepGreyColor = Color.fromRGBO(65, 66, 63, 1);
+  final Color _yellowColor = const Color.fromRGBO(248, 205, 97, 1);
+  final Color _greenColor = const Color.fromRGBO(203, 216, 125, 1);
+  final Color _lightGreyColor = const Color.fromRGBO(111, 111, 107, 1);
+  final Color _deepGreyColor = const Color.fromRGBO(65, 66, 63, 1);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(31, 31, 31, 1),
+      backgroundColor: const Color.fromRGBO(31, 31, 31, 1),
       body: SafeArea(
         child: Stack(
           children: [
@@ -37,7 +37,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                             color: _yellowColor,
                             borderRadius: BorderRadius.circular(24),
                           ),
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 4,
                             vertical: 4,
                           ),
@@ -45,23 +45,23 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                             children: [
                               CircleAvatar(
                                 radius: 16,
-                                child: Icon(Icons.add),
+                                child: const Icon(Icons.add),
                                 foregroundColor: _yellowColor,
                                 backgroundColor: Colors.black,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 8,
                               ),
-                              Text(
+                              const Text(
                                 "Create New Task",
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 8,
                               ),
                             ],
                           ),
                         ),
-                        CircleAvatar(
+                        const CircleAvatar(
                           backgroundColor: Colors.grey,
                         ),
                       ],
@@ -72,7 +72,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Manage Your Task",
                           style: TextStyle(
                             fontSize: 24,
@@ -81,7 +81,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text(
+                          child: const Text(
                             "See all",
                           ),
                         )
@@ -89,7 +89,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 16),
+                    margin: const EdgeInsets.symmetric(vertical: 16),
                     height: 64,
                     color: Colors.blue,
                   ),
@@ -99,17 +99,17 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                       child: ListView(
                         children: [
                           Container(
-                            margin: EdgeInsets.only(bottom: 16),
+                            margin: const EdgeInsets.only(bottom: 16),
                             decoration: BoxDecoration(
                               color: _greenColor,
                               borderRadius: BorderRadius.circular(24),
                             ),
-                            padding: EdgeInsets.all(16),
+                            padding: const EdgeInsets.all(16),
                             child: Column(
                               children: [
                                 Row(
                                   children: [
-                                    Expanded(
+                                    const Expanded(
                                       child: Text(
                                         "February Dribble\nshot Design",
                                         style: TextStyle(
@@ -122,7 +122,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                       radius: 30,
                                       backgroundColor: Colors.black,
                                       foregroundColor: _greenColor,
-                                      child: Icon(Icons.share),
+                                      child: const Icon(Icons.share),
                                     ),
                                   ],
                                 ),
@@ -133,28 +133,28 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                       Expanded(
                                           child: Row(
                                         children: [
-                                          Icon(Icons.calendar_month),
-                                          SizedBox(
+                                          const Icon(Icons.calendar_month),
+                                          const SizedBox(
                                             width: 12,
                                           ),
-                                          Text("26 Feb"),
+                                          const Text("26 Feb"),
                                         ],
                                       )),
                                       Expanded(
                                           child: Row(
                                         children: [
-                                          Icon(Icons.access_time_filled),
-                                          SizedBox(
+                                          const Icon(Icons.access_time_filled),
+                                          const SizedBox(
                                             width: 12,
                                           ),
-                                          Text("10:15pm"),
+                                          const Text("10:15pm"),
                                         ],
                                       ))
                                     ],
                                   ),
                                 ),
                                 Container(
-                                  padding: EdgeInsets.fromLTRB(12, 12, 12, 12),
+                                  padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
                                   decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(24),
@@ -164,18 +164,18 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                       Expanded(
                                           child: Stack(
                                         children: [
-                                          Positioned(
+                                          const Positioned(
                                             child: CircleAvatar(
                                               radius: 14,
                                             ),
                                           ),
-                                          Positioned(
+                                          const Positioned(
                                             left: 20,
                                             child: CircleAvatar(
                                               radius: 14,
                                             ),
                                           ),
-                                          Positioned(
+                                          const Positioned(
                                             left: 40,
                                             child: CircleAvatar(
                                               radius: 14,
@@ -187,7 +187,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                               radius: 14,
                                               backgroundColor: _greenColor,
                                               foregroundColor: Colors.black,
-                                              child: Icon(
+                                              child: const Icon(
                                                 Icons.add,
                                                 size: 16,
                                               ),
@@ -200,8 +200,8 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                           color: _greenColor,
                                           borderRadius: BorderRadius.circular(24),
                                         ),
-                                        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                                        child: Center(
+                                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                        child: const Center(
                                           child: Text("Medium"),
                                         ),
                                       )
@@ -212,17 +212,17 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.only(bottom: 16),
+                            margin: const EdgeInsets.only(bottom: 16),
                             decoration: BoxDecoration(
                               color: _yellowColor,
                               borderRadius: BorderRadius.circular(24),
                             ),
-                            padding: EdgeInsets.all(16),
+                            padding: const EdgeInsets.all(16),
                             child: Column(
                               children: [
                                 Row(
                                   children: [
-                                    Expanded(
+                                    const Expanded(
                                       child: Text(
                                         "February Dribble\nshot Design",
                                         style: TextStyle(
@@ -235,7 +235,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                       radius: 30,
                                       backgroundColor: Colors.black,
                                       foregroundColor: _greenColor,
-                                      child: Icon(Icons.share),
+                                      child: const Icon(Icons.share),
                                     ),
                                   ],
                                 ),
@@ -246,28 +246,28 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                       Expanded(
                                           child: Row(
                                         children: [
-                                          Icon(Icons.calendar_month),
-                                          SizedBox(
+                                          const Icon(Icons.calendar_month),
+                                          const SizedBox(
                                             width: 12,
                                           ),
-                                          Text("26 Feb"),
+                                          const Text("26 Feb"),
                                         ],
                                       )),
                                       Expanded(
                                           child: Row(
                                         children: [
-                                          Icon(Icons.access_time_filled),
-                                          SizedBox(
+                                          const Icon(Icons.access_time_filled),
+                                          const SizedBox(
                                             width: 12,
                                           ),
-                                          Text("10:15pm"),
+                                          const Text("10:15pm"),
                                         ],
                                       ))
                                     ],
                                   ),
                                 ),
                                 Container(
-                                  padding: EdgeInsets.fromLTRB(12, 12, 12, 12),
+                                  padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
                                   decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(24),
@@ -277,18 +277,18 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                       Expanded(
                                           child: Stack(
                                         children: [
-                                          Positioned(
+                                          const Positioned(
                                             child: CircleAvatar(
                                               radius: 14,
                                             ),
                                           ),
-                                          Positioned(
+                                          const Positioned(
                                             left: 20,
                                             child: CircleAvatar(
                                               radius: 14,
                                             ),
                                           ),
-                                          Positioned(
+                                          const Positioned(
                                             left: 40,
                                             child: CircleAvatar(
                                               radius: 14,
@@ -300,7 +300,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                               radius: 14,
                                               backgroundColor: _yellowColor,
                                               foregroundColor: Colors.black,
-                                              child: Icon(
+                                              child: const Icon(
                                                 Icons.add,
                                                 size: 16,
                                               ),
@@ -313,11 +313,11 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                           color: _yellowColor,
                                           borderRadius: BorderRadius.circular(24),
                                         ),
-                                        padding: EdgeInsets.symmetric(
+                                        padding: const EdgeInsets.symmetric(
                                           horizontal: 16,
                                           vertical: 8,
                                         ),
-                                        child: Center(
+                                        child: const Center(
                                           child: Text("Medium"),
                                         ),
                                       )
@@ -328,17 +328,17 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.only(bottom: 16),
+                            margin: const EdgeInsets.only(bottom: 16),
                             decoration: BoxDecoration(
                               color: Colors.grey[300],
                               borderRadius: BorderRadius.circular(24),
                             ),
-                            padding: EdgeInsets.all(16),
+                            padding: const EdgeInsets.all(16),
                             child: Column(
                               children: [
                                 Row(
                                   children: [
-                                    Expanded(
+                                    const Expanded(
                                       child: Text(
                                         "February Dribble\nshot Design",
                                         style: TextStyle(
@@ -351,7 +351,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                       radius: 30,
                                       backgroundColor: Colors.black,
                                       foregroundColor: _greenColor,
-                                      child: Icon(Icons.share),
+                                      child: const Icon(Icons.share),
                                     ),
                                   ],
                                 ),
@@ -362,28 +362,28 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                       Expanded(
                                           child: Row(
                                         children: [
-                                          Icon(Icons.calendar_month),
-                                          SizedBox(
+                                          const Icon(Icons.calendar_month),
+                                          const SizedBox(
                                             width: 12,
                                           ),
-                                          Text("26 Feb"),
+                                          const Text("26 Feb"),
                                         ],
                                       )),
                                       Expanded(
                                           child: Row(
                                         children: [
-                                          Icon(Icons.access_time_filled),
-                                          SizedBox(
+                                          const Icon(Icons.access_time_filled),
+                                          const SizedBox(
                                             width: 12,
                                           ),
-                                          Text("10:15pm"),
+                                          const Text("10:15pm"),
                                         ],
                                       ))
                                     ],
                                   ),
                                 ),
                                 Container(
-                                  padding: EdgeInsets.fromLTRB(12, 12, 12, 12),
+                                  padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
                                   decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(24),
@@ -393,18 +393,18 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                       Expanded(
                                           child: Stack(
                                         children: [
-                                          Positioned(
+                                          const Positioned(
                                             child: CircleAvatar(
                                               radius: 14,
                                             ),
                                           ),
-                                          Positioned(
+                                          const Positioned(
                                             left: 20,
                                             child: CircleAvatar(
                                               radius: 14,
                                             ),
                                           ),
-                                          Positioned(
+                                          const Positioned(
                                             left: 40,
                                             child: CircleAvatar(
                                               radius: 14,
@@ -416,7 +416,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                               radius: 14,
                                               backgroundColor: _yellowColor,
                                               foregroundColor: Colors.black,
-                                              child: Icon(
+                                              child: const Icon(
                                                 Icons.add,
                                                 size: 16,
                                               ),
@@ -429,11 +429,11 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                           color: _yellowColor,
                                           borderRadius: BorderRadius.circular(24),
                                         ),
-                                        padding: EdgeInsets.symmetric(
+                                        padding: const EdgeInsets.symmetric(
                                           horizontal: 16,
                                           vertical: 8,
                                         ),
-                                        child: Center(
+                                        child: const Center(
                                           child: Text("Medium"),
                                         ),
                                       )
@@ -460,7 +460,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                   shape: StadiumBorder(),
                   color: Colors.black,
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -468,25 +468,25 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                       radius: 30,
                       backgroundColor: _yellowColor,
                       foregroundColor: Colors.black,
-                      child: Icon(Icons.home_filled),
+                      child: const Icon(Icons.home_filled),
                     ),
                     CircleAvatar(
                       radius: 30,
                       backgroundColor: _deepGreyColor,
                       foregroundColor: Colors.grey,
-                      child: Icon(Icons.chat),
+                      child: const Icon(Icons.chat),
                     ),
                     CircleAvatar(
                       radius: 30,
                       backgroundColor: _deepGreyColor,
                       foregroundColor: Colors.grey,
-                      child: Icon(Icons.pie_chart),
+                      child: const Icon(Icons.pie_chart),
                     ),
                     CircleAvatar(
                       radius: 30,
                       backgroundColor: _deepGreyColor,
                       foregroundColor: Colors.grey,
-                      child: Icon(Icons.settings),
+                      child: const Icon(Icons.settings),
                     ),
                   ],
                 ),
