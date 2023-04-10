@@ -9,6 +9,9 @@ class TaskManagementMainPage extends StatefulWidget {
 
 class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
   Color _yellowColor = Color.fromRGBO(248, 205, 97, 1);
+  Color _greenColor = Color.fromRGBO(203, 216, 125, 1);
+  Color _lightGreyColor = Color.fromRGBO(111, 111, 107, 1);
+  Color _deepGreyColor = Color.fromRGBO(65, 66, 63, 1);
 
   @override
   Widget build(BuildContext context) {
@@ -86,6 +89,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                   children: [
                     CircleAvatar(
                       radius: 30,
+                      backgroundColor: _deepGreyColor,
                     ),
                     CircleAvatar(
                       radius: 30,
