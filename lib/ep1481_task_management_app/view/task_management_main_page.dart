@@ -181,7 +181,12 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                             left: 60,
                                             child: CircleAvatar(
                                               radius: 14,
-                                              child: Icon(Icons.add),
+                                              backgroundColor: _greenColor,
+                                              foregroundColor: Colors.black,
+                                              child: Icon(
+                                                Icons.add,
+                                                size: 16,
+                                              ),
                                             ),
                                           ),
                                         ],
