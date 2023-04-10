@@ -121,6 +121,25 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                       child: Icon(Icons.share),
                                     ),
                                   ],
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 16),
+                                  child: Row(
+                                    children: [
+                                      Expanded(
+                                          child: Row(
+                                        children: [
+                                          Icon(Icons.calendar_month),
+                                          Text("26 Feb"),
+                                        ],
+                                      )),
+                                      Expanded(child: Row(children: [
+                                        Icon(Icons.access_time_filled),
+                                        Text("10:15pm"),
+                                      ],))
+
+                                    ],
+                                  ),
                                 )
                               ],
                             ),
