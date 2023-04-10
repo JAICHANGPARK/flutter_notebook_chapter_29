@@ -150,13 +150,21 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                   ),
                                 ),
                                 Container(
-                                  padding: EdgeInsets.all(16),
+                                  padding: EdgeInsets.fromLTRB(12, 16, 12, 16),
                                   decoration: BoxDecoration(
-                                    color: Colors.white
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(24),
                                   ),
                                   child: Row(
                                     children: [
-                                      Expanded(child: Stack()),
+                                      Expanded(child: Stack(
+                                        children: [
+                                          CircleAvatar(
+                                            radius: 14,
+
+                                          )
+                                        ],
+                                      )),
                                       Container(
                                         decoration: BoxDecoration(
                                           color: _greenColor,
