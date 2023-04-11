@@ -221,7 +221,12 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                           SizedBox(
                                             width: 12,
                                           ),
-                                          Text("26 Feb"),
+                                          Text(
+                                            "26 Feb",
+                                            style: TextStyle(
+                                              fontSize: 16,
+                                            ),
+                                          ),
                                         ],
                                       )),
                                       Expanded(
@@ -231,7 +236,11 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                           SizedBox(
                                             width: 12,
                                           ),
-                                          Text("10:15pm"),
+                                          Text("10:15pm",
+                                            style: TextStyle(
+                                              fontSize: 16,
+                                            ),
+                                          ),
                                         ],
                                       ))
                                     ],
@@ -334,7 +343,9 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                           SizedBox(
                                             width: 12,
                                           ),
-                                          Text("26 Feb"),
+                                          Text("26 Feb" , style: TextStyle(
+                                            fontSize: 16,
+                                          ),),
                                         ],
                                       )),
                                       Expanded(
@@ -344,7 +355,9 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                           SizedBox(
                                             width: 12,
                                           ),
-                                          Text("10:15pm"),
+                                          Text("10:15pm" , style: TextStyle(
+                                            fontSize: 16,
+                                          ),),
                                         ],
                                       ))
                                     ],
