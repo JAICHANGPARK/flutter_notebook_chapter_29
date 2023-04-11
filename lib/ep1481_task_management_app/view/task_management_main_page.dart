@@ -103,9 +103,10 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                             borderRadius: BorderRadius.circular(16),
                           ),
                           child: Center(
-                              child: Text(
-                            "06 Apr",
-                          )),
+                            child: Text(
+                              "06 Apr",
+                            ),
+                          ),
                         ),
                         Container(
                           margin: EdgeInsets.symmetric(vertical: 16),
@@ -115,9 +116,10 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                             borderRadius: BorderRadius.circular(16),
                           ),
                           child: Center(
-                              child: Text(
-                                "07 Apr",
-                              )),
+                            child: Text(
+                              "07 Apr",
+                            ),
+                          ),
                         )
                       ],
                     ),
