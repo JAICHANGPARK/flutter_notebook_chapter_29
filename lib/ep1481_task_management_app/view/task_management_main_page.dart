@@ -122,13 +122,15 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(top: 0, bottom: 0, right: 12),
+                          margin: EdgeInsets.only(top: 4, bottom: 4, right: 12),
                           padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           decoration: BoxDecoration(
                             color: _lightGreyColor,
                             borderRadius: BorderRadius.circular(16),
                           ),
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Center(
                                 child: Text(
