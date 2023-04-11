@@ -96,7 +96,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
-                          margin: EdgeInsets.only(top: 16, bottom: 16, right: 16),
+                          margin: EdgeInsets.only(top: 16, bottom: 16, right: 12),
                           padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           decoration: BoxDecoration(
                             color: _deepGreyColor,
@@ -110,7 +110,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.symmetric(vertical: 16),
+                          margin: EdgeInsets.only(top: 16, bottom: 16, right: 12),
                           padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           decoration: BoxDecoration(
                             color: _lightGreyColor,
