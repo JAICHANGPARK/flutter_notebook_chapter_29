@@ -318,7 +318,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                     CircleAvatar(
                                       radius: 30,
                                       backgroundColor: Colors.black,
-                                      foregroundColor: _greenColor,
+                                      foregroundColor: _yellowColor,
                                       child: const Icon(Icons.share),
                                     ),
                                   ],
@@ -434,7 +434,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                     CircleAvatar(
                                       radius: 30,
                                       backgroundColor: Colors.black,
-                                      foregroundColor: _greenColor,
+                                      foregroundColor: Colors.grey[300],
                                       child: const Icon(Icons.share),
                                     ),
                                   ],
