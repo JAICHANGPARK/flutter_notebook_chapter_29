@@ -122,7 +122,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                           ),
                         ),
                         Container(
-                          margin: const EdgeInsets.only(top: 4, bottom: 4, right: 12),
+                          margin: const EdgeInsets.only(top: 6, bottom: 6, right: 12),
                           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                           decoration: BoxDecoration(
                             color: _yellowColor,
