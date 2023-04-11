@@ -145,7 +145,33 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                               ),
                             ],
                           ),
-                        )
+                        ),
+                        Container(
+                          margin: const EdgeInsets.only(top: 16, bottom: 16, right: 12),
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          decoration: BoxDecoration(
+                            color: _lightGreyColor,
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: const Center(
+                            child: Text(
+                              "09 Apr",
+                            ),
+                          ),
+                        ),
+                        Container(
+                          margin: const EdgeInsets.only(top: 16, bottom: 16, right: 12),
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          decoration: BoxDecoration(
+                            color: _deepGreyColor,
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: const Center(
+                            child: Text(
+                              "10 Apr",
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
