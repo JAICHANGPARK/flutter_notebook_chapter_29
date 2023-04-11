@@ -84,6 +84,9 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                           child: const Text(
                             "See all",
                           ),
+                          style: TextButton.styleFrom(
+                            foregroundColor: Colors.grey,
+                          ),
                         )
                       ],
                     ),
