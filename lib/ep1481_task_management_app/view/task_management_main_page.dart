@@ -93,7 +93,7 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                     height: 64,
                     color: Colors.blue,
                     child: ListView(
-                      
+                      scrollDirection: Axis.horizontal,
                       children: [
                         Container(
                           decoration: BoxDecoration(
