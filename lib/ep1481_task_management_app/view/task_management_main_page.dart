@@ -102,7 +102,6 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                             color: _deepGreyColor,
                             borderRadius: BorderRadius.circular(16),
                           ),
-
                           child: Center(
                             child: Text(
                               "06 Apr",
@@ -120,6 +119,24 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                             child: Text(
                               "07 Apr",
                             ),
+                          ),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(top: 0, bottom: 0, right: 12),
+                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          decoration: BoxDecoration(
+                            color: _lightGreyColor,
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: Column(
+                            children: [
+                              Center(
+                                child: Text(
+                                  "07 Apr",
+                                ),
+                              ),
+                              Text("Today"),
+                            ],
                           ),
                         )
                       ],
