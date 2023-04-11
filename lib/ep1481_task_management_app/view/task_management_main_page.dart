@@ -591,11 +591,18 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                         child: const Icon(Icons.home_filled),
                       ),
                     ),
-                    CircleAvatar(
-                      radius: 30,
-                      backgroundColor: _deepGreyColor,
-                      foregroundColor: Colors.grey,
-                      child: const Icon(Icons.chat),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _pageIndex = 1;
+                        });
+                      },
+                      child: CircleAvatar(
+                        radius: 30,
+                        backgroundColor: _pageIndex == 1 ? _yellowColor : _deepGreyColor,
+                        foregroundColor:  _pageIndex == 1 ? Colors.black : Colors.grey,
+                        child: const Icon(Icons.chat),
+                      ),
                     ),
                     CircleAvatar(
                       radius: 30,
