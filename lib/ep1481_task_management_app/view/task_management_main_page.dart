@@ -45,9 +45,9 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                             children: [
                               CircleAvatar(
                                 radius: 16,
-                                child: const Icon(Icons.add),
                                 foregroundColor: _yellowColor,
                                 backgroundColor: Colors.black,
+                                child: const Icon(Icons.add),
                               ),
                               const SizedBox(
                                 width: 8,
@@ -81,11 +81,11 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: const Text(
-                            "See all",
-                          ),
                           style: TextButton.styleFrom(
                             foregroundColor: Colors.grey,
+                          ),
+                          child: const Text(
+                            "See all",
                           ),
                         )
                       ],
