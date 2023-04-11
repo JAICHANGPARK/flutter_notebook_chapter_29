@@ -617,11 +617,18 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                         child: const Icon(Icons.pie_chart),
                       ),
                     ),
-                    CircleAvatar(
-                      radius: 30,
-                      backgroundColor: _deepGreyColor,
-                      foregroundColor: Colors.grey,
-                      child: const Icon(Icons.settings),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _pageIndex = 3;
+                        });
+                      },
+                      child: CircleAvatar(
+                        radius: 30,
+                        backgroundColor: _deepGreyColor,
+                        foregroundColor: Colors.grey,
+                        child: const Icon(Icons.settings),
+                      ),
                     ),
                   ],
                 ),
