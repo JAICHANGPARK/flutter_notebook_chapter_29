@@ -578,11 +578,18 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    CircleAvatar(
-                      radius: 30,
-                      backgroundColor: _yellowColor,
-                      foregroundColor: Colors.black,
-                      child: const Icon(Icons.home_filled),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _pageIndex = 0;
+                        });
+                      },
+                      child: CircleAvatar(
+                        radius: 30,
+                        backgroundColor: _pageIndex == 0 ? _yellowColor : _deepGreyColor,
+                        foregroundColor:  _pageIndex == 0 ? Colors.black : Colors.grey,
+                        child: const Icon(Icons.home_filled),
+                      ),
                     ),
                     CircleAvatar(
                       radius: 30,
@@ -611,4 +618,6 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
       ),
     );
   }
+
+  int _pageIndex = 0;
 }
