@@ -133,13 +133,13 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              const Center(
+                            children: const [
+                              Center(
                                 child: Text(
                                   "08 Apr",
                                 ),
                               ),
-                              const Text(
+                              Text(
                                 "Today",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
