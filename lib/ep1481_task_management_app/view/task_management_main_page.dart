@@ -92,19 +92,32 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                     margin: const EdgeInsets.symmetric(vertical: 16),
                     height: 64,
                     color: Colors.blue,
-
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
                           margin: EdgeInsets.symmetric(vertical: 16),
+                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           decoration: BoxDecoration(
                             color: _deepGreyColor,
+                            borderRadius: BorderRadius.circular(16),
                           ),
                           child: Center(
                               child: Text(
                             "06 Apr",
                           )),
+                        ),
+                        Container(
+                          margin: EdgeInsets.symmetric(vertical: 16),
+                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          decoration: BoxDecoration(
+                            color: _lightGreyColor,
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: Center(
+                              child: Text(
+                                "07 Apr",
+                              )),
                         )
                       ],
                     ),
