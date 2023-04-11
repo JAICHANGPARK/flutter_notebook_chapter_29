@@ -123,10 +123,10 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                         ),
                         Container(
                           margin: EdgeInsets.only(top: 4, bottom: 4, right: 12),
-                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                           decoration: BoxDecoration(
-                            color: _lightGreyColor,
-                            borderRadius: BorderRadius.circular(16),
+                            color: _yellowColor,
+                            borderRadius: BorderRadius.circular(36),
                           ),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
@@ -137,7 +137,12 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                                   "07 Apr",
                                 ),
                               ),
-                              Text("Today"),
+                              Text(
+                                "Today",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ],
                           ),
                         )
