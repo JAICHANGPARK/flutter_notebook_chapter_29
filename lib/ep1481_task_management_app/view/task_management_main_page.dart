@@ -96,12 +96,13 @@ class _TaskManagementMainPageState extends State<TaskManagementMainPage> {
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
-                          margin: EdgeInsets.symmetric(vertical: 16),
+                          margin: EdgeInsets.only(top: 16, bottom: 16, right: 16),
                           padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           decoration: BoxDecoration(
                             color: _deepGreyColor,
                             borderRadius: BorderRadius.circular(16),
                           ),
+
                           child: Center(
                             child: Text(
                               "06 Apr",
