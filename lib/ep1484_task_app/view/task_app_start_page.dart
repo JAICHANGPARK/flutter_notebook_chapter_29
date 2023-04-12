@@ -13,26 +13,31 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
     return Scaffold(
       backgroundColor: Color.fromRGBO(26, 26, 26, 1),
       body: SafeArea(
-        child: Column(
-          children: [
-            Container(
-              height: MediaQuery.of(context).size.height / 2,
-            ),
-            Text.rich(
-              TextSpan(
-                children: [
-                  TextSpan(
-                    text: "Organized",
-                    style: TextStyle(
-                      color: Color.fromRGBO(181, 253, 222, 1),
-                    ),
-                  ),
-                  TextSpan(text: "Project"),
-                ],
+        child: Padding(
+          padding: const EdgeInsets.all(24.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                height: MediaQuery.of(context).size.height / 2,
               ),
-            ),
-            Text("Management")
-          ],
+              Text.rich(
+                TextSpan(
+                  children: [
+                    TextSpan(
+                      text: "Organized",
+                      style: TextStyle(
+                        color: Color.fromRGBO(181, 253, 222, 1),
+                        fontSize: 40
+                      ),
+                    ),
+                    TextSpan(text: "Project"),
+                  ],
+                ),
+              ),
+              Text("Management")
+            ],
+          ),
         ),
       ),
     );
