@@ -26,18 +26,27 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
                   children: [
                     TextSpan(
                       text: "Organized",
-                      style: TextStyle(color: Color.fromRGBO(181, 253, 222, 1), fontSize: 40),
+                      style: TextStyle(
+                        color: Color.fromRGBO(181, 253, 222, 1),
+                        fontSize: 40,
+                      ),
                     ),
                     TextSpan(
                       text: " Project",
-                      style: TextStyle(color: Colors.white, fontSize: 40),
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 40,
+                      ),
                     ),
                   ],
                 ),
               ),
               Text(
                 "Management",
-                style: TextStyle(color: Colors.white, fontSize: 40),
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 40,
+                ),
               )
             ],
           ),
