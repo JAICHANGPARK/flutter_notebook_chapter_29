@@ -76,12 +76,12 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
                 ),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
-                  children: [
-                    const Text("Get Started"),
-                    const SizedBox(
+                  children: const [
+                    Text("Get Started"),
+                    SizedBox(
                       width: 16,
                     ),
-                    const CircleAvatar(
+                    CircleAvatar(
                       radius: 28,
                       backgroundColor: Color.fromRGBO(26, 26, 26, 1),
                       foregroundColor: Colors.white,
