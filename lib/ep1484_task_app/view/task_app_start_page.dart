@@ -64,10 +64,8 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
               ),
               Spacer(),
               Container(
-                decoration: BoxDecoration(
-                  color: Color.fromRGBO(253, 244, 133, 1),
-                  borderRadius: BorderRadius.circular(32)
-                ),
+                decoration:
+                    BoxDecoration(color: Color.fromRGBO(253, 244, 133, 1), borderRadius: BorderRadius.circular(32)),
                 padding: EdgeInsets.only(
                   left: 16,
                   top: 8,
@@ -89,6 +87,7 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
                     )
                   ],
                 ),
+                margin: EdgeInsets.only(bottom: 24),
               )
             ],
           ),
