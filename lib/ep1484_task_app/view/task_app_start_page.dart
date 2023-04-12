@@ -74,6 +74,7 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
                   bottom: 4,
                   right: 4,
                 ),
+                margin: const EdgeInsets.only(bottom: 24),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: const [
@@ -89,7 +90,6 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
                     )
                   ],
                 ),
-                margin: const EdgeInsets.only(bottom: 24),
               )
             ],
           ),
