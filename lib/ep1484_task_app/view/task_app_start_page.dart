@@ -15,7 +15,23 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
       body: SafeArea(
         child: Column(
           children: [
-
+            Container(
+              height: MediaQuery.of(context).size.height / 2,
+            ),
+            Text.rich(
+              TextSpan(
+                children: [
+                  TextSpan(
+                    text: "Organized",
+                    style: TextStyle(
+                      color: Color.fromRGBO(181, 253, 222, 1),
+                    ),
+                  ),
+                  TextSpan(text: "Project"),
+                ],
+              ),
+            ),
+            Text("Management")
           ],
         ),
       ),
