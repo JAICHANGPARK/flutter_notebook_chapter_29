@@ -10,6 +10,15 @@ class TaskAppStartPage extends StatefulWidget {
 class _TaskAppStartPageState extends State<TaskAppStartPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Color.fromRGBO(26, 26, 26, 1),
+      body: SafeArea(
+        child: Column(
+          children: [
+
+          ],
+        ),
+      ),
+    );
   }
 }
