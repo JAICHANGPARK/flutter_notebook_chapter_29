@@ -80,7 +80,7 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
                       width: 16,
                     ),
                     CircleAvatar(
-                      radius: 24,
+                      radius: 28,
                       backgroundColor: Color.fromRGBO(26, 26, 26, 1),
                       foregroundColor: Colors.white,
                       child: Icon(Icons.arrow_forward),
