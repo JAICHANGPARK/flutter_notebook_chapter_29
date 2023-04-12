@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_29/ep1484_task_app/view/task_app_start_page.dart';
 
 void main() {
-  runApp(Ep1484TaskApp());
+  runApp(const Ep1484TaskApp());
 }
 
 class Ep1484TaskApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class Ep1484TaskApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: TaskAppStartPage(),
     );
   }
