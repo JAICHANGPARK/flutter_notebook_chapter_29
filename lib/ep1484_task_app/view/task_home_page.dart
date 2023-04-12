@@ -17,7 +17,23 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
           SafeArea(
               child: Column(
             children: [],
-          ))
+          )),
+          Positioned(
+            bottom: 24,
+            left: 0,
+            right: 0,
+            child: Center(
+              child: Container(
+                child: Row(
+                  children: [
+                    CircleAvatar(),
+                    CircleAvatar(),
+                    CircleAvatar(),
+                  ],
+                ),
+              ),
+            ),
+          )
         ],
       ),
     );
