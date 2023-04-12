@@ -6,7 +6,7 @@
 - by Arip for Hatypo Studio
 - https://dribbble.com/shots/21176252-Task-Management-Mobile-Concept
 
-<img src="https://cdn.dribbble.com/userupload/6097739/file/original-72c391703935b506e9e8af33fe99bda2.jpg?compress=1&resize=1600x1200" width="500px"/>
+<img src="https://cdn.dribbble.com/userupload/6186773/file/original-1b78f61e30d242b3ec8a983555f97cd4.png?compress=1&resize=1600x1200" width="500px"/>
 
 ### EP1481-1483
 
