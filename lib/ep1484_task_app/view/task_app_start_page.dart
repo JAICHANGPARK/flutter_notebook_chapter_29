@@ -41,6 +41,9 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
                   ],
                 ),
               ),
+              SizedBox(
+                height: 16,
+              ),
               Text(
                 "Management",
                 style: TextStyle(
@@ -56,10 +59,7 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
                 child: Text(
                   "Tasks can be prioritized and set with deadlines, so all team members"
                   "have visibility into the project's progress",
-                  style: TextStyle(
-                    color: Colors.grey,
-                    height: 1.5
-                  ),
+                  style: TextStyle(color: Colors.grey, height: 1.5),
                 ),
               )
             ],
