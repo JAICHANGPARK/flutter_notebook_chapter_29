@@ -11,7 +11,7 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(26, 26, 26, 1),
+      backgroundColor: const Color.fromRGBO(26, 26, 26, 1),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(24.0),
@@ -21,7 +21,7 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
               Container(
                 height: MediaQuery.of(context).size.height / 2,
               ),
-              Text.rich(
+              const Text.rich(
                 TextSpan(
                   children: [
                     TextSpan(
@@ -41,18 +41,18 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
-              Text(
+              const Text(
                 "Management",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 40,
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(
+              const Padding(
+                padding: EdgeInsets.only(
                   top: 24,
                   right: 42,
                 ),
@@ -62,13 +62,13 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
                   style: TextStyle(color: Colors.grey, height: 1.5),
                 ),
               ),
-              Spacer(),
+              const Spacer(),
               Container(
                 decoration: BoxDecoration(
-                  color: Color.fromRGBO(253, 244, 133, 1),
+                  color: const Color.fromRGBO(253, 244, 133, 1),
                   borderRadius: BorderRadius.circular(48),
                 ),
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   left: 32,
                   top: 4,
                   bottom: 4,
@@ -77,11 +77,11 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Text("Get Started"),
-                    SizedBox(
+                    const Text("Get Started"),
+                    const SizedBox(
                       width: 16,
                     ),
-                    CircleAvatar(
+                    const CircleAvatar(
                       radius: 28,
                       backgroundColor: Color.fromRGBO(26, 26, 26, 1),
                       foregroundColor: Colors.white,
@@ -89,7 +89,7 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
                     )
                   ],
                 ),
-                margin: EdgeInsets.only(bottom: 24),
+                margin: const EdgeInsets.only(bottom: 24),
               )
             ],
           ),
