@@ -64,7 +64,12 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
               ),
               Spacer(),
               Container(
+
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(253, 244, 133, 1),
+                ),
                 child: Row(
+                  mainAxisSize: MainAxisSize.min,
                   children: [
                     Text("Get Started"),
                     CircleAvatar(
