@@ -66,11 +66,13 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
               Container(
                 decoration: BoxDecoration(
                   color: Color.fromRGBO(253, 244, 133, 1),
+                  borderRadius: BorderRadius.circular(32)
                 ),
                 padding: EdgeInsets.only(
                   left: 16,
                   top: 8,
                   bottom: 8,
+                  right: 4,
                 ),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
