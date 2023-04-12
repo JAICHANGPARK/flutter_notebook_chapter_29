@@ -31,7 +31,12 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
                         fontSize: 40
                       ),
                     ),
-                    TextSpan(text: "Project"),
+                    TextSpan(text: "Project",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 40
+                      ),
+                    ),
                   ],
                 ),
               ),
