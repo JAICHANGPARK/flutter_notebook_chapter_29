@@ -1,7 +1,14 @@
 # flutter_notebook_chapter_29
 
+### EP1484
 
-### EP1481
+- Task Management - Mobile Concept
+- by Arip for Hatypo Studio
+- https://dribbble.com/shots/21176252-Task-Management-Mobile-Concept
+
+<img src="https://cdn.dribbble.com/userupload/6097739/file/original-72c391703935b506e9e8af33fe99bda2.jpg?compress=1&resize=1600x1200" width="500px"/>
+
+### EP1481-1483
 
 - Task management mobile app design
 - by Antora Yeasmin (Nataliya) for DesignOps
