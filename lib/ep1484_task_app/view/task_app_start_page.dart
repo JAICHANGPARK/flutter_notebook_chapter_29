@@ -47,6 +47,19 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
                   color: Colors.white,
                   fontSize: 40,
                 ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(
+                  top: 24,
+                  right: 32,
+                ),
+                child: Text(
+                  "Tasks can be prioritized and set with deadlines, so all team members"
+                  "have visibility into the project's progress",
+                  style: TextStyle(
+                    color: Colors.grey,
+                  ),
+                ),
               )
             ],
           ),
