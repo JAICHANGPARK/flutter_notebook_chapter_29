@@ -61,6 +61,14 @@ class _TaskAppStartPageState extends State<TaskAppStartPage> {
                   "have visibility into the project's progress",
                   style: TextStyle(color: Colors.grey, height: 1.5),
                 ),
+              ),
+              Spacer(),
+              Container(
+                child: Row(
+                  children: [
+                    
+                  ],
+                ),
               )
             ],
           ),
