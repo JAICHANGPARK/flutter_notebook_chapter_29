@@ -131,10 +131,18 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                           fontSize: 18,
                         ),
                       ),
+                      Column(
+                        children: List.generate(
+                          10,
+                          (index) => Container(
+                            height: 72,
+                            color: Colors.blue,
+                          ),
+                        ),
+                      )
                     ],
                   ),
                 )),
-
               ],
             )),
           ),
