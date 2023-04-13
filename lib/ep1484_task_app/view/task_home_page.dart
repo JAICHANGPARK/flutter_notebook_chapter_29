@@ -125,7 +125,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                         ),
                       ),
                       Text(
-                        "Your Progress",
+                        "To Do List",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 18,
