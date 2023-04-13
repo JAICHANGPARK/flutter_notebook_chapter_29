@@ -30,7 +30,11 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
             right: 0,
             child: Center(
               child: Container(
-                color: Color.fromRGBO(36, 36, 36, 1),
+
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(36, 36, 36, 1),
+                  borderRadius: BorderRadius.circular(48)
+                ),
                 padding: EdgeInsets.symmetric(horizontal: 8,vertical: 8),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
