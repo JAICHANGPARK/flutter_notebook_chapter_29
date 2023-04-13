@@ -13,7 +13,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(26, 26, 26, 1),
+      backgroundColor: const Color.fromRGBO(26, 26, 26, 1),
       body: Stack(
         children: [
           Positioned(
@@ -33,10 +33,10 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
             child: Center(
               child: Container(
                 decoration: BoxDecoration(
-                  color: Color.fromRGBO(36, 36, 36, 1),
+                  color: const Color.fromRGBO(36, 36, 36, 1),
                   borderRadius: BorderRadius.circular(48),
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -48,16 +48,17 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                       },
                       child: CircleAvatar(
                         radius: 28,
-                        backgroundColor:
-                            _pageIndex == 0 ? const Color.fromRGBO(253, 244, 133, 1) : Color.fromRGBO(36, 36, 36, 1),
-                        foregroundColor: _pageIndex == 0 ? Color.fromRGBO(36, 36, 36, 1) : Colors.grey,
-                        child: Icon(
+                        backgroundColor: _pageIndex == 0
+                            ? const Color.fromRGBO(253, 244, 133, 1)
+                            : const Color.fromRGBO(36, 36, 36, 1),
+                        foregroundColor: _pageIndex == 0 ? const Color.fromRGBO(36, 36, 36, 1) : Colors.grey,
+                        child: const Icon(
                           Icons.home_outlined,
                           size: 28,
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 8,
                     ),
                     GestureDetector(
@@ -68,20 +69,36 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                       },
                       child: CircleAvatar(
                         radius: 28,
-                        backgroundColor:
-                            _pageIndex == 1 ? const Color.fromRGBO(253, 244, 133, 1) : Color.fromRGBO(36, 36, 36, 1),
-                        foregroundColor: _pageIndex == 1 ? Color.fromRGBO(36, 36, 36, 1) : Colors.grey,
-                        child: Icon(
+                        backgroundColor: _pageIndex == 1
+                            ? const Color.fromRGBO(253, 244, 133, 1)
+                            : const Color.fromRGBO(36, 36, 36, 1),
+                        foregroundColor: _pageIndex == 1 ? const Color.fromRGBO(36, 36, 36, 1) : Colors.grey,
+                        child: const Icon(
                           Icons.list_alt,
                           size: 28,
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 8,
                     ),
-                    CircleAvatar(
-                      radius: 28,
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _pageIndex = 2;
+                        });
+                      },
+                      child: CircleAvatar(
+                        radius: 28,
+                        backgroundColor: _pageIndex == 2
+                            ? const Color.fromRGBO(253, 244, 133, 1)
+                            : const Color.fromRGBO(36, 36, 36, 1),
+                        foregroundColor: _pageIndex == 2 ? const Color.fromRGBO(36, 36, 36, 1) : Colors.grey,
+                        child: const Icon(
+                          Icons.person_outline,
+                          size: 28,
+                        ),
+                      ),
                     ),
                   ],
                 ),
