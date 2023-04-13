@@ -28,12 +28,16 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           "Hi, Dream",
                           style: TextStyle(
                             color: Colors.grey,
                           ),
+                        ),
+                        SizedBox(
+                          height: 16,
                         ),
                         Text(
                           "You Have",
