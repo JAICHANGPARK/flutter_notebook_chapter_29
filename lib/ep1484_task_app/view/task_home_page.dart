@@ -23,6 +23,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
             top: 8,
             child: SafeArea(
                 child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -95,7 +96,6 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                         ],
                       ),
                     ),
-
                   ],
                 ),
                 Container(
@@ -105,11 +105,16 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                     color: Colors.white,
                   ),
                 ),
-                Text("Your Progress",style: TextStyle(
-                  color: Colors.white
-                ),),
+                Text(
+                  "Your Progress",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                  ),
+                ),
                 Container(
                   height: 180,
+                  margin: EdgeInsets.symmetric(vertical: 16),
                   decoration: BoxDecoration(
                     color: Colors.white,
                   ),
