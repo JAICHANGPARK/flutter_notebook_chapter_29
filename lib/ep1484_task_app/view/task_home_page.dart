@@ -43,12 +43,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                     CircleAvatar(
                       radius: 28,
                       backgroundColor: const Color.fromRGBO(253, 244, 133, 1),
-                      foregroundColor: Color.fromRGBO(
-                        36,
-                        36,
-                        36,
-                        1,
-                      ),
+                      foregroundColor: Color.fromRGBO(36, 36, 36, 1),
                       child: Icon(
                         Icons.home_outlined,
                         size: 28,
@@ -61,6 +56,8 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                       radius: 28,
                       backgroundColor:
                           _pageIndex == 1 ? const Color.fromRGBO(253, 244, 133, 1) : Color.fromRGBO(36, 36, 36, 1),
+                      foregroundColor: _pageIndex == 1 ? Colors.grey : Color.fromRGBO(36, 36, 36, 1),
+                      child: Icon(Icons.list_alt),
                     ),
                     SizedBox(
                       width: 8,
