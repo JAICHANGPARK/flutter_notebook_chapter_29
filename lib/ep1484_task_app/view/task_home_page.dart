@@ -40,13 +40,20 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    CircleAvatar(
-                      radius: 28,
-                      backgroundColor: const Color.fromRGBO(253, 244, 133, 1),
-                      foregroundColor: Color.fromRGBO(36, 36, 36, 1),
-                      child: Icon(
-                        Icons.home_outlined,
-                        size: 28,
+                    GestureDetector(
+                      onTap: (){
+                        setState(() {
+                          _pageIndex = 0;
+                        });
+                      },
+                      child: CircleAvatar(
+                        radius: 28,
+                        backgroundColor: const Color.fromRGBO(253, 244, 133, 1),
+                        foregroundColor: Color.fromRGBO(36, 36, 36, 1),
+                        child: Icon(
+                          Icons.home_outlined,
+                          size: 28,
+                        ),
                       ),
                     ),
                     SizedBox(
