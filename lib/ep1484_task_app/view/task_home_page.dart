@@ -47,7 +47,10 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                           Container(
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
-                              border: Border.all(color: Colors.white, width: 0.5),
+                              border: Border.all(
+                                color: Colors.white,
+                                width: 0.5,
+                              ),
                             ),
                             child: Center(
                               child: Icon(
@@ -56,9 +59,17 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                               ),
                             ),
                           ),
-                          CircleAvatar(
-                            radius: 12,
-                            backgroundColor: Colors.white,
+                          Positioned(
+                            right: 0,
+                            top: 0,
+                            child: CircleAvatar(
+                              radius: 10,
+                              backgroundColor: Colors.white,
+                              child: Text(
+                                "4",
+                                
+                              ),
+                            ),
                           )
                         ],
                       ),
