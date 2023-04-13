@@ -98,27 +98,42 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                     ),
                   ],
                 ),
-                Container(
-                  height: 240,
-                  margin: EdgeInsets.symmetric(vertical: 24),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
+                Expanded(
+                    child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 240,
+                        margin: EdgeInsets.symmetric(vertical: 24),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                        ),
+                      ),
+                      Text(
+                        "Your Progress",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                        ),
+                      ),
+                      Container(
+                        height: 180,
+                        margin: EdgeInsets.symmetric(vertical: 16),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                        ),
+                      ),
+                      Text(
+                        "Your Progress",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                        ),
+                      ),
+                    ],
                   ),
-                ),
-                Text(
-                  "Your Progress",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                  ),
-                ),
-                Container(
-                  height: 180,
-                  margin: EdgeInsets.symmetric(vertical: 16),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                  ),
-                ),
+                )),
+
               ],
             )),
           ),
