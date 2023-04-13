@@ -47,6 +47,9 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                             fontSize: 26,
                           ),
                         ),
+                        SizedBox(
+                          height: 8,
+                        ),
                         Text(
                           "4 Projects",
                           style: TextStyle(
