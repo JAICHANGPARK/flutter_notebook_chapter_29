@@ -101,6 +101,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                 Expanded(
                     child: SingleChildScrollView(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
                         height: 240,
