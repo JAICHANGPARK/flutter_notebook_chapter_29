@@ -30,8 +30,10 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
             right: 0,
             child: Center(
               child: Container(
-                decoration:
-                    BoxDecoration(color: Color.fromRGBO(36, 36, 36, 1), borderRadius: BorderRadius.circular(48)),
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(36, 36, 36, 1),
+                  borderRadius: BorderRadius.circular(48),
+                ),
                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
@@ -39,6 +41,10 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                     CircleAvatar(
                       radius: 28,
                       backgroundColor: const Color.fromRGBO(253, 244, 133, 1),
+                      foregroundColor: Color.fromRGBO(36, 36, 36, 1),
+                      child: Icon(
+                        Icons.home_outlined,
+                      ),
                     ),
                     SizedBox(
                       width: 8,
