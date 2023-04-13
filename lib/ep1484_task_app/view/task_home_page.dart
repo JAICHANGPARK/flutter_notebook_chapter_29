@@ -30,23 +30,25 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
             right: 0,
             child: Center(
               child: Container(
-
-                decoration: BoxDecoration(
-                  color: Color.fromRGBO(36, 36, 36, 1),
-                  borderRadius: BorderRadius.circular(48)
-                ),
-                padding: EdgeInsets.symmetric(horizontal: 8,vertical: 8),
+                decoration:
+                    BoxDecoration(color: Color.fromRGBO(36, 36, 36, 1), borderRadius: BorderRadius.circular(48)),
+                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     CircleAvatar(
                       radius: 28,
+                      backgroundColor: const Color.fromRGBO(253, 244, 133, 1),
                     ),
-                    SizedBox(width: 8,),
+                    SizedBox(
+                      width: 8,
+                    ),
                     CircleAvatar(
                       radius: 28,
                     ),
-                    SizedBox(width: 8,),
+                    SizedBox(
+                      width: 8,
+                    ),
                     CircleAvatar(
                       radius: 28,
                     ),
