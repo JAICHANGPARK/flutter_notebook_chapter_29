@@ -25,6 +25,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                 child: Column(
               children: [
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
                       children: [
@@ -46,7 +47,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                           Container(
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
-                              border: Border.all(),
+                              border: Border.all(color: Colors.white, width: 0.5),
                             ),
                             child: Center(
                               child: Icon(
@@ -54,6 +55,10 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                 color: Colors.white,
                               ),
                             ),
+                          ),
+                          CircleAvatar(
+                            radius: 12,
+                            backgroundColor: Colors.white,
                           )
                         ],
                       ),
