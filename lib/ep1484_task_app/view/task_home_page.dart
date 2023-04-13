@@ -40,8 +40,8 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                       ],
                     ),
                     Container(
-                      height: 58,
-                      width: 58,
+                      height: 52,
+                      width: 52,
                       child: Stack(
                         children: [
                           Container(
@@ -55,7 +55,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                             child: Center(
                               child: Icon(
                                 Icons.chat_outlined,
-                                color: Colors.white,
+                                color: Colors.white.withOpacity(0.3),
                               ),
                             ),
                           ),
@@ -67,7 +67,9 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                               backgroundColor: Colors.white,
                               child: Text(
                                 "4",
-                                
+                                style: TextStyle(
+                                  fontSize: 12
+                                ),
                               ),
                             ),
                           )
