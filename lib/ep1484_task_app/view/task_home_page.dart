@@ -23,7 +23,24 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
             top: 0,
             child: SafeArea(
                 child: Column(
-              children: [],
+              children: [
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Text("Hi, Dream"),
+                        Text("You Have"),
+                        Text(
+                          "4 Projects",
+                          style: TextStyle(
+                            decoration: TextDecoration.underline,
+                          ),
+                        )
+                      ],
+                    ),
+                  ],
+                )
+              ],
             )),
           ),
           Positioned(
