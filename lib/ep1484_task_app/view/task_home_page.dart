@@ -17,15 +17,16 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
       body: Stack(
         children: [
           Positioned(
-            left: 0,
+            left: 8,
             bottom: 0,
             right: 0,
-            top: 0,
+            top: 8,
             child: SafeArea(
                 child: Column(
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,13 +44,15 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                           "You Have",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 24,
+                            fontSize: 26,
                           ),
                         ),
                         Text(
                           "4 Projects",
                           style: TextStyle(
                             decoration: TextDecoration.underline,
+                            color: Colors.white,
+                            fontSize: 48,
                           ),
                         ),
                       ],
