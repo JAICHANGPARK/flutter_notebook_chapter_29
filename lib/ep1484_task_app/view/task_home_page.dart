@@ -29,8 +29,19 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                   children: [
                     Column(
                       children: [
-                        Text("Hi, Dream"),
-                        Text("You Have"),
+                        Text(
+                          "Hi, Dream",
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
+                        ),
+                        Text(
+                          "You Have",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                          ),
+                        ),
                         Text(
                           "4 Projects",
                           style: TextStyle(
@@ -67,9 +78,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                               backgroundColor: Colors.white,
                               child: Text(
                                 "4",
-                                style: TextStyle(
-                                  fontSize: 12
-                                ),
+                                style: TextStyle(fontSize: 12),
                               ),
                             ),
                           )
