@@ -35,11 +35,25 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                           style: TextStyle(
                             decoration: TextDecoration.underline,
                           ),
-                        )
+                        ),
                       ],
                     ),
+                    Container(
+                      height: 58,
+                      width: 58,
+                      child: Stack(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(),
+                            ),
+                          )
+                        ],
+                      ),
+                    )
                   ],
-                )
+                ),
               ],
             )),
           ),
