@@ -48,6 +48,12 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                               shape: BoxShape.circle,
                               border: Border.all(),
                             ),
+                            child: Center(
+                              child: Icon(
+                                Icons.chat_outlined,
+                                color: Colors.white,
+                              ),
+                            ),
                           )
                         ],
                       ),
