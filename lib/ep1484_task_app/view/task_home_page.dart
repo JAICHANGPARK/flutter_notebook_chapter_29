@@ -94,8 +94,22 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                           )
                         ],
                       ),
-                    )
+                    ),
+
                   ],
+                ),
+                Container(
+                  height: 240,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),
+                ),
+                Text("Your Progress"),
+                Container(
+                  height: 180,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),
                 ),
               ],
             )),
