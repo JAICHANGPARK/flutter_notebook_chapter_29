@@ -30,27 +30,27 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                   children: [
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text(
+                      children: const [
+                        Text(
                           "Hi, Dream",
                           style: TextStyle(
                             color: Colors.grey,
                           ),
                         ),
-                        const SizedBox(
+                        SizedBox(
                           height: 16,
                         ),
-                        const Text(
+                        Text(
                           "You Have",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 26,
                           ),
                         ),
-                        const SizedBox(
+                        SizedBox(
                           height: 8,
                         ),
-                        const Text(
+                        Text(
                           "4 Projects",
                           style: TextStyle(
                             decoration: TextDecoration.underline,
