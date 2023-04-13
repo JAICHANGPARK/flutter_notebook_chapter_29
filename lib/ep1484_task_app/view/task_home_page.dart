@@ -52,7 +52,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                           style: TextStyle(
                             decoration: TextDecoration.underline,
                             color: Colors.white,
-                            fontSize: 48,
+                            fontSize: 36,
                           ),
                         ),
                       ],
