@@ -41,15 +41,16 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     GestureDetector(
-                      onTap: (){
+                      onTap: () {
                         setState(() {
                           _pageIndex = 0;
                         });
                       },
                       child: CircleAvatar(
                         radius: 28,
-                        backgroundColor: const Color.fromRGBO(253, 244, 133, 1),
-                        foregroundColor: Color.fromRGBO(36, 36, 36, 1),
+                        backgroundColor:
+                            _pageIndex == 0 ? const Color.fromRGBO(253, 244, 133, 1) : Color.fromRGBO(36, 36, 36, 1),
+                        foregroundColor: _pageIndex == 0 ? Colors.grey : Color.fromRGBO(36, 36, 36, 1),
                         child: Icon(
                           Icons.home_outlined,
                           size: 28,
@@ -59,12 +60,19 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                     SizedBox(
                       width: 8,
                     ),
-                    CircleAvatar(
-                      radius: 28,
-                      backgroundColor:
-                          _pageIndex == 1 ? const Color.fromRGBO(253, 244, 133, 1) : Color.fromRGBO(36, 36, 36, 1),
-                      foregroundColor: _pageIndex == 1 ? Colors.grey : Color.fromRGBO(36, 36, 36, 1),
-                      child: Icon(Icons.list_alt),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _pageIndex = 1;
+                        });
+                      },
+                      child: CircleAvatar(
+                        radius: 28,
+                        backgroundColor:
+                            _pageIndex == 1 ? const Color.fromRGBO(253, 244, 133, 1) : Color.fromRGBO(36, 36, 36, 1),
+                        foregroundColor: _pageIndex == 1 ? Colors.grey : Color.fromRGBO(36, 36, 36, 1),
+                        child: Icon(Icons.list_alt),
+                      ),
                     ),
                     SizedBox(
                       width: 8,
