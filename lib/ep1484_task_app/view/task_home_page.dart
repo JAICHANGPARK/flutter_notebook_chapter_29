@@ -134,6 +134,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                       color: const Color.fromRGBO(180, 255, 221, 1),
                                       borderRadius: BorderRadius.circular(16),
                                     ),
+                                    width: 280,
                                     padding: const EdgeInsets.all(16),
                                     child: Stack(
                                       children: [
@@ -147,9 +148,10 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                             Row(
                                               children: [
                                                 LinearPercentIndicator(
-                                                  width: 200,
+                                                  width: 140,
                                                   percent: 0.6,
                                                   padding: EdgeInsets.zero,
+                                                  progressColor: Colors.black,
                                                 ),
                                                 const SizedBox(
                                                   width: 8,
@@ -220,7 +222,8 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                         ),
                                       ],
                                     ),
-                                  )
+                                  ),
+                                
                                 ],
                               ),
                             )
