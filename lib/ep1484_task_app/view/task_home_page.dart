@@ -153,9 +153,19 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                             Text("60%"),
                                           ],
                                         ),
+                                        SizedBox(
+                                          height: 32,
+                                        ),
                                         Container(
                                           height: 42,
                                           color: Colors.blue,
+                                          child: Stack(
+                                            children: [],
+                                          ),
+                                        ),
+                                        Text(
+                                          "Analytics",
+                                          style: TextStyle(fontWeight: FontWeight.w200, fontSize: 32),
                                         )
                                       ],
                                     ),
