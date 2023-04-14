@@ -334,9 +334,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                       Container(
                         height: 200,
                         margin: const EdgeInsets.symmetric(vertical: 16),
-                        decoration: const BoxDecoration(
-
-                        ),
+                        decoration: const BoxDecoration(),
                         child: Row(
                           children: [
                             Expanded(
@@ -344,6 +342,9 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                 decoration: BoxDecoration(
                                   color: Color.fromRGBO(31, 31, 31, 1),
                                   borderRadius: BorderRadius.circular(16),
+                                  border: Border.all(
+                                    color: Color.fromRGBO(35, 35, 35, 1),
+                                  ),
                                 ),
                               ),
                             ),
@@ -358,6 +359,9 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                       decoration: BoxDecoration(
                                         color: Color.fromRGBO(31, 31, 31, 1),
                                         borderRadius: BorderRadius.circular(16),
+                                        border: Border.all(
+                                          color: Color.fromRGBO(35, 35, 35, 1),
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -369,6 +373,9 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                       decoration: BoxDecoration(
                                         color: Color.fromRGBO(31, 31, 31, 1),
                                         borderRadius: BorderRadius.circular(16),
+                                        border: Border.all(
+                                          color: Color.fromRGBO(35, 35, 35, 1),
+                                        ),
                                       ),
                                     ),
                                   ),
