@@ -158,13 +158,17 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                               ],
                                             ),
                                             SizedBox(
-                                              height: 32,
+                                              height: 24,
                                             ),
                                             Container(
-                                              height: 42,
+                                              height: 32,
                                               color: Colors.blue,
                                               child: Stack(
-                                                children: [],
+                                                children: [
+                                                  Positioned(child: CircleAvatar()),
+                                                  Positioned(child: CircleAvatar()),
+                                                  Positioned(child: CircleAvatar()),
+                                                ],
                                               ),
                                             ),
                                             Text(
@@ -174,11 +178,14 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                                 fontSize: 32,
                                               ),
                                             ),
-                                            Text(
-                                              "Dashboard",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.w200,
-                                                fontSize: 32,
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 8),
+                                              child: Text(
+                                                "Dashboard",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 32,
+                                                ),
                                               ),
                                             ),
                                             Text("Web Design"),
