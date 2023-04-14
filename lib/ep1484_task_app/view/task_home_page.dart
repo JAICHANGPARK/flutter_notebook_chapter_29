@@ -132,6 +132,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                     decoration: BoxDecoration(
                                       color: Color.fromRGBO(180, 255, 221, 1),
                                     ),
+                                    padding: EdgeInsets.all(16),
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
@@ -140,6 +141,8 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                           children: [
                                             LinearPercentIndicator(
                                               width: 200,
+                                              percent: 0.6,
+                                              padding: EdgeInsets.zero,
                                             ),
                                             Text("60%"),
                                           ],
