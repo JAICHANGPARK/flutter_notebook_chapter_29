@@ -106,16 +106,16 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                       Container(
                         height: 240,
                         margin: EdgeInsets.symmetric(vertical: 24),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-
-                        ),
+                        decoration: BoxDecoration(),
                         child: Row(
                           children: [
                             Container(
+                              decoration: BoxDecoration(
+                                
+                              ),
                               child: Center(
                                 child: IconButton(
-                                  onPressed: (){},
+                                  onPressed: () {},
                                   icon: Icon(Icons.add),
                                 ),
                               ),
