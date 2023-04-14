@@ -340,12 +340,13 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                         child: Row(
                           children: [
                             Expanded(
-                                child: Container(
-                              decoration: BoxDecoration(
-                                color: Color.fromRGBO(31, 31, 31, 1),
-                                borderRadius: BorderRadius.circular(16),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Color.fromRGBO(31, 31, 31, 1),
+                                  borderRadius: BorderRadius.circular(16),
+                                ),
                               ),
-                            )),
+                            ),
                             SizedBox(
                               width: 8,
                             ),
@@ -353,22 +354,24 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                               child: Column(
                                 children: [
                                   Expanded(
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          color: Color.fromRGBO(31, 31, 31, 1),
-                                          borderRadius: BorderRadius.circular(16),
-                                        ),
-                                      )),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Color.fromRGBO(31, 31, 31, 1),
+                                        borderRadius: BorderRadius.circular(16),
+                                      ),
+                                    ),
+                                  ),
                                   SizedBox(
                                     height: 8,
                                   ),
                                   Expanded(
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          color: Color.fromRGBO(31, 31, 31, 1),
-                                          borderRadius: BorderRadius.circular(16),
-                                        ),
-                                      )),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Color.fromRGBO(31, 31, 31, 1),
+                                        borderRadius: BorderRadius.circular(16),
+                                      ),
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
