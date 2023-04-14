@@ -114,6 +114,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                 border: Border.all(
                                   color: Colors.white.withOpacity(0.2),
                                 ),
+                                borderRadius: BorderRadius.circular(16)
                               ),
                               child: Center(
                                 child: IconButton(
