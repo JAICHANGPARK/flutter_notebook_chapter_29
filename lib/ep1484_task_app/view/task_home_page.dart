@@ -223,6 +223,101 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                       ],
                                     ),
                                   ),
+                                  Container(
+                                    margin: const EdgeInsets.symmetric(horizontal: 8),
+                                    decoration: BoxDecoration(
+                                      color: const Color.fromRGBO(254, 244, 144, 1),
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
+                                    width: 280,
+                                    padding: const EdgeInsets.all(16),
+                                    child: Stack(
+                                      children: [
+                                        Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            const Text("Progress"),
+                                            const SizedBox(
+                                              height: 8,
+                                            ),
+                                            Row(
+                                              children: [
+                                                LinearPercentIndicator(
+                                                  width: 140,
+                                                  percent: 0.6,
+                                                  padding: EdgeInsets.zero,
+                                                  progressColor: Colors.black,
+                                                ),
+                                                const SizedBox(
+                                                  width: 8,
+                                                ),
+                                                const Text("60%"),
+                                              ],
+                                            ),
+                                            const SizedBox(
+                                              height: 24,
+                                            ),
+                                            SizedBox(
+                                              height: 32,
+                                              width: 200,
+                                              child: Stack(
+                                                children: const [
+                                                  Positioned(
+                                                    child: CircleAvatar(
+                                                      radius: 16,
+                                                    ),
+                                                  ),
+                                                  Positioned(
+                                                    left: 20,
+                                                    child: CircleAvatar(
+                                                      radius: 16,
+                                                      backgroundColor: Colors.red,
+                                                    ),
+                                                  ),
+                                                  Positioned(
+                                                    left: 40,
+                                                    child: CircleAvatar(
+                                                      radius: 16,
+                                                      backgroundColor: Colors.green,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                            const SizedBox(
+                                              height: 8,
+                                            ),
+                                            const Text(
+                                              "Analytics",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.w200,
+                                                fontSize: 28,
+                                              ),
+                                            ),
+                                            const Padding(
+                                              padding: EdgeInsets.symmetric(vertical: 4),
+                                              child: Text(
+                                                "Dashboard",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 32,
+                                                ),
+                                              ),
+                                            ),
+                                            const Text("Web Design"),
+                                          ],
+                                        ),
+                                        const Positioned(
+                                          child: CircleAvatar(
+                                            radius: 26,
+                                            backgroundColor: Colors.black,
+                                          ),
+                                          right: 0,
+                                          bottom: 0,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
 
                                 ],
                               ),
