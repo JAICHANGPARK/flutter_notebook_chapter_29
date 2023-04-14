@@ -165,9 +165,22 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                               width: 200,
                                               child: Stack(
                                                 children: [
-                                                  Positioned(child: CircleAvatar(radius: 18,)),
-                                                  Positioned(left: 20, child: CircleAvatar(radius: 18,)),
-                                                  Positioned(left: 40, child: CircleAvatar(radius: 18,)),
+                                                  Positioned(
+                                                      child: CircleAvatar(
+                                                    radius: 16,
+                                                  )),
+                                                  Positioned(
+                                                      left: 20,
+                                                      child: CircleAvatar(
+                                                        radius: 16,
+                                                        backgroundColor: Colors.red,
+                                                      )),
+                                                  Positioned(
+                                                      left: 40,
+                                                      child: CircleAvatar(
+                                                        radius: 16,
+                                                        backgroundColor: Colors.green,
+                                                      )),
                                                 ],
                                               ),
                                             ),
