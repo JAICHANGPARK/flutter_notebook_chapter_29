@@ -106,8 +106,8 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                     children: [
                       Container(
                         height: 240,
-                        margin: EdgeInsets.symmetric(vertical: 24),
-                        decoration: BoxDecoration(),
+                        margin: const EdgeInsets.symmetric(vertical: 24),
+                        decoration: const BoxDecoration(),
                         child: Row(
                           children: [
                             Container(
@@ -119,7 +119,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                               child: Center(
                                 child: IconButton(
                                   onPressed: () {},
-                                  icon: Icon(Icons.add),
+                                  icon: const Icon(Icons.add),
                                   color: Colors.white,
                                 ),
                               ),
@@ -129,19 +129,19 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                 scrollDirection: Axis.horizontal,
                                 children: [
                                   Container(
-                                    margin: EdgeInsets.symmetric(horizontal: 8),
+                                    margin: const EdgeInsets.symmetric(horizontal: 8),
                                     decoration: BoxDecoration(
-                                      color: Color.fromRGBO(180, 255, 221, 1),
+                                      color: const Color.fromRGBO(180, 255, 221, 1),
                                       borderRadius: BorderRadius.circular(16),
                                     ),
-                                    padding: EdgeInsets.all(16),
+                                    padding: const EdgeInsets.all(16),
                                     child: Stack(
                                       children: [
                                         Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            Text("Progress"),
-                                            SizedBox(
+                                            const Text("Progress"),
+                                            const SizedBox(
                                               height: 8,
                                             ),
                                             Row(
@@ -151,13 +151,13 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                                   percent: 0.6,
                                                   padding: EdgeInsets.zero,
                                                 ),
-                                                SizedBox(
+                                                const SizedBox(
                                                   width: 8,
                                                 ),
-                                                Text("60%"),
+                                                const Text("60%"),
                                               ],
                                             ),
-                                            SizedBox(
+                                            const SizedBox(
                                               height: 24,
                                             ),
                                             Container(
@@ -165,34 +165,37 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                               width: 200,
                                               child: Stack(
                                                 children: [
-                                                  Positioned(
-                                                      child: CircleAvatar(
-                                                    radius: 16,
-                                                  )),
-                                                  Positioned(
-                                                      left: 20,
-                                                      child: CircleAvatar(
-                                                        radius: 16,
-                                                        backgroundColor: Colors.red,
-                                                      )),
-                                                  Positioned(
-                                                      left: 40,
-                                                      child: CircleAvatar(
-                                                        radius: 16,
-                                                        backgroundColor: Colors.green,
-                                                      )),
+                                                  const Positioned(
+                                                    child: CircleAvatar(
+                                                      radius: 16,
+                                                    ),
+                                                  ),
+                                                  const Positioned(
+                                                    left: 20,
+                                                    child: CircleAvatar(
+                                                      radius: 16,
+                                                      backgroundColor: Colors.red,
+                                                    ),
+                                                  ),
+                                                  const Positioned(
+                                                    left: 40,
+                                                    child: CircleAvatar(
+                                                      radius: 16,
+                                                      backgroundColor: Colors.green,
+                                                    ),
+                                                  ),
                                                 ],
                                               ),
                                             ),
-                                            Text(
+                                            const Text(
                                               "Analytics",
                                               style: TextStyle(
                                                 fontWeight: FontWeight.w200,
                                                 fontSize: 32,
                                               ),
                                             ),
-                                            Padding(
-                                              padding: const EdgeInsets.symmetric(vertical: 8),
+                                            const Padding(
+                                              padding: EdgeInsets.symmetric(vertical: 8),
                                               child: Text(
                                                 "Dashboard",
                                                 style: TextStyle(
@@ -201,10 +204,10 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                                 ),
                                               ),
                                             ),
-                                            Text("Web Design"),
+                                            const Text("Web Design"),
                                           ],
                                         ),
-                                        Positioned(
+                                        const Positioned(
                                           child: CircleAvatar(
                                             radius: 26,
                                             backgroundColor: Colors.black,
@@ -221,7 +224,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                           ],
                         ),
                       ),
-                      Text(
+                      const Text(
                         "Your Progress",
                         style: TextStyle(
                           color: Colors.white,
@@ -230,12 +233,12 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                       ),
                       Container(
                         height: 180,
-                        margin: EdgeInsets.symmetric(vertical: 16),
-                        decoration: BoxDecoration(
+                        margin: const EdgeInsets.symmetric(vertical: 16),
+                        decoration: const BoxDecoration(
                           color: Colors.white,
                         ),
                       ),
-                      Text(
+                      const Text(
                         "To Do List",
                         style: TextStyle(
                           color: Colors.white,
