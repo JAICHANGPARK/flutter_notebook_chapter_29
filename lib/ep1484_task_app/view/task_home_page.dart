@@ -62,7 +62,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                         ),
                       ],
                     ),
-                    Container(
+                    SizedBox(
                       height: 52,
                       width: 52,
                       child: Stack(
@@ -162,24 +162,24 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                             const SizedBox(
                                               height: 24,
                                             ),
-                                            Container(
+                                            SizedBox(
                                               height: 32,
                                               width: 200,
                                               child: Stack(
-                                                children: [
-                                                  const Positioned(
+                                                children: const [
+                                                  Positioned(
                                                     child: CircleAvatar(
                                                       radius: 16,
                                                     ),
                                                   ),
-                                                  const Positioned(
+                                                  Positioned(
                                                     left: 20,
                                                     child: CircleAvatar(
                                                       radius: 16,
                                                       backgroundColor: Colors.red,
                                                     ),
                                                   ),
-                                                  const Positioned(
+                                                  Positioned(
                                                     left: 40,
                                                     child: CircleAvatar(
                                                       radius: 16,
@@ -223,7 +223,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                       ],
                                     ),
                                   ),
-                                
+
                                 ],
                               ),
                             )
