@@ -335,7 +335,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                         height: 200,
                         margin: const EdgeInsets.symmetric(vertical: 16),
                         decoration: const BoxDecoration(
-                          
+
                         ),
                         child: Row(
                           children: [
