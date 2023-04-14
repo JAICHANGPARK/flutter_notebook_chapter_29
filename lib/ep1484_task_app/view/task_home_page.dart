@@ -339,7 +339,12 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                         ),
                         child: Row(
                           children: [
-                            Expanded(child: Placeholder()),
+                            Expanded(
+                                child: Container(
+                              decoration: BoxDecoration(
+                                color: Color.fromRGBO(31, 31, 31, 1),
+                              ),
+                            )),
                             SizedBox(
                               width: 8,
                             ),
