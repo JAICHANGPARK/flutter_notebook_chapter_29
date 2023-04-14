@@ -213,12 +213,12 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                           ],
                                         ),
                                         const Positioned(
+                                          right: 0,
+                                          bottom: 0,
                                           child: CircleAvatar(
                                             radius: 26,
                                             backgroundColor: Colors.black,
                                           ),
-                                          right: 0,
-                                          bottom: 0,
                                         ),
                                       ],
                                     ),
@@ -308,12 +308,12 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                           ],
                                         ),
                                         const Positioned(
+                                          right: 0,
+                                          bottom: 0,
                                           child: CircleAvatar(
                                             radius: 26,
                                             backgroundColor: Colors.black,
                                           ),
-                                          right: 0,
-                                          bottom: 0,
                                         ),
                                       ],
                                     ),
