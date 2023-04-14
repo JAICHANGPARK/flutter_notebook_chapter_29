@@ -109,6 +109,15 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                         decoration: BoxDecoration(
                           color: Colors.white,
                         ),
+                        child: Row(
+                          children: [
+                            Container(),
+                            Expanded(
+                                child: ListView(
+                              children: [],
+                            ))
+                          ],
+                        ),
                       ),
                       Text(
                         "Your Progress",
