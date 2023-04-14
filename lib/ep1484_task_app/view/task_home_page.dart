@@ -332,7 +332,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                         ),
                       ),
                       Container(
-                        height: 180,
+                        height: 200,
                         margin: const EdgeInsets.symmetric(vertical: 16),
                         decoration: const BoxDecoration(
                           color: Colors.white,
@@ -343,6 +343,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                 child: Container(
                               decoration: BoxDecoration(
                                 color: Color.fromRGBO(31, 31, 31, 1),
+                                borderRadius: BorderRadius.circular(16),
                               ),
                             )),
                             SizedBox(
