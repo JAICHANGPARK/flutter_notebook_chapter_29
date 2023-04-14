@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class TaskAppHomePage extends StatefulWidget {
   const TaskAppHomePage({Key? key}) : super(key: key);
@@ -111,11 +112,10 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                           children: [
                             Container(
                               decoration: BoxDecoration(
-                                border: Border.all(
-                                  color: Colors.white.withOpacity(0.2),
-                                ),
-                                borderRadius: BorderRadius.circular(16)
-                              ),
+                                  border: Border.all(
+                                    color: Colors.white.withOpacity(0.2),
+                                  ),
+                                  borderRadius: BorderRadius.circular(16)),
                               child: Center(
                                 child: IconButton(
                                   onPressed: () {},
@@ -126,7 +126,28 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                             ),
                             Expanded(
                               child: ListView(
-                                children: [],
+                                scrollDirection: Axis.horizontal,
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Color.fromRGBO(180, 255, 221, 1),
+                                    ),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text("Progress"),
+                                        Row(
+                                          children: [
+                                            LinearPercentIndicator(
+                                              width: 200,
+                                            ),
+                                            Text("60%"),
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  )
+                                ],
                               ),
                             )
                           ],
