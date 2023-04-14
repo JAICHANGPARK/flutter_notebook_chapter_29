@@ -187,15 +187,18 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                                 ],
                                               ),
                                             ),
+                                            const SizedBox(
+                                              height: 8,
+                                            ),
                                             const Text(
                                               "Analytics",
                                               style: TextStyle(
                                                 fontWeight: FontWeight.w200,
-                                                fontSize: 32,
+                                                fontSize: 28,
                                               ),
                                             ),
                                             const Padding(
-                                              padding: EdgeInsets.symmetric(vertical: 8),
+                                              padding: EdgeInsets.symmetric(vertical: 4),
                                               child: Text(
                                                 "Dashboard",
                                                 style: TextStyle(
