@@ -318,7 +318,6 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                       ],
                                     ),
                                   ),
-
                                 ],
                               ),
                             )
@@ -337,6 +336,13 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                         margin: const EdgeInsets.symmetric(vertical: 16),
                         decoration: const BoxDecoration(
                           color: Colors.white,
+                        ),
+                        child: Row(
+                          children: [
+                            Expanded(child: Placeholder()),
+                            Expanded(child: Placeholder()),
+
+                          ],
                         ),
                       ),
                       const Text(
