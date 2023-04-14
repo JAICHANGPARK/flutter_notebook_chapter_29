@@ -137,6 +137,9 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text("Progress"),
+                                        SizedBox(
+                                          height: 8,
+                                        ),
                                         Row(
                                           children: [
                                             LinearPercentIndicator(
@@ -144,9 +147,16 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                               percent: 0.6,
                                               padding: EdgeInsets.zero,
                                             ),
+                                            SizedBox(
+                                              width: 8,
+                                            ),
                                             Text("60%"),
                                           ],
                                         ),
+                                        Container(
+                                          height: 42,
+                                          color: Colors.blue,
+                                        )
                                       ],
                                     ),
                                   )
