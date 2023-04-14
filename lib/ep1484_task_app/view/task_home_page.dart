@@ -133,40 +133,55 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                       color: Color.fromRGBO(180, 255, 221, 1),
                                     ),
                                     padding: EdgeInsets.all(16),
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                    child: Stack(
                                       children: [
-                                        Text("Progress"),
-                                        SizedBox(
-                                          height: 8,
-                                        ),
-                                        Row(
+                                        Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            LinearPercentIndicator(
-                                              width: 200,
-                                              percent: 0.6,
-                                              padding: EdgeInsets.zero,
+                                            Text("Progress"),
+                                            SizedBox(
+                                              height: 8,
+                                            ),
+                                            Row(
+                                              children: [
+                                                LinearPercentIndicator(
+                                                  width: 200,
+                                                  percent: 0.6,
+                                                  padding: EdgeInsets.zero,
+                                                ),
+                                                SizedBox(
+                                                  width: 8,
+                                                ),
+                                                Text("60%"),
+                                              ],
                                             ),
                                             SizedBox(
-                                              width: 8,
+                                              height: 32,
                                             ),
-                                            Text("60%"),
+                                            Container(
+                                              height: 42,
+                                              color: Colors.blue,
+                                              child: Stack(
+                                                children: [],
+                                              ),
+                                            ),
+                                            Text(
+                                              "Analytics",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.w200,
+                                                fontSize: 32,
+                                              ),
+                                            )
                                           ],
                                         ),
-                                        SizedBox(
-                                          height: 32,
-                                        ),
-                                        Container(
-                                          height: 42,
-                                          color: Colors.blue,
-                                          child: Stack(
-                                            children: [],
+                                        Positioned(
+                                          child: CircleAvatar(
+                                            radius: 26,
+                                            backgroundColor: Colors.black,
                                           ),
+                                          right: 0,
+                                          bottom: 0,
                                         ),
-                                        Text(
-                                          "Analytics",
-                                          style: TextStyle(fontWeight: FontWeight.w200, fontSize: 32),
-                                        )
                                       ],
                                     ),
                                   )
