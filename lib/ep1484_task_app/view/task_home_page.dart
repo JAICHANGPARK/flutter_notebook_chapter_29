@@ -129,8 +129,10 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                 scrollDirection: Axis.horizontal,
                                 children: [
                                   Container(
+                                    margin: EdgeInsets.symmetric(horizontal: 8),
                                     decoration: BoxDecoration(
                                       color: Color.fromRGBO(180, 255, 221, 1),
+                                      borderRadius: BorderRadius.circular(16),
                                     ),
                                     padding: EdgeInsets.all(16),
                                     child: Stack(
@@ -171,7 +173,15 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                                 fontWeight: FontWeight.w200,
                                                 fontSize: 32,
                                               ),
-                                            )
+                                            ),
+                                            Text(
+                                              "Dashboard",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.w200,
+                                                fontSize: 32,
+                                              ),
+                                            ),
+                                            Text("Web Design"),
                                           ],
                                         ),
                                         Positioned(
