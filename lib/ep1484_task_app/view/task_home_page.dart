@@ -340,8 +340,13 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                         child: Row(
                           children: [
                             Expanded(child: Placeholder()),
-                            Expanded(child: Placeholder()),
-
+                            Expanded(
+                              child: Column(
+                                children: [
+                                  Expanded(child: Placeholder()),
+                                ],
+                              ),
+                            ),
                           ],
                         ),
                       ),
