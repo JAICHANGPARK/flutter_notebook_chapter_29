@@ -472,6 +472,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                           color: const Color.fromRGBO(35, 35, 35, 1),
                                         ),
                                       ),
+                                      padding: EdgeInsets.all(16),
                                       child: Row(
                                         children: [
                                           Container(
