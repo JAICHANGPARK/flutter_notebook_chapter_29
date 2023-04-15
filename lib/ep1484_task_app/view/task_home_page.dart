@@ -346,9 +346,13 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                     color: const Color.fromRGBO(35, 35, 35, 1),
                                   ),
                                 ),
-                                Text("Priority Task"),
-                                RadioListTile(value: 0, groupValue: 0, onChanged: (d) {},
-                                ),
+                               child: Column(
+                                 children: [
+                                   Text("Priority Task"),
+                                   RadioListTile(value: 0, groupValue: 0, onChanged: (d) {},
+                                   ),
+                                 ],
+                               ),
                               ),
                             ),
                             const SizedBox(
