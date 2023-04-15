@@ -527,6 +527,13 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                           (index) => Container(
                             height: 72,
                             color: Colors.blue,
+                            child: Row(
+                              children: [
+                                Container(
+                                  
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       )
