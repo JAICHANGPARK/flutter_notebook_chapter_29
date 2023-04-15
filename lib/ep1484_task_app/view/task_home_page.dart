@@ -363,7 +363,10 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                           groupValue: 0,
                                           onChanged: (int? value) {},
                                         ),
-                                        Text("Design Logo")
+                                        Text("Design Logo",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),)
                                       ],
                                     ),
                                     Row(
@@ -373,7 +376,10 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                           groupValue: 0,
                                           onChanged: (int? value) {},
                                         ),
-                                        Text("Daily Meeting")
+                                        Text("Daily Meeting",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),)
                                       ],
                                     ),
                                     Row(
@@ -383,9 +389,13 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                           groupValue: 0,
                                           onChanged: (int? value) {},
                                         ),
-                                        Text("Design Logo")
+                                        Text("Design Homepage",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),)
                                       ],
                                     ),
+
                                   ],
                                 ),
                               ),
@@ -405,7 +415,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                           color: const Color.fromRGBO(35, 35, 35, 1),
                                         ),
                                       ),
-                                      child: Column(
+                                      child: Row(
                                         children: [],
                                       ),
                                     ),
