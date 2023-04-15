@@ -433,10 +433,16 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                             child: Column(
                                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                               children: [
-                                                Text("Completed", style: TextStyle(
-                                                  color: Colors.grey
-                                                ),),
-                                                Text("56/64 Task"),
+                                                Text(
+                                                  "Completed",
+                                                  style: TextStyle(color: Colors.grey),
+                                                ),
+                                                Text(
+                                                  "56/64 Task",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
                                               ],
                                             ),
                                           )
