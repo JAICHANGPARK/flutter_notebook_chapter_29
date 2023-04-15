@@ -525,7 +525,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                         children: List.generate(
                           10,
                           (index) => Container(
-                            color: Colors.blue,
+                            
                             padding: EdgeInsets.all(12),
                             child: Row(
                               children: [
