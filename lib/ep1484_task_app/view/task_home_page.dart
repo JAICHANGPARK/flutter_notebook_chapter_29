@@ -534,7 +534,17 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                     border: Border.all(),
                                   ),
                                 ),
-                                
+                                Column(
+                                  children: [
+                                    Text("Drink a glass of water"),
+                                    Row(
+                                      children: [
+                                        Icon(Icons.calendar_month),
+                                        Text("All days"),
+                                      ],
+                                    )
+                                  ],
+                                )
                               ],
                             ),
                           ),
