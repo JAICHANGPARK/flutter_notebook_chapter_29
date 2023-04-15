@@ -435,7 +435,9 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                               children: [
                                                 Text(
                                                   "Completed",
-                                                  style: TextStyle(color: Colors.grey),
+                                                  style: TextStyle(
+                                                    color: Colors.grey,
+                                                  ),
                                                 ),
                                                 Text(
                                                   "56/64 Task",
