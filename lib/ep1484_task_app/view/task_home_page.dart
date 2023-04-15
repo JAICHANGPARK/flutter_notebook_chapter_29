@@ -350,7 +350,12 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("Priority Task"),
+                                    Text(
+                                      "Priority Task",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    ),
                                     Row(
                                       children: [
                                         Radio(
@@ -361,7 +366,6 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                         Text("Design Logo")
                                       ],
                                     ),
-                                    
                                   ],
                                 ),
                               ),
