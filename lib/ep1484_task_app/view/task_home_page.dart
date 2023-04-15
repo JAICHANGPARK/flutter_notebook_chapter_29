@@ -364,10 +364,12 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                           groupValue: 0,
                                           onChanged: (int? value) {},
                                         ),
-                                        Text("Design Logo",
+                                        Text(
+                                          "Design Logo",
                                           style: TextStyle(
                                             color: Colors.white,
-                                          ),)
+                                          ),
+                                        )
                                       ],
                                     ),
                                     Row(
@@ -377,10 +379,12 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                           groupValue: 0,
                                           onChanged: (int? value) {},
                                         ),
-                                        Text("Daily Meeting",
+                                        Text(
+                                          "Daily Meeting",
                                           style: TextStyle(
                                             color: Colors.white,
-                                          ),)
+                                          ),
+                                        )
                                       ],
                                     ),
                                     Row(
@@ -390,13 +394,14 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                           groupValue: 0,
                                           onChanged: (int? value) {},
                                         ),
-                                        Text("Design Homepage",
+                                        Text(
+                                          "Design Homepage",
                                           style: TextStyle(
                                             color: Colors.white,
-                                          ),)
+                                          ),
+                                        )
                                       ],
                                     ),
-
                                   ],
                                 ),
                               ),
@@ -419,10 +424,17 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                       child: Row(
                                         children: [
                                           CircularPercentIndicator(
-                                            percent: 0.7, radius: 32,
+                                            percent: 0.7,
+                                            radius: 32,
                                           ),
-                                          Column(
-                                            children: [],
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Column(
+                                              children: [
+                                                Text("Completed"),
+                                                Text("56/64 Task"),
+                                              ],
+                                            ),
                                           )
                                         ],
                                       ),
