@@ -525,7 +525,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                         children: List.generate(
                           10,
                           (index) => Container(
-                            
+
                             color: Colors.blue,
                             padding: EdgeInsets.all(12),
                             child: Row(
@@ -540,6 +540,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text("Drink a glass of water"),
                                       Row(
