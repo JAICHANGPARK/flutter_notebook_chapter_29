@@ -548,10 +548,12 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                           Icon(Icons.calendar_month),
                                           Text("All days"),
                                         ],
-                                      )
+                                      ),
+
                                     ],
                                   ),
-                                )
+                                ),
+                                IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz))
                               ],
                             ),
                           ),
