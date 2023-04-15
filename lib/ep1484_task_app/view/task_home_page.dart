@@ -440,7 +440,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                             padding: const EdgeInsets.all(8.0),
                                             child: Column(
                                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                              children: [
+                                              children: const [
                                                 Text(
                                                   "Completed",
                                                   style: TextStyle(
@@ -476,8 +476,11 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                       child: Row(
                                         children: [
                                           Container(
-                                            height: 32,
-                                            width: 32,
+                                            height: 46,
+                                            width: 46,
+                                            decoration: BoxDecoration(
+                                              
+                                            ),
                                             child: Center(
                                               child: CupertinoActivityIndicator(),
                                             ),
@@ -487,7 +490,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                             child: Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                              children: [
+                                              children: const [
                                                 Text(
                                                   "in Progress",
                                                   style: TextStyle(
