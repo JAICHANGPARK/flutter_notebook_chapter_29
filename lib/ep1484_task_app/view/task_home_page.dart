@@ -429,8 +429,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                             radius: 28,
                                             center: Text("70%"),
                                             backgroundColor: Colors.white,
-                                            progressColor: Colors.,
-
+                                            progressColor: const Color.fromRGBO(180, 255, 221, 1),
                                           ),
                                           Padding(
                                             padding: const EdgeInsets.all(8.0),
