@@ -525,7 +525,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                         children: List.generate(
                           10,
                           (index) => Container(
-                            
+
                             padding: EdgeInsets.all(12),
                             child: Row(
                               children: [
@@ -542,11 +542,18 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text("Drink a glass of water"),
+                                      Text("Drink a glass of water",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),),
                                       Row(
                                         children: [
-                                          Icon(Icons.calendar_month),
-                                          Text("All days"),
+                                          Icon(Icons.calendar_month,
+                                          color: Colors.white,),
+                                          Text("All days",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),),
                                         ],
                                       ),
                                     ],
