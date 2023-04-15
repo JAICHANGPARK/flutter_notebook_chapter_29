@@ -427,6 +427,10 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                           CircularPercentIndicator(
                                             percent: 0.7,
                                             radius: 28,
+                                            center: Text("70%"),
+                                            backgroundColor: Colors.white,
+                                            progressColor: Colors.,
+
                                           ),
                                           Padding(
                                             padding: const EdgeInsets.all(8.0),
