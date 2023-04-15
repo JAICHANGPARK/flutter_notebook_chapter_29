@@ -525,7 +525,6 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                         children: List.generate(
                           10,
                           (index) => Container(
-
                             color: Colors.blue,
                             padding: EdgeInsets.all(12),
                             child: Row(
@@ -549,11 +548,16 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                           Text("All days"),
                                         ],
                                       ),
-
                                     ],
                                   ),
                                 ),
-                                IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz))
+                                Spacer(),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(
+                                    Icons.more_horiz,
+                                  ),
+                                )
                               ],
                             ),
                           ),
