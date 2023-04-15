@@ -525,25 +525,31 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                         children: List.generate(
                           10,
                           (index) => Container(
-                            height: 72,
+                            
                             color: Colors.blue,
+                            padding: EdgeInsets.all(12),
                             child: Row(
                               children: [
                                 Container(
+                                  height: 34,
+                                  width: 34,
                                   decoration: BoxDecoration(
                                     border: Border.all(),
                                   ),
                                 ),
-                                Column(
-                                  children: [
-                                    Text("Drink a glass of water"),
-                                    Row(
-                                      children: [
-                                        Icon(Icons.calendar_month),
-                                        Text("All days"),
-                                      ],
-                                    )
-                                  ],
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Column(
+                                    children: [
+                                      Text("Drink a glass of water"),
+                                      Row(
+                                        children: [
+                                          Icon(Icons.calendar_month),
+                                          Text("All days"),
+                                        ],
+                                      )
+                                    ],
+                                  ),
                                 )
                               ],
                             ),
