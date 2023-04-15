@@ -533,6 +533,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                   height: 34,
                                   width: 34,
                                   decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
                                     border: Border.all(),
                                   ),
                                 ),
