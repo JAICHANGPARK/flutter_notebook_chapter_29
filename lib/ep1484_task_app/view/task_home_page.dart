@@ -478,9 +478,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                           Container(
                                             height: 46,
                                             width: 46,
-                                            decoration: BoxDecoration(
-                                              
-                                            ),
+                                            decoration: BoxDecoration(),
                                             child: Center(
                                               child: CupertinoActivityIndicator(),
                                             ),
