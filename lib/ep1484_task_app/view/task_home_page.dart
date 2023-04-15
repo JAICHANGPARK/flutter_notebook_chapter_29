@@ -346,6 +346,8 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                     color: const Color.fromRGBO(35, 35, 35, 1),
                                   ),
                                 ),
+                                
+                                padding: EdgeInsets.all(8),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
