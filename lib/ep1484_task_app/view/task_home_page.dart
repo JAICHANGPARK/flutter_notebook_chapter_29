@@ -549,7 +549,8 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                       Row(
                                         children: [
                                           Icon(Icons.calendar_month,
-                                          color: Colors.white,),
+                                          color: Colors.white,
+                                          size: 16,),
                                           Text("All days",
                                             style: TextStyle(
                                               color: Colors.white,
