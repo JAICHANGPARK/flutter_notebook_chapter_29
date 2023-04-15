@@ -530,8 +530,11 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                             child: Row(
                               children: [
                                 Container(
-                                  
-                                )
+                                  decoration: BoxDecoration(
+                                    border: Border.all(),
+                                  ),
+                                ),
+                                
                               ],
                             ),
                           ),
