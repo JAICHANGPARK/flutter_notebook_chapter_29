@@ -566,6 +566,7 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                   icon: Icon(
                                     Icons.more_horiz,
                                   ),
+                                  color: Colors.white,
                                 )
                               ],
                             ),
