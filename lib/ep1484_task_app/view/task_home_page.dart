@@ -340,15 +340,15 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                             Expanded(
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: Color.fromRGBO(31, 31, 31, 1),
+                                  color: const Color.fromRGBO(31, 31, 31, 1),
                                   borderRadius: BorderRadius.circular(16),
                                   border: Border.all(
-                                    color: Color.fromRGBO(35, 35, 35, 1),
+                                    color: const Color.fromRGBO(35, 35, 35, 1),
                                   ),
                                 ),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 8,
                             ),
                             Expanded(
@@ -357,24 +357,24 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                   Expanded(
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: Color.fromRGBO(31, 31, 31, 1),
+                                        color: const Color.fromRGBO(31, 31, 31, 1),
                                         borderRadius: BorderRadius.circular(16),
                                         border: Border.all(
-                                          color: Color.fromRGBO(35, 35, 35, 1),
+                                          color: const Color.fromRGBO(35, 35, 35, 1),
                                         ),
                                       ),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 8,
                                   ),
                                   Expanded(
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: Color.fromRGBO(31, 31, 31, 1),
+                                        color: const Color.fromRGBO(31, 31, 31, 1),
                                         borderRadius: BorderRadius.circular(16),
                                         border: Border.all(
-                                          color: Color.fromRGBO(35, 35, 35, 1),
+                                          color: const Color.fromRGBO(35, 35, 35, 1),
                                         ),
                                       ),
                                     ),
