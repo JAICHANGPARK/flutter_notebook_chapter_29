@@ -421,15 +421,17 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                           color: const Color.fromRGBO(35, 35, 35, 1),
                                         ),
                                       ),
+                                      padding: EdgeInsets.all(12),
                                       child: Row(
                                         children: [
                                           CircularPercentIndicator(
                                             percent: 0.7,
-                                            radius: 32,
+                                            radius: 28,
                                           ),
                                           Padding(
                                             padding: const EdgeInsets.all(8.0),
                                             child: Column(
+                                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                               children: [
                                                 Text("Completed"),
                                                 Text("56/64 Task"),
