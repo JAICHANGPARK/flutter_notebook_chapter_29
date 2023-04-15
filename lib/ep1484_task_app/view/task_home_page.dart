@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
+import 'package:percent_indicator/percent_indicator.dart';
 
 class TaskAppHomePage extends StatefulWidget {
   const TaskAppHomePage({Key? key}) : super(key: key);
@@ -416,7 +417,14 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                         ),
                                       ),
                                       child: Row(
-                                        children: [],
+                                        children: [
+                                          CircularPercentIndicator(
+                                            percent: 0.7, radius: 32,
+                                          ),
+                                          Column(
+                                            children: [],
+                                          )
+                                        ],
                                       ),
                                     ),
                                   ),
