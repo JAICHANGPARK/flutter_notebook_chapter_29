@@ -366,6 +366,26 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                         Text("Design Logo")
                                       ],
                                     ),
+                                    Row(
+                                      children: [
+                                        Radio(
+                                          value: 1,
+                                          groupValue: 0,
+                                          onChanged: (int? value) {},
+                                        ),
+                                        Text("Daily Meeting")
+                                      ],
+                                    ),
+                                    Row(
+                                      children: [
+                                        Radio(
+                                          value: 2,
+                                          groupValue: 0,
+                                          onChanged: (int? value) {},
+                                        ),
+                                        Text("Design Logo")
+                                      ],
+                                    ),
                                   ],
                                 ),
                               ),
