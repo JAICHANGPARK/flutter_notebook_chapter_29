@@ -346,17 +346,22 @@ class _TaskAppHomePageState extends State<TaskAppHomePage> {
                                     color: const Color.fromRGBO(35, 35, 35, 1),
                                   ),
                                 ),
-                                
                                 padding: EdgeInsets.all(8),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text("Priority Task"),
-                                    RadioListTile(
-                                      value: 0,
-                                      groupValue: 0,
-                                      onChanged: (d) {},
+                                    Row(
+                                      children: [
+                                        Radio(
+                                          value: 0,
+                                          groupValue: 0,
+                                          onChanged: (int? value) {},
+                                        ),
+                                        Text("Design Logo")
+                                      ],
                                     ),
+                                    
                                   ],
                                 ),
                               ),
