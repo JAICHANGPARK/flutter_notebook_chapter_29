@@ -15,42 +15,51 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
       body: SafeArea(
         child: Stack(
           children: [
-            Row(
-              children: [
-                Container(
-                  height: 48,
-                  width: 48,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
-                    color: Colors.white,
+            Positioned(
+              left: 16,
+              top: 16,
+              bottom: 0,
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          color: Colors.white,
+                        ),
+                      ),
+                      Text(
+                        "Dream Walker",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                          color: Colors.white,
+                        ),
+                      ),
+                      Container(
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(
+                            color: Colors.white.withOpacity(0.4),
+                          ),
+                        ),
+                        child: Center(
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.search),
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
-                ),
-                Text(
-                  "Dream Walker",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
-                    color: Colors.white,
-                  ),
-                ),
-                Container(
-                  height: 48,
-                  width: 48,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
-                    border: Border.all(
-                      color: Colors.white.withOpacity(0.4),
-                    ),
-                  ),
-                  child: Center(
-                    child: IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.search),
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-              ],
+                ],
+              ),
             )
           ],
         ),
