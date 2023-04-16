@@ -74,7 +74,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                         Container(
                           width: 94,
                           // color: Colors.orange,
-                          margin: const EdgeInsets.only(right: 16),
+                          margin: const EdgeInsets.only(right: 8),
                           child: Stack(
                             children: [
                               Positioned(
@@ -103,6 +103,198 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                       decoration: BoxDecoration(
                                         border: Border.all(
                                           color: Colors.deepOrange,
+                                          width: 1,
+                                        ),
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      padding: const EdgeInsets.all(5),
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.orange,
+                                          borderRadius: BorderRadius.circular(8),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                  bottom: 0,
+                                  left: 8,
+                                  right: 8,
+                                  child: Container(
+                                    padding: const EdgeInsets.symmetric(vertical: 2),
+                                    decoration: const BoxDecoration(
+                                      color: Color.fromRGBO(41, 41, 41, 1),
+                                    ),
+                                    child: const Center(
+                                      child: Text(
+                                        "Dreamwalker",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          color: Colors.white,
+                                        ),
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
+                                    ),
+                                  ))
+                            ],
+                          ),
+                        ),
+                        Container(
+                          width: 94,
+                          // color: Colors.orange,
+                          margin: const EdgeInsets.only(right: 8),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                left: 0,
+                                right: 0,
+                                bottom: 8,
+                                top: 0,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(16),
+                                  ),
+                                  padding: const EdgeInsets.all(5),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
+                                    padding: const EdgeInsets.all(5),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.white.withOpacity(0.1),
+                                          width: 1,
+                                        ),
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      padding: const EdgeInsets.all(5),
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.orange,
+                                          borderRadius: BorderRadius.circular(8),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                  bottom: 0,
+                                  left: 8,
+                                  right: 8,
+                                  child: Container(
+                                    padding: const EdgeInsets.symmetric(vertical: 2),
+                                    decoration: const BoxDecoration(
+                                      color: Color.fromRGBO(41, 41, 41, 1),
+                                    ),
+                                    child: const Center(
+                                      child: Text(
+                                        "Dreamwalker",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          color: Colors.white,
+                                        ),
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
+                                    ),
+                                  ))
+                            ],
+                          ),
+                        ),
+                        Container(
+                          width: 94,
+                          // color: Colors.orange,
+                          margin: const EdgeInsets.only(right: 16),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                left: 0,
+                                right: 0,
+                                bottom: 8,
+                                top: 0,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(16),
+                                  ),
+                                  padding: const EdgeInsets.all(5),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
+                                    padding: const EdgeInsets.all(5),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.white.withOpacity(0.1),
+                                          width: 1,
+                                        ),
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      padding: const EdgeInsets.all(5),
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.orange,
+                                          borderRadius: BorderRadius.circular(8),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                  bottom: 0,
+                                  left: 8,
+                                  right: 8,
+                                  child: Container(
+                                    padding: const EdgeInsets.symmetric(vertical: 2),
+                                    decoration: const BoxDecoration(
+                                      color: Color.fromRGBO(41, 41, 41, 1),
+                                    ),
+                                    child: const Center(
+                                      child: Text(
+                                        "Dreamwalker",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          color: Colors.white,
+                                        ),
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
+                                    ),
+                                  ))
+                            ],
+                          ),
+                        ),
+                        Container(
+                          width: 94,
+                          // color: Colors.orange,
+                          margin: const EdgeInsets.only(right: 16),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                left: 0,
+                                right: 0,
+                                bottom: 8,
+                                top: 0,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(16),
+                                  ),
+                                  padding: const EdgeInsets.all(5),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
+                                    padding: const EdgeInsets.all(5),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.white.withOpacity(0.1),
                                           width: 1,
                                         ),
                                         borderRadius: BorderRadius.circular(12),
