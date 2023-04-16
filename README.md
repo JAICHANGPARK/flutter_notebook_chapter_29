@@ -1,8 +1,8 @@
 # flutter_notebook_chapter_29
 ### EP1488
 
-- Task Management - Mobile Concept
-- by Arip for Hatypo Studio
+- Streaming Social Network
+- by Purrweb UI/UX Agency
 - https://dribbble.com/shots/21176252-Task-Management-Mobile-Concept
 
 <img src="https://cdn.dribbble.com/userupload/6186773/file/original-1b78f61e30d242b3ec8a983555f97cd4.png?compress=1&resize=1600x1200" width="500px"/>
