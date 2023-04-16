@@ -81,11 +81,11 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                 child: Container(
                                   decoration: BoxDecoration(
                                     border: Border.all(
-                                      color: Colors.grey,
+                                      color: Colors.black26,
                                     ),
                                     borderRadius: BorderRadius.circular(12),
                                   ),
-                                  padding: EdgeInsets.all(4),
+                                  padding: EdgeInsets.all(6),
                                   child: Container(
                                     decoration: BoxDecoration(
                                       border: Border.all(
