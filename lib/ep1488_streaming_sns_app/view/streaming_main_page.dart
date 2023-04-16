@@ -66,18 +66,22 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                   ),
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 24),
-                    height: 84,
+                    height: 100,
                     // color: Colors.blue,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
-                          width: 84,
+                          width: 94,
                           // color: Colors.orange,
                           margin: EdgeInsets.only(right: 16),
                           child: Stack(
                             children: [
                               Positioned(
+                                left: 0,
+                                right: 0,
+                                bottom: 8,
+                                top: 0,
                                 child: Container(
                                   decoration: BoxDecoration(
                                     border: Border.all(
@@ -108,23 +112,26 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                 ),
                               ),
                               Positioned(
-                                bottom: 0,
-                                  left: 6,
-                                  right: 6,
+                                  bottom: 0,
+                                  left: 8,
+                                  right: 8,
                                   child: Container(
-                                decoration: BoxDecoration(
-                                  color: Color.fromRGBO(41, 41, 41, 1),
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    "Dreamwalker",
-                                    style: TextStyle(
-                                      fontSize: 12,
-                                      color: Colors.white
+                                    padding: EdgeInsets.symmetric(vertical: 2),
+                                    decoration: BoxDecoration(
+                                      color: Color.fromRGBO(41, 41, 41, 1),
                                     ),
-                                  ),
-                                ),
-                              ))
+                                    child: Center(
+                                      child: Text(
+                                        "Dreamwalker",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          color: Colors.white,
+                                        ),
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
+                                    ),
+                                  ))
                             ],
                           ),
                         ),
