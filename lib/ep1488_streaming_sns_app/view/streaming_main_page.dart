@@ -89,13 +89,13 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                   child: Container(
                                     decoration: BoxDecoration(
                                       border: Border.all(
-                                        color: Colors.deepOrange[600]!,
+                                        color: Colors.deepOrange[400]!,
                                         width: 1,
                                       ),
                                       borderRadius: BorderRadius.circular(16),
                                     ),
                                     padding: EdgeInsets.all(6),
-                                    child:  Container(
+                                    child: Container(
                                       decoration: BoxDecoration(
                                         border: Border.all(
                                           color: Colors.deepOrange,
@@ -105,9 +105,22 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                       ),
                                     ),
                                   ),
-
                                 ),
-                              )
+                              ),
+                              Positioned(
+                                bottom: 0,
+                                  left: 8,
+                                  right: 8,
+                                  child: Container(
+                                decoration: BoxDecoration(
+                                  color: Color.fromRGBO(41, 41, 41, 1),
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    "Dreamwalker",
+                                  ),
+                                ),
+                              ))
                             ],
                           ),
                         ),
