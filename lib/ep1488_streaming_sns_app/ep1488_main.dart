@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_29/ep1488_streaming_sns_app/view/streaming_main_page.dart';
 
 void main() {
-  runApp(StreamingSnsApp());
+  runApp(const StreamingSnsApp());
 }
 
 class StreamingSnsApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class StreamingSnsApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: StreamingSnsMainPage(),
     );
   }
