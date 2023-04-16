@@ -25,7 +25,14 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                     color: Colors.white,
                   ),
                 ),
-                Text("Dream Walker"),
+                Text(
+                  "Dream Walker",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                    color: Colors.white,
+                  ),
+                ),
                 Container(
                   height: 48,
                   width: 48,
