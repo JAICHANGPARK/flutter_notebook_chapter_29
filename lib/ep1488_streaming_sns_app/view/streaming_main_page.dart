@@ -39,6 +39,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                     child: IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.search),
+                      color: Colors.white,
                     ),
                   ),
                 ),
