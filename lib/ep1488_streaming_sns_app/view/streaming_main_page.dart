@@ -89,7 +89,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                     ),
                                     borderRadius: BorderRadius.circular(16),
                                   ),
-                                  padding: EdgeInsets.all(6),
+                                  padding: EdgeInsets.all(5),
                                   child: Container(
                                     decoration: BoxDecoration(
                                       border: Border.all(
@@ -98,7 +98,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                       ),
                                       borderRadius: BorderRadius.circular(16),
                                     ),
-                                    padding: EdgeInsets.all(6),
+                                    padding: EdgeInsets.all(5),
                                     child: Container(
                                       decoration: BoxDecoration(
                                         border: Border.all(
@@ -106,6 +106,13 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                           width: 1,
                                         ),
                                         borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      padding: EdgeInsets.all(5),
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.orange,
+                                          borderRadius: BorderRadius.circular(8),
+                                        ),
                                       ),
                                     ),
                                   ),
