@@ -1,11 +1,12 @@
 # flutter_notebook_chapter_29
+
 ### EP1488
 
 - Streaming Social Network
 - by Purrweb UI/UX Agency
-- https://dribbble.com/shots/21176252-Task-Management-Mobile-Concept
+- https://dribbble.com/shots/21209392-Streaming-Social-Network
 
-<img src="https://cdn.dribbble.com/userupload/6186773/file/original-1b78f61e30d242b3ec8a983555f97cd4.png?compress=1&resize=1600x1200" width="500px"/>
+<img src="https://cdn.dribbble.com/userupload/6282338/file/original-79f3d8d453dbf4c9c22d29436bf13e3f.png?compress=1&resize=1600x1200" width="500px"/>
 
 ### EP1484-1487
 
