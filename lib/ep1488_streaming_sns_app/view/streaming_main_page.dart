@@ -75,6 +75,19 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                           width: 84,
                           color: Colors.orange,
                           margin: EdgeInsets.only(right: 16),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                         Container(
                           width: 84,
