@@ -18,13 +18,22 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
             Row(
               children: [
                 Container(
-                  height: 42,
-                  width: 42,
+                  height: 48,
+                  width: 48,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(8),
                     color: Colors.white
                   ),
-                )
+                ),
+                Text("Dream Walker"),
+                Container(
+                  height: 48,
+                  width: 48,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      
+                  ),
+                ),
               ],
             )
           ],
