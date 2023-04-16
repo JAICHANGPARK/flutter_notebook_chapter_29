@@ -64,6 +64,26 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                       ),
                     ],
                   ),
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 24),
+                    height: 84,
+                    color: Colors.blue,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        Container(
+                          width: 84,
+                          color: Colors.orange,
+                          margin: EdgeInsets.only(right: 16),
+                        ),
+                        Container(
+                          width: 84,
+                          color: Colors.orange,
+                          margin: EdgeInsets.only(right: 16),
+                        )
+                      ],
+                    ),
+                  )
                 ],
               ),
             )
