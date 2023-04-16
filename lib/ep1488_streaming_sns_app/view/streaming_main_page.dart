@@ -11,6 +11,14 @@ class StreamingSnsMainPage extends StatefulWidget {
 class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Stack(
+          children: [
+
+          ],
+        ),
+      ),
+    );
   }
 }
