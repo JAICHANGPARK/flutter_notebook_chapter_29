@@ -67,13 +67,13 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 24),
                     height: 84,
-                    color: Colors.blue,
+                    // color: Colors.blue,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
                           width: 84,
-                          color: Colors.orange,
+                          // color: Colors.orange,
                           margin: EdgeInsets.only(right: 16),
                           child: Stack(
                             children: [
@@ -82,6 +82,17 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                   decoration: BoxDecoration(
                                     border: Border.all(
                                       color: Colors.grey,
+                                    ),
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                  padding: EdgeInsets.all(4),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      border: Border.all(
+                                        color: Colors.deepOrange,
+                                        width: 1
+                                      ),
+                                      borderRadius: BorderRadius.circular(12),
                                     ),
                                   ),
                                 ),
