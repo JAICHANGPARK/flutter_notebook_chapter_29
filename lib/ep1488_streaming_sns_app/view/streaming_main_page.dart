@@ -209,7 +209,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                         Container(
                           width: 94,
                           // color: Colors.orange,
-                          margin: const EdgeInsets.only(right: 16),
+                          margin: const EdgeInsets.only(right: 8),
                           child: Stack(
                             children: [
                               Positioned(
@@ -273,7 +273,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                         Container(
                           width: 94,
                           // color: Colors.orange,
-                          margin: const EdgeInsets.only(right: 16),
+                          margin: const EdgeInsets.only(right: 8),
                           child: Stack(
                             children: [
                               Positioned(
@@ -337,7 +337,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                         Container(
                           width: 94,
                           // color: Colors.orange,
-                          margin: const EdgeInsets.only(right: 16),
+                          margin: const EdgeInsets.only(right: 8),
                           child: Stack(
                             children: [
                               Positioned(
@@ -399,6 +399,22 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                           ),
                         ),
                       ],
+                    ),
+                  ),
+                  Container(
+                    height: 72,
+                    color: Colors.white,
+                  ),
+                  Container(
+                    height: 400,
+                    color: Colors.blue,
+                  ),
+                  Text(
+                    "You follow",
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white
                     ),
                   )
                 ],
