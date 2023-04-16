@@ -11,7 +11,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(28, 28, 28, 1),
+      backgroundColor: const Color.fromRGBO(28, 28, 28, 1),
       body: SafeArea(
         child: Stack(
           children: [
@@ -32,10 +32,10 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                           color: Colors.white,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
-                      Text(
+                      const Text(
                         "Dream Walker",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -43,11 +43,11 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                           color: Colors.white,
                         ),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Container(
                         height: 48,
                         width: 48,
-                        margin: EdgeInsets.only(right: 16),
+                        margin: const EdgeInsets.only(right: 16),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
                           border: Border.all(
@@ -57,7 +57,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                         child: Center(
                           child: IconButton(
                             onPressed: () {},
-                            icon: Icon(Icons.search),
+                            icon: const Icon(Icons.search),
                             color: Colors.white,
                           ),
                         ),
@@ -65,7 +65,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                     ],
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 24),
+                    margin: const EdgeInsets.symmetric(vertical: 24),
                     height: 100,
                     // color: Colors.blue,
                     child: ListView(
@@ -74,7 +74,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                         Container(
                           width: 94,
                           // color: Colors.orange,
-                          margin: EdgeInsets.only(right: 16),
+                          margin: const EdgeInsets.only(right: 16),
                           child: Stack(
                             children: [
                               Positioned(
@@ -85,11 +85,11 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                 child: Container(
                                   decoration: BoxDecoration(
                                     border: Border.all(
-                                      color: Colors.white.withOpacity(0.2),
+                                      color: Colors.white.withOpacity(0.1),
                                     ),
                                     borderRadius: BorderRadius.circular(16),
                                   ),
-                                  padding: EdgeInsets.all(5),
+                                  padding: const EdgeInsets.all(5),
                                   child: Container(
                                     decoration: BoxDecoration(
                                       border: Border.all(
@@ -98,7 +98,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                       ),
                                       borderRadius: BorderRadius.circular(16),
                                     ),
-                                    padding: EdgeInsets.all(5),
+                                    padding: const EdgeInsets.all(5),
                                     child: Container(
                                       decoration: BoxDecoration(
                                         border: Border.all(
@@ -107,7 +107,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                         ),
                                         borderRadius: BorderRadius.circular(12),
                                       ),
-                                      padding: EdgeInsets.all(5),
+                                      padding: const EdgeInsets.all(5),
                                       child: Container(
                                         decoration: BoxDecoration(
                                           color: Colors.orange,
@@ -123,11 +123,11 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                   left: 8,
                                   right: 8,
                                   child: Container(
-                                    padding: EdgeInsets.symmetric(vertical: 2),
-                                    decoration: BoxDecoration(
+                                    padding: const EdgeInsets.symmetric(vertical: 2),
+                                    decoration: const BoxDecoration(
                                       color: Color.fromRGBO(41, 41, 41, 1),
                                     ),
-                                    child: Center(
+                                    child: const Center(
                                       child: Text(
                                         "Dreamwalker",
                                         style: TextStyle(
@@ -145,7 +145,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                         Container(
                           width: 94,
                           // color: Colors.orange,
-                          margin: EdgeInsets.only(right: 16),
+                          margin: const EdgeInsets.only(right: 16),
                           child: Stack(
                             children: [
                               Positioned(
@@ -155,16 +155,14 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                 top: 0,
                                 child: Container(
                                   decoration: BoxDecoration(
-                                  
                                     borderRadius: BorderRadius.circular(16),
                                   ),
-                                  padding: EdgeInsets.all(5),
+                                  padding: const EdgeInsets.all(5),
                                   child: Container(
                                     decoration: BoxDecoration(
-
                                       borderRadius: BorderRadius.circular(16),
                                     ),
-                                    padding: EdgeInsets.all(5),
+                                    padding: const EdgeInsets.all(5),
                                     child: Container(
                                       decoration: BoxDecoration(
                                         border: Border.all(
@@ -173,7 +171,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                         ),
                                         borderRadius: BorderRadius.circular(12),
                                       ),
-                                      padding: EdgeInsets.all(5),
+                                      padding: const EdgeInsets.all(5),
                                       child: Container(
                                         decoration: BoxDecoration(
                                           color: Colors.orange,
@@ -189,11 +187,11 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                   left: 8,
                                   right: 8,
                                   child: Container(
-                                    padding: EdgeInsets.symmetric(vertical: 2),
-                                    decoration: BoxDecoration(
+                                    padding: const EdgeInsets.symmetric(vertical: 2),
+                                    decoration: const BoxDecoration(
                                       color: Color.fromRGBO(41, 41, 41, 1),
                                     ),
-                                    child: Center(
+                                    child: const Center(
                                       child: Text(
                                         "Dreamwalker",
                                         style: TextStyle(
