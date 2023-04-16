@@ -18,6 +18,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
             Positioned(
               left: 16,
               top: 16,
+              right: 0,
               bottom: 0,
               child: Column(
                 children: [
@@ -39,9 +40,11 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                           color: Colors.white,
                         ),
                       ),
+                      Spacer(),
                       Container(
                         height: 48,
                         width: 48,
+                        margin: EdgeInsets.only(right: 16),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
                           border: Border.all(
