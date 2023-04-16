@@ -109,8 +109,8 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                               ),
                               Positioned(
                                 bottom: 0,
-                                  left: 8,
-                                  right: 8,
+                                  left: 6,
+                                  right: 6,
                                   child: Container(
                                 decoration: BoxDecoration(
                                   color: Color.fromRGBO(41, 41, 41, 1),
@@ -118,6 +118,10 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                 child: Center(
                                   child: Text(
                                     "Dreamwalker",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.white
+                                    ),
                                   ),
                                 ),
                               ))
