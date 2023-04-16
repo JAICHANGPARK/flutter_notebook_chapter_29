@@ -81,20 +81,31 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                 child: Container(
                                   decoration: BoxDecoration(
                                     border: Border.all(
-                                      color: Colors.black26,
+                                      color: Colors.white.withOpacity(0.2),
                                     ),
-                                    borderRadius: BorderRadius.circular(12),
+                                    borderRadius: BorderRadius.circular(16),
                                   ),
                                   padding: EdgeInsets.all(6),
                                   child: Container(
                                     decoration: BoxDecoration(
                                       border: Border.all(
-                                        color: Colors.deepOrange,
-                                        width: 1
+                                        color: Colors.deepOrange[600]!,
+                                        width: 1,
                                       ),
-                                      borderRadius: BorderRadius.circular(12),
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
+                                    padding: EdgeInsets.all(6),
+                                    child:  Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.deepOrange,
+                                          width: 1,
+                                        ),
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
                                     ),
                                   ),
+
                                 ),
                               )
                             ],
