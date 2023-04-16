@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class StreamingSnsMainPage extends StatefulWidget {
   const StreamingSnsMainPage({Key? key}) : super(key: key);
 
@@ -12,10 +11,22 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(28, 28, 28, 1),
       body: SafeArea(
         child: Stack(
           children: [
-
+            Row(
+              children: [
+                Container(
+                  height: 42,
+                  width: 42,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                    color: Colors.white
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
