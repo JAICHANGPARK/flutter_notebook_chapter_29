@@ -32,6 +32,11 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                       color: Colors.white.withOpacity(0.4),
                     ),
                   ),
+                  child: Center(
+                    child: IconButton(
+                      onPressed: (){},
+                    ),
+                  ),
                 ),
               ],
             )
