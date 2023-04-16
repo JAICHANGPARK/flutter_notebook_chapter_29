@@ -20,7 +20,10 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                 Container(
                   height: 48,
                   width: 48,
-                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(8), color: Colors.white),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                    color: Colors.white,
+                  ),
                 ),
                 Text("Dream Walker"),
                 Container(
@@ -34,7 +37,8 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                   ),
                   child: Center(
                     child: IconButton(
-                      onPressed: (){},
+                      onPressed: () {},
+                      icon: Icon(Icons.search),
                     ),
                   ),
                 ),
