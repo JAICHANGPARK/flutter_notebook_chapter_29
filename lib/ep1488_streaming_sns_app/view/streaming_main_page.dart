@@ -505,6 +505,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                       ),
                                     ),
                                     Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Row(
                                           children: [
@@ -532,6 +533,9 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                               ),
                                             ),
                                           ],
+                                        ),
+                                        SizedBox(
+                                          height: 8,
                                         ),
                                         Text(
                                           "9.9 k followers",
