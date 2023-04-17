@@ -402,14 +402,15 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                     ),
                   ),
                   Container(
-                    height: 54,
+                    height: 50,
                     margin: EdgeInsets.symmetric(vertical: 16),
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
                           decoration: BoxDecoration(
-                            color: Color.fromRGBO(255, 100, 63, 1)
+                            color: Color.fromRGBO(255, 100, 63, 1),
+                            borderRadius: BorderRadius.circular(8)
                           ),
                           padding: EdgeInsets.symmetric(horizontal: 16),
                           child: Center(
