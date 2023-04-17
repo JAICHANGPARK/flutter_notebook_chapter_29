@@ -486,8 +486,8 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                       itemBuilder: (context, _) {
                         return Container(
                           width: 240,
-                          margin: EdgeInsets.only(right: 12),
-                          decoration: BoxDecoration(
+                          margin: const EdgeInsets.only(right: 12),
+                          decoration: const BoxDecoration(
                               // color: Colors.pink,
                               ),
                           child: Column(
@@ -499,7 +499,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                     border: Border.all(
                                       color: Colors.white.withOpacity(0.2),
                                     ),
-                                    image: DecorationImage(
+                                    image: const DecorationImage(
                                       image: NetworkImage(
                                           "https://cdn.pixabay.com/photo/2022/10/20/19/31/dog-7535633_1280.jpg"),
                                       fit: BoxFit.cover,
@@ -507,15 +507,15 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                   ),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 4,
                               ),
                               Container(
                                 decoration: BoxDecoration(
-                                  color: Color.fromRGBO(34, 34, 34, 1),
+                                  color: const Color.fromRGBO(34, 34, 34, 1),
                                   borderRadius: BorderRadius.circular(8),
                                 ),
-                                padding: EdgeInsets.all(4),
+                                padding: const EdgeInsets.all(4),
                                 child: Row(
                                   children: [
                                     Container(
@@ -526,7 +526,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                         borderRadius: BorderRadius.circular(4),
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 8,
                                     ),
                                     Column(
@@ -534,21 +534,21 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                       children: [
                                         Row(
                                           children: [
-                                            Text(
+                                            const Text(
                                               "Dreamwalker",
                                               style: TextStyle(
                                                 color: Colors.white,
                                                 fontWeight: FontWeight.bold,
                                               ),
                                             ),
-                                            SizedBox(
+                                            const SizedBox(
                                               width: 4,
                                             ),
                                             Container(
-                                              decoration: BoxDecoration(
-                                                color: const Color.fromRGBO(255, 100, 63, 1),
+                                              decoration: const BoxDecoration(
+                                                color: Color.fromRGBO(255, 100, 63, 1),
                                               ),
-                                              child: Center(
+                                              child: const Center(
                                                 child: Text(
                                                   "LIVE",
                                                   style: TextStyle(
@@ -559,10 +559,10 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                             ),
                                           ],
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 8,
                                         ),
-                                        Text(
+                                        const Text(
                                           "9.9 k followers",
                                           style: TextStyle(
                                             color: Colors.grey,
