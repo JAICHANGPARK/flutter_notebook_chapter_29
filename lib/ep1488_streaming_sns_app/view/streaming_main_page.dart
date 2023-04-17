@@ -480,20 +480,59 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                     ),
                   ),
                   Container(
-                      height: 400,
-                      color: Colors.blue,
-                      child: ListView.builder(
-                        itemBuilder: (context, _) {
-                          return Container(
-                            width: 240,
-                            margin: EdgeInsets.only(right: 12),
-                            decoration: BoxDecoration(
-                              color: Colors.pink,
-                            ),
-                          );
-                        },
-                        scrollDirection: Axis.horizontal,
-                      )),
+                    height: 400,
+                    color: Colors.blue,
+                    child: ListView.builder(
+                      itemBuilder: (context, _) {
+                        return Container(
+                          width: 240,
+                          margin: EdgeInsets.only(right: 12),
+                          decoration: BoxDecoration(
+                            color: Colors.pink,
+                          ),
+                          child: Column(
+                            children: [
+                              Expanded(child: Placeholder()),
+                              Container(
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      height: 32,
+                                      width: 32,
+                                      decoration: BoxDecoration(
+                                        color: Colors.orange,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                    ),
+                                    Column(
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Text("Dreamwalker"),
+                                            Container(
+                                              child: Center(
+                                                child: Text(
+                                                  "LIVE",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        );
+                      },
+                      scrollDirection: Axis.horizontal,
+                    ),
+                  ),
                   const Text(
                     "You follow",
                     style: TextStyle(
