@@ -120,26 +120,27 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                 ),
                               ),
                               Positioned(
-                                  bottom: 0,
-                                  left: 8,
-                                  right: 8,
-                                  child: Container(
-                                    padding: const EdgeInsets.symmetric(vertical: 2),
-                                    decoration: const BoxDecoration(
-                                      color: Color.fromRGBO(41, 41, 41, 1),
-                                    ),
-                                    child: const Center(
-                                      child: Text(
-                                        "Dreamwalker",
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                          color: Colors.white,
-                                        ),
-                                        maxLines: 1,
-                                        overflow: TextOverflow.ellipsis,
+                                bottom: 0,
+                                left: 8,
+                                right: 8,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(vertical: 2),
+                                  decoration: const BoxDecoration(
+                                    color: Color.fromRGBO(41, 41, 41, 1),
+                                  ),
+                                  child: const Center(
+                                    child: Text(
+                                      "Dreamwalker",
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        color: Colors.white,
                                       ),
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
                                     ),
-                                  ))
+                                  ),
+                                ),
+                              )
                             ],
                           ),
                         ),
@@ -491,7 +492,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                   ),
                   Container(
                     height: 400,
-                    color: Colors.blue,
+                    // color: Colors.blue,
                     child: ListView.builder(
                       itemBuilder: (context, _) {
                         return Container(
