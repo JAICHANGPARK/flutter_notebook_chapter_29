@@ -632,10 +632,12 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                           IconButton(
                             onPressed: () {},
                             icon: Icon(Icons.videocam_rounded),
+                            color: Colors.deepOrange,
                           ),
                           IconButton(
                             onPressed: () {},
                             icon: Icon(Icons.location_on_outlined),
+                            color: Colors.white,
                           ),
                           IconButton(
                             onPressed: () {},
