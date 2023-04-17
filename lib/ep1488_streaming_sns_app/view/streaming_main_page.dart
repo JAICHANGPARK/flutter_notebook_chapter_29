@@ -403,8 +403,8 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                   ),
                   Container(
                     height: 72,
-                    color: Colors.white,
                     child: ListView(
+                      scrollDirection: Axis.horizontal,
                       children: [
                         Container(
                           child: Center(
