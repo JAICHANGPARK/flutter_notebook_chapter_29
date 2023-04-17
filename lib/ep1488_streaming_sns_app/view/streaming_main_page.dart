@@ -518,8 +518,14 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                                   ),
                                                 ),
                                               ),
-                                            )
+                                            ),
                                           ],
+                                        ),
+                                        Text(
+                                          "9.9 k followers",
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                          ),
                                         )
                                       ],
                                     )
