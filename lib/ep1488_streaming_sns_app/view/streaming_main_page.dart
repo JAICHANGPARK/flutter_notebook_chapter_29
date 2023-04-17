@@ -21,6 +21,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
               right: 0,
               bottom: 0,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     children: [
