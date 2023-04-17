@@ -436,9 +436,29 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                           padding: EdgeInsets.symmetric(horizontal: 16),
                           child: Center(
                             child: Text(
-                              "Most Popular",
+                              "Fashion",
                               style: TextStyle(
-                                color: Colors.white,
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(right: 8),
+                          decoration: BoxDecoration(
+                            // color: Color.fromRGBO(255, 100, 63, 1),
+                              borderRadius: BorderRadius.circular(8),
+                              border: Border.all(
+                                  color: Color.fromRGBO(33, 33, 33, 1)
+                              )
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          child: Center(
+                            child: Text(
+                              "Fashion",
+                              style: TextStyle(
+                                color: Colors.grey,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
