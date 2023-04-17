@@ -495,11 +495,15 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                               Expanded(
                                   child: Container(
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  border: Border.all(
-                                    color: Colors.white.withOpacity(0.2),
-                                  ),
-                                ),
+                                    borderRadius: BorderRadius.circular(8),
+                                    border: Border.all(
+                                      color: Colors.white.withOpacity(0.2),
+                                    ),
+                                    image: DecorationImage(
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2022/10/20/19/31/dog-7535633_1280.jpg"),
+                                      fit: BoxFit.cover,
+                                    )),
                               )),
                               SizedBox(
                                 height: 4,
