@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class StreamingSnsMainPage extends StatefulWidget {
@@ -610,33 +612,46 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
               right: 16,
               bottom: 24,
               child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                ),
-                child: Row(
-                  children: [
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.videocam_rounded),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.location_on_outlined),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.mail_outline),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.notifications_none),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.person_outline),
-                    ),
 
-                  ],
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.1),
+                ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(16),
+                  child: BackdropFilter(
+                    filter: ImageFilter.blur(sigmaX: 10, sigmaY: 8),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          // color: Colors.white,
+                          ),
+                      padding: EdgeInsets.all(8),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.videocam_rounded),
+                          ),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.location_on_outlined),
+                          ),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.mail_outline),
+                          ),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.notifications_none),
+                          ),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.person_outline),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ),
