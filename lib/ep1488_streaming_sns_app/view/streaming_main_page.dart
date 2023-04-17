@@ -445,9 +445,12 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                         Container(
                           margin: const EdgeInsets.only(right: 8),
                           decoration: BoxDecoration(
-                              // color: Color.fromRGBO(255, 100, 63, 1),
-                              borderRadius: BorderRadius.circular(8),
-                              border: Border.all(color: const Color.fromRGBO(33, 33, 33, 1))),
+                            // color: Color.fromRGBO(255, 100, 63, 1),
+                            borderRadius: BorderRadius.circular(8),
+                            border: Border.all(
+                              color: const Color.fromRGBO(33, 33, 33, 1),
+                            ),
+                          ),
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           child: const Center(
                             child: Text(
@@ -462,9 +465,12 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                         Container(
                           margin: const EdgeInsets.only(right: 8),
                           decoration: BoxDecoration(
-                              // color: Color.fromRGBO(255, 100, 63, 1),
-                              borderRadius: BorderRadius.circular(8),
-                              border: Border.all(color: const Color.fromRGBO(33, 33, 33, 1))),
+                            // color: Color.fromRGBO(255, 100, 63, 1),
+                            borderRadius: BorderRadius.circular(8),
+                            border: Border.all(
+                              color: const Color.fromRGBO(33, 33, 33, 1),
+                            ),
+                          ),
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           child: const Center(
                             child: Text(
