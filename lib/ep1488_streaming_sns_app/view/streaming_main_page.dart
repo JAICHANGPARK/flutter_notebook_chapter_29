@@ -494,15 +494,19 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                             children: [
                               Expanded(child: Placeholder()),
                               Container(
+                                padding: EdgeInsets.all(4),
                                 child: Row(
                                   children: [
                                     Container(
-                                      height: 32,
-                                      width: 32,
+                                      height: 42,
+                                      width: 42,
                                       decoration: BoxDecoration(
                                         color: Colors.orange,
                                         borderRadius: BorderRadius.circular(4),
                                       ),
+                                    ),
+                                    SizedBox(
+                                      width: 8,
                                     ),
                                     Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
