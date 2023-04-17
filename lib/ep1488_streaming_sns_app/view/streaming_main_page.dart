@@ -407,6 +407,9 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
+                          decoration: BoxDecoration(
+                            color: Color.fromRGBO(255, 100, 63, 1)
+                          ),
                           child: Center(
                             child: Text(
                               "Most Popular",
