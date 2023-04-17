@@ -508,8 +508,20 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                       children: [
                                         Row(
                                           children: [
-                                            Text("Dreamwalker"),
+                                            Text(
+                                              "Dreamwalker",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            SizedBox(
+                                              width: 4,
+                                            ),
                                             Container(
+                                              decoration: BoxDecoration(
+                                                color: const Color.fromRGBO(255, 100, 63, 1),
+                                              ),
                                               child: Center(
                                                 child: Text(
                                                   "LIVE",
