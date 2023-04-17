@@ -424,6 +424,26 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                             ),
                           ),
                         ),
+                        Container(
+                          margin: EdgeInsets.only(right: 8),
+                          decoration: BoxDecoration(
+                              // color: Color.fromRGBO(255, 100, 63, 1),
+                              borderRadius: BorderRadius.circular(8),
+                            border: Border.all(
+                              color: Color.fromRGBO(33, 33, 33, 1)
+                            )
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          child: Center(
+                            child: Text(
+                              "Most Popular",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
 
                       ],
                     ),
