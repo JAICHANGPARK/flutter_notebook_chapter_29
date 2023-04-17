@@ -621,11 +621,11 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.videocam_rounded),
+                      icon: Icon(Icons.location_on_outlined),
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.videocam_rounded),
+                      icon: Icon(Icons.mail_outline),
                     ),
                     IconButton(
                       onPressed: () {},
