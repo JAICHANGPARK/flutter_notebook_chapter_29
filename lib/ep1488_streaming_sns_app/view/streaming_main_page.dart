@@ -376,26 +376,27 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                                 ),
                               ),
                               Positioned(
-                                  bottom: 0,
-                                  left: 8,
-                                  right: 8,
-                                  child: Container(
-                                    padding: const EdgeInsets.symmetric(vertical: 2),
-                                    decoration: const BoxDecoration(
-                                      color: Color.fromRGBO(41, 41, 41, 1),
-                                    ),
-                                    child: const Center(
-                                      child: Text(
-                                        "Dreamwalker",
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                          color: Colors.white,
-                                        ),
-                                        maxLines: 1,
-                                        overflow: TextOverflow.ellipsis,
+                                bottom: 0,
+                                left: 8,
+                                right: 8,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(vertical: 2),
+                                  decoration: const BoxDecoration(
+                                    color: Color.fromRGBO(41, 41, 41, 1),
+                                  ),
+                                  child: const Center(
+                                    child: Text(
+                                      "Dreamwalker",
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        color: Colors.white,
                                       ),
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
                                     ),
-                                  ))
+                                  ),
+                                ),
+                              )
                             ],
                           ),
                         ),
@@ -428,9 +429,12 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                         Container(
                           margin: const EdgeInsets.only(right: 8),
                           decoration: BoxDecoration(
-                              // color: Color.fromRGBO(255, 100, 63, 1),
-                              borderRadius: BorderRadius.circular(8),
-                              border: Border.all(color: const Color.fromRGBO(33, 33, 33, 1))),
+                            // color: Color.fromRGBO(255, 100, 63, 1),
+                            borderRadius: BorderRadius.circular(8),
+                            border: Border.all(
+                              color: const Color.fromRGBO(33, 33, 33, 1),
+                            ),
+                          ),
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           child: const Center(
                             child: Text(
