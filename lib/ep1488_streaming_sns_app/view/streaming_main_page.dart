@@ -480,11 +480,20 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                     ),
                   ),
                   Container(
-                    height: 400,
-                    color: Colors.blue,
-                    child: ListView.builder(itemBuilder: (context,_){},
-                    scrollDirection: Axis.horizontal,)
-                  ),
+                      height: 400,
+                      color: Colors.blue,
+                      child: ListView.builder(
+                        itemBuilder: (context, _) {
+                          return Container(
+                            width: 240,
+                            margin: EdgeInsets.only(right: 12),
+                            decoration: BoxDecoration(
+                              color: Colors.pink,
+                            ),
+                          );
+                        },
+                        scrollDirection: Axis.horizontal,
+                      )),
                   const Text(
                     "You follow",
                     style: TextStyle(
