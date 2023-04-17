@@ -402,7 +402,8 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                     ),
                   ),
                   Container(
-                    height: 72,
+                    height: 54,
+                    margin: EdgeInsets.symmetric(vertical: 16),
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: [
@@ -410,6 +411,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                           decoration: BoxDecoration(
                             color: Color.fromRGBO(255, 100, 63, 1)
                           ),
+                          padding: EdgeInsets.symmetric(horizontal: 16),
                           child: Center(
                             child: Text(
                               "Most Popular",
