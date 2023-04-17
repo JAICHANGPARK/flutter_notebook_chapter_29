@@ -492,10 +492,20 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                           ),
                           child: Column(
                             children: [
-                              Expanded(child: Placeholder()),
+                              Expanded(child: Container(
+                                decoration: BoxDecoration(
+
+                                  borderRadius: BorderRadius.circular(8),
+                                  border: Border.all( color: Colors.white.withOpacity(0.2),)
+                                ),
+                              )),
+                              SizedBox(
+                                height: 4,
+                              ),
                               Container(
                                 decoration: BoxDecoration(
-                                  color: Color.fromRGBO(34 , 34, 34, 1),
+                                  color: Color.fromRGBO(34, 34, 34, 1),
+                                  borderRadius: BorderRadius.circular(8),
                                 ),
                                 padding: EdgeInsets.all(4),
                                 child: Row(
