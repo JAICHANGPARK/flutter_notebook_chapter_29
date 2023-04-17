@@ -604,7 +604,42 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                   )
                 ],
               ),
-            )
+            ),
+            Positioned(
+              left: 16,
+              right: 16,
+              bottom: 24,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+                child: Row(
+                  children: [
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.videocam_rounded),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.videocam_rounded),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.videocam_rounded),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.notifications_none),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.person_outline),
+                    ),
+
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
