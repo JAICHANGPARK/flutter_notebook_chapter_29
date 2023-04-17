@@ -494,6 +494,9 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                             children: [
                               Expanded(child: Placeholder()),
                               Container(
+                                decoration: BoxDecoration(
+                                  color: Color.fromRGBO(34 , 34, 34, 1),
+                                ),
                                 padding: EdgeInsets.all(4),
                                 child: Row(
                                   children: [
