@@ -580,12 +580,15 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                       scrollDirection: Axis.horizontal,
                     ),
                   ),
-                  const Text(
-                    "You follow",
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                  Padding(
+                    padding: const EdgeInsets.only(top: 24, bottom: 8, left: 0),
+                    child: const Text(
+                      "You follow",
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
                     ),
                   )
                 ],
