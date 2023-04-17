@@ -65,7 +65,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                     ],
                   ),
                   Container(
-                    margin: const EdgeInsets.symmetric(vertical: 24),
+                    margin: const EdgeInsets.fromLTRB(0, 24, 0, 16),
                     height: 100,
                     // color: Colors.blue,
                     child: ListView(
@@ -410,9 +410,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                         Container(
                           margin: EdgeInsets.only(right: 8),
                           decoration: BoxDecoration(
-                            color: Color.fromRGBO(255, 100, 63, 1),
-                            borderRadius: BorderRadius.circular(8)
-                          ),
+                              color: Color.fromRGBO(255, 100, 63, 1), borderRadius: BorderRadius.circular(8)),
                           padding: EdgeInsets.symmetric(horizontal: 16),
                           child: Center(
                             child: Text(
@@ -429,10 +427,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                           decoration: BoxDecoration(
                               // color: Color.fromRGBO(255, 100, 63, 1),
                               borderRadius: BorderRadius.circular(8),
-                            border: Border.all(
-                              color: Color.fromRGBO(33, 33, 33, 1)
-                            )
-                          ),
+                              border: Border.all(color: Color.fromRGBO(33, 33, 33, 1))),
                           padding: EdgeInsets.symmetric(horizontal: 16),
                           child: Center(
                             child: Text(
@@ -447,12 +442,9 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                         Container(
                           margin: EdgeInsets.only(right: 8),
                           decoration: BoxDecoration(
-                            // color: Color.fromRGBO(255, 100, 63, 1),
+                              // color: Color.fromRGBO(255, 100, 63, 1),
                               borderRadius: BorderRadius.circular(8),
-                              border: Border.all(
-                                  color: Color.fromRGBO(33, 33, 33, 1)
-                              )
-                          ),
+                              border: Border.all(color: Color.fromRGBO(33, 33, 33, 1))),
                           padding: EdgeInsets.symmetric(horizontal: 16),
                           child: Center(
                             child: Text(
@@ -467,12 +459,9 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                         Container(
                           margin: EdgeInsets.only(right: 8),
                           decoration: BoxDecoration(
-                            // color: Color.fromRGBO(255, 100, 63, 1),
+                              // color: Color.fromRGBO(255, 100, 63, 1),
                               borderRadius: BorderRadius.circular(8),
-                              border: Border.all(
-                                  color: Color.fromRGBO(33, 33, 33, 1)
-                              )
-                          ),
+                              border: Border.all(color: Color.fromRGBO(33, 33, 33, 1))),
                           padding: EdgeInsets.symmetric(horizontal: 16),
                           child: Center(
                             child: Text(
@@ -484,7 +473,6 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                             ),
                           ),
                         ),
-
                       ],
                     ),
                   ),
