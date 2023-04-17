@@ -402,7 +402,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                     ),
                   ),
                   Container(
-                    height: 50,
+                    height: 46,
                     margin: EdgeInsets.symmetric(vertical: 16),
                     child: ListView(
                       scrollDirection: Axis.horizontal,
@@ -456,7 +456,27 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                           padding: EdgeInsets.symmetric(horizontal: 16),
                           child: Center(
                             child: Text(
-                              "Fashion",
+                              "Gaming",
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(right: 8),
+                          decoration: BoxDecoration(
+                            // color: Color.fromRGBO(255, 100, 63, 1),
+                              borderRadius: BorderRadius.circular(8),
+                              border: Border.all(
+                                  color: Color.fromRGBO(33, 33, 33, 1)
+                              )
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          child: Center(
+                            child: Text(
+                              "Sport",
                               style: TextStyle(
                                 color: Colors.grey,
                                 fontWeight: FontWeight.bold,
