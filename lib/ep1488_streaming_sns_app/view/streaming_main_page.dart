@@ -488,15 +488,17 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                           width: 240,
                           margin: EdgeInsets.only(right: 12),
                           decoration: BoxDecoration(
-                            color: Colors.pink,
-                          ),
+                              // color: Colors.pink,
+                              ),
                           child: Column(
                             children: [
-                              Expanded(child: Container(
+                              Expanded(
+                                  child: Container(
                                 decoration: BoxDecoration(
-
                                   borderRadius: BorderRadius.circular(8),
-                                  border: Border.all( color: Colors.white.withOpacity(0.2),)
+                                  border: Border.all(
+                                    color: Colors.white.withOpacity(0.2),
+                                  ),
                                 ),
                               )),
                               SizedBox(
