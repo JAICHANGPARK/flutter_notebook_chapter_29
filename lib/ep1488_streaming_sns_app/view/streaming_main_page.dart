@@ -408,6 +408,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
+                          margin: EdgeInsets.only(right: 8),
                           decoration: BoxDecoration(
                             color: Color.fromRGBO(255, 100, 63, 1),
                             borderRadius: BorderRadius.circular(8)
@@ -422,7 +423,8 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                               ),
                             ),
                           ),
-                        )
+                        ),
+
                       ],
                     ),
                   ),
