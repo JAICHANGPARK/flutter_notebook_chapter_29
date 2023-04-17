@@ -404,6 +404,21 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                   Container(
                     height: 72,
                     color: Colors.white,
+                    child: ListView(
+                      children: [
+                        Container(
+                          child: Center(
+                            child: Text(
+                              "Most Popular",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                   Container(
                     height: 400,
@@ -411,11 +426,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                   ),
                   Text(
                     "You follow",
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white
-                    ),
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
                   )
                 ],
               ),
