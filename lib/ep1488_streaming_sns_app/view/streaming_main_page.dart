@@ -642,10 +642,12 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                           IconButton(
                             onPressed: () {},
                             icon: Icon(Icons.mail_outline),
+                            color: Colors.white,
                           ),
                           IconButton(
                             onPressed: () {},
                             icon: Icon(Icons.notifications_none),
+                            color: Colors.white,
                           ),
                           IconButton(
                             onPressed: () {},
