@@ -652,6 +652,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                           IconButton(
                             onPressed: () {},
                             icon: Icon(Icons.person_outline),
+                            color: Colors.white,
                           ),
                         ],
                       ),
