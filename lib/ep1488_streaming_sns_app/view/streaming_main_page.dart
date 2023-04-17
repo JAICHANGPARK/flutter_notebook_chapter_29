@@ -404,16 +404,18 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                   ),
                   Container(
                     height: 46,
-                    margin: EdgeInsets.symmetric(vertical: 16),
+                    margin: const EdgeInsets.symmetric(vertical: 16),
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
-                          margin: EdgeInsets.only(right: 8),
+                          margin: const EdgeInsets.only(right: 8),
                           decoration: BoxDecoration(
-                              color: Color.fromRGBO(255, 100, 63, 1), borderRadius: BorderRadius.circular(8)),
-                          padding: EdgeInsets.symmetric(horizontal: 16),
-                          child: Center(
+                            color: const Color.fromRGBO(255, 100, 63, 1),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: const Center(
                             child: Text(
                               "Most Popular",
                               style: TextStyle(
@@ -424,13 +426,13 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(right: 8),
+                          margin: const EdgeInsets.only(right: 8),
                           decoration: BoxDecoration(
                               // color: Color.fromRGBO(255, 100, 63, 1),
                               borderRadius: BorderRadius.circular(8),
-                              border: Border.all(color: Color.fromRGBO(33, 33, 33, 1))),
-                          padding: EdgeInsets.symmetric(horizontal: 16),
-                          child: Center(
+                              border: Border.all(color: const Color.fromRGBO(33, 33, 33, 1))),
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: const Center(
                             child: Text(
                               "Fashion",
                               style: TextStyle(
@@ -441,13 +443,13 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(right: 8),
+                          margin: const EdgeInsets.only(right: 8),
                           decoration: BoxDecoration(
                               // color: Color.fromRGBO(255, 100, 63, 1),
                               borderRadius: BorderRadius.circular(8),
-                              border: Border.all(color: Color.fromRGBO(33, 33, 33, 1))),
-                          padding: EdgeInsets.symmetric(horizontal: 16),
-                          child: Center(
+                              border: Border.all(color: const Color.fromRGBO(33, 33, 33, 1))),
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: const Center(
                             child: Text(
                               "Gaming",
                               style: TextStyle(
@@ -458,13 +460,13 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(right: 8),
+                          margin: const EdgeInsets.only(right: 8),
                           decoration: BoxDecoration(
                               // color: Color.fromRGBO(255, 100, 63, 1),
                               borderRadius: BorderRadius.circular(8),
-                              border: Border.all(color: Color.fromRGBO(33, 33, 33, 1))),
-                          padding: EdgeInsets.symmetric(horizontal: 16),
-                          child: Center(
+                              border: Border.all(color: const Color.fromRGBO(33, 33, 33, 1))),
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: const Center(
                             child: Text(
                               "Sport",
                               style: TextStyle(
@@ -481,7 +483,7 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                     height: 400,
                     color: Colors.blue,
                   ),
-                  Text(
+                  const Text(
                     "You follow",
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
                   )
