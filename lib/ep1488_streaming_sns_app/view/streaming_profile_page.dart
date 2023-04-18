@@ -158,6 +158,19 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
                         Expanded(child: Placeholder())
                       ],
                     ),
+                  ),
+                  Container(
+                    height: 84,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                    ),
+                    child: Row(
+                      children: [
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder())
+                      ],
+                    ),
                   )
                 ],
               ),
