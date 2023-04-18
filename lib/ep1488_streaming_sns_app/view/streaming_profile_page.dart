@@ -109,10 +109,16 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
                       ),
                     ],
                   ),
-                  Text(
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-                    style: TextStyle(
-                      color: Colors.white,
+                  SizedBox(
+                    height: 16,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 4),
+                    child: Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                   Container(
