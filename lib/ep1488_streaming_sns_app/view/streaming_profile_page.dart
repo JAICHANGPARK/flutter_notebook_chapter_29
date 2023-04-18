@@ -36,7 +36,25 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
               ),
             ),
           ),
-          
+          Positioned(
+            left: 0,
+            right: 0,
+            bottom: 0,
+            child: Container(
+              height: MediaQuery.of(context).size.height / 1.5,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.bottomCenter,
+                  end: Alignment.topCenter,
+                  colors: [
+                    Colors.black,
+                    Color.fromRGBO(31, 31, 31, 1),
+                    Colors.transparent,
+                  ],
+                ),
+              ),
+            ),
+          ),
           Positioned(
             left: 16,
             right: 16,
