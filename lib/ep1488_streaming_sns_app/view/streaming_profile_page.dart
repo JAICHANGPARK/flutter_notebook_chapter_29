@@ -121,7 +121,11 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
-                              border: Border.all(),
+                              border: Border.all(
+                                color: Colors.white,
+                                
+                              ),
+                              borderRadius: BorderRadius.circular(32)
                             ),
                           ),
                         ),
