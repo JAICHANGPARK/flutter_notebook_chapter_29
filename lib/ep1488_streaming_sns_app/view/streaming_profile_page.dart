@@ -91,6 +91,27 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
                         ),
                       )
                     ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        height: 48,
+                        width: 48,
+                      ),
+                      Column(
+                        children: [
+                          Text("Dream Walker"),
+                          Text("dreamwalker"),
+                        ],
+                      ),
+
+                    ],
+                  ),
+                  Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
                   )
                 ],
               ),
