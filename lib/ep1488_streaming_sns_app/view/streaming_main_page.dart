@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_29/ep1488_streaming_sns_app/view/streaming_profile_page.dart';
 
 class StreamingSnsMainPage extends StatefulWidget {
   const StreamingSnsMainPage({Key? key}) : super(key: key);
@@ -612,7 +613,6 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
               right: 16,
               bottom: 24,
               child: Container(
-
                 decoration: BoxDecoration(
                   color: Colors.white.withOpacity(0.2),
                   borderRadius: BorderRadius.circular(16),
@@ -650,7 +650,13 @@ class _StreamingSnsMainPageState extends State<StreamingSnsMainPage> {
                             color: Colors.white,
                           ),
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => StreamingProfilePage(),
+                                ),
+                              );
+                            },
                             icon: Icon(Icons.person_outline),
                             color: Colors.white,
                           ),
