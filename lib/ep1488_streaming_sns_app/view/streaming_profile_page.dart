@@ -153,7 +153,9 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
                     ),
                     child: Row(
                       children: [
-                        
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder())
                       ],
                     ),
                   )
