@@ -13,10 +13,10 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
     return Scaffold(
       body: Stack(
         children: [
-          Column(
-            children: [
-
-            ],
+          Positioned(
+            child: Column(
+              children: [],
+            ),
           ),
         ],
       ),
