@@ -92,6 +92,7 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
                       )
                     ],
                   ),
+                  Spacer(),
                   Row(
                     children: [
                       Container(
@@ -171,7 +172,10 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
                         Expanded(child: Placeholder())
                       ],
                     ),
-                  )
+                  ),
+                  Container(
+                    height: 100,
+                  ),
                 ],
               ),
             ),
