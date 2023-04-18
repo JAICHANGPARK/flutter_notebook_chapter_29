@@ -24,6 +24,13 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
                   image: NetworkImage("https://cdn.pixabay.com/photo/2023/04/07/08/52/girl-7905874_1280.jpg"),
                   fit: BoxFit.cover,
                 ),
+                gradient: LinearGradient(
+                  colors: [
+                    Colors.black,
+                    Color.fromRGBO(31, 31, 31, 1),
+                    Colors.transparent,
+                  ],
+                ),
               ),
             ),
           ),
