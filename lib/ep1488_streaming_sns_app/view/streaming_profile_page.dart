@@ -100,20 +100,23 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
                         width: 64,
                         color: Colors.white,
                       ),
+                      SizedBox(
+                        width: 16,
+                      ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Dream Walker"),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Text("dreamwalker"),
                         ],
                       ),
                     ],
                   ),
-                  SizedBox(
-                    height: 16,
-                  ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 4),
+                    padding: const EdgeInsets.symmetric(vertical: 16),
                     child: Text(
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
                       style: TextStyle(
