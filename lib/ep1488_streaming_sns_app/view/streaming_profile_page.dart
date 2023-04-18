@@ -14,8 +14,58 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
       body: Stack(
         children: [
           Positioned(
-            child: Column(
-              children: [],
+            left: 0,
+            right: 0,
+            top: 0,
+            bottom: 0,
+            child: Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage("https://cdn.pixabay.com/photo/2023/04/07/08/52/girl-7905874_1280.jpg"),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            left: 16,
+            right: 16,
+            top: 16,
+            bottom: 0,
+            child: SafeArea(
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.keyboard_arrow_left,
+                        ),
+                        color: Colors.white,
+                      ),
+                      Container(
+                        height: 56,
+                        width: 56,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(
+                            color: Colors.white,
+                          ),
+                        ),
+                        child: IconButton(
+                          icon: Icon(
+                            Icons.more_vert,
+                          ),
+                          onPressed: () {},
+                          color: Colors.white,
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
         ],
