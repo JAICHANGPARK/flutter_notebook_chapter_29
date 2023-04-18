@@ -25,6 +25,8 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
                   fit: BoxFit.cover,
                 ),
                 gradient: LinearGradient(
+                  begin: Alignment.bottomCenter,
+                  end: Alignment.topCenter,
                   colors: [
                     Colors.black,
                     Color.fromRGBO(31, 31, 31, 1),
@@ -34,6 +36,7 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
               ),
             ),
           ),
+          
           Positioned(
             left: 16,
             right: 16,
