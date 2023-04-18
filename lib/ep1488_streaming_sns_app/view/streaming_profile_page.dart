@@ -149,6 +149,7 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
                   ),
                   Container(
                     height: 84,
+                    margin: EdgeInsets.symmetric(vertical: 16),
                     decoration: BoxDecoration(
                       color: Colors.blue,
                     ),
@@ -165,6 +166,7 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
                     decoration: BoxDecoration(
                       color: Colors.blue,
                     ),
+                    margin: EdgeInsets.symmetric(vertical: 16),
                     child: Row(
                       children: [
                         Expanded(child: Placeholder()),
@@ -174,7 +176,7 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
                     ),
                   ),
                   Container(
-                    height: 100,
+                    height: 64,
                   ),
                 ],
               ),
