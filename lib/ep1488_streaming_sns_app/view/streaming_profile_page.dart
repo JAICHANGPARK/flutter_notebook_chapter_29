@@ -100,6 +100,7 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
                         color: Colors.white,
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Dream Walker"),
                           Text("dreamwalker"),
@@ -111,6 +112,15 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
                     style: TextStyle(
                       color: Colors.white,
+                    ),
+                  ),
+                  Container(
+                    height: 48,
+                    child: Row(
+                      children: [
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder()),
+                      ],
                     ),
                   )
                 ],
