@@ -95,8 +95,9 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
                   Row(
                     children: [
                       Container(
-                        height: 48,
-                        width: 48,
+                        height: 64,
+                        width: 64,
+                        color: Colors.white,
                       ),
                       Column(
                         children: [
@@ -104,7 +105,6 @@ class _StreamingProfilePageState extends State<StreamingProfilePage> {
                           Text("dreamwalker"),
                         ],
                       ),
-
                     ],
                   ),
                   Text(
