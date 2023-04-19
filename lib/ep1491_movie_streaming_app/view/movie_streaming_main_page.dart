@@ -20,11 +20,22 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
             top: 0,
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.blue,
-                image: DecorationImage(
-                  image: NetworkImage(
-                    "https://cdn.pixabay.com/photo/2016/11/15/07/09/photo-manipulation-1825450_1280.jpg",
+                gradient: LinearGradient(
+                  colors: [
+                    Colors.blue
+                  ]
+                )
+              ),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  image: DecorationImage(
+                    image: NetworkImage(
+                      "https://cdn.pixabay.com/photo/2016/11/15/07/09/photo-manipulation-1825450_1280.jpg",
+                    ),
+                    fit: BoxFit.cover,
                   ),
+
                 ),
               ),
             ),
