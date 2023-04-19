@@ -82,11 +82,14 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                   icon: Icon(
                     Icons.search,
                   ),
+                  color: Colors.white,
+                  iconSize: 34,
                 ),
                 Text(
                   "Search",
                   style: TextStyle(
                     fontSize: 12,
+                    color: Colors.white
                   ),
                 ),
               ],
@@ -97,7 +100,10 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                   onPressed: () {},
                   icon: Icon(
                     Icons.calendar_month,
+
                   ),
+                  color: Colors.white,
+                  iconSize: 34,
                 ),
                 Text(
                   "Upcoming",
@@ -114,6 +120,8 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                   icon: Icon(
                     Icons.download,
                   ),
+                  color: Colors.white,
+                  iconSize: 34,
                 ),
                 Text(
                   "Downloads",
