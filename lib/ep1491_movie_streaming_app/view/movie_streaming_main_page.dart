@@ -71,11 +71,11 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                 IconButton(
                   onPressed: () {},
                   icon: Icon(
-                    Icons.home_outlined,
+                    Icons.search,
                   ),
                 ),
                 Text(
-                  "Home",
+                  "Search",
                 ),
               ],
             ),
@@ -84,11 +84,11 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                 IconButton(
                   onPressed: () {},
                   icon: Icon(
-                    Icons.home_outlined,
+                    Icons.calendar_month,
                   ),
                 ),
                 Text(
-                  "Home",
+                  "Upcoming",
                 ),
               ],
             ),
@@ -97,11 +97,11 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                 IconButton(
                   onPressed: () {},
                   icon: Icon(
-                    Icons.home_outlined,
+                    Icons.download,
                   ),
                 ),
                 Text(
-                  "Home",
+                  "Downloads",
                 ),
               ],
             ),
