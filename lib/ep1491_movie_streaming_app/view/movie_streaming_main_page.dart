@@ -51,22 +51,26 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
       ),
       bottomNavigationBar: BottomAppBar(
         height: 72,
+        color: Colors.black,
         padding: EdgeInsets.symmetric(horizontal: 12),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Column(
+            Column(mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
                   onPressed: () {},
                   icon: Icon(
                     Icons.home_outlined,
                   ),
+                  color: Colors.red,
+                  iconSize: 34,
                 ),
                 Text(
                   "Home",
                   style: TextStyle(
                     fontSize: 12,
+                    color: Colors.red,
                   ),
                 ),
               ],
@@ -109,7 +113,6 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                   onPressed: () {},
                   icon: Icon(
                     Icons.download,
-
                   ),
                 ),
                 Text(
