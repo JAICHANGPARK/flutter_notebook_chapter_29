@@ -50,7 +50,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
         ],
       ),
       bottomNavigationBar: BottomAppBar(
-        height: 72,
+        height: 80,
         color: Colors.black,
         padding: EdgeInsets.symmetric(horizontal: 12),
         child: Row(
