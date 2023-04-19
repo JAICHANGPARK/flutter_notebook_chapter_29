@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_29
 
-### EP1488
+### EP1491
+
+- Movie Streaming App - Mobile Concept
+- by Lay
+- https://dribbble.com/shots/21240783-Movie-Streaming-App-Mobile-Concept
+
+<img src="https://cdn.dribbble.com/userupload/6374926/file/original-8491635a46b0905f7309be225a7d59ec.png?compress=1&resize=1813x1360" width="500px"/>
+
+### EP1488-1490
 
 - Streaming Social Network
 - by Purrweb UI/UX Agency
