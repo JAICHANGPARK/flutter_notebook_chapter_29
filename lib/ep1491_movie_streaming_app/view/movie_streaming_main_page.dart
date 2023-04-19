@@ -31,7 +31,21 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
             ),
           ),
           Positioned(
-            child: Container(),
+            left: 0,
+            right: 0,
+            bottom: 0,
+
+            child: Container(
+              height: MediaQuery.of(context).size.height / 1.5,
+              decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                      colors: [
+                        Colors.blue,
+                        Colors.blue
+                      ]
+                  )
+              ),
+            ),
           ),
         ],
       ),
