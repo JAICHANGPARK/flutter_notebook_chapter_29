@@ -65,6 +65,9 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                 ),
                 Text(
                   "Home",
+                  style: TextStyle(
+                    fontSize: 12,
+                  ),
                 ),
               ],
             ),
@@ -78,6 +81,9 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                 ),
                 Text(
                   "Search",
+                  style: TextStyle(
+                    fontSize: 12,
+                  ),
                 ),
               ],
             ),
@@ -91,6 +97,9 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                 ),
                 Text(
                   "Upcoming",
+                  style: TextStyle(
+                    fontSize: 12,
+                  ),
                 ),
               ],
             ),
@@ -100,10 +109,14 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                   onPressed: () {},
                   icon: Icon(
                     Icons.download,
+
                   ),
                 ),
                 Text(
                   "Downloads",
+                  style: TextStyle(
+                    fontSize: 12,
+                  ),
                 ),
               ],
             ),
