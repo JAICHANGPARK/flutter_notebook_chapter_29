@@ -56,7 +56,8 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Column(mainAxisAlignment: MainAxisAlignment.center,
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
                   onPressed: () {},
@@ -76,6 +77,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
               ],
             ),
             Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
                   onPressed: () {},
@@ -89,18 +91,18 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                   "Search",
                   style: TextStyle(
                     fontSize: 12,
-                    color: Colors.white
+                    color: Colors.white,
                   ),
                 ),
               ],
             ),
             Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
                   onPressed: () {},
                   icon: Icon(
                     Icons.calendar_month,
-
                   ),
                   color: Colors.white,
                   iconSize: 34,
@@ -109,11 +111,13 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                   "Upcoming",
                   style: TextStyle(
                     fontSize: 12,
+                    color: Colors.white,
                   ),
                 ),
               ],
             ),
             Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
                   onPressed: () {},
@@ -127,11 +131,14 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                   "Downloads",
                   style: TextStyle(
                     fontSize: 12,
+                    color: Colors.white,
                   ),
                 ),
               ],
             ),
-            CircleAvatar(),
+            CircleAvatar(
+              radius: 24,
+            ),
           ],
         ),
       ),
