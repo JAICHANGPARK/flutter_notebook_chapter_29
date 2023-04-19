@@ -21,12 +21,18 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
             child: Container(
               decoration: BoxDecoration(
                 color: Colors.blue,
+                image: DecorationImage(
+                  image: NetworkImage(
+                    "https://cdn.pixabay.com/photo/2016/11/15/07/09/photo-manipulation-1825450_1280.jpg",
+                  ),
+                ),
               ),
             ),
           ),
         ],
       ),
       bottomNavigationBar: BottomAppBar(
+        height: 72,
         child: Row(
           children: [
             Column(
@@ -41,7 +47,47 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                   "Home",
                 ),
               ],
-            )
+            ),
+            Column(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.home_outlined,
+                  ),
+                ),
+                Text(
+                  "Home",
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.home_outlined,
+                  ),
+                ),
+                Text(
+                  "Home",
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.home_outlined,
+                  ),
+                ),
+                Text(
+                  "Home",
+                ),
+              ],
+            ),
+            CircleAvatar(),
           ],
         ),
       ),
