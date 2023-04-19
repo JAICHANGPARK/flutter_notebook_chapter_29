@@ -29,7 +29,19 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
       bottomNavigationBar: BottomAppBar(
         child: Row(
           children: [
-
+            Column(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.home_outlined,
+                  ),
+                ),
+                Text(
+                  "Home",
+                ),
+              ],
+            )
           ],
         ),
       ),
