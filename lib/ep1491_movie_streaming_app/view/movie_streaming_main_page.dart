@@ -171,7 +171,31 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                         SizedBox(
                           width: 8,
                         ),
-                        Expanded(child: Placeholder()),
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: Center(
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(
+                                    Icons.play_circle_outline,
+                                    // color: Colors.white,
+                                  ),
+                                  Text(
+                                    'My List',
+                                    style: TextStyle(
+                                      // color: Colors.white,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   )
