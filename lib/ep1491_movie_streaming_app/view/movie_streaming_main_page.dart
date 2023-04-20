@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class MovieStreamingMainPage extends StatefulWidget {
   const MovieStreamingMainPage({Key? key}) : super(key: key);
@@ -131,7 +132,10 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                         ),
                       )
                     ],
-                  )
+                  ),
+                  LinearPercentIndicator(
+                    percent: 0.5,
+                  ),
                 ],
               ),
             ),
