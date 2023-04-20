@@ -59,20 +59,23 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
             child: SafeArea(
               child: Column(
                 children: [
-                  Row(
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black,
-                        ),
-                        child: IconButton(
-                          icon: Icon(
-                            Icons.keyboard_arrow_left,
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black,
                           ),
-                          onPressed: () {},
-                        ),
-                      )
-                    ],
+                          child: IconButton(
+                            icon: Icon(
+                              Icons.keyboard_arrow_left,
+                            ),
+                            onPressed: () {},
+                          ),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
