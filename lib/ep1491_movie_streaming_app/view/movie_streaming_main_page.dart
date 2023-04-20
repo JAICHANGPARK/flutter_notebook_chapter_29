@@ -121,7 +121,13 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                         "Continue Watching",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          color: Colors.white
+                          color: Colors.white,
+                        ),
+                      ),
+                      Text(
+                        "-58m",
+                        style: TextStyle(
+                          color: Colors.white,
                         ),
                       )
                     ],
