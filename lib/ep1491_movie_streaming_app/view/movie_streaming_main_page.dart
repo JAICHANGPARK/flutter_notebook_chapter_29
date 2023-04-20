@@ -62,11 +62,15 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      _pageIndex = 0;
+                    });
+                  },
                   icon: const Icon(
                     Icons.home_outlined,
                   ),
-                  color: Colors.red,
+                  color: _pageIndex == 0 ? Colors.red : Colors.white,
                   iconSize: 34,
                 ),
                 const Text(
