@@ -116,22 +116,26 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                       },
                     ),
                   ),
-                  Row(
-                    children: [
-                      Text(
-                        "Continue Watching",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      children: [
+                        Text(
+                          "Continue Watching",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            fontSize: 18
+                          ),
                         ),
-                      ),
-                      Text(
-                        "-58m",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      )
-                    ],
+                        Text(
+                          "-58m",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                   LinearPercentIndicator(
                     percent: 0.5,
