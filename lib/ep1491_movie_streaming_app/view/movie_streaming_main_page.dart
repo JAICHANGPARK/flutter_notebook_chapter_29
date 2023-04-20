@@ -73,11 +73,11 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                   color: _pageIndex == 0 ? Colors.red : Colors.white,
                   iconSize: 34,
                 ),
-                const Text(
+                Text(
                   "Home",
                   style: TextStyle(
                     fontSize: 12,
-                    color: Colors.red,
+                    color: _pageIndex == 0 ? Colors.red : Colors.white,
                   ),
                 ),
               ],
