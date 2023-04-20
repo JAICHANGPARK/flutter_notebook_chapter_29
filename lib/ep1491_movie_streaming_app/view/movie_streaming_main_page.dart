@@ -174,7 +174,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
-                              color: Colors.red,
+                              color: Colors.white,
                               borderRadius: BorderRadius.circular(4),
                             ),
                             child: Center(
