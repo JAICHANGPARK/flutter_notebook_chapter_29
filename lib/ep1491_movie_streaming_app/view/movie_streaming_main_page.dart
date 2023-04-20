@@ -93,6 +93,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                   ),
                   Container(
                     height: 42,
+                    margin: EdgeInsets.only(left: 16),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
@@ -113,6 +114,17 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                         );
                       },
                     ),
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        "Continue Watching",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white
+                        ),
+                      )
+                    ],
                   )
                 ],
               ),
