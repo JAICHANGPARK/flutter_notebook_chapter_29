@@ -143,7 +143,17 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                     margin: EdgeInsets.all(16),
                     child: Row(
                       children: [
-                        Expanded(child: Placeholder()),
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 8,
+                        ),
                         Expanded(child: Placeholder()),
                       ],
                     ),
