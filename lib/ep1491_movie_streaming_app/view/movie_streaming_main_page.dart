@@ -39,11 +39,11 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
             bottom: 0,
             child: Container(
               height: MediaQuery.of(context).size.height / 1.4,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.bottomCenter,
                   end: Alignment.topCenter,
-                  colors: const [
+                  colors: [
                     Color.fromRGBO(17, 5, 9, 1),
                     Color.fromRGBO(20, 6, 16, 1),
                     Colors.transparent,
@@ -66,24 +66,24 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.black,
                           ),
                           child: IconButton(
                             color: Colors.white,
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.keyboard_arrow_left,
                             ),
                             onPressed: () {},
                           ),
                         ),
                         Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.black,
                           ),
                           child: IconButton(
                             color: Colors.white,
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.open_in_new,
                             ),
                             onPressed: () {},
@@ -94,19 +94,19 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                   ),
                   Container(
                     height: 42,
-                    margin: EdgeInsets.only(left: 16),
+                    margin: const EdgeInsets.only(left: 16),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Container(
-                          margin: EdgeInsets.only(right: 8),
-                          padding: EdgeInsets.symmetric(horizontal: 24),
+                          margin: const EdgeInsets.only(right: 8),
+                          padding: const EdgeInsets.symmetric(horizontal: 24),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(2),
                               border: Border.all(
                                 color: Colors.white,
                               )),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "Fantasy",
                               style: TextStyle(color: Colors.white),
@@ -144,7 +144,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                   ),
                   Container(
                     height: 48,
-                    margin: EdgeInsets.all(16),
+                    margin: const EdgeInsets.all(16),
                     child: Row(
                       children: [
                         Expanded(
@@ -172,7 +172,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 8,
                         ),
                         Expanded(
