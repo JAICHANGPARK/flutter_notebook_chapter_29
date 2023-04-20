@@ -119,6 +119,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
                           "Continue Watching",
