@@ -211,7 +211,8 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                         ),
                       ],
                     ),
-                  )
+                  ),
+                  Divider(),
                 ],
               ),
             ),
