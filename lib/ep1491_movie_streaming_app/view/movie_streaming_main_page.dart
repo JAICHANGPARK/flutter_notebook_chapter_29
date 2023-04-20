@@ -62,14 +62,28 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.black,
                           ),
                           child: IconButton(
+                            color: Colors.white,
                             icon: Icon(
                               Icons.keyboard_arrow_left,
+                            ),
+                            onPressed: () {},
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                          ),
+                          child: IconButton(
+                            color: Colors.white,
+                            icon: Icon(
+                              Icons.open_in_new,
                             ),
                             onPressed: () {},
                           ),
