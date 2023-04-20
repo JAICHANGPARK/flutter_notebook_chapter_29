@@ -86,18 +86,22 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      _pageIndex = 1;
+                    });
+                  },
                   icon: const Icon(
                     Icons.search,
                   ),
-                  color: Colors.white,
+                  color: _pageIndex == 1 ? Colors.red : Colors.white,
                   iconSize: 34,
                 ),
-                const Text(
+                Text(
                   "Search",
                   style: TextStyle(
                     fontSize: 12,
-                    color: Colors.white,
+                    color: _pageIndex == 1 ? Colors.red : Colors.white,
                   ),
                 ),
               ],
