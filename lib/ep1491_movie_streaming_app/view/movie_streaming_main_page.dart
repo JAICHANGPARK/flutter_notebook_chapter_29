@@ -93,7 +93,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                     ),
                   ),
                   SizedBox(
-                    height: 300,
+                    height: 320,
                   ),
                   Container(
                     height: 42,
