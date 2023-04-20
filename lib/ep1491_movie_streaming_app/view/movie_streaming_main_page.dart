@@ -138,6 +138,16 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                     percent: 0.5,
                     progressColor: Colors.white,
                   ),
+                  Container(
+                    height: 48,
+                    margin: EdgeInsets.all(16),
+                    child: Row(
+                      children: [
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder()),
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
