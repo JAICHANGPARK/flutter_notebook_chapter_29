@@ -149,6 +149,20 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                               color: Colors.red,
                               borderRadius: BorderRadius.circular(4),
                             ),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.play_arrow,
+                                  color: Colors.white,
+                                ),
+                                Text(
+                                  'Play',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                         SizedBox(
