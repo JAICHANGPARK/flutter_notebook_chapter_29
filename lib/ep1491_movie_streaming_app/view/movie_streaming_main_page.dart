@@ -119,6 +119,9 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                       },
                     ),
                   ),
+                  SizedBox(
+                    height: 16,
+                  ),
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Row(
