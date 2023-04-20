@@ -123,7 +123,11 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                       children: [
                         Text(
                           "Continue Watching",
-                          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            fontSize: 18,
+                          ),
                         ),
                         Text(
                           "-58m",
@@ -188,8 +192,8 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                   Text(
                                     'My List',
                                     style: TextStyle(
-                                      // color: Colors.white,
-                                    ),
+                                        // color: Colors.white,
+                                        ),
                                   )
                                 ],
                               ),
