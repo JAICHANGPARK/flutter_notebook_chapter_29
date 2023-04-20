@@ -37,12 +37,14 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
             right: 0,
             bottom: 0,
             child: Container(
-              height: MediaQuery.of(context).size.height / 2,
+              height: MediaQuery.of(context).size.height / 1.4,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
+                  begin: Alignment.bottomCenter,
+                  end: Alignment.topCenter,
                   colors: [
-                    Colors.blue,
-                    Colors.blue[200]!,
+                    Color.fromRGBO(17, 5, 9, 1),
+                    Color.fromRGBO(20, 6, 16, 1),
                     Colors.transparent,
                   ],
                 ),
