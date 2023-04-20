@@ -90,6 +90,12 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                         )
                       ],
                     ),
+                  ),
+                  Container(
+                    height: 48,
+                    child: ListView.builder(itemBuilder: (context, index) {
+                      return Container();
+                    }),
                   )
                 ],
               ),
