@@ -8,6 +8,8 @@ class MovieStreamingMainPage extends StatefulWidget {
 }
 
 class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
+  int _pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +21,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
             bottom: 0,
             top: 0,
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.blue,
                 image: DecorationImage(
                   image: NetworkImage(
@@ -52,7 +54,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
       bottomNavigationBar: BottomAppBar(
         height: 80,
         color: Colors.black,
-        padding: EdgeInsets.symmetric(horizontal: 12),
+        padding: const EdgeInsets.symmetric(horizontal: 12),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -61,13 +63,13 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.home_outlined,
                   ),
                   color: Colors.red,
                   iconSize: 34,
                 ),
-                Text(
+                const Text(
                   "Home",
                   style: TextStyle(
                     fontSize: 12,
@@ -81,13 +83,13 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.search,
                   ),
                   color: Colors.white,
                   iconSize: 34,
                 ),
-                Text(
+                const Text(
                   "Search",
                   style: TextStyle(
                     fontSize: 12,
@@ -101,13 +103,13 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.calendar_month,
                   ),
                   color: Colors.white,
                   iconSize: 34,
                 ),
-                Text(
+                const Text(
                   "Upcoming",
                   style: TextStyle(
                     fontSize: 12,
@@ -121,13 +123,13 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.download,
                   ),
                   color: Colors.white,
                   iconSize: 34,
                 ),
-                Text(
+                const Text(
                   "Downloads",
                   style: TextStyle(
                     fontSize: 12,
@@ -136,7 +138,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                 ),
               ],
             ),
-            CircleAvatar(
+            const CircleAvatar(
               radius: 24,
             ),
           ],
