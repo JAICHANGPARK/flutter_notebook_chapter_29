@@ -97,9 +97,11 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return Container(
+                            padding: EdgeInsets.symmetric(horizontal: 16),
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(2),
-                              border: Border.all(color: Colors.white)
+                                borderRadius: BorderRadius.circular(2), border: Border.all(color: Colors.white)),
+                            child: Center(
+                              child: Text("Fantasy"),
                             ),
                           );
                         }),
