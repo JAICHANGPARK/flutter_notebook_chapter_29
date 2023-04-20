@@ -43,7 +43,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                 gradient: LinearGradient(
                   begin: Alignment.bottomCenter,
                   end: Alignment.topCenter,
-                  colors: [
+                  colors: const [
                     Color.fromRGBO(17, 5, 9, 1),
                     Color.fromRGBO(20, 6, 16, 1),
                     Colors.transparent,
@@ -120,7 +120,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                     padding: const EdgeInsets.all(16.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
+                      children: const [
                         Text(
                           "Continue Watching",
                           style: TextStyle(
@@ -156,7 +156,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                             child: Center(
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
+                                children: const [
                                   Icon(
                                     Icons.play_arrow,
                                     color: Colors.white,
@@ -184,7 +184,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                             child: Center(
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
+                                children: const [
                                   Icon(
                                     Icons.play_circle_outline,
                                     // color: Colors.white,
