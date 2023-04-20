@@ -93,9 +93,16 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                   ),
                   Container(
                     height: 48,
-                    child: ListView.builder(itemBuilder: (context, index) {
-                      return Container();
-                    }),
+                    child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(2),
+                              border: Border.all(color: Colors.white)
+                            ),
+                          );
+                        }),
                   )
                 ],
               ),
