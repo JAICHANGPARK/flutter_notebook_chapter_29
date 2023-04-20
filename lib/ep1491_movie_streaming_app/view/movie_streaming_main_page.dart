@@ -92,6 +92,9 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                       ],
                     ),
                   ),
+                  SizedBox(
+                    height: 300,
+                  ),
                   Container(
                     height: 42,
                     margin: const EdgeInsets.only(left: 16),
