@@ -222,6 +222,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                           Padding(
                             padding: const EdgeInsets.all(16.0),
                             child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
                                   "The Cast",
@@ -232,6 +233,9 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                 TextButton(
                                   onPressed: () {},
                                   child: Text("See all"),
+                                  style: TextButton.styleFrom(
+                                    foregroundColor: Colors.grey,
+                                  ),
                                 ),
                               ],
                             ),
