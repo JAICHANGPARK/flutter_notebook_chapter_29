@@ -278,6 +278,14 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                     color: Colors.orange,
                                     borderRadius: BorderRadius.circular(4),
                                   ),
+                                ),
+                                Container(
+                                  width: MediaQuery.of(context).size.width,
+                                  margin: EdgeInsets.only(right: 8),
+                                  decoration: BoxDecoration(
+                                    color: Colors.orange,
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
                                 )
                               ],
                             ),
