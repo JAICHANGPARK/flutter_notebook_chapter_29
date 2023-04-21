@@ -286,6 +286,29 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                     color: Colors.orange,
                                     borderRadius: BorderRadius.circular(4),
                                   ),
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        child: Row(
+                                          children: [
+                                            Container(
+                                              height: 54,
+                                              width: 54,
+                                            ),
+                                            Column(
+                                              children: [
+                                                Text("5 languages"),
+                                                Text("Sound"),
+                                              ],
+                                            ),
+                                            Text("En" ,style: TextStyle(
+                                              
+                                            ),)
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 )
                               ],
                             ),
