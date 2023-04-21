@@ -244,6 +244,12 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                             decoration: BoxDecoration(
                               color: Colors.blue,
                             ),
+                            child: ListView(
+                              scrollDirection: Axis.horizontal,
+                              children: [
+
+                              ],
+                            ),
                           )
                         ],
                       ),
