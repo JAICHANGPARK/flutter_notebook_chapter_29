@@ -228,7 +228,11 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                   style: TextStyle(
                                     color: Colors.white,
                                   ),
-                                )
+                                ),
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text("See all"),
+                                ),
                               ],
                             ),
                           )
