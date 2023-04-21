@@ -350,17 +350,23 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                               color: Colors.grey,
                             ),
                           ),
-                          SizedBox(height: 32,),
+                          SizedBox(
+                            height: 32,
+                          ),
                           Container(
                             decoration: BoxDecoration(
-                              color: Colors.red
+                              color: Colors.red,
                             ),
                             child: Center(
                               child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Text("FULL LIST", style: TextStyle(
-                                    color: Colors.white
-                                  ),)
+                                  Text(
+                                    "FULL LIST",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  )
                                 ],
                               ),
                             ),
