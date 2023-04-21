@@ -312,9 +312,12 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                                 ],
                                               ),
                                             ),
+                                            Spacer(),
                                             Text(
                                               "En",
-                                              style: TextStyle(),
+                                              style: TextStyle(
+                                                color: Colors.amber
+                                              ),
                                             )
                                           ],
                                         ),
