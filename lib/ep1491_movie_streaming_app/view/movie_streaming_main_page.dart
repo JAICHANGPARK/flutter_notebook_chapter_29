@@ -92,6 +92,9 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                       ],
                     ),
                   ),
+                  Expanded(
+                    child: SingleChildScrollView(),
+                  ),
                   SizedBox(
                     height: 320,
                   ),
