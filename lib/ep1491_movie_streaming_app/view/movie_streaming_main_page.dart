@@ -229,6 +229,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
+                                    fontSize: 18
                                   ),
                                 ),
                                 TextButton(
