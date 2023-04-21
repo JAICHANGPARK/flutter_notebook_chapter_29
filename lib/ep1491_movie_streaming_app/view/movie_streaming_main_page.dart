@@ -298,20 +298,28 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                               height: 54,
                                               width: 54,
                                               decoration: BoxDecoration(
-                                                color: Color.fromRGBO(35, 35, 35, 1),
-                                                borderRadius: BorderRadius.circular(8)
-                                              ),
+                                                  color: Color.fromRGBO(35, 35, 35, 1),
+                                                  borderRadius: BorderRadius.circular(8)),
                                             ),
                                             Padding(
                                               padding: const EdgeInsets.only(left: 12),
                                               child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
-                                                  Text("5 languages"),
-                                                  SizedBox(
-                                                    height: 4,
+                                                  Text(
+                                                    "5 languages",
+                                                    style: TextStyle(
+                                                        color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18),
                                                   ),
-                                                  Text("Sound"),
+                                                  SizedBox(
+                                                    height: 8,
+                                                  ),
+                                                  Text(
+                                                    "Sound",
+                                                    style: TextStyle(
+                                                      color: Colors.grey,
+                                                    ),
+                                                  ),
                                                 ],
                                               ),
                                             ),
