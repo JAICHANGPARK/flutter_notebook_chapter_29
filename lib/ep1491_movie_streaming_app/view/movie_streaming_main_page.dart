@@ -248,6 +248,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                               scrollDirection: Axis.horizontal,
                               children: [
                                 Container(
+                                  width: 140,
                                   decoration: BoxDecoration(
                                     color: Colors.orange,
                                     borderRadius: BorderRadius.circular(4),
