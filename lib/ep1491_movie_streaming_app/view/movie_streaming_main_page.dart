@@ -228,6 +228,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                   "The Cast",
                                   style: TextStyle(
                                     color: Colors.white,
+                                    fontWeight: FontWeight.bold,
                                   ),
                                 ),
                                 TextButton(
