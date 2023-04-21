@@ -355,6 +355,15 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                             decoration: BoxDecoration(
                               color: Colors.red
                             ),
+                            child: Center(
+                              child: Row(
+                                children: [
+                                  Text("FULL LIST", style: TextStyle(
+                                    color: Colors.white
+                                  ),)
+                                ],
+                              ),
+                            ),
                           )
                         ],
                       ),
