@@ -205,8 +205,8 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                           Text(
                                             'My List',
                                             style: TextStyle(
-                                              // color: Colors.white,
-                                            ),
+                                                // color: Colors.white,
+                                                ),
                                           )
                                         ],
                                       ),
@@ -216,12 +216,26 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                               ],
                             ),
                           ),
-                          Divider(),
+                          Divider(
+                            color: Colors.grey,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Row(
+                              children: [
+                                Text(
+                                  "The Cast",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                )
+                              ],
+                            ),
+                          )
                         ],
                       ),
                     ),
                   ),
-
                 ],
               ),
             ),
