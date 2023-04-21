@@ -342,9 +342,18 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                           ),
                           Container(
                             height: 80,
-                            margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                            margin: EdgeInsets.symmetric(
+                              horizontal: 16,
+                              vertical: 8,
+                            ),
                             decoration: BoxDecoration(
                               color: Colors.grey,
+                            ),
+                          ),
+                          SizedBox(height: 32,),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.red
                             ),
                           )
                         ],
