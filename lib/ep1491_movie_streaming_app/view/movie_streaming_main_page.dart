@@ -241,9 +241,9 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                           Container(
                             margin: EdgeInsets.only(left: 16),
                             height: 240,
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
+                            // decoration: BoxDecoration(
+                            //   color: Colors.blue,
+                            // ),
                             child: ListView(
                               scrollDirection: Axis.horizontal,
                               children: [
@@ -315,9 +315,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                             Spacer(),
                                             Text(
                                               "En",
-                                              style: TextStyle(
-                                                color: Colors.amber
-                                              ),
+                                              style: TextStyle(color: Colors.amber),
                                             )
                                           ],
                                         ),
