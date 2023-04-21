@@ -280,7 +280,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                   ),
                                 ),
                                 Container(
-                                  width: MediaQuery.of(context).size.width,
+                                  width: MediaQuery.of(context).size.width - 24,
                                   margin: EdgeInsets.only(right: 0),
                                   decoration: BoxDecoration(
                                     color: Colors.grey,
