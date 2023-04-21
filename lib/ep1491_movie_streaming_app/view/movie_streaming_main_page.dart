@@ -226,11 +226,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                               children: [
                                 Text(
                                   "The Cast",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 18
-                                  ),
+                                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18),
                                 ),
                                 TextButton(
                                   onPressed: () {},
@@ -240,6 +236,12 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                   ),
                                 ),
                               ],
+                            ),
+                          ),
+                          Container(
+                            height: 100,
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
                             ),
                           )
                         ],
