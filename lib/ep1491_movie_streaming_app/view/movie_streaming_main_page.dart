@@ -281,21 +281,24 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                 ),
                                 Container(
                                   width: MediaQuery.of(context).size.width,
-                                  margin: EdgeInsets.only(right: 8),
+                                  margin: EdgeInsets.only(right: 0),
                                   decoration: BoxDecoration(
                                     color: Colors.orange,
-                                    borderRadius: BorderRadius.circular(4),
+                                    borderRadius: BorderRadius.circular(16),
                                   ),
                                   child: Stack(
                                     children: [
                                       Positioned(
+                                        left: 16,
+                                        bottom: 16,
+                                        right: 16,
                                         child: Row(
                                           children: [
                                             Container(
                                               height: 54,
                                               width: 54,
                                               decoration: BoxDecoration(
-                                                color: Color.fromRGBO(31, 31, 31, 1)
+                                                color: Color.fromRGBO(35, 35, 35, 1)
                                               ),
                                             ),
                                             Column(
