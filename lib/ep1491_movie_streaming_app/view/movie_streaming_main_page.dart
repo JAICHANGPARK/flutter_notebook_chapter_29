@@ -297,19 +297,25 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                             Container(
                                               height: 54,
                                               width: 54,
-                                              decoration: BoxDecoration(
-                                                color: Color.fromRGBO(35, 35, 35, 1)
+                                              decoration: BoxDecoration(color: Color.fromRGBO(35, 35, 35, 1)),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(left: 12),
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text("5 languages"),
+                                                  SizedBox(
+                                                    height: 4,
+                                                  ),
+                                                  Text("Sound"),
+                                                ],
                                               ),
                                             ),
-                                            Column(
-                                              children: [
-                                                Text("5 languages"),
-                                                Text("Sound"),
-                                              ],
-                                            ),
-                                            Text("En" ,style: TextStyle(
-                                              
-                                            ),)
+                                            Text(
+                                              "En",
+                                              style: TextStyle(),
+                                            )
                                           ],
                                         ),
                                       )
