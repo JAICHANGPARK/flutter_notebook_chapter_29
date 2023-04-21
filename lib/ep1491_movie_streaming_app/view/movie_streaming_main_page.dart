@@ -297,7 +297,10 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                             Container(
                                               height: 54,
                                               width: 54,
-                                              decoration: BoxDecoration(color: Color.fromRGBO(35, 35, 35, 1)),
+                                              decoration: BoxDecoration(
+                                                color: Color.fromRGBO(35, 35, 35, 1),
+                                                borderRadius: BorderRadius.circular(8)
+                                              ),
                                             ),
                                             Padding(
                                               padding: const EdgeInsets.only(left: 12),
