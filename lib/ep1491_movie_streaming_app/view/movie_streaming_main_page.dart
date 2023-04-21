@@ -357,6 +357,8 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                             decoration: BoxDecoration(
                               color: Colors.red,
                             ),
+                            margin: EdgeInsets.all(16),
+                            padding: EdgeInsets.symmetric(vertical: 16),
                             child: Center(
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -366,6 +368,11 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                     style: TextStyle(
                                       color: Colors.white,
                                     ),
+                                  ),
+                                  IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(Icons.keyboard_arrow_down),
+                                    color: Colors.white,
                                   )
                                 ],
                               ),
