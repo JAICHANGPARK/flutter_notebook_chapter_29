@@ -356,9 +356,10 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                           Container(
                             decoration: BoxDecoration(
                               color: Colors.red,
+                              borderRadius: BorderRadius.circular(32)
                             ),
                             margin: EdgeInsets.all(16),
-                            padding: EdgeInsets.symmetric(vertical: 16),
+                            padding: EdgeInsets.symmetric(vertical: 12),
                             child: Center(
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
