@@ -294,6 +294,9 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                             Container(
                                               height: 54,
                                               width: 54,
+                                              decoration: BoxDecoration(
+                                                color: Color.fromRGBO(31, 31, 31, 1)
+                                              ),
                                             ),
                                             Column(
                                               children: [
