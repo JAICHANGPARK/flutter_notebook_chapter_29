@@ -240,7 +240,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                           ),
                           Container(
                             margin: EdgeInsets.only(left: 16),
-                            height: 300,
+                            height: 240,
                             decoration: BoxDecoration(
                               color: Colors.blue,
                             ),
