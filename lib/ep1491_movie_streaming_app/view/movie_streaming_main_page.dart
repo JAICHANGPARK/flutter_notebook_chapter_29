@@ -369,11 +369,10 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                       color: Colors.white,
                                     ),
                                   ),
-                                  IconButton(
-                                    onPressed: () {},
-                                    icon: Icon(Icons.keyboard_arrow_down),
+                                  Icon(
+                                    Icons.keyboard_arrow_down,
                                     color: Colors.white,
-                                  )
+                                  ),
                                 ],
                               ),
                             ),
