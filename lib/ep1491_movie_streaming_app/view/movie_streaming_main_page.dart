@@ -96,7 +96,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                     child: SingleChildScrollView(
                       child: Column(
                         children: [
-                          SizedBox(
+                          const SizedBox(
                             height: 320,
                           ),
                           Container(
@@ -123,7 +123,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                               },
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                           ),
                           Padding(
@@ -216,7 +216,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                               ],
                             ),
                           ),
-                          Divider(
+                          const Divider(
                             color: Colors.grey,
                           ),
                           Padding(
@@ -224,13 +224,13 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(
+                                const Text(
                                   "The Cast",
                                   style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18),
                                 ),
                                 TextButton(
                                   onPressed: () {},
-                                  child: Text("See all"),
+                                  child: const Text("See all"),
                                   style: TextButton.styleFrom(
                                     foregroundColor: Colors.grey,
                                   ),
@@ -239,7 +239,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.only(left: 16),
+                            margin: const EdgeInsets.only(left: 16),
                             height: 240,
                             // decoration: BoxDecoration(
                             //   color: Colors.blue,
@@ -249,7 +249,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                               children: [
                                 Container(
                                   width: 120,
-                                  margin: EdgeInsets.only(right: 8),
+                                  margin: const EdgeInsets.only(right: 8),
                                   decoration: BoxDecoration(
                                     color: Colors.orange,
                                     borderRadius: BorderRadius.circular(4),
@@ -257,7 +257,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                 ),
                                 Container(
                                   width: 120,
-                                  margin: EdgeInsets.only(right: 8),
+                                  margin: const EdgeInsets.only(right: 8),
                                   decoration: BoxDecoration(
                                     color: Colors.orange,
                                     borderRadius: BorderRadius.circular(4),
@@ -265,7 +265,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                 ),
                                 Container(
                                   width: 120,
-                                  margin: EdgeInsets.only(right: 8),
+                                  margin: const EdgeInsets.only(right: 8),
                                   decoration: BoxDecoration(
                                     color: Colors.orange,
                                     borderRadius: BorderRadius.circular(4),
@@ -273,7 +273,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                 ),
                                 Container(
                                   width: 120,
-                                  margin: EdgeInsets.only(right: 8),
+                                  margin: const EdgeInsets.only(right: 8),
                                   decoration: BoxDecoration(
                                     color: Colors.orange,
                                     borderRadius: BorderRadius.circular(4),
@@ -281,7 +281,7 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                 ),
                                 Container(
                                   width: MediaQuery.of(context).size.width - 24,
-                                  margin: EdgeInsets.only(right: 0),
+                                  margin: const EdgeInsets.only(right: 0),
                                   decoration: BoxDecoration(
                                     color: Colors.black,
                                     borderRadius: BorderRadius.circular(16),
@@ -298,14 +298,14 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                               height: 54,
                                               width: 54,
                                               decoration: BoxDecoration(
-                                                  color: Color.fromRGBO(35, 35, 35, 1),
+                                                  color: const Color.fromRGBO(35, 35, 35, 1),
                                                   borderRadius: BorderRadius.circular(8)),
                                             ),
                                             Padding(
                                               padding: const EdgeInsets.only(left: 12),
                                               child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                                children: [
+                                                children: const [
                                                   Text(
                                                     "5 languages",
                                                     style: TextStyle(
@@ -326,8 +326,8 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                                 ],
                                               ),
                                             ),
-                                            Spacer(),
-                                            Text(
+                                            const Spacer(),
+                                            const Text(
                                               "En",
                                               style: TextStyle(color: Colors.amber),
                                             )
@@ -342,28 +342,25 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                           ),
                           Container(
                             height: 80,
-                            margin: EdgeInsets.symmetric(
+                            margin: const EdgeInsets.symmetric(
                               horizontal: 16,
                               vertical: 8,
                             ),
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Colors.grey,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 32,
                           ),
                           Container(
-                            decoration: BoxDecoration(
-                              color: Colors.red,
-                              borderRadius: BorderRadius.circular(32)
-                            ),
-                            margin: EdgeInsets.all(16),
-                            padding: EdgeInsets.symmetric(vertical: 12),
+                            decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(32)),
+                            margin: const EdgeInsets.all(16),
+                            padding: const EdgeInsets.symmetric(vertical: 12),
                             child: Center(
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
+                                children: const [
                                   Text(
                                     "FULL LIST",
                                     style: TextStyle(
