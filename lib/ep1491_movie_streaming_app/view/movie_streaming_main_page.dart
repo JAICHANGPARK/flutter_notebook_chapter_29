@@ -309,7 +309,10 @@ class _MovieStreamingMainPageState extends State<MovieStreamingMainPage> {
                                                   Text(
                                                     "5 languages",
                                                     style: TextStyle(
-                                                        color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18),
+                                                      color: Colors.white,
+                                                      fontWeight: FontWeight.bold,
+                                                      fontSize: 18,
+                                                    ),
                                                   ),
                                                   SizedBox(
                                                     height: 8,
