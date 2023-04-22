@@ -16,6 +16,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
         child: Row(
           children: [
             Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
                   onPressed: () {},
@@ -27,6 +28,22 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                   height: 5,
                   width: 24,
                   color: Colors.blue,
+                )
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.favorite_border),
+                  iconSize: 30,
+                  color: Colors.grey,
+                ),
+                Container(
+                  height: 5,
+                  width: 24,
+                  color: Colors.transparent,
                 )
               ],
             )
