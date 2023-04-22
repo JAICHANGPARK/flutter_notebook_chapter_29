@@ -12,6 +12,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomAppBar(
+        height: 80,
         child: Row(
           children: [],
         ),
