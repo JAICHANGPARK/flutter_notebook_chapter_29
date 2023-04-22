@@ -12,22 +12,24 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Column(
-        children: [
-          Row(
-            children: [
-              Text("TickShop"),
-              Container(
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.grey,
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Text("TickShop"),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.grey,
 
+                    ),
                   ),
-                ),
-              )
-            ],
-          )
-        ],
+                )
+              ],
+            )
+          ],
+        ),
       ),
       bottomNavigationBar: BottomAppBar(
         height: 80,
