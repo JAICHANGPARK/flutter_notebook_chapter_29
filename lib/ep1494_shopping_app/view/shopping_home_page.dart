@@ -21,7 +21,10 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
               children: [
                 Text(
                   "TikShop",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 28,
+                  ),
                 ),
                 Container(
                   decoration: BoxDecoration(
