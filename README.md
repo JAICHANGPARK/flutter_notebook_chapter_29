@@ -4,10 +4,9 @@
 
 - TikShop - Online Shop App
 - by farizzakky for Pickolab Studio
-- https://dribbble.com/shots/21240783-Movie-Streaming-App-Mobile-Concept
+- https://dribbble.com/shots/21258997-TikShop-Online-Shop-App
 
-<img src="https://cdn.dribbble.com/userupload/6374926/file/original-8491635a46b0905f7309be225a7d59ec.png?compress=1&resize=1813x1360" width="500px"/>
-
+<img src="https://cdn.dribbble.com/userupload/6428919/file/original-f926f9b5b2d83a9ef82986e458b65f24.png?compress=1&resize=1600x1200" width="500px"/>
 
 ### EP1491-1493
 
