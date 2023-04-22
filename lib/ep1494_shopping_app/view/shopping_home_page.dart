@@ -46,6 +46,38 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                   color: Colors.transparent,
                 )
               ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.video_collection_outlined),
+                  iconSize: 30,
+                  color: Colors.grey,
+                ),
+                Container(
+                  height: 5,
+                  width: 24,
+                  color: Colors.transparent,
+                )
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.settings_outlined),
+                  iconSize: 30,
+                  color: Colors.grey,
+                ),
+                Container(
+                  height: 5,
+                  width: 24,
+                  color: Colors.transparent,
+                )
+              ],
             )
           ],
         ),
