@@ -19,7 +19,13 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("TickShop"),
+                Text(
+                  "TickShop",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 28
+                  ),
+                ),
                 Container(
                   decoration: BoxDecoration(
                     border: Border.all(
