@@ -11,6 +11,24 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
+      body: Column(
+        children: [
+          Row(
+            children: [
+              Text("TickShop"),
+              Container(
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.grey,
+
+                  ),
+                ),
+              )
+            ],
+          )
+        ],
+      ),
       bottomNavigationBar: BottomAppBar(
         height: 80,
         child: Row(
