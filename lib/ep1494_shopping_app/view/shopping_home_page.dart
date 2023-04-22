@@ -38,6 +38,9 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                         onPressed: () {},
                         icon: Icon(Icons.headphones),
                       ),
+                      CircleAvatar(
+                        radius: 16,
+                      )
                     ],
                   ),
                 )
