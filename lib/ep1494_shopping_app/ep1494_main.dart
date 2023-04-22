@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() {}
+void main() {
+  runApp(ShoppingApp());
+}
 
 class ShoppingApp extends StatelessWidget {
   const ShoppingApp({Key? key}) : super(key: key);
