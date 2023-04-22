@@ -21,10 +21,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
               children: [
                 Text(
                   "TikShop",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 28
-                  ),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
                 ),
                 Container(
                   decoration: BoxDecoration(
@@ -36,7 +33,11 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                     children: [
                       Badge(
                         child: Icon(Icons.chat_outlined),
-                      )
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.headphones),
+                      ),
                     ],
                   ),
                 )
