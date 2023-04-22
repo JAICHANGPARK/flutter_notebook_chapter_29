@@ -20,7 +20,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  "TickShop",
+                  "TikShop",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 28
@@ -31,6 +31,13 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                     border: Border.all(
                       color: Colors.grey,
                     ),
+                  ),
+                  child: Row(
+                    children: [
+                      Badge(
+                        child: Icon(Icons.chat_outlined),
+                      )
+                    ],
                   ),
                 )
               ],
