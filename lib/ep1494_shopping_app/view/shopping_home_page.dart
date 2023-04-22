@@ -14,7 +14,16 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
       bottomNavigationBar: BottomAppBar(
         height: 80,
         child: Row(
-          children: [],
+          children: [
+            Column(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.home_filled),
+                )
+              ],
+            )
+          ],
         ),
       ),
     );
