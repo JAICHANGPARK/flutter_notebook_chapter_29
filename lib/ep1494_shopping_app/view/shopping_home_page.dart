@@ -16,38 +16,43 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "TikShop",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 28,
-                  ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.grey,
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "TikShop",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 28,
                     ),
                   ),
-                  child: Row(
-                    children: [
-                      Badge(
-                        child: Icon(Icons.chat_outlined),
+                  Container(
+                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey,
                       ),
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(Icons.headphones),
-                      ),
-                      CircleAvatar(
-                        radius: 16,
-                      )
-                    ],
-                  ),
-                )
-              ],
+                      borderRadius: BorderRadius.circular(32),
+                    ),
+                    child: Row(
+                      children: [
+                        Badge(
+                          child: Icon(Icons.chat_outlined),
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.headphones),
+                        ),
+                        CircleAvatar(
+                          radius: 16,
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
