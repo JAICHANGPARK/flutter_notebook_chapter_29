@@ -21,6 +21,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                   onPressed: () {},
                   icon: Icon(Icons.home_filled),
                   iconSize: 30,
+                  color: Colors.blue,
                 ),
                 Container(
                   height: 5,
