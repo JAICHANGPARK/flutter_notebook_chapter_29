@@ -14,6 +14,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
       bottomNavigationBar: BottomAppBar(
         height: 80,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
