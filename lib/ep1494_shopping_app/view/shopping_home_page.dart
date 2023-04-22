@@ -14,15 +14,16 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("TickShop"),
                 Container(
                   decoration: BoxDecoration(
                     border: Border.all(
                       color: Colors.grey,
-
                     ),
                   ),
                 )
