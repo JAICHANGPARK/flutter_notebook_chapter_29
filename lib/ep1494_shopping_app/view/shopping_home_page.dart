@@ -143,7 +143,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                         return Container(
                           margin: EdgeInsets.only(right: 8),
                           color: Colors.amber,
-                          width: MediaQuery.of(context).size.width / 3 - 16,
+                          width: MediaQuery.of(context).size.width / 3 ,
                         );
                       },
                     ),
