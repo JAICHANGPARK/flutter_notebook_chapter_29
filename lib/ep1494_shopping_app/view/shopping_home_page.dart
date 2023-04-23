@@ -72,9 +72,13 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                           height: 64,
                           width: 64,
                           decoration: BoxDecoration(
-                            border: Border.all(),
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
                             shape: BoxShape.circle,
                           ),
+                          padding: EdgeInsets.all(2),
+                          child: CircleAvatar(),
                         ),
                         const SizedBox(
                           width: 8,
