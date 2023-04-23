@@ -56,6 +56,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
             ),
             Container(
               height: 72,
+              margin: EdgeInsets.all(16),
               decoration: BoxDecoration(
                 color: Colors.blue
               ),
