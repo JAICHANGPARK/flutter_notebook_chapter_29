@@ -62,7 +62,9 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(),
+              margin: EdgeInsets.only(
+                bottom: 16
+              ),
               child: Column(
                 children: [
                   Padding(
@@ -135,7 +137,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                     ),
                   ),
                   Container(
-                    height: 100,
+                    height: 92,
                     color: Colors.pink,
                     child: ListView.builder(
                       itemCount: 10,
@@ -151,7 +153,100 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                   ),
                 ],
               ),
-            )
+            ),
+            Container(
+              margin: EdgeInsets.only(
+                  bottom: 16
+              ),
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 64,
+                          width: 64,
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                            shape: BoxShape.circle,
+                          ),
+                          padding: EdgeInsets.all(2),
+                          child: CircleAvatar(),
+                        ),
+                        const SizedBox(
+                          width: 8,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              "Fasion",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 8,
+                            ),
+                            Row(
+                              children: [
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.indigo[100],
+                                  ),
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 4,
+                                    vertical: 4,
+                                  ),
+                                  child: const Text(
+                                    "Star Seller",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(
+                                  width: 16,
+                                ),
+                                const Text(
+                                  "100 Items",
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                        Spacer(),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.arrow_forward_ios,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: 92,
+                    color: Colors.pink,
+                    child: ListView.builder(
+                      itemCount: 10,
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          margin: EdgeInsets.only(right: 8),
+                          color: Colors.amber,
+                          width: MediaQuery.of(context).size.width / 3 ,
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
