@@ -77,7 +77,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                           ),
                         ),
                         SizedBox(
-                          width: 16,
+                          width: 8,
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -89,7 +89,9 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                                 fontSize: 20,
                               ),
                             ),
-
+                            SizedBox(
+                              height: 8,
+                            ),
                             Row(
                               children: [
                                 Container(
