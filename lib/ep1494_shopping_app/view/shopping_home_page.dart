@@ -98,10 +98,13 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                                   decoration: BoxDecoration(
                                     color: Colors.indigo[50],
                                   ),
-                                  padding: EdgeInsets.symmetric(
-                                    horizontal: 4,
+                                  padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                                  child: Text(
+                                    "Star Seller",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
                                   ),
-                                  child: Text("Star Seller"),
                                 ),
                                 Text(
                                   "100 Items",
