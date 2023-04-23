@@ -96,7 +96,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                               children: [
                                 Container(
                                   decoration: BoxDecoration(
-                                    color: Colors.indigo[50],
+                                    color: Colors.indigo[100],
                                   ),
                                   padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                                   child: Text(
@@ -105,6 +105,9 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                                       color: Colors.white,
                                     ),
                                   ),
+                                ),
+                                SizedBox(
+                                  width: 16,
                                 ),
                                 Text(
                                   "100 Items",
