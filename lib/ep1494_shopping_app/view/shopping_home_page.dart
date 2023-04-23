@@ -53,6 +53,12 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                   )
                 ],
               ),
+            ),
+            Container(
+              height: 72,
+              decoration: BoxDecoration(
+                color: Colors.blue
+              ),
             )
           ],
         ),
