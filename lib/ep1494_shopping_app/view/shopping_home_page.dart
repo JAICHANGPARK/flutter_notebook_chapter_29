@@ -67,7 +67,11 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                   Row(
                     children: [
                       Container(
-                        decoration: BoxDecoration(border: Border.all()),
+                        height: 52,
+                        width: 52,
+                        decoration: BoxDecoration(
+                          border: Border.all(),
+                        ),
                       ),
                       Column(
                         children: [
