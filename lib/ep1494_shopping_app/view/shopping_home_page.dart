@@ -141,6 +141,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Container(
+                          margin: EdgeInsets.only(right: 8),
                           color: Colors.amber,
                           width: MediaQuery.of(context).size.width / 3 - 16,
                         );
