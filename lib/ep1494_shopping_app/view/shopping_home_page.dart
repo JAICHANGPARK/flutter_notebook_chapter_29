@@ -62,6 +62,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
               ),
             ),
             Container(
+              margin: EdgeInsets.only(),
               child: Column(
                 children: [
                   Padding(
