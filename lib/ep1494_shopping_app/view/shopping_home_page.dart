@@ -75,8 +75,15 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                         ),
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Fasion"),
+                          Text(
+                            "Fasion",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20
+                            ),
+                          ),
                           Row(
                             children: [
                               Container(
@@ -84,9 +91,12 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                                   color: Colors.indigo[100],
                                 ),
                                 child: Text("Star Seller"),
+                              ),
+                              Text(
+                                "100 Items",
                               )
                             ],
-                          )
+                          ),
                         ],
                       )
                     ],
