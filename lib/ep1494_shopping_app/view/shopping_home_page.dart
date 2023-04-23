@@ -64,42 +64,45 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
             Container(
               child: Column(
                 children: [
-                  Row(
-                    children: [
-                      Container(
-                        height: 64,
-                        width: 64,
-                        decoration: BoxDecoration(
-                          border: Border.all(),
-                          shape: BoxShape.circle,
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 64,
+                          width: 64,
+                          decoration: BoxDecoration(
+                            border: Border.all(),
+                            shape: BoxShape.circle,
+                          ),
                         ),
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Fasion",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20
-                            ),
-                          ),
-                          Row(
-                            children: [
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.indigo[100],
-                                ),
-                                child: Text("Star Seller"),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Fasion",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20
                               ),
-                              Text(
-                                "100 Items",
-                              )
-                            ],
-                          ),
-                        ],
-                      )
-                    ],
+                            ),
+                            Row(
+                              children: [
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.indigo[100],
+                                  ),
+                                  child: Text("Star Seller"),
+                                ),
+                                Text(
+                                  "100 Items",
+                                )
+                              ],
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
