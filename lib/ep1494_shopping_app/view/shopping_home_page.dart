@@ -139,7 +139,12 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                     child: ListView.builder(
                       itemCount: 10,
                       scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) {},
+                      itemBuilder: (context, index) {
+                        return Container(
+                          color: Colors.amber,
+                          width: MediaQuery.of(context).size.width / 3 - 16,
+                        );
+                      },
                     ),
                   ),
                 ],
