@@ -70,6 +70,11 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                         decoration: BoxDecoration(
                           border: Border.all()
                         ),
+                      ),
+                      Column(
+                        children: [
+                          
+                        ],
                       )
                     ],
                   )
