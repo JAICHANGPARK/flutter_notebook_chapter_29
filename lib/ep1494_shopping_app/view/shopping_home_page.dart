@@ -21,7 +21,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     "TikShop",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -29,7 +29,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
                     decoration: BoxDecoration(
                       border: Border.all(
                         color: Colors.grey,
@@ -38,14 +38,14 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                     ),
                     child: Row(
                       children: [
-                        Badge(
+                        const Badge(
                           child: Icon(Icons.chat_outlined),
                         ),
                         IconButton(
                           onPressed: () {},
-                          icon: Icon(Icons.headphones),
+                          icon: const Icon(Icons.headphones),
                         ),
-                        CircleAvatar(
+                        const CircleAvatar(
                           radius: 16,
                         )
                       ],
@@ -56,8 +56,8 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
             ),
             Container(
               height: 72,
-              margin: EdgeInsets.all(16),
-              decoration: BoxDecoration(
+              margin: const EdgeInsets.all(16),
+              decoration: const BoxDecoration(
                 color: Colors.blue,
               ),
             ),
@@ -76,20 +76,20 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                             shape: BoxShape.circle,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 8,
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
+                            const Text(
                               "Fasion",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 8,
                             ),
                             Row(
@@ -98,18 +98,21 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                                   decoration: BoxDecoration(
                                     color: Colors.indigo[100],
                                   ),
-                                  padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-                                  child: Text(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 4,
+                                    vertical: 4,
+                                  ),
+                                  child: const Text(
                                     "Star Seller",
                                     style: TextStyle(
                                       color: Colors.white,
                                     ),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 16,
                                 ),
-                                Text(
+                                const Text(
                                   "100 Items",
                                 )
                               ],
@@ -135,7 +138,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.home_filled),
+                  icon: const Icon(Icons.home_filled),
                   iconSize: 30,
                   color: Colors.blue,
                 ),
@@ -151,7 +154,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.favorite_border),
+                  icon: const Icon(Icons.favorite_border),
                   iconSize: 30,
                   color: Colors.grey,
                 ),
@@ -167,7 +170,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.video_collection_outlined),
+                  icon: const Icon(Icons.video_collection_outlined),
                   iconSize: 30,
                   color: Colors.grey,
                 ),
@@ -183,7 +186,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.settings_outlined),
+                  icon: const Icon(Icons.settings_outlined),
                   iconSize: 30,
                   color: Colors.grey,
                 ),
