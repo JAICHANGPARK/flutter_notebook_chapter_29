@@ -122,9 +122,20 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                               ],
                             ),
                           ],
+                        ),
+                        Spacer(),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.arrow_forward_ios,
+                          ),
                         )
                       ],
                     ),
+                  ),
+                  Container(
+                    height: 100,
+                    color: Colors.pink,
                   )
                 ],
               ),
