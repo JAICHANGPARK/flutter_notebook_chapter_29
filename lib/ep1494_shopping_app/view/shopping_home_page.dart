@@ -76,15 +76,15 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                             shape: BoxShape.circle,
                           ),
                         ),
+                        SizedBox(
+                          height: 16,
+                        ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               "Fasion",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20
-                              ),
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                             ),
                             Row(
                               children: [
