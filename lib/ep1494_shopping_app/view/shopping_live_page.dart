@@ -49,6 +49,13 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                           decoration: BoxDecoration(
                             color: Colors.blue,
                           ),
+                          child: Stack(
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(),
+                              )
+                            ],
+                          ),
                         ),
                         Text(
                           "DreamWalker",
