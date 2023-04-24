@@ -528,12 +528,12 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                   },
                   icon: const Icon(Icons.home_filled),
                   iconSize: 30,
-                  color: Colors.blue,
+                  color: _pageIndex == 0 ? Colors.blue : Colors.grey,
                 ),
                 Container(
                   height: 5,
                   width: 24,
-                  color: Colors.blue,
+                  color: _pageIndex == 0 ? Colors.blue : Colors.transparent,
                 )
               ],
             ),
@@ -548,12 +548,12 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                   },
                   icon: const Icon(Icons.favorite_border),
                   iconSize: 30,
-                  color: Colors.grey,
+                  color: _pageIndex == 1 ? Colors.blue : Colors.grey,
                 ),
                 Container(
                   height: 5,
                   width: 24,
-                  color: Colors.transparent,
+                  color: _pageIndex == 0 ? Colors.blue : Colors.transparent,
                 )
               ],
             ),
