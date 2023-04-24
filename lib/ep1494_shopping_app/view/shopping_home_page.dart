@@ -8,6 +8,8 @@ class ShoppingHomePage extends StatefulWidget {
 }
 
 class _ShoppingHomePageState extends State<ShoppingHomePage> {
+  int _pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -519,7 +521,11 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      _pageIndex = 0;
+                    });
+                  },
                   icon: const Icon(Icons.home_filled),
                   iconSize: 30,
                   color: Colors.blue,
@@ -535,7 +541,11 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      _pageIndex = 1;
+                    });
+                  },
                   icon: const Icon(Icons.favorite_border),
                   iconSize: 30,
                   color: Colors.grey,
