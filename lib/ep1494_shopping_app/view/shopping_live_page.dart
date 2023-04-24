@@ -51,10 +51,38 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                           ),
                           child: Stack(
                             children: [
-                              Container(
-                                decoration: BoxDecoration(
-                                  border: Border.all(color: Colors.indigo),
-                                  shape: BoxShape.circle,
+                              Positioned(
+                                left: 0,
+                                right: 0,
+                                bottom: 0,
+                                top: 0,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(
+                                      color: Colors.indigo,
+                                    ),
+                                    shape: BoxShape.circle,
+                                  ),
+                                  padding: EdgeInsets.all(2),
+                                  child: CircleAvatar(),
+                                ),
+                              ),
+                              Positioned(
+                                left: 8,
+                                right: 8,
+                                bottom: 0,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.red,
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "Live",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
                                 ),
                               )
                             ],
