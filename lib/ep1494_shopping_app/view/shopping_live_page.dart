@@ -30,12 +30,21 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Stories & Live"),
+                  Text(
+                    "Stories & Live",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   TextButton(
                     onPressed: () {},
                     child: Text("See More"),
                   ),
                 ],
+              ),
+              SizedBox(
+                height: 16,
               ),
               Expanded(
                 child: ListView(
@@ -72,9 +81,7 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                 right: 8,
                                 bottom: 0,
                                 child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.red,
-                                  ),
+                                  decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(16)),
                                   child: Center(
                                     child: Text(
                                       "Live",
@@ -87,6 +94,9 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                               )
                             ],
                           ),
+                        ),
+                        SizedBox(
+                          height: 16,
                         ),
                         Text(
                           "DreamWalker",
