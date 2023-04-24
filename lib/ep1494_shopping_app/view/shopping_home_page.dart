@@ -55,7 +55,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
               ),
             ),
             Container(
-              height: 54,
+              height: 48,
               margin: const EdgeInsets.all(16),
               decoration: BoxDecoration(
                 color: Colors.grey[100]!,
@@ -71,7 +71,9 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                       color: Colors.white,
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.grey[100],
+                          color: Colors.grey[200]!,
+                          spreadRadius: 4,
+                          blurRadius: 2
                         )
                       ],
                     ),
