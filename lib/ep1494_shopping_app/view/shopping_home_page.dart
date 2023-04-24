@@ -533,7 +533,10 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                 Container(
                   height: 5,
                   width: 24,
-                  color: _pageIndex == 0 ? Color.fromRGBO(23, 57, 225, 1) : Colors.transparent,
+                  decoration: ShapeDecoration(
+                    color: _pageIndex == 0 ? Color.fromRGBO(23, 57, 225, 1) : Colors.transparent,
+                    shape: StadiumBorder(),
+                  ),
                 )
               ],
             ),
@@ -553,7 +556,10 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                 Container(
                   height: 5,
                   width: 24,
-                  color: _pageIndex == 1 ? Color.fromRGBO(23, 57, 225, 1) : Colors.transparent,
+                  decoration: ShapeDecoration(
+                    color: _pageIndex == 1 ? Color.fromRGBO(23, 57, 225, 1) : Colors.transparent,
+                    shape: StadiumBorder(),
+                  ),
                 )
               ],
             ),
@@ -568,12 +574,15 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                   },
                   icon: const Icon(Icons.video_collection_outlined),
                   iconSize: 30,
-                  color: Colors.grey,
+                  color: _pageIndex == 2 ? Color.fromRGBO(23, 57, 225, 1) : Colors.grey,
                 ),
                 Container(
                   height: 5,
                   width: 24,
-                  color: Colors.transparent,
+                  decoration: ShapeDecoration(
+                    color: _pageIndex == 2 ? Color.fromRGBO(23, 57, 225, 1) : Colors.transparent,
+                    shape: StadiumBorder(),
+                  ),
                 )
               ],
             ),
