@@ -28,6 +28,7 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                 ),
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text("Stories & Live"),
                   TextButton(
@@ -35,6 +36,27 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                     child: Text("See More"),
                   ),
                 ],
+              ),
+              Expanded(
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                          height: 64,
+                          width: 64,
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                          ),
+                        ),
+                        Text(
+                          "DreamWalker",
+                        )
+                      ],
+                    )
+                  ],
+                ),
               )
             ],
           ),
