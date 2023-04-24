@@ -561,7 +561,11 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      _pageIndex = 2;
+                    });
+                  },
                   icon: const Icon(Icons.video_collection_outlined),
                   iconSize: 30,
                   color: Colors.grey,
@@ -577,7 +581,11 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      _pageIndex = 3;
+                    });
+                  },
                   icon: const Icon(Icons.settings_outlined),
                   iconSize: 30,
                   color: Colors.grey,
