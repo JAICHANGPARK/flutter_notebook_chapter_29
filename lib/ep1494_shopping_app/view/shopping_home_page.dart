@@ -61,7 +61,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                 color: Colors.grey[100]!,
                 borderRadius: BorderRadius.circular(32),
               ),
-              padding: EdgeInsets.all(4),
+              padding: const EdgeInsets.all(4),
               child: Row(
                 children: [
                   Expanded(
@@ -77,7 +77,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                         ),
                       ],
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Text(
                         "ALL",
                         style: TextStyle(
@@ -99,7 +99,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                         //   )
                         // ],
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           "MALE",
                           style: TextStyle(
@@ -122,7 +122,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                         //   )
                         // ],
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           "FEMALE",
                           style: TextStyle(
@@ -140,7 +140,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                 child: Column(
                   children: [
                     Container(
-                      margin: EdgeInsets.only(bottom: 16),
+                      margin: const EdgeInsets.only(bottom: 16),
                       child: Column(
                         children: [
                           Padding(
@@ -156,8 +156,8 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                                     ),
                                     shape: BoxShape.circle,
                                   ),
-                                  padding: EdgeInsets.all(2),
-                                  child: CircleAvatar(),
+                                  padding: const EdgeInsets.all(2),
+                                  child: const CircleAvatar(),
                                 ),
                                 const SizedBox(
                                   width: 8,
@@ -202,10 +202,10 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                                     ),
                                   ],
                                 ),
-                                Spacer(),
+                                const Spacer(),
                                 IconButton(
                                   onPressed: () {},
-                                  icon: Icon(
+                                  icon: const Icon(
                                     Icons.arrow_forward_ios,
                                   ),
                                 )
@@ -220,7 +220,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
                                 return Container(
-                                  margin: EdgeInsets.only(right: 8),
+                                  margin: const EdgeInsets.only(right: 8),
                                   color: Colors.amber,
                                   width: MediaQuery.of(context).size.width / 3,
                                 );
@@ -231,7 +231,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(bottom: 16),
+                      margin: const EdgeInsets.only(bottom: 16),
                       child: Column(
                         children: [
                           Padding(
@@ -247,8 +247,8 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                                     ),
                                     shape: BoxShape.circle,
                                   ),
-                                  padding: EdgeInsets.all(2),
-                                  child: CircleAvatar(),
+                                  padding: const EdgeInsets.all(2),
+                                  child: const CircleAvatar(),
                                 ),
                                 const SizedBox(
                                   width: 8,
@@ -293,10 +293,10 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                                     ),
                                   ],
                                 ),
-                                Spacer(),
+                                const Spacer(),
                                 IconButton(
                                   onPressed: () {},
-                                  icon: Icon(
+                                  icon: const Icon(
                                     Icons.arrow_forward_ios,
                                   ),
                                 )
@@ -311,7 +311,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
                                 return Container(
-                                  margin: EdgeInsets.only(right: 8),
+                                  margin: const EdgeInsets.only(right: 8),
                                   color: Colors.amber,
                                   width: MediaQuery.of(context).size.width / 3,
                                 );
@@ -322,7 +322,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(bottom: 16),
+                      margin: const EdgeInsets.only(bottom: 16),
                       child: Column(
                         children: [
                           Padding(
@@ -338,8 +338,8 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                                     ),
                                     shape: BoxShape.circle,
                                   ),
-                                  padding: EdgeInsets.all(2),
-                                  child: CircleAvatar(),
+                                  padding: const EdgeInsets.all(2),
+                                  child: const CircleAvatar(),
                                 ),
                                 const SizedBox(
                                   width: 8,
@@ -384,10 +384,10 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                                     ),
                                   ],
                                 ),
-                                Spacer(),
+                                const Spacer(),
                                 IconButton(
                                   onPressed: () {},
-                                  icon: Icon(
+                                  icon: const Icon(
                                     Icons.arrow_forward_ios,
                                   ),
                                 )
@@ -402,7 +402,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
                                 return Container(
-                                  margin: EdgeInsets.only(right: 8),
+                                  margin: const EdgeInsets.only(right: 8),
                                   color: Colors.amber,
                                   width: MediaQuery.of(context).size.width / 3,
                                 );
@@ -413,7 +413,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(bottom: 16),
+                      margin: const EdgeInsets.only(bottom: 16),
                       child: Column(
                         children: [
                           Padding(
@@ -429,8 +429,8 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                                     ),
                                     shape: BoxShape.circle,
                                   ),
-                                  padding: EdgeInsets.all(2),
-                                  child: CircleAvatar(),
+                                  padding: const EdgeInsets.all(2),
+                                  child: const CircleAvatar(),
                                 ),
                                 const SizedBox(
                                   width: 8,
@@ -475,10 +475,10 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                                     ),
                                   ],
                                 ),
-                                Spacer(),
+                                const Spacer(),
                                 IconButton(
                                   onPressed: () {},
-                                  icon: Icon(
+                                  icon: const Icon(
                                     Icons.arrow_forward_ios,
                                   ),
                                 )
@@ -493,7 +493,7 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
                                 return Container(
-                                  margin: EdgeInsets.only(right: 8),
+                                  margin: const EdgeInsets.only(right: 8),
                                   color: Colors.amber,
                                   width: MediaQuery.of(context).size.width / 3,
                                 );
