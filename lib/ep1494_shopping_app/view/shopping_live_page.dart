@@ -16,6 +16,7 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
         Expanded(child: Placeholder()),
         Container(
           height: 216,
+          padding: EdgeInsets.all(16),
           decoration: BoxDecoration(color: Colors.white),
           child: Column(
             children: [
@@ -25,6 +26,15 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                 decoration: BoxDecoration(
                   color: Colors.grey,
                 ),
+              ),
+              Row(
+                children: [
+                  Text("Stories & Live"),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text("See More"),
+                  ),
+                ],
               )
             ],
           ),
