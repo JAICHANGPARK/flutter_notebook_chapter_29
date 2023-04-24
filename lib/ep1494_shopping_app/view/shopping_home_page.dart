@@ -81,7 +81,23 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                       child: Text("ALL"),
                     ),
                   )),
-                  Expanded(child: Container()),
+                  Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(32),
+                          // color: Colors.white,
+                          // boxShadow: [
+                          //   BoxShadow(
+                          //       color: Colors.grey[200]!,
+                          //       spreadRadius: 4,
+                          //       blurRadius: 2
+                          //   )
+                          // ],
+                        ),
+                        child: Center(
+                          child: Text("ALL"),
+                        ),
+                      )),
                   Expanded(child: Container()),
                 ],
               ),
