@@ -53,8 +53,8 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                     Column(
                       children: [
                         Container(
-                          height: 64,
-                          width: 64,
+                          height: 68,
+                          width: 68,
                           decoration: BoxDecoration(
                             color: Colors.blue,
                           ),
