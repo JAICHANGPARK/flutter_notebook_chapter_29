@@ -10,6 +10,11 @@ class ShoppingLivePage extends StatefulWidget {
 class _ShoppingLivePageState extends State<ShoppingLivePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+        body: Column(
+          children: [
+              
+          ],
+        ));
   }
 }
