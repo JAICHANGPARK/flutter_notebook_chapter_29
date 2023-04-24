@@ -12,9 +12,24 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Column(
-          children: [
-              
-          ],
-        ));
+      children: [
+        Expanded(child: Placeholder()),
+        Container(
+          height: 216,
+          decoration: BoxDecoration(color: Colors.white),
+          child: Column(
+            children: [
+              Container(
+                height: 4,
+                width: 24,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                ),
+              )
+            ],
+          ),
+        )
+      ],
+    ));
   }
 }
