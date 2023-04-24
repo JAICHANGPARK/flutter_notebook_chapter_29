@@ -69,10 +69,21 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(32),
                       color: Colors.white,
-                      boxShadow: [BoxShadow(color: Colors.grey[200]!, spreadRadius: 4, blurRadius: 2)],
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey[200]!,
+                          spreadRadius: 4,
+                          blurRadius: 2,
+                        ),
+                      ],
                     ),
                     child: Center(
-                      child: Text("ALL"),
+                      child: Text(
+                        "ALL",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
                   )),
                   Expanded(
