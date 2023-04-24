@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_29/ep1494_shopping_app/view/shopping_live_page.dart';
 
 class ShoppingHomePage extends StatefulWidget {
   const ShoppingHomePage({Key? key}) : super(key: key);
@@ -206,7 +207,10 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
                                 ),
                                 const Spacer(),
                                 IconButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.of(context)
+                                        .push(MaterialPageRoute(builder: (context) => ShoppingLivePage()));
+                                  },
                                   icon: const Icon(
                                     Icons.arrow_forward_ios,
                                   ),
