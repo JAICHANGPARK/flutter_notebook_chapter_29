@@ -55,14 +55,19 @@ class _ShoppingHomePageState extends State<ShoppingHomePage> {
               ),
             ),
             Container(
-              height: 72,
+              height: 54,
               margin: const EdgeInsets.all(16),
               decoration:  BoxDecoration(
               color: Colors.grey[100]!,
-                borderRadius: BorderRadius.circular(24),
+                borderRadius: BorderRadius.circular(32),
               ),
+              padding: EdgeInsets.all(4),
               child: Row(
-                children: [],
+                children: [
+                  Expanded(child: Container()),
+                  Expanded(child: Container()),
+                  Expanded(child: Container()),
+                ],
               ),
             ),
             Expanded(
