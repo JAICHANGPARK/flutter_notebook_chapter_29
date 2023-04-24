@@ -52,7 +52,10 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                           child: Stack(
                             children: [
                               Container(
-                                decoration: BoxDecoration(),
+                                decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.indigo),
+                                  shape: BoxShape.circle,
+                                ),
                               )
                             ],
                           ),
