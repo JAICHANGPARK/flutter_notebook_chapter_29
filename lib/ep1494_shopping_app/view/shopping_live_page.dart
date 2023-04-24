@@ -81,7 +81,11 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                 right: 8,
                                 bottom: 0,
                                 child: Container(
-                                  decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(16)),
+                                  decoration: BoxDecoration(
+                                    color: Colors.red,
+                                    borderRadius: BorderRadius.circular(16),
+                                  ),
+                                  padding: EdgeInsets.symmetric(vertical: 2),
                                   child: Center(
                                     child: Text(
                                       "Live",
