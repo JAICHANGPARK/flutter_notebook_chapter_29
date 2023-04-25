@@ -46,11 +46,13 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.grey[200],
-
                         ),
                         child: Row(
                           children: [
-                            
+                            Icon(Icons.person_outline),
+                            Text(
+                              "44",
+                            )
                           ],
                         ),
                       )
