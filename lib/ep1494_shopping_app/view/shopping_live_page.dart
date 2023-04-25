@@ -16,7 +16,7 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
         const Expanded(child: Placeholder()),
         Container(
           height: 216,
-          padding: const EdgeInsets.all(16),
+          padding: const EdgeInsets.fromLTRB(16, 16, 0, 16),
           decoration: const BoxDecoration(color: Colors.white),
           child: Column(
             children: [
