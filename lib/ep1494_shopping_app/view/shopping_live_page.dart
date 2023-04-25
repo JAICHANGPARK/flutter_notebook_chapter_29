@@ -133,7 +133,11 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                     shape: BoxShape.circle,
                                   ),
                                   padding: EdgeInsets.all(2),
-                                  child: CircleAvatar(),
+                                  child: Row(
+                                    children: [
+                                      CircleAvatar(),
+                                    ],
+                                  ),
                                 ),
                               ),
                               Positioned(
