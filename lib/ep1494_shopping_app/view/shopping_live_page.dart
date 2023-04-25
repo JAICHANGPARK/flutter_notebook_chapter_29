@@ -116,10 +116,7 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                     ),
                     Spacer(),
                     Container(
-                      decoration: BoxDecoration(
-                        color: Colors.grey[200],
-                        borderRadius: BorderRadius.circular(32)
-                      ),
+                      decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(32)),
                       padding: EdgeInsets.all(4),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
@@ -128,6 +125,7 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                             radius: 12,
                             backgroundColor: Colors.yellow,
                           ),
+                          VerticalDivider(),
                           Text("Outer Trendy"),
                           Icon(
                             Icons.arrow_drop_down_outlined,
