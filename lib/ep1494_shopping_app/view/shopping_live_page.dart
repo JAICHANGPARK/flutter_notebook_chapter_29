@@ -99,7 +99,7 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                             color: Colors.grey[300],
                             borderRadius: BorderRadius.circular(32),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           child: Row(
                             children: const [
                               Icon(Icons.person_outline),
@@ -114,23 +114,23 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                         )
                       ],
                     ),
-                    Spacer(),
+                    const Spacer(),
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(32),
                       ),
-                      padding: EdgeInsets.symmetric(vertical: 8, horizontal: 4),
+                      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          CircleAvatar(
+                          const CircleAvatar(
                             radius: 12,
                             backgroundColor: Colors.yellow,
                           ),
-                          VerticalDivider(),
-                          Text("Outer Trendy"),
-                          Icon(
+                          const VerticalDivider(),
+                          const Text("Outer Trendy"),
+                          const Icon(
                             Icons.arrow_drop_down_outlined,
                           )
                         ],
