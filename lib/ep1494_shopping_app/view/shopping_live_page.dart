@@ -41,11 +41,11 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                         child: Column(
                           children: [
                             Container(
-                              height: 68,
+                              height: 46,
                               width: 120,
                               decoration: const BoxDecoration(
-                                // color: Colors.blue,
-                              ),
+                                  // color: Colors.blue,
+                                  ),
                               child: Stack(
                                 children: [
                                   Positioned(
@@ -55,21 +55,16 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                     top: 0,
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        border: Border.all(
-                                          color: Colors.indigo,
-                                        ),
+                                        color: Colors.grey[200]!,
                                         borderRadius: BorderRadius.circular(36),
                                       ),
-                                      padding: const EdgeInsets.all(2),
+                                      padding: const EdgeInsets.all(4),
                                       child: Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
                                           const CircleAvatar(
-                                            radius: 28,
+                                            radius: 20,
                                           ),
-                                          const CircleAvatar(
-                                            radius: 28,
-                                          ),
+                                          Text("Outer"),
                                         ],
                                       ),
                                     ),
