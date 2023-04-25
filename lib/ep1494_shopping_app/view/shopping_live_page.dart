@@ -65,7 +65,7 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                 Positioned(
                                   left: 0,
                                   right: 0,
-                                  bottom: 4,
+                                  bottom: 6,
                                   top: 0,
                                   child: Container(
                                     decoration: BoxDecoration(
