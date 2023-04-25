@@ -41,8 +41,8 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                         child: Column(
                           children: [
                             Container(
-                              height: 46,
-                              width: 120,
+                              height: 52,
+                              width: 100,
                               decoration: const BoxDecoration(
                                   // color: Colors.blue,
                                   ),
@@ -60,9 +60,10 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                       ),
                                       padding: const EdgeInsets.all(4),
                                       child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
                                           const CircleAvatar(
-                                            radius: 20,
+                                            radius: 12,
                                           ),
                                           Text("Outer"),
                                         ],
