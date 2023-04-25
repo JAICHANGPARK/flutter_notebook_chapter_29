@@ -114,7 +114,7 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                       children: [
                         Container(
                           height: 68,
-                          width: 68,
+                          width: 120,
                           decoration: BoxDecoration(
                             // color: Colors.blue,
                           ),
@@ -130,12 +130,19 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                     border: Border.all(
                                       color: Colors.indigo,
                                     ),
-                                    shape: BoxShape.circle,
+                                    borderRadius: BorderRadius.circular(36)
+                                 
                                   ),
                                   padding: EdgeInsets.all(2),
                                   child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      CircleAvatar(),
+                                      CircleAvatar(
+                                        radius: 28,
+                                      ),
+                                      CircleAvatar(
+                                        radius: 28,
+                                      ),
                                     ],
                                   ),
                                 ),
@@ -144,13 +151,13 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                 left: 8,
                                 right: 8,
                                 bottom: 0,
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.red,
-                                    borderRadius: BorderRadius.circular(16),
-                                  ),
-                                  padding: EdgeInsets.symmetric(vertical: 2),
-                                  child: Center(
+                                child: Center(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
+                                    padding: EdgeInsets.symmetric(vertical: 2),
                                     child: Text(
                                       "Live",
                                       style: TextStyle(
