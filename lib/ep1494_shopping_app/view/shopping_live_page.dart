@@ -19,6 +19,7 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
             Positioned(
               child: Image.network(
                 "https://cdn.pixabay.com/photo/2023/04/08/15/06/portrait-7909587_1280.jpg",
+                fit: BoxFit.cover,
               ),
               left: 0,
               right: 0,
