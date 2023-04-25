@@ -80,13 +80,13 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                 left: 8,
                                 right: 8,
                                 bottom: 0,
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.red,
-                                    borderRadius: BorderRadius.circular(16),
-                                  ),
-                                  padding: EdgeInsets.symmetric(vertical: 2),
-                                  child: Center(
+                                child: Center(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
+                                    padding: EdgeInsets.symmetric(vertical: 2, horizontal: 4),
                                     child: Text(
                                       "Live",
                                       style: TextStyle(
