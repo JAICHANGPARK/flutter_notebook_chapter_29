@@ -56,8 +56,8 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                           height: 68,
                           width: 68,
                           decoration: BoxDecoration(
-                            // color: Colors.blue,
-                          ),
+                              // color: Colors.blue,
+                              ),
                           child: Stack(
                             children: [
                               Positioned(
@@ -104,6 +104,9 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                         ),
                         Text(
                           "DreamWalker",
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
                         )
                       ],
                     )
