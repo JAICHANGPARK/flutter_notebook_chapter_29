@@ -61,8 +61,8 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                       padding: const EdgeInsets.all(4),
                                       child: Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
-                                          const CircleAvatar(
+                                        children: const [
+                                          CircleAvatar(
                                             radius: 12,
                                           ),
                                           VerticalDivider(),
@@ -104,7 +104,7 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                         ),
                         padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                         child: Row(
-                          children: [
+                          children: const [
                             Icon(Icons.person_outline),
                             SizedBox(
                               width: 8,
@@ -116,10 +116,10 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                         ),
                       )
                     ],
-                  )
+                  ),
                 ],
               ),
-            )
+            ),
           ],
         )),
         Container(
@@ -251,11 +251,11 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                     padding: const EdgeInsets.all(2),
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        const CircleAvatar(
+                                      children: const [
+                                        CircleAvatar(
                                           radius: 28,
                                         ),
-                                        const CircleAvatar(
+                                        CircleAvatar(
                                           radius: 28,
                                         ),
                                       ],
