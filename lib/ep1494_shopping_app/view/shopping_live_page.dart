@@ -27,8 +27,16 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
               top: 0,
             ),
             Positioned(
+              left: 16,
+              right: 16,
+              top: 64,
+              bottom: 32,
               child: Column(
-                children: [],
+                children: [
+                  Row(
+                    children: [],
+                  )
+                ],
               ),
             )
           ],
