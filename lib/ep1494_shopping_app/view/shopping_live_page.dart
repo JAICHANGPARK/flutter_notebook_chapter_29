@@ -14,128 +14,126 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
         body: Column(
       children: [
         Expanded(
-            child: Stack(
-          children: [
-            Positioned(
-              child: Image.network(
-                "https://cdn.pixabay.com/photo/2023/04/08/15/06/portrait-7909587_1280.jpg",
-                fit: BoxFit.cover,
+          child: Stack(
+            children: [
+              Positioned(
+                child: Image.network(
+                  "https://cdn.pixabay.com/photo/2023/04/08/15/06/portrait-7909587_1280.jpg",
+                  fit: BoxFit.cover,
+                ),
+                left: 0,
+                right: 0,
+                bottom: 0,
+                top: 0,
               ),
-              left: 0,
-              right: 0,
-              bottom: 0,
-              top: 0,
-            ),
-            Positioned(
-              left: 16,
-              right: 16,
-              top: 64,
-              bottom: 32,
-              child: Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(right: 16),
-                        child: Column(
-                          children: [
-                            Container(
-                              height: 52,
-                              width: 100,
-                              decoration: const BoxDecoration(
-                                  // color: Colors.blue,
+              Positioned(
+                left: 16,
+                right: 16,
+                top: 64,
+                bottom: 32,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(right: 16),
+                          child: Container(
+                            height: 52,
+                            width: 100,
+                            decoration: const BoxDecoration(
+                                // color: Colors.blue,
+                                ),
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  left: 0,
+                                  right: 0,
+                                  bottom: 8,
+                                  top: 0,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[200]!,
+                                      borderRadius: BorderRadius.circular(36),
+                                    ),
+                                    padding: const EdgeInsets.all(4),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: const [
+                                        CircleAvatar(
+                                          radius: 12,
+                                        ),
+                                        VerticalDivider(),
+                                        Text("Outer"),
+                                      ],
+                                    ),
                                   ),
-                              child: Stack(
-                                children: [
-                                  Positioned(
-                                    left: 0,
-                                    right: 0,
-                                    bottom: 8,
-                                    top: 0,
+                                ),
+                                Positioned(
+                                  left: 8,
+                                  right: 8,
+                                  bottom: 0,
+                                  child: Center(
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: Colors.grey[200]!,
-                                        borderRadius: BorderRadius.circular(36),
+                                        color: Colors.red,
+                                        borderRadius: BorderRadius.circular(16),
                                       ),
-                                      padding: const EdgeInsets.all(4),
-                                      child: Row(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: const [
-                                          CircleAvatar(
-                                            radius: 12,
-                                          ),
-                                          VerticalDivider(),
-                                          Text("Outer"),
-                                        ],
+                                      padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 4),
+                                      child: const Text(
+                                        "Live",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
                                       ),
                                     ),
                                   ),
-                                  Positioned(
-                                    left: 8,
-                                    right: 8,
-                                    bottom: 0,
-                                    child: Center(
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          color: Colors.red,
-                                          borderRadius: BorderRadius.circular(16),
-                                        ),
-                                        padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 4),
-                                        child: const Text(
-                                          "Live",
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  )
-                                ],
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey[300],
+                            borderRadius: BorderRadius.circular(32),
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          child: Row(
+                            children: const [
+                              Icon(Icons.person_outline),
+                              SizedBox(
+                                width: 8,
                               ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          borderRadius: BorderRadius.circular(32),
-                        ),
-                        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                        child: Row(
-                          children: const [
-                            Icon(Icons.person_outline),
-                            SizedBox(
-                              width: 8,
-                            ),
-                            Text(
-                              "44",
-                            )
-                          ],
-                        ),
-                      )
-                    ],
-                  ),
-                  Spacer(),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                    ),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        CircleAvatar(
-                          radius: 16,
-                        ),
+                              Text(
+                                "44",
+                              )
+                            ],
+                          ),
+                        )
                       ],
                     ),
-                  )
-                ],
+                    Spacer(),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          CircleAvatar(
+                            radius: 16,
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
-            ),
-          ],
-        )),
+            ],
+          ),
+        ),
         Container(
           height: 216,
           padding: const EdgeInsets.fromLTRB(16, 16, 0, 16),
