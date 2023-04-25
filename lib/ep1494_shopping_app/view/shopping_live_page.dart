@@ -13,7 +13,20 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
     return Scaffold(
         body: Column(
       children: [
-        const Expanded(child: Placeholder()),
+        Expanded(
+            child: Stack(
+          children: [
+            Positioned(
+              child: Image.network(
+                "https://cdn.pixabay.com/photo/2023/04/08/15/06/portrait-7909587_1280.jpg",
+              ),
+              left: 0,
+              right: 0,
+              bottom: 0,
+              top: 0,
+            )
+          ],
+        )),
         Container(
           height: 216,
           padding: const EdgeInsets.fromLTRB(16, 16, 0, 16),
