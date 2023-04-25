@@ -65,6 +65,7 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                           const CircleAvatar(
                                             radius: 12,
                                           ),
+                                          VerticalDivider(),
                                           Text("Outer"),
                                         ],
                                       ),
