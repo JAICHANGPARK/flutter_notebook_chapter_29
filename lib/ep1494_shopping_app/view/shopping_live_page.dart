@@ -13,24 +13,24 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
     return Scaffold(
         body: Column(
       children: [
-        Expanded(child: Placeholder()),
+        const Expanded(child: Placeholder()),
         Container(
           height: 216,
-          padding: EdgeInsets.all(16),
-          decoration: BoxDecoration(color: Colors.white),
+          padding: const EdgeInsets.all(16),
+          decoration: const BoxDecoration(color: Colors.white),
           child: Column(
             children: [
               Container(
                 height: 4,
                 width: 24,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.grey,
                 ),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     "Stories & Live",
                     style: TextStyle(
                       fontSize: 18,
@@ -39,14 +39,14 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: Text("See More"),
+                    child: const Text("See More"),
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.grey,
                     ),
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Expanded(
@@ -60,7 +60,7 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                           Container(
                             height: 68,
                             width: 68,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                                 // color: Colors.blue,
                                 ),
                             child: Stack(
@@ -77,8 +77,8 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                       ),
                                       shape: BoxShape.circle,
                                     ),
-                                    padding: EdgeInsets.all(2),
-                                    child: CircleAvatar(),
+                                    padding: const EdgeInsets.all(2),
+                                    child: const CircleAvatar(),
                                   ),
                                 ),
                                 Positioned(
@@ -91,8 +91,8 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                         color: Colors.red,
                                         borderRadius: BorderRadius.circular(16),
                                       ),
-                                      padding: EdgeInsets.symmetric(vertical: 2, horizontal: 4),
-                                      child: Text(
+                                      padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 4),
+                                      child: const Text(
                                         "Live",
                                         style: TextStyle(
                                           color: Colors.white,
@@ -104,10 +104,10 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                               ],
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                           ),
-                          Text(
+                          const Text(
                             "DreamWalker",
                             style: TextStyle(
                               color: Colors.grey,
@@ -123,7 +123,7 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                           Container(
                             height: 68,
                             width: 120,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                                 // color: Colors.blue,
                                 ),
                             child: Stack(
@@ -140,14 +140,14 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                       ),
                                       borderRadius: BorderRadius.circular(36),
                                     ),
-                                    padding: EdgeInsets.all(2),
+                                    padding: const EdgeInsets.all(2),
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
-                                        CircleAvatar(
+                                        const CircleAvatar(
                                           radius: 28,
                                         ),
-                                        CircleAvatar(
+                                        const CircleAvatar(
                                           radius: 28,
                                         ),
                                       ],
@@ -164,8 +164,8 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                         color: Colors.red,
                                         borderRadius: BorderRadius.circular(16),
                                       ),
-                                      padding: EdgeInsets.symmetric(vertical: 2, horizontal: 4),
-                                      child: Text(
+                                      padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 4),
+                                      child: const Text(
                                         "Live",
                                         style: TextStyle(
                                           color: Colors.white,
@@ -177,10 +177,10 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                               ],
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                           ),
-                          Text(
+                          const Text(
                             "DreamWalker",
                             style: TextStyle(
                               color: Colors.grey,
@@ -196,7 +196,7 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                           Container(
                             height: 68,
                             width: 68,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                                 // color: Colors.blue,
                                 ),
                             child: Stack(
@@ -213,8 +213,8 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                       ),
                                       shape: BoxShape.circle,
                                     ),
-                                    padding: EdgeInsets.all(2),
-                                    child: CircleAvatar(),
+                                    padding: const EdgeInsets.all(2),
+                                    child: const CircleAvatar(),
                                   ),
                                 ),
                                 Positioned(
@@ -227,8 +227,8 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                         color: Colors.red,
                                         borderRadius: BorderRadius.circular(16),
                                       ),
-                                      padding: EdgeInsets.symmetric(vertical: 2, horizontal: 4),
-                                      child: Text(
+                                      padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 4),
+                                      child: const Text(
                                         "Live",
                                         style: TextStyle(
                                           color: Colors.white,
@@ -240,10 +240,10 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                               ],
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                           ),
-                          Text(
+                          const Text(
                             "DreamWalker",
                             style: TextStyle(
                               color: Colors.grey,
@@ -259,7 +259,7 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                           Container(
                             height: 68,
                             width: 68,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                                 // color: Colors.blue,
                                 ),
                             child: Stack(
@@ -276,8 +276,8 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                       ),
                                       shape: BoxShape.circle,
                                     ),
-                                    padding: EdgeInsets.all(2),
-                                    child: CircleAvatar(),
+                                    padding: const EdgeInsets.all(2),
+                                    child: const CircleAvatar(),
                                   ),
                                 ),
                                 Positioned(
@@ -290,8 +290,8 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                         color: Colors.red,
                                         borderRadius: BorderRadius.circular(16),
                                       ),
-                                      padding: EdgeInsets.symmetric(vertical: 2, horizontal: 4),
-                                      child: Text(
+                                      padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 4),
+                                      child: const Text(
                                         "Live",
                                         style: TextStyle(
                                           color: Colors.white,
@@ -303,10 +303,10 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                               ],
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                           ),
-                          Text(
+                          const Text(
                             "DreamWalker",
                             style: TextStyle(
                               color: Colors.grey,
@@ -322,7 +322,7 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                           Container(
                             height: 68,
                             width: 68,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                                 // color: Colors.blue,
                                 ),
                             child: Stack(
@@ -339,8 +339,8 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                       ),
                                       shape: BoxShape.circle,
                                     ),
-                                    padding: EdgeInsets.all(2),
-                                    child: CircleAvatar(),
+                                    padding: const EdgeInsets.all(2),
+                                    child: const CircleAvatar(),
                                   ),
                                 ),
                                 Positioned(
@@ -353,8 +353,8 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                                         color: Colors.red,
                                         borderRadius: BorderRadius.circular(16),
                                       ),
-                                      padding: EdgeInsets.symmetric(vertical: 2, horizontal: 4),
-                                      child: Text(
+                                      padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 4),
+                                      child: const Text(
                                         "Live",
                                         style: TextStyle(
                                           color: Colors.white,
@@ -366,10 +366,10 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                               ],
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                           ),
-                          Text(
+                          const Text(
                             "DreamWalker",
                             style: TextStyle(
                               color: Colors.grey,
