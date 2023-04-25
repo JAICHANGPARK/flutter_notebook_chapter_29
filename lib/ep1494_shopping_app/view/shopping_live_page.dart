@@ -34,7 +34,27 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
               child: Column(
                 children: [
                   Row(
-                    children: [],
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        height: 64,
+                        width: 100,
+                        child: Stack(
+                          children: [],
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.grey[200],
+
+                        ),
+                        child: Row(
+                          children: [
+                            
+                          ],
+                        ),
+                      )
+                    ],
                   )
                 ],
               ),
