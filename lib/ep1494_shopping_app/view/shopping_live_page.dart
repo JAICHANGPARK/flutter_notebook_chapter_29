@@ -117,6 +117,20 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                       )
                     ],
                   ),
+                  Spacer(),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        CircleAvatar(
+                          radius: 16,
+                        ),
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
