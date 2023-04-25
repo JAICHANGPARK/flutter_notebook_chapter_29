@@ -123,8 +123,13 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           CircleAvatar(
-                            radius: 16,
+                            radius: 12,
+                            backgroundColor: Colors.yellow,
                           ),
+                          Text("Outer Trendy"),
+                          Icon(
+                            Icons.arrow_drop_down_outlined,
+                          )
                         ],
                       ),
                     )
