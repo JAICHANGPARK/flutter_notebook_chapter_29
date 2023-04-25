@@ -63,7 +63,7 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                               Positioned(
                                 left: 0,
                                 right: 0,
-                                bottom: 8,
+                                bottom: 4,
                                 top: 0,
                                 child: Container(
                                   decoration: BoxDecoration(
@@ -116,23 +116,21 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                           height: 68,
                           width: 120,
                           decoration: BoxDecoration(
-                            // color: Colors.blue,
-                          ),
+                              // color: Colors.blue,
+                              ),
                           child: Stack(
                             children: [
                               Positioned(
                                 left: 0,
                                 right: 0,
-                                bottom:8,
+                                bottom: 4,
                                 top: 0,
                                 child: Container(
                                   decoration: BoxDecoration(
-                                    border: Border.all(
-                                      color: Colors.indigo,
-                                    ),
-                                    borderRadius: BorderRadius.circular(36)
-                                 
-                                  ),
+                                      border: Border.all(
+                                        color: Colors.indigo,
+                                      ),
+                                      borderRadius: BorderRadius.circular(36)),
                                   padding: EdgeInsets.all(2),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
