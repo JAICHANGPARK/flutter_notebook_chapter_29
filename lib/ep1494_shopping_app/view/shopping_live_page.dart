@@ -47,6 +47,7 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                         decoration: BoxDecoration(
                           color: Colors.grey[200],
                         ),
+                        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                         child: Row(
                           children: [
                             Icon(Icons.person_outline),
