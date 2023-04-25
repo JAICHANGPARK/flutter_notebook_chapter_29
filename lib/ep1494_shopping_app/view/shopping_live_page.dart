@@ -36,11 +36,68 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        height: 64,
-                        width: 100,
-                        child: Stack(
-                          children: [],
+                      Padding(
+                        padding: const EdgeInsets.only(right: 16),
+                        child: Column(
+                          children: [
+                            Container(
+                              height: 68,
+                              width: 120,
+                              decoration: const BoxDecoration(
+                                // color: Colors.blue,
+                              ),
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    left: 0,
+                                    right: 0,
+                                    bottom: 8,
+                                    top: 0,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.indigo,
+                                        ),
+                                        borderRadius: BorderRadius.circular(36),
+                                      ),
+                                      padding: const EdgeInsets.all(2),
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          const CircleAvatar(
+                                            radius: 28,
+                                          ),
+                                          const CircleAvatar(
+                                            radius: 28,
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Positioned(
+                                    left: 8,
+                                    right: 8,
+                                    bottom: 0,
+                                    child: Center(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.red,
+                                          borderRadius: BorderRadius.circular(16),
+                                        ),
+                                        padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 4),
+                                        child: const Text(
+                                          "Live",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                       Container(
