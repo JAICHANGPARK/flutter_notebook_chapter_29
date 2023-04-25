@@ -50,65 +50,68 @@ class _ShoppingLivePageState extends State<ShoppingLivePage> {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                    Column(
-                      children: [
-                        Container(
-                          height: 68,
-                          width: 68,
-                          decoration: BoxDecoration(
-                              // color: Colors.blue,
-                              ),
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                left: 0,
-                                right: 0,
-                                bottom: 4,
-                                top: 0,
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    border: Border.all(
-                                      color: Colors.indigo,
-                                    ),
-                                    shape: BoxShape.circle,
-                                  ),
-                                  padding: EdgeInsets.all(2),
-                                  child: CircleAvatar(),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 16),
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 68,
+                            width: 68,
+                            decoration: BoxDecoration(
+                                // color: Colors.blue,
                                 ),
-                              ),
-                              Positioned(
-                                left: 8,
-                                right: 8,
-                                bottom: 0,
-                                child: Center(
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  left: 0,
+                                  right: 0,
+                                  bottom: 4,
+                                  top: 0,
                                   child: Container(
                                     decoration: BoxDecoration(
-                                      color: Colors.red,
-                                      borderRadius: BorderRadius.circular(16),
+                                      border: Border.all(
+                                        color: Colors.indigo,
+                                      ),
+                                      shape: BoxShape.circle,
                                     ),
-                                    padding: EdgeInsets.symmetric(vertical: 2, horizontal: 4),
-                                    child: Text(
-                                      "Live",
-                                      style: TextStyle(
-                                        color: Colors.white,
+                                    padding: EdgeInsets.all(2),
+                                    child: CircleAvatar(),
+                                  ),
+                                ),
+                                Positioned(
+                                  left: 8,
+                                  right: 8,
+                                  bottom: 0,
+                                  child: Center(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.red,
+                                        borderRadius: BorderRadius.circular(16),
+                                      ),
+                                      padding: EdgeInsets.symmetric(vertical: 2, horizontal: 4),
+                                      child: Text(
+                                        "Live",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
                                       ),
                                     ),
                                   ),
-                                ),
-                              )
-                            ],
+                                )
+                              ],
+                            ),
                           ),
-                        ),
-                        SizedBox(
-                          height: 16,
-                        ),
-                        Text(
-                          "DreamWalker",
-                          style: TextStyle(
-                            color: Colors.grey,
+                          SizedBox(
+                            height: 16,
                           ),
-                        )
-                      ],
+                          Text(
+                            "DreamWalker",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(right: 16),
