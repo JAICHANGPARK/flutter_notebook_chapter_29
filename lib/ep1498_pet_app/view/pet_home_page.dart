@@ -28,6 +28,7 @@ class _PetHomePageState extends State<PetHomePage> {
                         CircleAvatar(
                           radius: 24,
                           backgroundColor: Colors.grey,
+                          foregroundColor: Colors.black,
                           child: Icon(Icons.apps),
                         ),
                         Expanded(
@@ -78,7 +79,7 @@ class _PetHomePageState extends State<PetHomePage> {
                         color: Colors.black.withOpacity(0.1),
                         blurRadius: 10,
                         spreadRadius: 6,
-                        offset: Offset(0,6),
+                        offset: Offset(0, 6),
                       )
                     ],
                   ),
@@ -111,7 +112,8 @@ class _PetHomePageState extends State<PetHomePage> {
                         onPressed: () {},
                         icon: Icon(
                           Icons.favorite,
-                        ),color: Colors.grey,
+                        ),
+                        color: Colors.grey,
                       ),
                       SizedBox(
                         width: 16,
@@ -120,7 +122,8 @@ class _PetHomePageState extends State<PetHomePage> {
                         onPressed: () {},
                         icon: Icon(
                           Icons.chat,
-                        ),color: Colors.grey,
+                        ),
+                        color: Colors.grey,
                       )
                     ],
                   ),
