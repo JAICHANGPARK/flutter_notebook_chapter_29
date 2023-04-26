@@ -11,6 +11,14 @@ class PetHomePage extends StatefulWidget {
 class _PetHomePageState extends State<PetHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Stack(
+          children: [
+            
+          ],
+        ),
+      ),
+    );
   }
 }
