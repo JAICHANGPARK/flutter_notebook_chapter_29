@@ -74,7 +74,7 @@ class _PetHomePageState extends State<PetHomePage> {
                     boxShadow: [
                       BoxShadow(
                         color: Colors.black.withOpacity(0.1),
-                        blurRadius: 8,
+                        blurRadius: 10,
                         spreadRadius: 6,
                         offset: Offset(0,6),
                       )
