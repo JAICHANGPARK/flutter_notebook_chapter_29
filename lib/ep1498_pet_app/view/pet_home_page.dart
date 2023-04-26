@@ -18,7 +18,7 @@ class _PetHomePageState extends State<PetHomePage> {
               left: 0,
               right: 0,
               bottom: 0,
-              top: 24,
+              top: 16,
               child: Column(
                 children: [
                   Padding(
