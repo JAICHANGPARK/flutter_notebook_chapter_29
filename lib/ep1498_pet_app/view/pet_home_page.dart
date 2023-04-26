@@ -21,12 +21,34 @@ class _PetHomePageState extends State<PetHomePage> {
               top: 0,
               child: Column(
                 children: [
-                  Row(
-                    children: [
-                      CircleAvatar(),
-                      Expanded(child: Container()),
-                      CircleAvatar(),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        CircleAvatar(
+                          radius: 28,
+                        ),
+                        Expanded(
+                          child: Container(
+                            margin: EdgeInsets.symmetric(horizontal: 16),
+                            decoration: BoxDecoration(
+                              border: Border.all(),
+                              borderRadius: BorderRadius.circular(32),
+                            ),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.location_on,
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        CircleAvatar(
+                          radius: 28,
+                        ),
+                      ],
+                    ),
                   )
                 ],
               ),
