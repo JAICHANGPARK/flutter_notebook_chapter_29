@@ -27,6 +27,8 @@ class _PetHomePageState extends State<PetHomePage> {
                       children: [
                         CircleAvatar(
                           radius: 24,
+                          backgroundColor: Colors.grey,
+                          child: Icon(Icons.apps),
                         ),
                         Expanded(
                           child: Container(
