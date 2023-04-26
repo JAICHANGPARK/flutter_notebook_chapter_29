@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_29
 
-### EP1494
+### EP1498
+
+- Pet Dating App Design Concept
+- by CMARIX TechnoLabs
+- https://dribbble.com/shots/21258997-TikShop-Online-Shop-App
+
+<img src="https://cdn.dribbble.com/userupload/6428919/file/original-f926f9b5b2d83a9ef82986e458b65f24.png?compress=1&resize=1600x1200" width="500px"/>
+
+### EP1494-1497
 
 - TikShop - Online Shop App
 - by farizzakky for Pickolab Studio
