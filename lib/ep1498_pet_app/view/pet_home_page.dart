@@ -109,7 +109,7 @@ class _PetHomePageState extends State<PetHomePage> {
                         onPressed: () {},
                         icon: Icon(
                           Icons.favorite,
-                        ),
+                        ),color: Colors.grey,
                       ),
                       SizedBox(
                         width: 16,
@@ -118,7 +118,7 @@ class _PetHomePageState extends State<PetHomePage> {
                         onPressed: () {},
                         icon: Icon(
                           Icons.chat,
-                        ),
+                        ),color: Colors.grey,
                       )
                     ],
                   ),
