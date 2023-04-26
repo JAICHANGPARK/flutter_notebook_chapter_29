@@ -38,10 +38,13 @@ class _PetHomePageState extends State<PetHomePage> {
                             ),
                             padding: EdgeInsets.all(4),
                             child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Icon(
                                   Icons.location_on,
-                                )
+                                ),
+                                SizedBox(width: 8,),
+                                Text("3740 Clover Penrose..."),
                               ],
                             ),
                           ),
