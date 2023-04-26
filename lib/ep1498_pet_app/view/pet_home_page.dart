@@ -70,6 +70,8 @@ class _PetHomePageState extends State<PetHomePage> {
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
+                    borderRadius: BorderRadius.circular(32),
+                    boxShadow: [],
                   ),
                   height: 64,
                   padding: EdgeInsets.symmetric(horizontal: 16),
@@ -82,17 +84,26 @@ class _PetHomePageState extends State<PetHomePage> {
                           Icons.home_filled,
                         ),
                       ),
+                      SizedBox(
+                        width: 16,
+                      ),
                       IconButton(
                         onPressed: () {},
                         icon: Icon(
                           Icons.send,
                         ),
                       ),
+                      SizedBox(
+                        width: 16,
+                      ),
                       IconButton(
                         onPressed: () {},
                         icon: Icon(
                           Icons.favorite,
                         ),
+                      ),
+                      SizedBox(
+                        width: 16,
                       ),
                       IconButton(
                         onPressed: () {},
