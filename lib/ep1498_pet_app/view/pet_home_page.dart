@@ -32,41 +32,45 @@ class _PetHomePageState extends State<PetHomePage> {
               ),
             ),
             Positioned(
-              bottom: 0,
+              bottom: 32,
               left: 0,
               right: 0,
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                ),
-                height: 64,
-                child: Row(
-                  children: [
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.home_filled,
+              child: Center(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),
+                  height: 64,
+                  padding: EdgeInsets.symmetric(horizontal: 16),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.home_filled,
+                        ),
                       ),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.home_filled,
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.send,
+                        ),
                       ),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.home_filled,
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.favorite,
+                        ),
                       ),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.home_filled,
-                      ),
-                    )
-                  ],
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.chat,
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
             )
