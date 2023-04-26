@@ -18,7 +18,7 @@ class _PetHomePageState extends State<PetHomePage> {
               left: 0,
               right: 0,
               bottom: 0,
-              top: 0,
+              top: 24,
               child: Column(
                 children: [
                   Padding(
@@ -26,15 +26,17 @@ class _PetHomePageState extends State<PetHomePage> {
                     child: Row(
                       children: [
                         CircleAvatar(
-                          radius: 28,
+                          radius: 24,
                         ),
                         Expanded(
                           child: Container(
+                            height: 48,
                             margin: EdgeInsets.symmetric(horizontal: 16),
                             decoration: BoxDecoration(
                               border: Border.all(),
                               borderRadius: BorderRadius.circular(32),
                             ),
+                            padding: EdgeInsets.all(4),
                             child: Row(
                               children: [
                                 Icon(
@@ -45,7 +47,7 @@ class _PetHomePageState extends State<PetHomePage> {
                           ),
                         ),
                         CircleAvatar(
-                          radius: 28,
+                          radius: 24,
                         ),
                       ],
                     ),
