@@ -21,7 +21,13 @@ class _PetHomePageState extends State<PetHomePage> {
               top: 0,
               child: Column(
                 children: [
-
+                  Row(
+                    children: [
+                      CircleAvatar(),
+                      Expanded(child: Container()),
+                      CircleAvatar(),
+                    ],
+                  )
                 ],
               ),
             ),
@@ -33,6 +39,7 @@ class _PetHomePageState extends State<PetHomePage> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                 ),
+                height: 64,
                 child: Row(
                   children: [
                     IconButton(
