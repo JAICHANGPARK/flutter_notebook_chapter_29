@@ -71,7 +71,14 @@ class _PetHomePageState extends State<PetHomePage> {
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(32),
-                    boxShadow: [],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.1),
+                        blurRadius: 8,
+                        spreadRadius: 6,
+                        offset: Offset(0,6),
+                      )
+                    ],
                   ),
                   height: 64,
                   padding: EdgeInsets.symmetric(horizontal: 16),
