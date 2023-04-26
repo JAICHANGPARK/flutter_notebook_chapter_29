@@ -33,7 +33,9 @@ class _PetHomePageState extends State<PetHomePage> {
                             height: 48,
                             margin: EdgeInsets.symmetric(horizontal: 16),
                             decoration: BoxDecoration(
-                              border: Border.all(),
+                              border: Border.all(
+                                color: Colors.grey[500]!,
+                              ),
                               borderRadius: BorderRadius.circular(32),
                             ),
                             padding: EdgeInsets.all(4),
@@ -43,7 +45,9 @@ class _PetHomePageState extends State<PetHomePage> {
                                 Icon(
                                   Icons.location_on,
                                 ),
-                                SizedBox(width: 8,),
+                                SizedBox(
+                                  width: 8,
+                                ),
                                 Text("3740 Clover Penrose..."),
                               ],
                             ),
