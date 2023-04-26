@@ -90,6 +90,7 @@ class _PetHomePageState extends State<PetHomePage> {
                         icon: Icon(
                           Icons.home_filled,
                         ),
+                        color: Colors.black,
                       ),
                       SizedBox(
                         width: 16,
@@ -99,6 +100,7 @@ class _PetHomePageState extends State<PetHomePage> {
                         icon: Icon(
                           Icons.send,
                         ),
+                        color: Colors.grey,
                       ),
                       SizedBox(
                         width: 16,
