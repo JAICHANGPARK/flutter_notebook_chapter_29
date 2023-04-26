@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class PetHomePage extends StatefulWidget {
   const PetHomePage({Key? key}) : super(key: key);
 
@@ -15,7 +14,45 @@ class _PetHomePageState extends State<PetHomePage> {
       body: SafeArea(
         child: Stack(
           children: [
-            
+            Positioned(
+              bottom: 0,
+              left: 0,
+              right: 0,
+              child: Container(
+                
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+                child: Row(
+                  children: [
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.home_filled,
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.home_filled,
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.home_filled,
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.home_filled,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            )
           ],
         ),
       ),
