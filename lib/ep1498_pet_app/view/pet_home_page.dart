@@ -139,19 +139,29 @@ class _PetHomePageState extends State<PetHomePage> {
                       },
                     ),
                   ),
-                  Row(
-                    children: [
-                      Text("Near You"),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          "View all",
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Near You",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                        style: TextButton.styleFrom(
-                          foregroundColor: Colors.grey,
-                        ),
-                      )
-                    ],
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            "View all",
+                          ),
+                          style: TextButton.styleFrom(
+                            foregroundColor: Colors.grey,
+                          ),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
