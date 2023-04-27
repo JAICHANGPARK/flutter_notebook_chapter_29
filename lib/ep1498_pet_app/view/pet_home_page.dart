@@ -88,7 +88,12 @@ class _PetHomePageState extends State<PetHomePage> {
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return Row(
-                            children: [CircleAvatar(), Text("WOOF")],
+                            children: [CircleAvatar(
+                              radius: 28,
+                            ), Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 8),
+                              child: Text("WOOF"),
+                            ), ],
                           );
                         },
                       ),
