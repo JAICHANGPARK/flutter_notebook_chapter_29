@@ -72,7 +72,7 @@ class _PetHomePageState extends State<PetHomePage> {
                     textAlign: TextAlign.center,
                   ),
                   SizedBox(
-                    height: 8,
+                    height: 16,
                   ),
                   Transform.rotate(
                     angle: 0.08,
@@ -83,6 +83,14 @@ class _PetHomePageState extends State<PetHomePage> {
                           top: BorderSide(),
                           bottom: BorderSide(),
                         ),
+                      ),
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return Row(
+                            children: [CircleAvatar(), Text("WOOF")],
+                          );
+                        },
                       ),
                     ),
                   )
