@@ -75,7 +75,7 @@ class _PetHomePageState extends State<PetHomePage> {
                     height: 8,
                   ),
                   Transform.rotate(
-                    angle: 0.1,
+                    angle: 0.08,
                     child: Container(
                       height: 64,
                       decoration: BoxDecoration(
