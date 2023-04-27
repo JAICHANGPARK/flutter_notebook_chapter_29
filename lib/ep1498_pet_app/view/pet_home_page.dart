@@ -153,11 +153,11 @@ class _PetHomePageState extends State<PetHomePage> {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: const Text(
-                            "View all",
-                          ),
                           style: TextButton.styleFrom(
                             foregroundColor: Colors.grey,
+                          ),
+                          child: const Text(
+                            "View all",
                           ),
                         )
                       ],
