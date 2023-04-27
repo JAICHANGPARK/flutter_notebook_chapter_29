@@ -162,7 +162,8 @@ class _PetHomePageState extends State<PetHomePage> {
                         )
                       ],
                     ),
-                  )
+                  ),
+                  Expanded(child: Placeholder()),
                 ],
               ),
             ),
