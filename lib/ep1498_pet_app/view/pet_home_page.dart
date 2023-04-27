@@ -76,26 +76,30 @@ class _PetHomePageState extends State<PetHomePage> {
                   ),
                   Transform.rotate(
                     angle: 0.08,
-                    child: Container(
-                      height: 64,
-                      decoration: BoxDecoration(
-                        border: Border(
-                          top: BorderSide(),
-                          bottom: BorderSide(),
+                    child: Transform.scale(
+                      scaleX: 1.1,
+                      scaleY: 1.1,
+                      child: Container(
+                        height: 64,
+                        decoration: BoxDecoration(
+                          border: Border(
+                            top: BorderSide(),
+                            bottom: BorderSide(),
+                          ),
                         ),
-                      ),
-                      child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemBuilder: (context, index) {
-                          return Row(
-                            children: [CircleAvatar(
-                              radius: 28,
-                            ), Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 8),
-                              child: Text("WOOF"),
-                            ), ],
-                          );
-                        },
+                        child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemBuilder: (context, index) {
+                            return Row(
+                              children: [CircleAvatar(
+                                radius: 28,
+                              ), Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 8),
+                                child: Text("WOOF"),
+                              ), ],
+                            );
+                          },
+                        ),
                       ),
                     ),
                   )
