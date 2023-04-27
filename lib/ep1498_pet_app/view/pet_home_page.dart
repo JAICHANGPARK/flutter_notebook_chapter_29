@@ -64,8 +64,10 @@ class _PetHomePageState extends State<PetHomePage> {
                     ),
                   ),
                   Text(
-                    "Find Pet Single near you!",
-                    style: GoogleFonts.pacifico(),
+                    "Find Pet Single\nnear you!",
+                    style: GoogleFonts.pacifico(
+                      fontSize: 32
+                    ),
                   ),
                 ],
               ),
