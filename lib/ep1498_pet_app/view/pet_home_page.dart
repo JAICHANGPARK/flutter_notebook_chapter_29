@@ -147,6 +147,9 @@ class _PetHomePageState extends State<PetHomePage> {
                         child: Text(
                           "View all",
                         ),
+                        style: TextButton.styleFrom(
+                          foregroundColor: Colors.grey,
+                        ),
                       )
                     ],
                   )
