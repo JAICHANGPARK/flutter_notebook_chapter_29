@@ -18,6 +18,7 @@ dependencies:
   flutter_staggered_grid_view: any
   percent_indicator: any
   go_router: any
+  google_fonts: any
 
 dev_dependencies:
   flutter_test:
