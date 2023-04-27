@@ -71,12 +71,15 @@ class _PetHomePageState extends State<PetHomePage> {
                     style: GoogleFonts.pacifico(fontSize: 32),
                     textAlign: TextAlign.center,
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border(
-                        top: BorderSide(),
-                        bottom: BorderSide()
-                      )
+                  Transform.rotate(
+                    child: Container(
+                      height: 64,
+                      decoration: BoxDecoration(
+                        border: Border(
+                          top: BorderSide(),
+                          bottom: BorderSide(),
+                        ),
+                      ),
                     ),
                   )
                 ],
