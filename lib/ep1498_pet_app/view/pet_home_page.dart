@@ -123,7 +123,7 @@ class _PetHomePageState extends State<PetHomePage> {
                         return Row(
                           children: [
                             CircleAvatar(
-                              radius: 28,
+                              radius: 26,
                             ),
                             Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 8),
