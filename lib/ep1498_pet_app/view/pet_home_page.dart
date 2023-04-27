@@ -63,7 +63,7 @@ class _PetHomePageState extends State<PetHomePage> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
                   Text(
@@ -71,7 +71,7 @@ class _PetHomePageState extends State<PetHomePage> {
                     style: GoogleFonts.pacifico(fontSize: 32),
                     textAlign: TextAlign.center,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 24,
                   ),
                   Transform.rotate(
@@ -81,7 +81,7 @@ class _PetHomePageState extends State<PetHomePage> {
                       scaleY: 1.1,
                       child: Container(
                         height: 60,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           border: Border(
                             top: BorderSide(),
                             bottom: BorderSide(),
@@ -92,11 +92,11 @@ class _PetHomePageState extends State<PetHomePage> {
                           itemBuilder: (context, index) {
                             return Row(
                               children: [
-                                CircleAvatar(
+                                const CircleAvatar(
                                   radius: 24,
                                 ),
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                                const Padding(
+                                  padding: EdgeInsets.symmetric(horizontal: 8),
                                   child: Text("WOOF"),
                                 ),
                               ],
@@ -106,12 +106,12 @@ class _PetHomePageState extends State<PetHomePage> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 24,
                   ),
                   Container(
                     height: 66,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         border: Border(
                           top: BorderSide(),
                           bottom: BorderSide(),
@@ -122,11 +122,11 @@ class _PetHomePageState extends State<PetHomePage> {
                       itemBuilder: (context, index) {
                         return Row(
                           children: [
-                            CircleAvatar(
+                            const CircleAvatar(
                               radius: 26,
                             ),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 8),
+                            const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 8),
                               child: Text(
                                 "WOOF",
                                 style: TextStyle(
@@ -144,7 +144,7 @@ class _PetHomePageState extends State<PetHomePage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Near You",
                           style: TextStyle(
                             fontSize: 20,
@@ -153,7 +153,7 @@ class _PetHomePageState extends State<PetHomePage> {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text(
+                          child: const Text(
                             "View all",
                           ),
                           style: TextButton.styleFrom(
@@ -169,7 +169,7 @@ class _PetHomePageState extends State<PetHomePage> {
                       itemBuilder: (context, index) {
                         return Container(
                           width: 300,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.orange,
                           ),
                         );
