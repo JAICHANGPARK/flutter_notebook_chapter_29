@@ -140,7 +140,7 @@ class _PetHomePageState extends State<PetHomePage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -165,7 +165,7 @@ class _PetHomePageState extends State<PetHomePage> {
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.fromLTRB(8.0, 0, 0, 48),
+                      padding: const EdgeInsets.fromLTRB(12.0, 0, 0, 48),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
