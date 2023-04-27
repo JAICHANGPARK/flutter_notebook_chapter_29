@@ -139,6 +139,17 @@ class _PetHomePageState extends State<PetHomePage> {
                       },
                     ),
                   ),
+                  Row(
+                    children: [
+                      Text("Near You"),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "View all",
+                        ),
+                      )
+                    ],
+                  )
                 ],
               ),
             ),
