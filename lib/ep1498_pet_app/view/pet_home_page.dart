@@ -68,6 +68,7 @@ class _PetHomePageState extends State<PetHomePage> {
                     style: GoogleFonts.pacifico(
                       fontSize: 32
                     ),
+                    textAlign: TextAlign.center,
                   ),
                 ],
               ),
