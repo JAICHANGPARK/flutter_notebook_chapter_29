@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class PetHomePage extends StatefulWidget {
   const PetHomePage({Key? key}) : super(key: key);
@@ -62,9 +63,10 @@ class _PetHomePageState extends State<PetHomePage> {
                       ],
                     ),
                   ),
-                  Text("Find Pet Single near you!", style: TextStyle(
-                    fontSize: 24
-                  ),)
+                  Text(
+                    "Find Pet Single near you!",
+                    style: GoogleFonts.pacifico(),
+                  ),
                 ],
               ),
             ),
