@@ -91,11 +91,11 @@ class _PetHomePageState extends State<PetHomePage> {
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
                             return Row(
-                              children: [
-                                const CircleAvatar(
+                              children: const [
+                                CircleAvatar(
                                   radius: 24,
                                 ),
-                                const Padding(
+                                Padding(
                                   padding: EdgeInsets.symmetric(horizontal: 8),
                                   child: Text("WOOF"),
                                 ),
@@ -121,11 +121,11 @@ class _PetHomePageState extends State<PetHomePage> {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Row(
-                          children: [
-                            const CircleAvatar(
+                          children: const [
+                            CircleAvatar(
                               radius: 26,
                             ),
-                            const Padding(
+                            Padding(
                               padding: EdgeInsets.symmetric(horizontal: 8),
                               child: Text(
                                 "WOOF",
