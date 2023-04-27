@@ -72,7 +72,7 @@ class _PetHomePageState extends State<PetHomePage> {
                     textAlign: TextAlign.center,
                   ),
                   SizedBox(
-                    height: 16,
+                    height: 24,
                   ),
                   Transform.rotate(
                     angle: 0.08,
@@ -102,7 +102,30 @@ class _PetHomePageState extends State<PetHomePage> {
                         ),
                       ),
                     ),
-                  )
+                  ),
+                  SizedBox(height: 24,),
+                  Container(
+                    height: 66,
+                    decoration: BoxDecoration(
+                      border: Border(
+                        top: BorderSide(),
+                        bottom: BorderSide(),
+                      ),
+                    ),
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Row(
+                          children: [CircleAvatar(
+                            radius: 28,
+                          ), Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                            child: Text("WOOF"),
+                          ), ],
+                        );
+                      },
+                    ),
+                  ),
                 ],
               ),
             ),
