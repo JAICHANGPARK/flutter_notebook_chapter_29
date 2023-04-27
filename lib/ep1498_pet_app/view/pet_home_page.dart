@@ -91,37 +91,50 @@ class _PetHomePageState extends State<PetHomePage> {
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
                             return Row(
-                              children: [CircleAvatar(
-                                radius: 24,
-                              ), Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 8),
-                                child: Text("WOOF"),
-                              ), ],
+                              children: [
+                                CircleAvatar(
+                                  radius: 24,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                                  child: Text("WOOF"),
+                                ),
+                              ],
                             );
                           },
                         ),
                       ),
                     ),
                   ),
-                  SizedBox(height: 24,),
+                  SizedBox(
+                    height: 24,
+                  ),
                   Container(
                     height: 66,
                     decoration: BoxDecoration(
-                      border: Border(
-                        top: BorderSide(),
-                        bottom: BorderSide(),
-                      ),
-                    ),
+                        border: Border(
+                          top: BorderSide(),
+                          bottom: BorderSide(),
+                        ),
+                        color: Colors.black),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Row(
-                          children: [CircleAvatar(
-                            radius: 28,
-                          ), Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 8),
-                            child: Text("WOOF"),
-                          ), ],
+                          children: [
+                            CircleAvatar(
+                              radius: 28,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 8),
+                              child: Text(
+                                "WOOF",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ],
                         );
                       },
                     ),
