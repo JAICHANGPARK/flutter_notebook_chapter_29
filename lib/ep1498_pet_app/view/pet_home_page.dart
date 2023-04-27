@@ -164,16 +164,19 @@ class _PetHomePageState extends State<PetHomePage> {
                     ),
                   ),
                   Expanded(
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) {
-                        return Container(
-                          width: 300,
-                          decoration: const BoxDecoration(
-                            color: Colors.orange,
-                          ),
-                        );
-                      },
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(8.0, 0,0,48),
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            width: 300,
+                            decoration: const BoxDecoration(
+                              color: Colors.orange,
+                            ),
+                          );
+                        },
+                      ),
                     ),
                   ),
                 ],
