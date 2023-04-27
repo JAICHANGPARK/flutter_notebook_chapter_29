@@ -80,7 +80,7 @@ class _PetHomePageState extends State<PetHomePage> {
                       scaleX: 1.1,
                       scaleY: 1.1,
                       child: Container(
-                        height: 64,
+                        height: 60,
                         decoration: BoxDecoration(
                           border: Border(
                             top: BorderSide(),
@@ -92,7 +92,7 @@ class _PetHomePageState extends State<PetHomePage> {
                           itemBuilder: (context, index) {
                             return Row(
                               children: [CircleAvatar(
-                                radius: 28,
+                                radius: 24,
                               ), Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 8),
                                 child: Text("WOOF"),
