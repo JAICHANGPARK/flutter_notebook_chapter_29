@@ -44,14 +44,14 @@ class _PetHomePageState extends State<PetHomePage> {
                             padding: const EdgeInsets.all(4),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                const Icon(
+                              children: const [
+                                Icon(
                                   Icons.location_on,
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                   width: 8,
                                 ),
-                                const Text("3740 Clover Penrose..."),
+                                Text("3740 Clover Penrose..."),
                               ],
                             ),
                           ),
@@ -61,7 +61,10 @@ class _PetHomePageState extends State<PetHomePage> {
                         ),
                       ],
                     ),
-                  )
+                  ),
+                  Text("Find Pet Single near you!", style: TextStyle(
+                    fontSize: 24
+                  ),)
                 ],
               ),
             ),
