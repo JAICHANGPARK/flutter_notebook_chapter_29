@@ -232,13 +232,15 @@ class _PetHomePageState extends State<PetHomePage> {
                                             ),
                                             Text(
                                               "3.5km away",
-                                              style: TextStyle(
-                                                color: Colors.white
-                                              ),
+                                              style: TextStyle(color: Colors.white),
                                             )
                                           ],
                                         ),
-                                      )
+                                      ),
+                                      Container(
+                                        height: 64,
+                                        child: BackdropFilter(filter: null,),
+                                      ),
                                     ],
                                   ),
                                 )
