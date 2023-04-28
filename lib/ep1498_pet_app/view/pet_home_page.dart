@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -239,7 +241,19 @@ class _PetHomePageState extends State<PetHomePage> {
                                       ),
                                       Container(
                                         height: 64,
-                                        child: BackdropFilter(filter: null,),
+                                        child: ClipRect(
+                                          child: BackdropFilter(
+                                            filter: ImageFilter.blur(
+                                              sigmaY: 10,
+                                              sigmaX: 10
+                                            ),
+                                            child: Row(
+                                              children: [
+                                                Icon(Icons.arrow_circle_right_outlined)
+                                              ],
+                                            ),
+                                          ),
+                                        ),
                                       ),
                                     ],
                                   ),
