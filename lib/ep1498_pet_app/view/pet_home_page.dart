@@ -192,6 +192,14 @@ class _PetHomePageState extends State<PetHomePage> {
                                       fit: BoxFit.cover,
                                     ),
                                   ),
+                                ),
+                                Positioned(
+                                  child: Row(
+                                    children: [
+                                      CircleAvatar(),
+                                      CircleAvatar(),
+                                    ],
+                                  ),
                                 )
                               ],
                             ),
