@@ -255,6 +255,9 @@ class _PetHomePageState extends State<PetHomePage> {
                                             ),
                                             child: Row(
                                               children: [
+                                                Text(
+                                                  "Dexter, a year",
+                                                ),
                                                 Icon(
                                                   Icons.arrow_circle_right_outlined,
                                                 ),
