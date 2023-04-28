@@ -70,7 +70,9 @@ class _PetHomePageState extends State<PetHomePage> {
                   ),
                   Text(
                     "Find Pet Single\nnear you!",
-                    style: GoogleFonts.pacifico(fontSize: 32),
+                    style: GoogleFonts.pacifico(
+                      fontSize: 32,
+                    ),
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(
