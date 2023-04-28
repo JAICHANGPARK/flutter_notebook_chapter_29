@@ -263,6 +263,9 @@ class _PetHomePageState extends State<PetHomePage> {
                                                     color: Colors.white,
                                                   ),
                                                 ),
+                                                SizedBox(
+                                                  width: 16,
+                                                ),
                                                 Icon(
                                                   Icons.arrow_circle_right_outlined,
                                                   color: Colors.white,
