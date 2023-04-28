@@ -177,7 +177,7 @@ class _PetHomePageState extends State<PetHomePage> {
                         itemBuilder: (context, index) {
                           return Container(
                             width: 300,
-                            margin: EdgeInsets.only(right: 16),
+                            margin: const EdgeInsets.only(right: 16),
                             decoration: BoxDecoration(
                               color: Colors.orange,
                               borderRadius: BorderRadius.circular(32),
@@ -200,12 +200,12 @@ class _PetHomePageState extends State<PetHomePage> {
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      CircleAvatar(
+                                      const CircleAvatar(
                                         backgroundColor: Colors.white,
                                         foregroundColor: Colors.red,
                                         child: Icon(Icons.favorite),
                                       ),
-                                      CircleAvatar(
+                                      const CircleAvatar(
                                         backgroundColor: Colors.grey,
                                         foregroundColor: Colors.white,
                                         child: Icon(Icons.clear),
