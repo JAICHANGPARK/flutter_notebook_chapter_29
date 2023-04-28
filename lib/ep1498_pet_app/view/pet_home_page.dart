@@ -241,15 +241,21 @@ class _PetHomePageState extends State<PetHomePage> {
                                       ),
                                       Container(
                                         height: 64,
-                                        child: ClipRect(
+                                        child: ClipRRect(
+                                          borderRadius: BorderRadius.only(
+                                            bottomLeft: Radius.circular(32),
+                                            bottomRight: Radius.circular(32),
+                                          ),
                                           child: BackdropFilter(
                                             filter: ImageFilter.blur(
                                               sigmaY: 10,
-                                              sigmaX: 10
+                                              sigmaX: 10,
                                             ),
                                             child: Row(
                                               children: [
-                                                Icon(Icons.arrow_circle_right_outlined)
+                                                Icon(
+                                                  Icons.arrow_circle_right_outlined,
+                                                ),
                                               ],
                                             ),
                                           ),
