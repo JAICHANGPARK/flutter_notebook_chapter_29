@@ -176,13 +176,21 @@ class _PetHomePageState extends State<PetHomePage> {
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return Container(
-                            width: 300,
-                            margin: EdgeInsets.only(right: 16),
-                            decoration: BoxDecoration(
-                              color: Colors.orange,
-                              borderRadius: BorderRadius.circular(32),
-                            ),
-                          );
+                              width: 300,
+                              margin: EdgeInsets.only(right: 16),
+                              decoration: BoxDecoration(
+                                color: Colors.orange,
+                                borderRadius: BorderRadius.circular(32),
+                              ),
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    child: Image.network(
+                                      "https://cdn.pixabay.com/photo/2020/10/06/11/50/dog-5632005_1280.jpg",
+                                    ),
+                                  )
+                                ],
+                              ));
                         },
                       ),
                     ),
