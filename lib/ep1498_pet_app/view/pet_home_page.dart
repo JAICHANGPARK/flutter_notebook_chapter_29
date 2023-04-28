@@ -220,7 +220,11 @@ class _PetHomePageState extends State<PetHomePage> {
                                   child: Column(
                                     children: [
                                       Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.orange[200],
+                                        ),
                                         child: Row(
+                                          mainAxisAlignment: MainAxisAlignment.center,
                                           children: [
                                             Icon(
                                               Icons.location_pin,
@@ -228,6 +232,9 @@ class _PetHomePageState extends State<PetHomePage> {
                                             ),
                                             Text(
                                               "3.5km away",
+                                              style: TextStyle(
+                                                color: Colors.white
+                                              ),
                                             )
                                           ],
                                         ),
