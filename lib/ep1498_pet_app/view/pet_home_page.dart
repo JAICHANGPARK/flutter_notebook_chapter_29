@@ -194,7 +194,11 @@ class _PetHomePageState extends State<PetHomePage> {
                                   ),
                                 ),
                                 Positioned(
+                                  left: 16,
+                                  right: 16,
+                                  top: 16,
                                   child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       CircleAvatar(),
                                       CircleAvatar(),
