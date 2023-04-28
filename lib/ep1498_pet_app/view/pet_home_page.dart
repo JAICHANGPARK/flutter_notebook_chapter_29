@@ -289,71 +289,71 @@ class _PetHomePageState extends State<PetHomePage> {
                 ],
               ),
             ),
-            // Positioned(
-            //   bottom: 32,
-            //   left: 0,
-            //   right: 0,
-            //   child: Center(
-            //     child: Container(
-            //       decoration: BoxDecoration(
-            //         color: Colors.white,
-            //         borderRadius: BorderRadius.circular(32),
-            //         boxShadow: [
-            //           BoxShadow(
-            //             color: Colors.black.withOpacity(0.1),
-            //             blurRadius: 10,
-            //             spreadRadius: 6,
-            //             offset: const Offset(0, 6),
-            //           )
-            //         ],
-            //       ),
-            //       height: 64,
-            //       padding: const EdgeInsets.symmetric(horizontal: 16),
-            //       child: Row(
-            //         mainAxisSize: MainAxisSize.min,
-            //         children: [
-            //           IconButton(
-            //             onPressed: () {},
-            //             icon: const Icon(
-            //               Icons.home_filled,
-            //             ),
-            //             color: Colors.black,
-            //           ),
-            //           const SizedBox(
-            //             width: 16,
-            //           ),
-            //           IconButton(
-            //             onPressed: () {},
-            //             icon: const Icon(
-            //               Icons.send,
-            //             ),
-            //             color: Colors.grey,
-            //           ),
-            //           const SizedBox(
-            //             width: 16,
-            //           ),
-            //           IconButton(
-            //             onPressed: () {},
-            //             icon: const Icon(
-            //               Icons.favorite,
-            //             ),
-            //             color: Colors.grey,
-            //           ),
-            //           const SizedBox(
-            //             width: 16,
-            //           ),
-            //           IconButton(
-            //             onPressed: () {},
-            //             icon: const Icon(
-            //               Icons.chat,
-            //             ),
-            //             color: Colors.grey,
-            //           )
-            //         ],
-            //       ),
-            //     ),
-            //   ),
-            // )
+            Positioned(
+              bottom: 32,
+              left: 0,
+              right: 0,
+              child: Center(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(32),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.1),
+                        blurRadius: 10,
+                        spreadRadius: 6,
+                        offset: const Offset(0, 6),
+                      )
+                    ],
+                  ),
+                  height: 64,
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.home_filled,
+                        ),
+                        color: Colors.black,
+                      ),
+                      const SizedBox(
+                        width: 16,
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.send,
+                        ),
+                        color: Colors.grey,
+                      ),
+                      const SizedBox(
+                        width: 16,
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.favorite,
+                        ),
+                        color: Colors.grey,
+                      ),
+                      const SizedBox(
+                        width: 16,
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.chat,
+                        ),
+                        color: Colors.grey,
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            )
           ],
         ),
       ),
