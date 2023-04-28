@@ -184,9 +184,14 @@ class _PetHomePageState extends State<PetHomePage> {
                               ),
                               child: Stack(
                                 children: [
-                                  Positioned(
-                                    child: Image.network(
-                                      "https://cdn.pixabay.com/photo/2020/10/06/11/50/dog-5632005_1280.jpg",
+                                  Positioned.fill(
+
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(32),
+                                      child: Image.network(
+                                        "https://cdn.pixabay.com/photo/2020/10/06/11/50/dog-5632005_1280.jpg",
+                                        fit: BoxFit.cover,
+                                      ),
                                     ),
                                   )
                                 ],
