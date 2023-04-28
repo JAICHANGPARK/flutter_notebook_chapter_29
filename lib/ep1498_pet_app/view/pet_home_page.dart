@@ -124,6 +124,9 @@ class _PetHomePageState extends State<PetHomePage> {
                           children: const [
                             CircleAvatar(
                               radius: 26,
+                              backgroundImage: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                              ),
                             ),
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 8),
