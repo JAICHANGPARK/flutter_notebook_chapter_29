@@ -260,10 +260,13 @@ class _PetHomePageState extends State<PetHomePage> {
                                                   "Dexter, a year",
                                                   style: GoogleFonts.pacifico(
                                                     fontSize: 20,
+                                                    color: Colors.white,
                                                   ),
                                                 ),
                                                 Icon(
                                                   Icons.arrow_circle_right_outlined,
+                                                  color: Colors.white,
+                                                  size: 32,
                                                 ),
                                               ],
                                             ),
