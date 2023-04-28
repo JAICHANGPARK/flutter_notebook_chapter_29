@@ -219,7 +219,19 @@ class _PetHomePageState extends State<PetHomePage> {
                                   bottom: 0,
                                   child: Column(
                                     children: [
-                                      
+                                      Container(
+                                        child: Row(
+                                          children: [
+                                            Icon(
+                                              Icons.location_pin,
+                                              color: Colors.white,
+                                            ),
+                                            Text(
+                                              "3.5km away",
+                                            )
+                                          ],
+                                        ),
+                                      )
                                     ],
                                   ),
                                 )
