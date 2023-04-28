@@ -254,9 +254,13 @@ class _PetHomePageState extends State<PetHomePage> {
                                               sigmaX: 10,
                                             ),
                                             child: Row(
+                                              mainAxisAlignment: MainAxisAlignment.center,
                                               children: [
                                                 Text(
                                                   "Dexter, a year",
+                                                  style: GoogleFonts.pacifico(
+                                                    fontSize: 20,
+                                                  ),
                                                 ),
                                                 Icon(
                                                   Icons.arrow_circle_right_outlined,
