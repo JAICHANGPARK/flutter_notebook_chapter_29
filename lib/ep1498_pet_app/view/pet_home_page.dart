@@ -200,8 +200,16 @@ class _PetHomePageState extends State<PetHomePage> {
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      CircleAvatar(),
-                                      CircleAvatar(),
+                                      CircleAvatar(
+                                        backgroundColor: Colors.white,
+                                        foregroundColor: Colors.red,
+                                        child: Icon(Icons.favorite),
+                                      ),
+                                      CircleAvatar(
+                                        backgroundColor: Colors.grey,
+                                        foregroundColor: Colors.white,
+                                        child: Icon(Icons.favorite),
+                                      ),
                                     ],
                                   ),
                                 )
