@@ -208,7 +208,7 @@ class _PetHomePageState extends State<PetHomePage> {
                                       CircleAvatar(
                                         backgroundColor: Colors.grey,
                                         foregroundColor: Colors.white,
-                                        child: Icon(Icons.favorite),
+                                        child: Icon(Icons.clear),
                                       ),
                                     ],
                                   ),
