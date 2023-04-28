@@ -199,17 +199,27 @@ class _PetHomePageState extends State<PetHomePage> {
                                   top: 16,
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      const CircleAvatar(
+                                    children: const [
+                                      CircleAvatar(
                                         backgroundColor: Colors.white,
                                         foregroundColor: Colors.red,
                                         child: Icon(Icons.favorite),
                                       ),
-                                      const CircleAvatar(
+                                      CircleAvatar(
                                         backgroundColor: Colors.grey,
                                         foregroundColor: Colors.white,
                                         child: Icon(Icons.clear),
                                       ),
+                                    ],
+                                  ),
+                                ),
+                                Positioned(
+                                  left: 0,
+                                  right: 0,
+                                  bottom: 0,
+                                  child: Column(
+                                    children: [
+                                      
                                     ],
                                   ),
                                 )
